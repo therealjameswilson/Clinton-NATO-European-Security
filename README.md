@@ -52,5 +52,5 @@ Then open <http://127.0.0.1:4197/>.
 
 This repository deploys through GitHub Pages with `.github/workflows/deploy-pages.yml`.
 
-After the first push to `main`, open the repository settings on GitHub, go to
-**Pages**, and set the source to **GitHub Actions** if it is not already selected.
+The repository Pages source is configured for **GitHub Actions**. The public site
+is expected at <https://therealjameswilson.github.io/Clinton-NATO-European-Security/>.
