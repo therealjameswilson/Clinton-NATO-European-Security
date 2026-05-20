@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">NATO and European security research map</title>
+  <desc id="desc">A stylized archival map showing NATO, Europe, Russia, and crisis-security research lanes.</desc>
+  <rect width="900" height="520" fill="#f5f7f5"/>
+  <path d="M0 0h900v520H0z" fill="#eef3f1"/>
+  <path d="M86 80c104-48 217-66 339-54 136 13 232 64 323 56 60-6 105-33 152-60v498H0V122c28-14 56-28 86-42z" fill="#dce7e4"/>
+  <path d="M90 252c60-36 116-50 174-39 74 15 124 70 196 69 80-1 124-69 208-74 54-3 96 20 140 50v176H90z" fill="#cfdeda"/>
+  <path d="M232 154c28-24 63-40 98-40 53 0 89 34 120 70 36 43 74 89 138 100 45 8 92-4 138-26" fill="none" stroke="#425c7a" stroke-width="8" stroke-linecap="round" opacity=".48"/>
+  <path d="M212 279c54 7 98 33 130 79 19 27 32 59 51 86" fill="none" stroke="#a24a4d" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <path d="M522 145c46 21 77 55 93 102 18 52 13 107 31 158" fill="none" stroke="#b9913e" stroke-width="8" stroke-linecap="round" opacity=".58"/>
+  <g fill="#25364f">
+    <circle cx="233" cy="154" r="12"/>
+    <circle cx="451" cy="184" r="12"/>
+    <circle cx="589" cy="284" r="12"/>
+  </g>
+  <g fill="#8c3b3f">
+    <circle cx="212" cy="279" r="11"/>
+    <circle cx="342" cy="358" r="11"/>
+    <circle cx="393" cy="444" r="11"/>
+  </g>
+  <g fill="#b98e36">
+    <circle cx="522" cy="145" r="11"/>
+    <circle cx="615" cy="247" r="11"/>
+    <circle cx="646" cy="405" r="11"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <text x="72" y="86" fill="#25364f" font-size="18">NATO Strategy</text>
+    <text x="518" y="111" fill="#25364f" font-size="18">NATO-Russia</text>
+    <text x="92" y="464" fill="#25364f" font-size="18">Crisis Security Files</text>
+    <text x="614" y="451" fill="#25364f" font-size="18">European Security</text>
+  </g>
+  <g opacity=".9">
+    <rect x="54" y="42" width="220" height="78" rx="8" fill="#fff" stroke="#d5dedb"/>
+    <rect x="580" y="36" width="246" height="78" rx="8" fill="#fff" stroke="#d5dedb"/>
+    <rect x="54" y="410" width="254" height="78" rx="8" fill="#fff" stroke="#d5dedb"/>
+    <rect x="558" y="396" width="276" height="78" rx="8" fill="#fff" stroke="#d5dedb"/>
+  </g>
+  <path d="M62 70h130M62 92h180M588 64h154M588 86h206M62 438h204M62 460h154M566 424h220M566 446h166" stroke="#d5dedb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M722 160l24 46 52 8-38 36 9 52-47-25-47 25 9-52-38-36 52-8z" fill="#ffffff" stroke="#25364f" stroke-width="8" opacity=".9"/>
+  <path d="M722 190v84M680 232h84" stroke="#25364f" stroke-width="8" stroke-linecap="round"/>
+</svg>

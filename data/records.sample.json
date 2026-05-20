@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sample-1997-07-08-nato-enlargement",
+    "date": "1997-07-08",
+    "sortDate": "1997-07-08",
+    "type": "Context",
+    "title": "Sample source lead for NATO enlargement",
+    "documentTitle": "Sample source lead for NATO enlargement",
+    "participants": ["Bill Clinton"],
+    "countries": ["United States"],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Search Lead",
+    "naid": "sample",
+    "catalogUrl": "https://catalog.archives.gov/",
+    "pdfUrl": "",
+    "pageCount": null,
+    "dateLine": "July 8, 1997",
+    "subjectLine": "Replace this sample with a verified source record.",
+    "sourceNote": "Source: sample only; do not publish as a compiler record.",
+    "source": {
+      "name": "Sample source",
+      "url": "https://catalog.archives.gov/"
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": ["NATO enlargement", "European security"],
+    "topics": ["NATO enlargement", "European security"]
+  }
+]
