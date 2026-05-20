@@ -33,6 +33,10 @@
       "type": "string",
       "enum": ["Memcon", "Telcon", "Release Packet", "Context", "Scout Lead", "Source Lead"]
     },
+    "documentNumber": {
+      "type": ["integer", "null"],
+      "minimum": 1
+    },
     "title": {
       "type": "string"
     },
@@ -73,7 +77,37 @@
     },
     "releaseStatus": {
       "type": "string",
-      "enum": ["Full", "Partial", "Mixed", "Unknown", "FOIA/MDR Lead", "Catalog Lead", "Search Lead"]
+      "enum": [
+        "Full",
+        "Partial",
+        "Mixed",
+        "Unknown",
+        "FOIA/MDR Lead",
+        "Catalog Lead",
+        "Search Lead",
+        "Withheld in Full"
+      ]
+    },
+    "selectionDecision": {
+      "type": "string",
+      "enum": ["Pending", "Include candidate", "Context candidate", "Exclude", "Ready for editor"]
+    },
+    "compilerDecision": {
+      "type": "string"
+    },
+    "productionIssues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "needs-selection",
+          "needs-source",
+          "needs-chronology",
+          "needs-declass",
+          "needs-annotation",
+          "needs-index"
+        ]
+      }
     },
     "naid": {
       "type": "string"
@@ -97,14 +131,105 @@
     "dateLine": {
       "type": "string"
     },
+    "washingtonTime": {
+      "type": "string"
+    },
+    "placementNote": {
+      "type": "string"
+    },
     "subjectLine": {
       "type": "string"
     },
     "sourceNote": {
       "type": "string"
     },
+    "sourcePages": {
+      "type": "string"
+    },
+    "originalClassification": {
+      "type": "string"
+    },
+    "classification": {
+      "type": "string"
+    },
+    "distribution": {
+      "type": "string"
+    },
+    "draftingInfo": {
+      "type": "string"
+    },
+    "readBy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "declassificationStatus": {
+      "type": "string",
+      "enum": [
+        "Released in full",
+        "Released with minor excisions",
+        "Excised paragraph or more",
+        "Withheld in full",
+        "Pending review",
+        "Not applicable"
+      ]
+    },
+    "withheldMaterial": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "omittedLines": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "omittedPages": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "annotationStatus": {
+      "type": "string",
+      "enum": ["Pending", "Drafted", "Ready"]
+    },
+    "annotation": {
+      "type": "object",
+      "properties": {
+        "firstFootnote": {
+          "type": "string"
+        },
+        "relatedDocuments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "publicStatements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "memoirs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "extractionStatus": {
       "type": "string"
+    },
+    "transcriptionUrl": {
+      "type": "string",
+      "format": "uri-reference"
     },
     "source": {
       "type": "object",
@@ -122,6 +247,18 @@
           "format": "uri-reference"
         },
         "caseNumber": {
+          "type": "string"
+        },
+        "documentId": {
+          "type": "string"
+        },
+        "collection": {
+          "type": "string"
+        },
+        "box": {
+          "type": "string"
+        },
+        "folder": {
           "type": "string"
         }
       }
@@ -152,6 +289,24 @@
       }
     },
     "topics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "indexTerms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "persons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compilerNotes": {
       "type": "array",
       "items": {
         "type": "string"

@@ -4,6 +4,7 @@
     "date": "1997-07-08",
     "sortDate": "1997-07-08",
     "type": "Context",
+    "documentNumber": null,
     "title": "Sample source lead for NATO enlargement",
     "documentTitle": "Sample source lead for NATO enlargement",
     "participants": ["Bill Clinton"],
@@ -13,16 +14,50 @@
       "name": "NATO Strategy and Enlargement"
     },
     "releaseStatus": "Search Lead",
+    "selectionDecision": "Pending",
+    "productionIssues": [
+      "needs-selection",
+      "needs-source",
+      "needs-chronology",
+      "needs-declass",
+      "needs-annotation",
+      "needs-index"
+    ],
     "naid": "sample",
     "catalogUrl": "https://catalog.archives.gov/",
     "pdfUrl": "",
     "pageCount": null,
     "dateLine": "July 8, 1997",
+    "washingtonTime": "",
+    "placementNote": "Place by Washington time once the source is verified.",
     "subjectLine": "Replace this sample with a verified source record.",
     "sourceNote": "Source: sample only; do not publish as a compiler record.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "distribution": "",
+    "draftingInfo": "",
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Pending review",
+      "omittedLines": null,
+      "omittedPages": null,
+      "description": ""
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
     "source": {
       "name": "Sample source",
-      "url": "https://catalog.archives.gov/"
+      "url": "https://catalog.archives.gov/",
+      "documentId": "",
+      "collection": "",
+      "box": "",
+      "folder": ""
     },
     "frusVolume": {
       "id": "frus1993-00v17",
@@ -31,6 +66,11 @@
       "status": "Planned"
     },
     "frusTopics": ["NATO enlargement", "European security"],
-    "topics": ["NATO enlargement", "European security"]
+    "topics": ["NATO enlargement", "European security"],
+    "indexTerms": ["NATO enlargement", "European security"],
+    "persons": ["Bill Clinton"],
+    "compilerNotes": [
+      "Sample record only. Verify source, chronology, classification, declassification, annotation, and index terms before treating as a candidate."
+    ]
   }
 ]

@@ -27,11 +27,31 @@ shape lives in `data/records.sample.json`.
 
 Each compiler record can track date, type, participants, countries, lane
 assignment, release status, source identifiers, PDF or catalog links, source
-notes, and FRUS topic tags.
+notes, FRUS topic tags, and production-readiness fields.
+
+## FRUS Production Workflow
+
+The workbench is organized around the editorial and production practices
+described in the FRUS "About the Series" front matter:
+
+1. **Selection decision**: mark whether a source is an include candidate,
+   context candidate, exclusion, or still pending.
+2. **Chronological placement**: record Washington time and sort memcons/telcons
+   by the time of the conversation, not the drafting date.
+3. **First-footnote readiness**: preserve source, classification, distribution,
+   drafting information, document IDs, page spans, and who read the item.
+4. **Declassification accounting**: mark full release, excisions, withheld
+   documents, pending review, and omitted lines or pages when available.
+5. **Annotation and access**: track related documents, public statements,
+   memoirs or first-hand accounts, people, countries, and index terms.
+
+The record UI includes issue filters for missing selection, source-note,
+chronology, declassification, annotation, and index-term metadata.
 
 ## Source Anchors
 
 - FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security: <https://history.state.gov/historicaldocuments/frus1993-00v17>
+- FRUS production and editorial method: <https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries>
 - Clinton Library Memcons and Telcons: <https://www.clintonlibrary.gov/research/memcons-and-telcons>
 - Clinton Library Meetings and Telephone Calls with Foreign Leaders: <https://www.clintonlibrary.gov/research/meetings-and-telephone-calls-foreign-leaders>
 - State Department FOIA Virtual Reading Room: <https://foia.state.gov/>
