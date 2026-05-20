@@ -31,11 +31,28 @@
     "washingtonTime": "",
     "placementNote": "Place by Washington time once the source is verified.",
     "subjectLine": "Replace this sample with a verified source record.",
-    "sourceNote": "Source: sample only; do not publish as a compiler record.",
+    "sourceNote": "Source: Clinton Presidential Library, [collection], [series], [box], [folder], [document identifier]. [Classification]; [handling markings]. Drafted by [name]; cleared by [names]; approved by [name].",
+    "sourceNoteStatus": "Pending",
+    "sourceNoteAddendum": "Replace bracketed placeholders with verified source-note information before treating this as a compiler candidate.",
     "sourcePages": "",
     "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "telegramPrecedence": "",
     "distribution": "",
     "draftingInfo": "",
+    "clearance": {
+      "draftedBy": [],
+      "clearedBy": [],
+      "approvedBy": []
+    },
+    "communication": {
+      "channel": "",
+      "precedence": "",
+      "sentTo": "",
+      "sentForInfo": []
+    },
+    "meetingLocation": "",
     "readBy": [],
     "declassificationStatus": "Pending review",
     "withheldMaterial": {
@@ -55,9 +72,15 @@
       "name": "Sample source",
       "url": "https://catalog.archives.gov/",
       "documentId": "",
+      "path": [],
       "collection": "",
+      "series": "",
+      "subseries": "",
+      "lotFile": "",
+      "fileUnit": "",
       "box": "",
-      "folder": ""
+      "folder": "",
+      "itemTitle": ""
     },
     "frusVolume": {
       "id": "frus1993-00v17",

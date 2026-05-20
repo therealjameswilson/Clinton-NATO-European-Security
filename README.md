@@ -29,6 +29,26 @@ Each compiler record can track date, type, participants, countries, lane
 assignment, release status, source identifiers, PDF or catalog links, source
 notes, FRUS topic tags, and production-readiness fields.
 
+## Source Note Model
+
+Citation information is organized to match the source-note pattern used in
+published FRUS volumes, especially the source notes in
+*FRUS, 1989-1992, Volume XXXI*. A record should either provide a finished
+`sourceNote` beginning with `Source:` or enough structured fields for the page
+to draft one.
+
+Preferred order:
+
+1. Repository, collection, series, file unit, box, folder, and item identifier.
+2. Original classification, precedence, distribution, and handling markings.
+3. Transmission channel, addressees, meeting place, or document context.
+4. Drafting, clearance, approval, marginalia, attachments, and source-page
+   details.
+
+Useful structured fields include `source.path`, `source.documentId`,
+`source.caseNumber`, `documentMarkings`, `handlingMarkings`, `communication`,
+`meetingLocation`, `clearance`, `sourcePages`, and `sourceNoteAddendum`.
+
 ## FRUS Production Workflow
 
 The workbench is organized around the editorial and production practices
@@ -38,8 +58,9 @@ described in the FRUS "About the Series" front matter:
    context candidate, exclusion, or still pending.
 2. **Chronological placement**: record Washington time and sort memcons/telcons
    by the time of the conversation, not the drafting date.
-3. **First-footnote readiness**: preserve source, classification, distribution,
-   drafting information, document IDs, page spans, and who read the item.
+3. **Source-note readiness**: preserve repository path, exact item identifier,
+   classification and handling markings, channel, drafting, clearance,
+   approval, page spans, and who read the item.
 4. **Declassification accounting**: mark full release, excisions, withheld
    documents, pending review, and omitted lines or pages when available.
 5. **Annotation and access**: track related documents, public statements,
@@ -52,6 +73,7 @@ chronology, declassification, annotation, and index-term metadata.
 
 - FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security: <https://history.state.gov/historicaldocuments/frus1993-00v17>
 - FRUS production and editorial method: <https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries>
+- FRUS 1989-1992, Volume XXXI source-note model: <https://history.state.gov/historicaldocuments/frus1989-92v31>
 - Clinton Library Memcons and Telcons: <https://www.clintonlibrary.gov/research/memcons-and-telcons>
 - Clinton Library Meetings and Telephone Calls with Foreign Leaders: <https://www.clintonlibrary.gov/research/meetings-and-telephone-calls-foreign-leaders>
 - State Department FOIA Virtual Reading Room: <https://foia.state.gov/>

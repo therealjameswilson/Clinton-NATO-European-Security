@@ -114,12 +114,13 @@
             <span>Fields: date, washingtonTime, sortDate, placementNote</span>
           </article>
           <article class="standard-panel">
-            <h3>First Footnote Readiness</h3>
+            <h3>Source Note Drafting</h3>
             <p>
-              Preserve source, original classification, distribution, drafting information,
-              document identifiers, and whether the President or senior advisers read it.
+              Draft the first note in FRUS order: repository trail, collection or series,
+              exact file or item identifier, markings, then transmission, meeting, drafting,
+              clearance, approval, or marginalia details.
             </p>
-            <span>Fields: sourceNote, classification, distribution, draftingInfo, readBy</span>
+            <span>Fields: sourceNote, source.path, documentMarkings, handlingMarkings, clearance</span>
           </article>
           <article class="standard-panel">
             <h3>Declassification Accounting</h3>
@@ -137,7 +138,7 @@
           </div>
           <div>
             <strong>Source</strong>
-            <span>Repository, collection, case number, NAID, page span, and PDF path.</span>
+            <span>Repository, collection, series, folder, item identifier, and markings.</span>
           </div>
           <div>
             <strong>Editorial</strong>
@@ -147,6 +148,27 @@
             <strong>Access</strong>
             <span>Index terms, people, countries, related documents, and public statements.</span>
           </div>
+        </div>
+        <div class="source-note-guide" aria-label="FRUS source note model">
+          <div>
+            <p class="kicker">Citation Standard</p>
+            <h3>Make footnote 1 do the archival work.</h3>
+            <p>
+              The Volume XXXI source notes consistently begin with <code>Source:</code>,
+              move from repository to file path, then add classification and handling
+              markings before editorial details such as channel, drafting, clearance,
+              approval, attachments, handwritten notes, or omitted material.
+            </p>
+          </div>
+          <ol>
+            <li>Repository and collection path</li>
+            <li>File unit, folder, document ID, NAID, or case number</li>
+            <li>Original classification, precedence, and handling markings</li>
+            <li>Drafted by, cleared by, approved by, channel, or meeting location</li>
+          </ol>
+          <a href="https://history.state.gov/historicaldocuments/frus1989-92v31" rel="noreferrer">
+            Volume XXXI source-note model
+          </a>
         </div>
       </section>
 
@@ -250,8 +272,9 @@
           <article>
             <h3>Provenance Notes</h3>
             <p>
-              Source notes track collection names, case numbers, NAIDs, document IDs,
-              source PDF pages, and extraction decisions.
+              Source notes track repository paths, exact file identifiers, original
+              markings, drafting and clearance trails, and any editorial provenance
+              needed for a FRUS first note.
             </p>
           </article>
           <article>
@@ -346,6 +369,9 @@
           <a href="https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries" rel="noreferrer">
             FRUS production and editorial method
           </a>
+          <a href="https://history.state.gov/historicaldocuments/frus1989-92v31" rel="noreferrer">
+            FRUS Volume XXXI source-note model
+          </a>
           <a href="https://www.clintonlibrary.gov/research/memcons-and-telcons" rel="noreferrer">
             Clinton Library Memcons and Telcons
           </a>
@@ -397,11 +423,11 @@
           </li>
           <li>
             <span class="step-number">05</span>
-            <span>Normalize dates, participants, source repositories, case numbers, release status, and lane assignment.</span>
+            <span>Normalize dates, participants, FRUS-style source-note fields, release status, and lane assignment.</span>
           </li>
           <li>
             <span class="step-number">06</span>
-            <span>Extract only actual document pages when building derivative PDFs, and keep provenance markers in source notes.</span>
+            <span>Extract only actual document pages and keep source notes in repository-to-markings-to-clearance order.</span>
           </li>
           <li>
             <span class="step-number">07</span>

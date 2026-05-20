@@ -143,6 +143,13 @@
     "sourceNote": {
       "type": "string"
     },
+    "sourceNoteStatus": {
+      "type": "string",
+      "enum": ["Pending", "Draft", "Complete", "Needs verification"]
+    },
+    "sourceNoteAddendum": {
+      "type": "string"
+    },
     "sourcePages": {
       "type": "string"
     },
@@ -152,10 +159,102 @@
     "classification": {
       "type": "string"
     },
+    "documentMarkings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "handlingMarkings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "telegramPrecedence": {
+      "type": "string"
+    },
     "distribution": {
       "type": "string"
     },
     "draftingInfo": {
+      "type": "string"
+    },
+    "clearance": {
+      "type": "object",
+      "properties": {
+        "draftedBy": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "clearedBy": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "approvedBy": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "communication": {
+      "type": "object",
+      "properties": {
+        "channel": {
+          "type": "string"
+        },
+        "precedence": {
+          "type": "string"
+        },
+        "sentTo": {
+          "type": "string"
+        },
+        "sentForInfo": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "meetingLocation": {
+      "type": "string"
+    },
+    "venue": {
       "type": "string"
     },
     "readBy": {
@@ -252,13 +351,34 @@
         "documentId": {
           "type": "string"
         },
+        "path": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "collection": {
+          "type": "string"
+        },
+        "series": {
+          "type": "string"
+        },
+        "subseries": {
+          "type": "string"
+        },
+        "lotFile": {
+          "type": "string"
+        },
+        "fileUnit": {
           "type": "string"
         },
         "box": {
           "type": "string"
         },
         "folder": {
+          "type": "string"
+        },
+        "itemTitle": {
           "type": "string"
         }
       }

@@ -344,6 +344,54 @@ dd {
   line-height: 1.45;
 }
 
+.source-note-guide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 0.78fr) auto;
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 18px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.source-note-guide h3 {
+  margin-top: 4px;
+}
+
+.source-note-guide p {
+  margin-bottom: 0;
+}
+
+.source-note-guide ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 22px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.source-note-guide a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 168px;
+  min-height: 44px;
+  align-self: start;
+  padding: 0 12px;
+  color: white;
+  font-size: 0.84rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  background: var(--navy);
+  border-radius: 6px;
+}
+
 h2 {
   max-width: 760px;
   font-family: Georgia, "Times New Roman", serif;
@@ -627,9 +675,14 @@ footer {
 
 .record-source-note {
   margin: 10px 0 0;
-  color: var(--muted);
-  font-size: 0.88rem;
+  padding: 11px 12px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
   line-height: 1.5;
+  background: rgba(255, 255, 255, 0.72);
+  border-left: 3px solid var(--navy);
+  border-radius: 6px;
 }
 
 .production-block {
@@ -852,6 +905,7 @@ footer a {
   .chapter-grid,
   .workbench-layout,
   .gate-grid,
+  .source-note-guide,
   .source-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -886,6 +940,7 @@ footer a {
   .chapter-grid,
   .workbench-layout,
   .gate-grid,
+  .source-note-guide,
   .production-list,
   .empty-grid,
   .source-list {

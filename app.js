@@ -45,6 +45,111 @@ function hasValue(value) {
   return Array.isArray(value) ? value.length > 0 : Boolean(value);
 }
 
+function listValues(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  return value ? [value] : [];
+}
+
+function joinValues(value) {
+  return listValues(value).join(", ");
+}
+
+function sourcePathParts(record) {
+  const source = record.source || {};
+  const explicitPath = listValues(source.path);
+
+  if (explicitPath.length) {
+    return [source.name, ...explicitPath].filter(Boolean);
+  }
+
+  return [
+    source.name,
+    source.collection,
+    source.series,
+    source.subseries,
+    source.lotFile,
+    source.fileUnit,
+    source.box ? `Box ${source.box}` : "",
+    source.folder ? `Folder ${source.folder}` : "",
+    source.itemTitle,
+    source.documentId ? `Document ${source.documentId}` : "",
+    source.caseNumber ? `Case ${source.caseNumber}` : "",
+    record.naid && !/^sample$/i.test(record.naid) ? `NAID ${record.naid}` : ""
+  ].filter(Boolean);
+}
+
+function sourceMarkings(record) {
+  const markings = [
+    record.originalClassification || record.classification,
+    ...listValues(record.documentMarkings),
+    record.telegramPrecedence || record.communication?.precedence,
+    ...listValues(record.handlingMarkings)
+  ].filter(Boolean);
+  return markings.join("; ");
+}
+
+function sourceTransmission(record) {
+  const communication = record.communication || {};
+  const notes = [];
+
+  if (communication.sentTo) {
+    const precedence = communication.precedence ? `${communication.precedence} ` : "";
+    notes.push(`Sent ${precedence}to ${communication.sentTo}`);
+  }
+
+  if (hasValue(communication.sentForInfo)) {
+    const verb = communication.sentTo ? "Also sent" : "Sent";
+    notes.push(`${verb} for information to ${joinValues(communication.sentForInfo)}`);
+  }
+
+  if (communication.channel) {
+    notes.push(`Sent via the ${communication.channel} channel`);
+  }
+
+  const location = record.meetingLocation || record.venue;
+  if (location) notes.push(`The meeting took place in ${location}`);
+
+  return notes.map((note) => (note.endsWith(".") ? note : `${note}.`)).join(" ");
+}
+
+function sourceClearance(record) {
+  const clearance = record.clearance || {};
+  const clauses = listValues(record.draftingInfo).map((value) => value.replace(/\.$/, ""));
+  if (hasValue(clearance.draftedBy)) clauses.push(`Drafted by ${joinValues(clearance.draftedBy)}`);
+  if (hasValue(clearance.clearedBy)) clauses.push(`cleared by ${joinValues(clearance.clearedBy)}`);
+  if (hasValue(clearance.approvedBy)) clauses.push(`approved by ${joinValues(clearance.approvedBy)}`);
+  return clauses.length ? `${clauses.join("; ")}.` : "";
+}
+
+function createSourceNoteDraft(record) {
+  if (record.sourceNote) return [record.sourceNote, record.sourceNoteAddendum].filter(Boolean).join(" ");
+
+  const path = sourcePathParts(record);
+  if (!path.length) return "Source: Citation pending.";
+
+  const sentences = [`Source: ${path.join(", ")}.`];
+  const markings = sourceMarkings(record);
+  const transmission = sourceTransmission(record);
+  const clearance = sourceClearance(record);
+
+  if (markings) sentences.push(`${markings}.`);
+  if (transmission) sentences.push(transmission);
+  if (clearance) sentences.push(clearance);
+  if (record.sourcePages || record.sourcePdfPages) sentences.push(`Source pages: ${record.sourcePages || record.sourcePdfPages}.`);
+  if (record.sourceNoteAddendum) sentences.push(record.sourceNoteAddendum);
+
+  return sentences.join(" ").replace(/\s+/g, " ").trim();
+}
+
+function hasSourceCitation(record) {
+  const note = [record.sourceNote, record.sourceNoteAddendum].filter(Boolean).join(" ");
+  const noteLooksComplete = /^Source:\s+\S/i.test(note) && !/pending|sample only|replace|\[[^\]]+\]/i.test(note);
+  const pathLooksComplete = sourcePathParts(record).length >= 2;
+  const hasMarkings = Boolean(noteLooksComplete || sourceMarkings(record));
+
+  return (noteLooksComplete || pathLooksComplete) && hasMarkings;
+}
+
 function getProductionIssues(record) {
   if (Array.isArray(record.productionIssues)) return record.productionIssues;
 
@@ -54,13 +159,7 @@ function getProductionIssues(record) {
 
   if (!selectionDecision || selectionDecision === "Pending") issues.push("needs-selection");
 
-  if (
-    !record.sourceNote ||
-    !record.source?.name ||
-    (!record.naid && !record.source?.caseNumber && !record.source?.documentId)
-  ) {
-    issues.push("needs-source");
-  }
+  if (!hasSourceCitation(record)) issues.push("needs-source");
 
   if (!record.sortDate || !record.dateLine || ((record.type === "Memcon" || record.type === "Telcon") && !record.washingtonTime)) {
     issues.push("needs-chronology");
@@ -178,7 +277,7 @@ function createRecordRow(record) {
     createParagraph("record-date-line", record.dateLine || formatDate(record.date)),
     createParagraph("record-subject", record.subjectLine || record.title),
     createMeta(record),
-    createParagraph("record-source-note", record.sourceNote || "Source: Provenance pending.")
+    createParagraph("record-source-note", createSourceNoteDraft(record))
   );
 
   body.append(createProductionBlock(record));
@@ -234,11 +333,12 @@ function createProductionBlock(record) {
   const items = [
     ["Decision", record.selectionDecision || record.compilerDecision || "Pending"],
     ["Washington time", record.washingtonTime || "Pending"],
-    ["Source pages", record.sourcePages || record.sourcePdfPages || "Pending"],
-    ["Classification", record.originalClassification || record.classification || "Pending"],
-    ["Distribution", record.distribution || "Pending"],
-    ["Drafting", record.draftingInfo || "Pending"],
-    ["Read by", Array.isArray(record.readBy) ? record.readBy.join(", ") : record.readBy || "Pending"],
+    ["Archival path", sourcePathParts(record).join(" / ") || "Pending"],
+    ["Document ID", record.source?.documentId || record.source?.caseNumber || record.naid || "Pending"],
+    ["Markings", sourceMarkings(record) || "Pending"],
+    ["Transmission", sourceTransmission(record) || record.distribution || "Pending"],
+    ["Draft/clear/approve", sourceClearance(record) || "Pending"],
+    ["Read by", joinValues(record.readBy) || "Pending"],
     ["Declass", record.declassificationStatus || record.releaseStatus || "Pending"],
     ["Index terms", Array.isArray(record.indexTerms) ? record.indexTerms.join(", ") : record.indexTerms || "Pending"]
   ];
@@ -294,10 +394,12 @@ function renderEmptyState() {
         <span>selectionDecision</span>
         <span>washingtonTime</span>
         <span>sourceNote</span>
-        <span>sourcePages</span>
+        <span>source.path</span>
+        <span>documentMarkings</span>
+        <span>handlingMarkings</span>
+        <span>clearance</span>
+        <span>communication</span>
         <span>declassificationStatus</span>
-        <span>withheldMaterial</span>
-        <span>annotation</span>
         <span>indexTerms</span>
       </div>
     </div>
