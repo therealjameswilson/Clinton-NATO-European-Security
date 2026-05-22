@@ -78,7 +78,29 @@ chronology, declassification, annotation, and index-term metadata.
 - Clinton Library Meetings and Telephone Calls with Foreign Leaders: <https://www.clintonlibrary.gov/research/meetings-and-telephone-calls-foreign-leaders>
 - State Department FOIA Virtual Reading Room: <https://foia.state.gov/>
 - National Archives Catalog: <https://catalog.archives.gov/>
+- GovInfo Public Papers of the Presidents: <https://www.govinfo.gov/app/collection/PPP>
 - Strobe Talbott FOIA manifest: <https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html>
+
+## Source Check
+
+Run the collection source pass from this repository:
+
+```bash
+node scripts/build-records-from-collection-sources.js
+```
+
+The script reads the sibling FRUS companion harvests under the parent collection
+directory, checks the same source classes used by the other sites, dedupes by
+source URL or item identifier, and writes:
+
+- `data/records.json`
+- `data/records.js`
+- `reports/source-check.json`
+
+The current pass adds 596 compiler records across Clinton Library released
+memcons/telcons, Balkans source packets, Clinton-Russia high-level
+cross-references, State FOIA/Strobe Talbott records, NARA Catalog/Scout leads,
+and GovInfo Public Papers context.
 
 ## Local Preview
 

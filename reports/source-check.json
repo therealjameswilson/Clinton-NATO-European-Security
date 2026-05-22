@@ -1,0 +1,126 @@
+{
+  "generatedAt": "2026-05-22T23:08:02.103Z",
+  "collectionRoot": "..",
+  "sourceUrls": {
+    "volume": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+    "clintonMemcons": "https://www.clintonlibrary.gov/research/memcons-and-telcons",
+    "clintonLeaderCalls": "https://www.clintonlibrary.gov/research/meetings-and-telephone-calls-foreign-leaders",
+    "stateFoia": "https://foia.state.gov/",
+    "strobeTalbott": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
+    "naraScout": "https://therealjameswilson.github.io/nara-scout/",
+    "naraCatalog": "https://catalog.archives.gov/",
+    "govInfo": "https://www.govinfo.gov/app/collection/PPP"
+  },
+  "sourceInputs": {
+    "balkansDocuments": 103,
+    "russiaHighLevel": 45,
+    "clintonDigitalLibrary": 75,
+    "strobeTalbottFoia": 122,
+    "naraScout": 140,
+    "naraCollection": 120,
+    "govInfoPublicPapers": 66
+  },
+  "added": {
+    "balkansDocuments": 98,
+    "russiaHighLevel": 43,
+    "clintonDigitalLibrary": 75,
+    "strobeTalbottFoia": 69,
+    "naraScout": 140,
+    "naraCollection": 120,
+    "govInfoPublicPapers": 66
+  },
+  "removedDuplicateTitleDateRecords": [
+    {
+      "id": "clinton-dl-101348",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "sortDate": "1993-02-15"
+    },
+    {
+      "id": "clinton-dl-101350",
+      "title": "Memorandum of Telephone Conversation - President Francois Mitterrand of France",
+      "sortDate": "1993-04-20"
+    },
+    {
+      "id": "clinton-dl-118528",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-05-27"
+    },
+    {
+      "id": "clinton-dl-101402",
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-06-14"
+    },
+    {
+      "id": "clinton-dl-101404",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-07-13"
+    },
+    {
+      "id": "clinton-dl-101405",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-07-19"
+    },
+    {
+      "id": "clinton-dl-101407",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-07-20"
+    },
+    {
+      "id": "clinton-dl-118530",
+      "title": "Memorandum of Telephone Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-08-07"
+    },
+    {
+      "id": "clinton-dl-118556",
+      "title": "Memorandum of Conversation - President Jacques Chirac of France",
+      "sortDate": "1995-12-14"
+    },
+    {
+      "id": "clinton-dl-101347",
+      "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
+      "sortDate": "1993-09-17"
+    },
+    {
+      "id": "clinton-dl-101431",
+      "title": "Memorandum of Conversation - NATO Secretary General Willy Claes",
+      "sortDate": "1995-03-07"
+    },
+    {
+      "id": "clinton-dl-118881",
+      "title": "Memorandum of Conversation with Spanish Prime Minister Felipe Gonzalez",
+      "sortDate": "1995-12-03"
+    },
+    {
+      "id": "clinton-dl-101610",
+      "title": "Memorandum of Conversation - President Boris Yeltsin of Russia",
+      "sortDate": "1999-11-19"
+    },
+    {
+      "id": "clinton-dl-101538",
+      "title": "Memorandum of Conversation - President Vaclav Havel of the Czech Republic",
+      "sortDate": "1998-09-16"
+    },
+    {
+      "id": "clinton-dl-101599",
+      "title": "Memorandum of Conversation - President Arpad Goncz of Hungary",
+      "sortDate": "1999-06-08"
+    }
+  ],
+  "totalRecords": 596,
+  "chapterCounts": {
+    "NATO Strategy and Enlargement": 27,
+    "NATO-Russia and Partnership": 85,
+    "European Security Architecture": 52,
+    "Crisis Security Files": 432
+  },
+  "typeCounts": {
+    "Scout Lead": 260,
+    "Memcon": 70,
+    "Context": 66,
+    "Telcon": 60,
+    "Source Lead": 70,
+    "Release Packet": 70
+  },
+  "recordsWithPdf": 587,
+  "recordsWithCatalogOrItemUrl": 596
+}
