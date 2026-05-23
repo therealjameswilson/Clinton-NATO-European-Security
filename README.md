@@ -69,6 +69,26 @@ described in the FRUS "About the Series" front matter:
 The record UI includes issue filters for missing selection, source-note,
 chronology, declassification, annotation, and index-term metadata.
 
+## Compiler Gap Audit
+
+Run the compiler-risk audit after refreshing records:
+
+```bash
+node scripts/audit-compiler-gaps.js
+```
+
+The audit writes:
+
+- `reports/compiler-gap-analysis.md`
+- `reports/compiler-gap-analysis.json`
+
+The current audit treats the corpus as a source-finding base, not as a
+selection-ready FRUS chapter set. It identifies six main gaps: crisis files
+dominate the set, 260 Scout Leads still need document-level extraction, source
+notes and declassification details remain draft-level, NAC/USNATO traffic is
+underrepresented, CFE and security-architecture records are thin, and 1997-2000
+coverage is sparse relative to 1993-1995.
+
 ## Source Anchors
 
 - FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security: <https://history.state.gov/historicaldocuments/frus1993-00v17>
@@ -96,6 +116,8 @@ source URL or item identifier, and writes:
 - `data/records.json`
 - `data/records.js`
 - `reports/source-check.json`
+- `reports/compiler-gap-analysis.json`
+- `reports/compiler-gap-analysis.md`
 
 The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level

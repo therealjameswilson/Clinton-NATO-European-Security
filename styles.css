@@ -274,6 +274,120 @@ dd {
   margin-bottom: 28px;
 }
 
+.gap-section {
+  padding-top: 56px;
+}
+
+.gap-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gap-summary div {
+  min-height: 184px;
+  padding: 20px;
+  color: white;
+  background: var(--navy);
+  border-radius: 8px;
+}
+
+.gap-summary div:nth-child(2) {
+  background: var(--red);
+}
+
+.gap-summary div:nth-child(3) {
+  background: var(--green);
+}
+
+.gap-summary div:nth-child(4) {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.gap-summary span {
+  display: block;
+  margin-bottom: 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.gap-summary p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.48;
+}
+
+.risk-ledger {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.risk-ledger div {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 15px 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
+  border-radius: 8px;
+}
+
+.risk-ledger div:nth-child(n + 5) {
+  border-left-color: var(--gold);
+}
+
+.risk-ledger strong {
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.risk-ledger div:nth-child(n + 5) strong {
+  color: var(--gold);
+}
+
+.risk-ledger span {
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.report-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.report-links a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  padding: 0 12px;
+  color: var(--navy);
+  font-size: 0.84rem;
+  font-weight: 900;
+  text-decoration: none;
+  background: rgba(37, 54, 79, 0.08);
+  border: 1px solid rgba(37, 54, 79, 0.14);
+  border-radius: 6px;
+}
+
+.report-links a:hover,
+.report-links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
 .workbench-section {
   padding-top: 56px;
 }
@@ -517,6 +631,7 @@ footer {
 .records-root {
   display: grid;
   gap: 34px;
+  min-width: 0;
 }
 
 .records-intro {
@@ -591,6 +706,7 @@ footer {
 .record-chapter {
   display: grid;
   gap: 12px;
+  min-width: 0;
   scroll-margin-top: 88px;
 }
 
@@ -607,6 +723,7 @@ footer {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.6rem, 3vw, 2.3rem);
+  overflow-wrap: anywhere;
 }
 
 .record-count {
@@ -618,6 +735,7 @@ footer {
 .record-list {
   display: grid;
   gap: 8px;
+  min-width: 0;
 }
 
 .record-row {
@@ -625,11 +743,16 @@ footer {
   grid-template-columns: 132px minmax(0, 1fr) auto;
   gap: 16px;
   align-items: start;
+  min-width: 0;
   min-height: auto;
   padding: 16px;
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.record-row > * {
+  min-width: 0;
 }
 
 .record-date {
@@ -646,6 +769,7 @@ footer {
   font-size: 1.1rem;
   font-weight: 900;
   line-height: 1.35;
+  overflow-wrap: anywhere;
   text-decoration: none;
 }
 
@@ -664,6 +788,7 @@ footer {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.98rem;
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .record-subject {
@@ -671,6 +796,7 @@ footer {
   color: var(--muted);
   font-weight: 800;
   line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .record-source-note {
@@ -680,6 +806,7 @@ footer {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 0.92rem;
   line-height: 1.5;
+  overflow-wrap: anywhere;
   background: rgba(255, 255, 255, 0.72);
   border-left: 3px solid var(--navy);
   border-radius: 6px;
@@ -688,6 +815,7 @@ footer {
 .production-block {
   display: grid;
   gap: 10px;
+  min-width: 0;
   margin-top: 12px;
 }
 
@@ -752,6 +880,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  min-width: 0;
   margin-top: 10px;
 }
 
@@ -905,6 +1034,7 @@ footer a {
   .chapter-grid,
   .workbench-layout,
   .gate-grid,
+  .gap-summary,
   .source-note-guide,
   .source-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -940,6 +1070,7 @@ footer a {
   .chapter-grid,
   .workbench-layout,
   .gate-grid,
+  .gap-summary,
   .source-note-guide,
   .production-list,
   .empty-grid,
@@ -958,6 +1089,10 @@ footer a {
   }
 
   .record-row {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-ledger div {
     grid-template-columns: 1fr;
   }
 

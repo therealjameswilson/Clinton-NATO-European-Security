@@ -1,0 +1,913 @@
+{
+  "generatedAt": "2026-05-23T13:37:09.835Z",
+  "officialVolumeStatus": {
+    "status": "Planned",
+    "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
+  },
+  "sourceBasis": [
+    {
+      "label": "FRUS 1993-2000, Volume XVII status page",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17"
+    },
+    {
+      "label": "FRUS production and editorial method",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries"
+    },
+    {
+      "label": "FRUS 1989-1992, Volume XXXI source-note model",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31"
+    },
+    {
+      "label": "Clinton Library memcons, telcons, meetings, and calls",
+      "url": "https://www.clintonlibrary.gov/research/memcons-and-telcons"
+    },
+    {
+      "label": "Department of State FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/"
+    },
+    {
+      "label": "Strobe Talbott FOIA manifest",
+      "url": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html"
+    },
+    {
+      "label": "National Archives Catalog and NARA Scout leads",
+      "url": "https://catalog.archives.gov/"
+    },
+    {
+      "label": "GovInfo Public Papers of the Presidents",
+      "url": "https://www.govinfo.gov/app/collection/PPP"
+    }
+  ],
+  "recordCount": 596,
+  "counts": {
+    "byChapter": {
+      "NATO Strategy and Enlargement": 27,
+      "NATO-Russia and Partnership": 85,
+      "European Security Architecture": 52,
+      "Crisis Security Files": 432
+    },
+    "byType": {
+      "Scout Lead": 260,
+      "Memcon": 70,
+      "Context": 66,
+      "Telcon": 60,
+      "Source Lead": 70,
+      "Release Packet": 70
+    },
+    "byYear": {
+      "1993": 127,
+      "1994": 106,
+      "1995": 149,
+      "1996": 60,
+      "1997": 44,
+      "1998": 49,
+      "1999": 44,
+      "2000": 17
+    },
+    "topSources": [
+      [
+        "National Archives Catalog",
+        260
+      ],
+      [
+        "William J. Clinton Presidential Library, Clinton Digital Library",
+        85
+      ],
+      [
+        "Department of State FOIA Virtual Reading Room",
+        69
+      ],
+      [
+        "Government Publishing Office, GovInfo",
+        66
+      ],
+      [
+        "William J. Clinton Presidential Library & Museum",
+        60
+      ],
+      [
+        "Clinton Library MDR release 2015-0782-M-2",
+        34
+      ],
+      [
+        "Department of State, FOIA Virtual Reading Room",
+        11
+      ],
+      [
+        "Clinton Library MDR release 2015-0782-M-1",
+        2
+      ],
+      [
+        "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin",
+        2
+      ],
+      [
+        "National Archives and Records Administration, National Archives Catalog",
+        2
+      ],
+      [
+        "Clinton Digital Library item 101758, Declassified Documents",
+        1
+      ],
+      [
+        "Clinton Digital Library item 100503, MDR release 2016-0620-M",
+        1
+      ],
+      [
+        "Clinton Digital Library item 119190, Telcons - Memoranda of Telephone Conversation",
+        1
+      ],
+      [
+        "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation",
+        1
+      ],
+      [
+        "Clinton Library MDR release 2014-0546-M-Release-A",
+        1
+      ]
+    ],
+    "productionIssues": {
+      "needs-selection": 277,
+      "needs-chronology": 130,
+      "needs-source": 134
+    },
+    "sourceVerifyCount": 596,
+    "declassWatchCount": 493,
+    "placeholderDateCount": 260
+  },
+  "topicCoverage": [
+    {
+      "id": "enlargement",
+      "label": "NATO enlargement, Madrid, accession, and Senate ratification",
+      "count": 114,
+      "minimum": 80,
+      "status": "covered-by-count",
+      "caveat": "NATO enlargement is a core volume subject, but the current set has too few direct decision records relative to the crisis material.",
+      "byType": {
+        "Scout Lead": 45,
+        "Memcon": 18,
+        "Context": 31,
+        "Telcon": 5,
+        "Source Lead": 13,
+        "Release Packet": 2
+      },
+      "byChapter": {
+        "NATO Strategy and Enlargement": 27,
+        "NATO-Russia and Partnership": 8,
+        "European Security Architecture": 25,
+        "Crisis Security Files": 54
+      },
+      "sampleRecords": [
+        {
+          "id": "nara-scout-23902171",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "clinton-dl-119044",
+          "date": "1993-04-21",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-101329",
+          "date": "1993-04-21",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Arpad Goncz of Hungary",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "nara-7388808-368557013",
+          "date": "1994-01-01",
+          "type": "Scout Lead",
+          "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "govinfo-PPP-1994-book1-doc-pg37",
+          "date": "1994-01-11",
+          "type": "Context",
+          "title": "Remarks and an Exchange With Reporters Following Discussions With President Vaclav Havel of the Czech Republic in Prague",
+          "source": "Government Publishing Office, GovInfo"
+        },
+        {
+          "id": "clinton-dl-118919",
+          "date": "1994-01-20",
+          "type": "Telcon",
+          "title": "Memorandum of Telephone Conversation with President Ulmanis of Latvia",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-101379",
+          "date": "1994-06-21",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Arpad Goncz of Hungary and President Michal Kovac of Slovakia",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-101391",
+          "date": "1994-07-04",
+          "type": "Telcon",
+          "title": "Memorandum of Telephone Conversation - President Vaclav Havel of the Czech Republic",
+          "source": "William J. Clinton Presidential Library & Museum"
+        }
+      ]
+    },
+    {
+      "id": "pfp",
+      "label": "Partnership for Peace and NATO partnership policy",
+      "count": 49,
+      "minimum": 30,
+      "status": "covered-by-count",
+      "caveat": "Partnership for Peace appears mostly as context inside crisis or Russia records; it needs a dedicated policy-document search.",
+      "byType": {
+        "Scout Lead": 43,
+        "Memcon": 6
+      },
+      "byChapter": {
+        "NATO Strategy and Enlargement": 1,
+        "NATO-Russia and Partnership": 1,
+        "Crisis Security Files": 47
+      },
+      "sampleRecords": [
+        {
+          "id": "nara-7388808-368557013",
+          "date": "1994-01-01",
+          "type": "Scout Lead",
+          "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "clinton-dl-101354",
+          "date": "1994-03-04",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Leonid Kravchuk of Ukraine",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "nara-scout-40482321",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Hercegovina, February 1993 [2]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-40482344",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Hercegovina, May - June 1993 [3]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-40482349",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Hercegovina, May - June 1993 [8]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-40482350",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Hercegovina, May - June 1993 [9]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-40482459",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Letters [1]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-40482461",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Bosnia - Letters [3]",
+          "source": "National Archives Catalog"
+        }
+      ]
+    },
+    {
+      "id": "nato_russia",
+      "label": "NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin",
+      "count": 175,
+      "minimum": 90,
+      "status": "covered-by-count",
+      "caveat": "The count is adequate, but many records are cross-references or crisis files; direct NATO-Russia negotiation files need prioritization.",
+      "byType": {
+        "Scout Lead": 57,
+        "Source Lead": 49,
+        "Memcon": 31,
+        "Telcon": 34,
+        "Context": 2,
+        "Release Packet": 2
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 85,
+        "European Security Architecture": 4,
+        "Crisis Security Files": 86
+      },
+      "sampleRecords": [
+        {
+          "id": "nara-scout-23901917",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Latvia [2]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-23901923",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Latvia: Russia-Latvia [1]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-23902173",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Lithuania [1]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-23902180",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "Lithuania [8]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "strobe-C09000054",
+          "date": "1993-04-28",
+          "type": "Source Lead",
+          "title": "Proposed Message to President Yeltsin",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000001",
+          "date": "1993-07-16",
+          "type": "Source Lead",
+          "title": "Memon with President Boris Yeltsin of Russia w/Attached Cover Sheet",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "clinton-dl-101346",
+          "date": "1993-09-17",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-101393",
+          "date": "1994-01-11",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Vaclav Havel of the Czech Republic and Czech Leaders",
+          "source": "William J. Clinton Presidential Library & Museum"
+        }
+      ]
+    },
+    {
+      "id": "bosnia",
+      "label": "Bosnia, Dayton, IFOR, and SFOR",
+      "count": 417,
+      "minimum": 80,
+      "status": "covered-by-count",
+      "caveat": "Bosnia is overrepresented relative to the rest of the volume; the risk is crowding out enlargement and architecture files.",
+      "byType": {
+        "Memcon": 41,
+        "Telcon": 48,
+        "Scout Lead": 238,
+        "Context": 20,
+        "Release Packet": 67,
+        "Source Lead": 3
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 28,
+        "Crisis Security Files": 389
+      },
+      "sampleRecords": [
+        {
+          "id": "russia-cross-contact-1994-07-10-memcon-22",
+          "date": "1994-07-10",
+          "type": "Memcon",
+          "title": "Meeting with President Boris Yeltsin of Russia, July 10, 1994, Naples Italy",
+          "source": "Clinton Library MDR release 2015-0782-M-1"
+        },
+        {
+          "id": "russia-cross-clinton-standalone-1994-09-28-second-one-on-one",
+          "date": "1994-09-28",
+          "type": "Memcon",
+          "title": "Informal record: Second Clinton/Yeltsin One-on-One",
+          "source": "Clinton Digital Library item 101758, Declassified Documents"
+        },
+        {
+          "id": "russia-cross-contact-1997-02-27-telcon-43",
+          "date": "1997-02-27",
+          "type": "Telcon",
+          "title": "Telephone call with President Boris Yeltsin of Russia, February 27, 1997, White House declassified in full",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-afternoon",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Afternoon Meeting with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-morning",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Morning Meeting with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-private-dinner",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Private Dinner with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-working-lunch",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Working Lunch with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-05-27-memcon-45",
+          "date": "1997-05-27",
+          "type": "Memcon",
+          "title": "Meeting with President Boris Yeltsin of Russia, May 27, 1997, Paris, France declassified in part",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        }
+      ]
+    },
+    {
+      "id": "kosovo",
+      "label": "Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy",
+      "count": 340,
+      "minimum": 70,
+      "status": "covered-by-count",
+      "caveat": "Kosovo has enough leads, but needs document-level extraction and sorting by Washington time.",
+      "byType": {
+        "Memcon": 23,
+        "Telcon": 32,
+        "Scout Lead": 245,
+        "Context": 27,
+        "Release Packet": 1,
+        "Source Lead": 12
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 28,
+        "Crisis Security Files": 312
+      },
+      "sampleRecords": [
+        {
+          "id": "russia-cross-contact-1994-07-10-memcon-22",
+          "date": "1994-07-10",
+          "type": "Memcon",
+          "title": "Meeting with President Boris Yeltsin of Russia, July 10, 1994, Naples Italy",
+          "source": "Clinton Library MDR release 2015-0782-M-1"
+        },
+        {
+          "id": "russia-cross-clinton-standalone-1994-09-28-second-one-on-one",
+          "date": "1994-09-28",
+          "type": "Memcon",
+          "title": "Informal record: Second Clinton/Yeltsin One-on-One",
+          "source": "Clinton Digital Library item 101758, Declassified Documents"
+        },
+        {
+          "id": "russia-cross-contact-1997-02-27-telcon-43",
+          "date": "1997-02-27",
+          "type": "Telcon",
+          "title": "Telephone call with President Boris Yeltsin of Russia, February 27, 1997, White House declassified in full",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-afternoon",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Afternoon Meeting with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-morning",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Morning Meeting with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-private-dinner",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Private Dinner with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-03-21-memcon-helsinki-working-lunch",
+          "date": "1997-03-21",
+          "type": "Memcon",
+          "title": "Memorandum of conversation: Helsinki Working Lunch with President Boris Yeltsin",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        },
+        {
+          "id": "russia-cross-contact-1997-05-27-memcon-45",
+          "date": "1997-05-27",
+          "type": "Memcon",
+          "title": "Meeting with President Boris Yeltsin of Russia, May 27, 1997, Paris, France declassified in part",
+          "source": "Clinton Library MDR release 2015-0782-M-2"
+        }
+      ]
+    },
+    {
+      "id": "osce",
+      "label": "OSCE/CSCE",
+      "count": 99,
+      "minimum": 35,
+      "status": "covered-by-count",
+      "caveat": "OSCE/CSCE appears in source leads, but direct decision records are thin.",
+      "byType": {
+        "Source Lead": 10,
+        "Scout Lead": 88,
+        "Memcon": 1
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 4,
+        "European Security Architecture": 10,
+        "Crisis Security Files": 85
+      },
+      "sampleRecords": [
+        {
+          "id": "strobe-C09000036",
+          "date": "1996-06-10",
+          "type": "Source Lead",
+          "title": "BILATERAL PRESIDENTIAL MEETING AT LYON SUMMIT",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000096",
+          "date": "1997-03-08",
+          "type": "Source Lead",
+          "title": "March 8, 1997 Note From Strobe Talbott To Barbara Larkin",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000097",
+          "date": "1997-03-19",
+          "type": "Source Lead",
+          "title": "March 19, 1997 Note From Strobe Talbott To Jeremy Rosner w/Attachment(s)",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000046",
+          "date": "1997-06-19",
+          "type": "Source Lead",
+          "title": "MEMCON OF SECRETARY ALBRIGHT/RUSSIAN FOREIGN MINISTER PRIMAKOV DINNER AT THE G-8 DENVER SUMMIT, BUCKHORN EXCHANGE, JUNE 19, 1997",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "nara-7388808-147873393",
+          "date": "1993-01-01",
+          "type": "Scout Lead",
+          "title": "DC 0145 DC Meeting Regarding Conference on Security and Cooperation in Europe/CSCE/Summit in Budapest, 5 December 199",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-147873129",
+          "date": "1994-01-01",
+          "type": "Scout Lead",
+          "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [1]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-147873131",
+          "date": "1994-01-01",
+          "type": "Scout Lead",
+          "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [2]",
+          "source": "National Archives Catalog"
+        },
+        {
+          "id": "nara-scout-147873137",
+          "date": "1994-01-01",
+          "type": "Scout Lead",
+          "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [5]",
+          "source": "National Archives Catalog"
+        }
+      ]
+    },
+    {
+      "id": "cfe",
+      "label": "CFE and conventional forces",
+      "count": 4,
+      "minimum": 20,
+      "status": "gap",
+      "caveat": "CFE is materially undercovered for a European security volume.",
+      "byType": {
+        "Source Lead": 3,
+        "Memcon": 1
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 3,
+        "Crisis Security Files": 1
+      },
+      "sampleRecords": [
+        {
+          "id": "strobe-C09000044",
+          "date": "1996-05-08",
+          "type": "Source Lead",
+          "title": "PAPER FOR MAMEDOV ON CFE",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000109",
+          "date": "1997-02-10",
+          "type": "Source Lead",
+          "title": "Prep meeting for Albright/Primakov Ministerial NATO-Russia Interagency flying squad 4:30 p.m. February 10, 1997",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000061",
+          "date": "1997-07-22",
+          "type": "Source Lead",
+          "title": "July 22, 1997 Letter From Strobe Talbott To H.E. G. E. Mamedov",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "balkans-yeltsin-1995-10-23-hyde-park-one-on-one",
+          "date": "1995-10-23",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - Clinton-Yeltsin One-on-One at Hyde Park",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        }
+      ]
+    },
+    {
+      "id": "nac_usnato",
+      "label": "NAC, USNATO, and North Atlantic Council traffic",
+      "count": 5,
+      "minimum": 25,
+      "status": "gap",
+      "caveat": "USNATO/NAC traffic is almost absent; this is a high-risk source gap for NATO institutional decision-making.",
+      "byType": {
+        "Source Lead": 2,
+        "Telcon": 1,
+        "Memcon": 2
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 1,
+        "Crisis Security Files": 4
+      },
+      "sampleRecords": [
+        {
+          "id": "strobe-C09000008",
+          "date": "2000-07-15",
+          "type": "Source Lead",
+          "title": "July 15, 2000 Note From Strobe Talbott To the Secretary",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "clinton-dl-101384",
+          "date": "1994-04-20",
+          "type": "Telcon",
+          "title": "Memorandum of Telephone Conversation - Prime Minister Jean Chretien of Canada",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "strobe-C09000059",
+          "date": "1998-09-18",
+          "type": "Source Lead",
+          "title": "OFFICIAL INFORMAL: DEPUTY SECRETARY AND AMB. HILL \"TOUR THE TABLE\" WITH THE NAC ON KOSOVO ISSUES FROM A POLITICAL SETTLEMENT TO UN MANDATE",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "clinton-dl-118888",
+          "date": "1999-03-15",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation with Secretary General Javier Solana of NATO",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-118886",
+          "date": "1999-04-22",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation with NATO Secretary General Javier Solana",
+          "source": "William J. Clinton Presidential Library & Museum"
+        }
+      ]
+    },
+    {
+      "id": "solana",
+      "label": "NATO Secretary General Solana/Claes and alliance leadership",
+      "count": 21,
+      "minimum": 25,
+      "status": "gap",
+      "caveat": "Alliance leadership contacts are underrepresented.",
+      "byType": {
+        "Source Lead": 4,
+        "Context": 5,
+        "Telcon": 4,
+        "Memcon": 8
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 1,
+        "European Security Architecture": 9,
+        "Crisis Security Files": 11
+      },
+      "sampleRecords": [
+        {
+          "id": "strobe-C09000076",
+          "date": "1997-05-19",
+          "type": "Source Lead",
+          "title": "May 19, 1997 Letter From Boris Yeltsin To William J. Clinton",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "govinfo-PPP-1994-book2-doc-pg1467",
+          "date": "1994-08-13",
+          "type": "Context",
+          "title": "Statement on the Death of NATO Secretary General Manfred Woerner",
+          "source": "Government Publishing Office, GovInfo"
+        },
+        {
+          "id": "strobe-C09000027",
+          "date": "1996-11-18",
+          "type": "Source Lead",
+          "title": "November 18, 1996 Letter From Strobe Talbott To Javier Solana",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "govinfo-PPP-1997-book1-doc-pg618",
+          "date": "1997-05-19",
+          "type": "Context",
+          "title": "Remarks Prior to Discussions With NATO Secretary General Javier Solana and an Exchange With Reporters",
+          "source": "Government Publishing Office, GovInfo"
+        },
+        {
+          "id": "strobe-C09000090",
+          "date": "1998-02-15",
+          "type": "Source Lead",
+          "title": "February 15, 1998 Note From Strobe Talbott To Amb. Grossman",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "clinton-dl-118889",
+          "date": "1998-05-02",
+          "type": "Telcon",
+          "title": "Memorandum of Telephone conversation with NATO Secretary General Solana",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "govinfo-PPP-1999-book1-doc-pg372",
+          "date": "1999-03-15",
+          "type": "Context",
+          "title": "Remarks Prior to Discussions With NATO Secretary General Javier Solana and an Exchange With Reporters",
+          "source": "Government Publishing Office, GovInfo"
+        },
+        {
+          "id": "strobe-C09000029",
+          "date": "1999-04-22",
+          "type": "Source Lead",
+          "title": "Meeting with NATO Secretary General Javier Solana",
+          "source": "Department of State FOIA Virtual Reading Room"
+        }
+      ]
+    },
+    {
+      "id": "nato_eu",
+      "label": "NATO-EU, EU, and European security architecture",
+      "count": 114,
+      "minimum": 35,
+      "status": "covered-by-count",
+      "caveat": "EU/NATO-EU material exists as public/context records, but needs more archival policy files.",
+      "byType": {
+        "Memcon": 16,
+        "Source Lead": 10,
+        "Scout Lead": 66,
+        "Context": 16,
+        "Telcon": 6
+      },
+      "byChapter": {
+        "NATO-Russia and Partnership": 9,
+        "European Security Architecture": 27,
+        "Crisis Security Files": 78
+      },
+      "sampleRecords": [
+        {
+          "id": "clinton-dl-101346",
+          "date": "1993-09-17",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-101354",
+          "date": "1994-03-04",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Leonid Kravchuk of Ukraine",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "clinton-dl-118984",
+          "date": "1994-07-08",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation between President Clinton and Italian Prime Minister Berlusconi",
+          "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "strobe-C09000036",
+          "date": "1996-06-10",
+          "type": "Source Lead",
+          "title": "BILATERAL PRESIDENTIAL MEETING AT LYON SUMMIT",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000096",
+          "date": "1997-03-08",
+          "type": "Source Lead",
+          "title": "March 8, 1997 Note From Strobe Talbott To Barbara Larkin",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000097",
+          "date": "1997-03-19",
+          "type": "Source Lead",
+          "title": "March 19, 1997 Note From Strobe Talbott To Jeremy Rosner w/Attachment(s)",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-C09000046",
+          "date": "1997-06-19",
+          "type": "Source Lead",
+          "title": "MEMCON OF SECRETARY ALBRIGHT/RUSSIAN FOREIGN MINISTER PRIMAKOV DINNER AT THE G-8 DENVER SUMMIT, BUCKHORN EXCHANGE, JUNE 19, 1997",
+          "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "clinton-dl-101470",
+          "date": "1997-07-09",
+          "type": "Memcon",
+          "title": "Memorandum of Conversation - President Leonid Kuchma of Ukraine",
+          "source": "William J. Clinton Presidential Library & Museum"
+        }
+      ]
+    }
+  ],
+  "risks": [
+    {
+      "id": "lane-imbalance",
+      "severity": "high",
+      "finding": "Crisis Security Files dominate the set.",
+      "evidence": "432 of 596 records are in the crisis lane.",
+      "action": "Run targeted enlargement, NATO-Russia institutional, USNATO/NAC, CFE, and NATO-EU searches before using this as a selection base."
+    },
+    {
+      "id": "file-unit-vs-document",
+      "severity": "high",
+      "finding": "Too many records are file-unit leads, not document-ready items.",
+      "evidence": "260 Scout Leads; 260 have placeholder January 1 dates.",
+      "action": "Promote high-value NARA file-unit leads to document-level rows only after inspecting digital objects, extracting page spans, and recording actual dates."
+    },
+    {
+      "id": "source-note-risk",
+      "severity": "high",
+      "finding": "Source-note and declassification details remain draft-level.",
+      "evidence": "134 records fail the source-note gate; 596 records carry verify/pending language; 493 records remain on declassification watch.",
+      "action": "Prioritize source-note completion for include candidates before expanding the corpus."
+    },
+    {
+      "id": "institutional-nato-gap",
+      "severity": "high",
+      "finding": "NAC/USNATO traffic is underrepresented.",
+      "evidence": "5 records match NAC/USNATO terms.",
+      "action": "Search USNATO, North Atlantic Council, S/S-S, EUR/RPM, NATO Mission, and cable traffic sources."
+    },
+    {
+      "id": "architecture-gap",
+      "severity": "medium",
+      "finding": "CFE and architecture records are thin.",
+      "evidence": "4 CFE matches; 52 architecture-lane records.",
+      "action": "Run a specific CFE/OSCE/NATO-EU architecture pass rather than relying on broad Europe searches."
+    },
+    {
+      "id": "late-period-gap",
+      "severity": "medium",
+      "finding": "1997-2000 coverage is sparse relative to 1993-1995.",
+      "evidence": "1997: 44, 1998: 49, 1999: 44, 2000: 17.",
+      "action": "Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, and 2000 transition searches."
+    }
+  ],
+  "nextActions": [
+    "Extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
+    "Run a targeted USNATO/NAC cable and file-unit search; current count is too low for compiler confidence.",
+    "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
+    "Audit source notes for all Include candidate records before adding more broad leads.",
+    "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
+    "Add a coverage matrix for allies and institutions: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
+  ]
+}
