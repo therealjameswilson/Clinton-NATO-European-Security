@@ -388,6 +388,106 @@ dd {
   outline: none;
 }
 
+.library-section {
+  padding-top: 56px;
+}
+
+.library-intro {
+  max-width: 980px;
+  margin: -10px 0 24px;
+  color: var(--muted);
+  font-size: 1.04rem;
+  line-height: 1.65;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.research-card {
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+}
+
+.research-card p {
+  margin-bottom: 16px;
+}
+
+.pull-priority {
+  margin-bottom: 12px;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.research-card span,
+.research-card a {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 34px;
+  align-items: center;
+  margin-top: auto;
+  padding: 7px 10px;
+  color: var(--navy);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-decoration: none;
+  background: rgba(37, 54, 79, 0.08);
+  border-radius: 6px;
+}
+
+.research-card a {
+  color: white;
+  background: var(--navy);
+}
+
+.research-card a:hover,
+.research-card a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
+.research-card-action {
+  border-top: 5px solid var(--gold);
+}
+
+.onsite-rules {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.onsite-rules div {
+  min-height: 118px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--green);
+  border-radius: 8px;
+}
+
+.onsite-rules strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--navy);
+  font-size: 0.92rem;
+}
+
+.onsite-rules span {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .workbench-section {
   padding-top: 56px;
 }
@@ -1035,6 +1135,8 @@ footer a {
   .workbench-layout,
   .gate-grid,
   .gap-summary,
+  .library-grid,
+  .onsite-rules,
   .source-note-guide,
   .source-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1071,6 +1173,8 @@ footer a {
   .workbench-layout,
   .gate-grid,
   .gap-summary,
+  .library-grid,
+  .onsite-rules,
   .source-note-guide,
   .production-list,
   .empty-grid,

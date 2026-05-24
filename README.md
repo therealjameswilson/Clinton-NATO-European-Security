@@ -89,11 +89,35 @@ notes and declassification details remain draft-level, NAC/USNATO traffic is
 underrepresented, CFE and security-architecture records are thin, and 1997-2000
 coverage is sparse relative to 1993-1995.
 
+## Clinton Library Research Plan
+
+The site includes an onsite pull strategy built from the local Clinton Library
+finding-aid PDFs for release `2013-0185-M`:
+
+- `2013-0185-M_Part1.pdf`
+- `2013-0185-M_Part2.pdf`
+- `2013-0185-M_Part3.pdf`
+- `2013-0185-M_Part4.pdf`
+
+The plan prioritizes European Affairs policy files before broad crisis files,
+then targets gaps in NAC/North Atlantic Council traffic, CFE, OSCE/CSCE,
+Partnership for Peace, NATO-Russia, NATO-EU/ESDI, Executive Secretary trip
+books, and PC/DC meeting chronology. It writes:
+
+- `reports/clinton-library-research-plan.md`
+- `reports/clinton-library-research-plan.json`
+
+Use the plan as a pre-visit pull queue and same-day decision log template; do
+not promote a folder title into the public corpus until an actual document has
+date, participants, page span, markings, release status, and source-note path.
+
 ## Source Anchors
 
 - FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security: <https://history.state.gov/historicaldocuments/frus1993-00v17>
 - FRUS production and editorial method: <https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries>
 - FRUS 1989-1992, Volume XXXI source-note model: <https://history.state.gov/historicaldocuments/frus1989-92v31>
+- Clinton Library research guide: <https://www.clintonlibrary.gov/research/guide>
+- Clinton Digital Library finding aids: <https://clinton.presidentiallibraries.us/items/browse?collection=82&sort_dir=a&sort_field=Dublin+Core%2CIdentifier>
 - Clinton Library Memcons and Telcons: <https://www.clintonlibrary.gov/research/memcons-and-telcons>
 - Clinton Library Meetings and Telephone Calls with Foreign Leaders: <https://www.clintonlibrary.gov/research/meetings-and-telephone-calls-foreign-leaders>
 - State Department FOIA Virtual Reading Room: <https://foia.state.gov/>
@@ -118,6 +142,8 @@ source URL or item identifier, and writes:
 - `reports/source-check.json`
 - `reports/compiler-gap-analysis.json`
 - `reports/compiler-gap-analysis.md`
+- `reports/clinton-library-research-plan.json`
+- `reports/clinton-library-research-plan.md`
 
 The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level

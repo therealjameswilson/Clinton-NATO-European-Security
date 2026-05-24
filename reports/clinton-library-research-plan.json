@@ -1,0 +1,376 @@
+{
+  "generatedAt": "2026-05-24T00:00:00-04:00",
+  "sourceSet": {
+    "release": "2013-0185-M",
+    "description": "Clinton Presidential Records, National Security Council folder-title finding aids supplied as local PDFs.",
+    "sourceFiles": [
+      {
+        "file": "2013-0185-M_Part1.pdf",
+        "pages": 375,
+        "usedFor": [
+          "Central and Eastern European Affairs",
+          "Bosnia files",
+          "NSC Admin leads"
+        ]
+      },
+      {
+        "file": "2013-0185-M_Part2.pdf",
+        "pages": 376,
+        "usedFor": [
+          "European Affairs",
+          "Executive Secretary",
+          "Legal Advisor",
+          "Multilateral and Humanitarian Affairs"
+        ]
+      },
+      {
+        "file": "2013-0185-M_Part3.pdf",
+        "pages": 356,
+        "usedFor": [
+          "Additional NSC office sweeps and cross-checking"
+        ]
+      },
+      {
+        "file": "2013-0185-M_Part4.pdf",
+        "pages": 183,
+        "usedFor": [
+          "Southeast European Affairs",
+          "Speechwriting",
+          "Staff Director",
+          "Strategic Planning"
+        ]
+      }
+    ]
+  },
+  "officialPlanningLinks": [
+    {
+      "label": "Clinton Library research page",
+      "url": "https://www.clintonlibrary.gov/research"
+    },
+    {
+      "label": "Clinton Library research guide and appointment information",
+      "url": "https://www.clintonlibrary.gov/research/guide"
+    },
+    {
+      "label": "Clinton Digital Library finding aids",
+      "url": "https://clinton.presidentiallibraries.us/items/browse?collection=82&sort_dir=a&sort_field=Dublin+Core%2CIdentifier"
+    }
+  ],
+  "researchAim": "Maximize Clinton Library onsite time for FRUS 1993-2000, Volume XVII by pre-ordering the most document-rich NSC folders for NATO enlargement, NATO-Russia, NATO-EU/ESDI, CFE/OSCE, NATO institutional decision-making, and crisis-security chronology.",
+  "pullBatches": [
+    {
+      "id": "policy-core",
+      "priority": "First pull",
+      "title": "European Affairs policy core",
+      "rationale": "These files are most likely to contain document-level policy memoranda, working-group papers, staff notes, and cleared materials on NATO enlargement, NATO-Russia, ESDI, and the strategic concept.",
+      "items": [
+        {
+          "oaId": "1073",
+          "folder": "NATO Working Group [2]",
+          "office": "European Affairs-Vershbow, Alexander",
+          "findingAidPart": "Part2",
+          "researchValue": "Direct enlargement policy process."
+        },
+        {
+          "oaId": "1073",
+          "folder": "NATO Expansion and Russia",
+          "office": "European Affairs-Vershbow, Alexander",
+          "findingAidPart": "Part2",
+          "researchValue": "Core NATO-Russia/enlargement negotiation file."
+        },
+        {
+          "oaId": "1073",
+          "folder": "European Security Working Group, 1994 [2]-[3]",
+          "office": "European Affairs-Vershbow, Alexander",
+          "findingAidPart": "Part2",
+          "researchValue": "Early architecture and enlargement framing."
+        },
+        {
+          "oaId": "900",
+          "folder": "European Security/NATO Expansion, December 1994-January 1995 [2]-[3]",
+          "office": "European Affairs-Vershbow, Alexander",
+          "findingAidPart": "Part2",
+          "researchValue": "Early NATO expansion policy window."
+        },
+        {
+          "oaId": "895",
+          "folder": "POTUS Trip to Madrid, Spain for NATO Summit, July 7-10, 1997 [Binder] [2]",
+          "office": "European Affairs-Vershbow, Alexander",
+          "findingAidPart": "Part2",
+          "researchValue": "Madrid summit decision package."
+        },
+        {
+          "oaId": "3211",
+          "folder": "NATO-PFP; NATO-Russia; NATO-Defense Planning; NATO-General",
+          "office": "European Affairs-Yee, Hoyt",
+          "findingAidPart": "Part2",
+          "researchValue": "Late-period NATO policy and partnership files."
+        },
+        {
+          "oaId": "3403",
+          "folder": "NATO-Enlargement; NATO-Relations with Russia; NATO-Strategic Concept",
+          "office": "European Affairs-Blinken, Antony",
+          "findingAidPart": "Part2",
+          "researchValue": "Late-period strategic concept and alliance policy."
+        },
+        {
+          "oaId": "3403",
+          "folder": "NATO-ESDI/NATO-E.U. Links; NATO/ESDI-Next Steps 2000; NATO-Atlantic Council Meeting, EU Security and Defense Policy Delegation",
+          "office": "European Affairs-Blinken, Antony",
+          "findingAidPart": "Part2",
+          "researchValue": "Direct NATO-EU/ESDI coverage."
+        }
+      ]
+    },
+    {
+      "id": "compiler-gap-fillers",
+      "priority": "First pull if available",
+      "title": "Gap fillers for NAC, CFE, OSCE, Partnership for Peace, and legal authority",
+      "rationale": "The current public corpus undercovers CFE and NAC/USNATO-style institutional records. These folders directly target those gaps.",
+      "items": [
+        {
+          "oaId": "1404",
+          "folder": "Former Yugoslavia-NAC (North Atlantic Council), August 1993",
+          "office": "Staff Director-Soderberg, Nancy",
+          "findingAidPart": "Part4",
+          "researchValue": "NAC coverage for institutional NATO decision-making."
+        },
+        {
+          "oaId": "1416",
+          "folder": "CSCE [Conference on Security and Cooperation in Europe]",
+          "office": "Staff Director-Soderberg, Nancy",
+          "findingAidPart": "Part4",
+          "researchValue": "OSCE/CSCE architecture file."
+        },
+        {
+          "oaId": "1417",
+          "folder": "NATO Summit; Partnership for Peace",
+          "office": "Staff Director-Soderberg, Nancy",
+          "findingAidPart": "Part4",
+          "researchValue": "Senior NSC staff files for NATO summit and PfP."
+        },
+        {
+          "oaId": "1732",
+          "folder": "CFE [Conventional Armed Forces in Europe]",
+          "office": "Central and Eastern European Affairs-Flanagan, Stephen",
+          "findingAidPart": "Part1",
+          "researchValue": "Direct CFE gap filler."
+        },
+        {
+          "oaId": "1732",
+          "folder": "NATO+ Strategy; NATO+ IWG; Open Door/MAP; 1999 NATO Summit",
+          "office": "Central and Eastern European Affairs-Flanagan, Stephen",
+          "findingAidPart": "Part1",
+          "researchValue": "Second-tranche/open-door enlargement work."
+        },
+        {
+          "oaId": "3110",
+          "folder": "OSCE [Organization for Security and Cooperation in Europe]",
+          "office": "Legal Advisor-Krass, Caroline",
+          "findingAidPart": "Part2",
+          "researchValue": "Legal/policy angle on OSCE architecture."
+        },
+        {
+          "oaId": "3115",
+          "folder": "CFE [Conventional Forces Europe]",
+          "office": "Legal Advisor-Krass, Caroline",
+          "findingAidPart": "Part2",
+          "researchValue": "Legal CFE coverage."
+        },
+        {
+          "oaId": "3390",
+          "folder": "CFE (Conventional Forces in Europe)",
+          "office": "Legal Advisor-Derosa, Mary",
+          "findingAidPart": "Part2",
+          "researchValue": "Second legal CFE file."
+        },
+        {
+          "oaId": "3410",
+          "folder": "ICTY-Kosovo; ICTY-NATO Operations",
+          "office": "Legal Advisor-Derosa, Mary",
+          "findingAidPart": "Part2",
+          "researchValue": "Legal authority and operations link for Kosovo/NATO."
+        }
+      ]
+    },
+    {
+      "id": "chronology-trip-pc-dc",
+      "priority": "Second pull",
+      "title": "Trip books, Executive Secretary files, and PC/DC chronology",
+      "rationale": "These files should anchor date placement, summit sequence, briefing-book provenance, and decision-meeting context.",
+      "items": [
+        {
+          "oaId": "2409",
+          "folder": "Davies Trip Prep Book-POTUS Travel to Paris, The Hague, London for NATO/Russia Summit & US/EU Summit, May 1997",
+          "office": "Executive Secretary-Davies, Glyn",
+          "findingAidPart": "Part2",
+          "researchValue": "NATO-Russia Founding Act and US/EU summit travel package."
+        },
+        {
+          "oaId": "2409",
+          "folder": "Davies Trip Prep Book-POTUS Travel to Europe for NATO Summit, July 1997",
+          "office": "Executive Secretary-Davies, Glyn",
+          "findingAidPart": "Part2",
+          "researchValue": "Madrid summit preparation."
+        },
+        {
+          "oaId": "2589",
+          "folder": "POTUS Visit to Paris, The Hague, London for NATO/Russia Summit, US/EU Summit, Meeting with Prime Minister Blair, May 26-29, 1997",
+          "office": "Executive Secretary",
+          "findingAidPart": "Part2",
+          "researchValue": "Presidential briefing book for NATO-Russia/US-EU sequence."
+        },
+        {
+          "oaId": "2589",
+          "folder": "POTUS Trip to Madrid, Spain for the NATO Summit, July 7-10, 1997",
+          "office": "Executive Secretary",
+          "findingAidPart": "Part2",
+          "researchValue": "Presidential Madrid NATO Summit briefing book."
+        },
+        {
+          "oaId": "2590",
+          "folder": "POTUS Participation in NATO Summit, Washington, D.C., April 23-25, 1999",
+          "office": "Executive Secretary",
+          "findingAidPart": "Part2",
+          "researchValue": "Washington 50th anniversary summit briefing book."
+        },
+        {
+          "oaId": "1949",
+          "folder": "Trip Books-NATO Summit, 1999",
+          "office": "Executive Secretary-Elkon, Nicole",
+          "findingAidPart": "Part2",
+          "researchValue": "NATO summit trip book cross-check."
+        },
+        {
+          "oaId": "1968-1970",
+          "folder": "PC/DC Meeting Files, October 1998-May 1999",
+          "office": "Executive Secretary-Bartlett, June",
+          "findingAidPart": "Part2",
+          "researchValue": "Kosovo/NATO air campaign decision chronology."
+        },
+        {
+          "oaId": "2227, 2414, 2419",
+          "folder": "DC/PC Meeting Files, June 1999-February 2000",
+          "office": "Executive Secretary-Bradtke, Robert",
+          "findingAidPart": "Part2",
+          "researchValue": "Postwar Kosovo and late-period NATO follow-up chronology."
+        }
+      ]
+    },
+    {
+      "id": "crisis-document-level",
+      "priority": "Third pull",
+      "title": "Crisis files to convert broad leads into document-level records",
+      "rationale": "The public corpus already has heavy Bosnia/Kosovo representation; these folders should be used selectively to extract decision documents, not to widen the imbalance.",
+      "items": [
+        {
+          "oaId": "1394",
+          "folder": "Soderberg Notes from Bosnia PC/DC Meetings, 1993-1996",
+          "office": "Staff Director-Soderberg, Nancy",
+          "findingAidPart": "Part4",
+          "researchValue": "Meeting-note spine for Bosnia decisions."
+        },
+        {
+          "oaId": "1710",
+          "folder": "NATO Reports; Kosovo Executive Committee Plans/Play of Day/Daily Digest; PC/DC/EXCOMM",
+          "office": "Bosnia-Hurley, Michael",
+          "findingAidPart": "Part1",
+          "researchValue": "High-yield Bosnia/Kosovo decision files."
+        },
+        {
+          "oaId": "1713",
+          "folder": "NAC [North Atlantic Council]",
+          "office": "Bosnia-Hurley, Michael",
+          "findingAidPart": "Part1",
+          "researchValue": "Institutional NATO angle within crisis files."
+        },
+        {
+          "oaId": "2989",
+          "folder": "NATO Intelligence; SFOR; Kosovo-PCs [Meetings]; NATO",
+          "office": "Southeast European Affairs-Von Lipsey, Roderick",
+          "findingAidPart": "Part4",
+          "researchValue": "Kosovo/SFOR/NATO operational-policy files."
+        },
+        {
+          "oaId": "3062",
+          "folder": "KFOR/SFOR 6 Month Review; Pol-Mil Plan; NATO",
+          "office": "Southeast European Affairs-Hurley, Michael",
+          "findingAidPart": "Part4",
+          "researchValue": "Late Kosovo/SFOR military-policy review."
+        },
+        {
+          "oaId": "3141",
+          "folder": "Bosnia; Kosovo; Federal Republic of Yugoslavia; Pittman Chron Files",
+          "office": "Southeast European Affairs-Pittman, Dean",
+          "findingAidPart": "Part4",
+          "researchValue": "Southeast Europe chronology and policy files."
+        },
+        {
+          "oaId": "3776",
+          "folder": "UNMIK-KFOR preparation; Kosovo Concept of Operations; POTUS Weekly Briefings on KFOR/SFOR; DIA Briefing on the Balkans",
+          "office": "Southeast European Affairs-Greenwood, Thomas",
+          "findingAidPart": "Part4",
+          "researchValue": "KFOR/SFOR and post-conflict Kosovo implementation."
+        }
+      ]
+    },
+    {
+      "id": "public-framing-control",
+      "priority": "Control pull",
+      "title": "Speechwriting and public-framing files",
+      "rationale": "Use these after policy files to date public messaging, compare final public text with internal options, and find staff-drafted framing memos.",
+      "items": [
+        {
+          "oaId": "3388",
+          "folder": "NATO-Russia Statement 5/14/97; NATO-Russia Signing 5/27/97; NATO-Russia Ceremony-Paris 5/27/97",
+          "office": "Speechwriting-Blinken, Antony",
+          "findingAidPart": "Part4",
+          "researchValue": "Public framing for the NATO-Russia Founding Act."
+        },
+        {
+          "oaId": "3389",
+          "folder": "North Atlantic Council Intervention 7/8/97; NATO-Ukraine Signing 7/9/97; NATO Press Conference Statement 7/9/97",
+          "office": "Speechwriting-Blinken, Antony",
+          "findingAidPart": "Part4",
+          "researchValue": "Madrid summit public-control files."
+        },
+        {
+          "oaId": "3380",
+          "folder": "NATO Event for Poland, Hungary, and Czech Republic 2/11/98; Statement on NATO Vote 5/1/98; Remarks on NATO Ratification 5/21/98",
+          "office": "Speechwriting-Blinken, Antony",
+          "findingAidPart": "Part4",
+          "researchValue": "Ratification and accession public-control files."
+        },
+        {
+          "oaId": "1856-1857",
+          "folder": "NATO General; NATO Protocols 2/11/98",
+          "office": "Speechwriting-Benjamin, Daniel",
+          "findingAidPart": "Part4",
+          "researchValue": "Supplemental speechwriting files."
+        },
+        {
+          "oaId": "2189-2190",
+          "folder": "European Union; NATO [North Atlantic Treaty Organization], April 1999",
+          "office": "Speechwriting-Widmer, Edward",
+          "findingAidPart": "Part4",
+          "researchValue": "Late NATO/EU public-message cross-check."
+        }
+      ]
+    }
+  ],
+  "onsiteWorkflow": [
+    "Before the visit, ask Clinton Library staff whether the 2013-0185-M OA/ID folders can be pre-pulled, whether any folders are fully or partly withdrawn, and whether there are daily pull or scanning limits.",
+    "Use the first pull for European Affairs policy-core folders before speechwriting or broad crisis folders.",
+    "For every folder opened, photograph or transcribe the folder title, OA/ID number, collection path, withdrawal sheets, and first/last page before extracting document images.",
+    "Promote only document-level items into the public corpus after recording actual date, sender/recipient or meeting participants, page span, markings, release status, and source-note path.",
+    "Use Executive Secretary trip books and PC/DC files to settle chronology, then use Speechwriting files as public-text controls rather than as the main documentary base.",
+    "Keep a same-day decision log: include candidate, context only, duplicate/source-control, or no action."
+  ],
+  "questionsForArchivist": [
+    "Can these OA/ID folders be requested in advance from release 2013-0185-M?",
+    "Are any of the listed folders available as digital surrogates or already-scanned researcher copies?",
+    "What are current pull limits, reproduction limits, and citation preferences for Clinton Presidential Records, NSC folder-title files?",
+    "Do folder titles map directly to box requests, or should the researcher request by office/staff segment plus OA/ID number?",
+    "Are withdrawal sheets available at the folder level and should they be cited separately when a document is partially withheld?"
+  ]
+}
