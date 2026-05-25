@@ -50,6 +50,9 @@ const SOURCE_PATHS = {
   russiaHighLevel: ["Clinton-Russia-High-Level", "data", "memcons.json"]
 };
 
+const DEFAULT_SOURCE_NOTE_ADDENDUM =
+  "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF.";
+
 function readJson(parts) {
   const filePath = path.join(COLLECTION_ROOT, ...parts);
   if (!fs.existsSync(filePath)) return null;
@@ -79,6 +82,97 @@ function unique(values) {
     seen.add(value);
     return true;
   });
+}
+
+function normalizeSourceNote(note) {
+  if (!note) return note;
+  let normalized = note.trim().replace(/\s+/g, " ");
+  normalized = normalized.replace(
+    /^Source: National Archives Catalog,/,
+    "Source: National Archives and Records Administration, National Archives Catalog,"
+  );
+  normalized = normalized.replace(
+    /^Source: National Archives and Records Administration, National Archives Catalog, National Archives Catalog,/,
+    "Source: National Archives and Records Administration, National Archives Catalog,"
+  );
+  normalized = normalized.replace(/^Source: William J\. Clinton Presidential Library & Museum,/, "Source: William J. Clinton Presidential Library,");
+  normalized = normalized.replace(/^Source: Department of State FOIA Virtual Reading Room,/, "Source: Department of State, FOIA Virtual Reading Room,");
+  normalized = normalized.replace(
+    /^Source: Department of State, FOIA Virtual Reading Room, Department of State FOIA Virtual Reading Room,/,
+    "Source: Department of State, FOIA Virtual Reading Room,"
+  );
+  normalized = normalized.replace(
+    /^Source: Clinton Presidential Library MDR release ([^;]+);\s*/i,
+    "Source: William J. Clinton Presidential Library, MDR Release $1, "
+  );
+  normalized = normalized.replace(
+    /^Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology[,;]\s*release packet ([^.]+)\.\s*Page count audit:\s*(\d+) actual conversation pages from ([^;]+);.*$/i,
+    (_, release, count, pages) =>
+      `Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology, Release packet ${release.trim()}. Source pages: pages ${pages.trim()}; ${count} conversation pages.`
+  );
+  normalized = normalized.replace(
+    /^Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology[,;]\s*release packet ([^.]+)\.\s*Page audit(?: correction)?:.*$/i,
+    (_, release) =>
+      `Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology, Release packet ${release.trim()}.`
+  );
+  normalized = normalized.replace(
+    /^Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology;\s*release packet ([^.]+)\./i,
+    (_, release) =>
+      `Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology, Release packet ${release.trim()}.`
+  );
+  normalized = normalized.replace(
+    /,\s*National Archives Catalog \/ Clinton NSC Records Management Office,/g,
+    ", Clinton NSC Records Management Office,"
+  );
+  normalized = normalized.replace(/,\s*https:\/\/clinton\.presidentiallibraries\.us\/items\/show\/(\d+)\./g, ", Item $1.");
+  normalized = normalized.replace(/,\s*(20\d{2}-\d{4}-M(?:-\d+)?)\s*,\s*Item/g, ", Release $1, Item");
+  normalized = normalized.replace(/,\s*(LP-WJC\/DOS-\d+-\d+)\s*,\s*Item/g, ", Release $1, Item");
+  normalized = normalized.replace(
+    /,\s*(C\d{8})(\s*\([^)]+\))?;\s*F-\d{4}-\d{5},\s*https:\/\/\S+\.pdf\./g,
+    (_, documentId, release) => `, Document ${documentId}${release || ""}.`
+  );
+  normalized = normalized.replace(/,\s*(C\d{8});\s*F-\d{4}-\d{5},\s*https:\/\/\S+\.pdf\./g, ", Document $1.");
+  normalized = normalized.replace(/;\s*NAID\s+(\d+),\s*https:\/\/catalog\.archives\.gov\/id\/\1\./g, ", NAID $1.");
+  normalized = normalized.replace(/\s*Direct item PDF https?:\/\/\S+;\s*([^.]*(?:page|pages) counted)\./gi, " Source pages: $1.");
+  normalized = normalized.replace(/\s*Direct FOIA PDF;\s*([^.]*(?:page|pages) counted)\./gi, " Source pages: $1.");
+  normalized = normalized.replace(/\s*Classification and handling markings require PDF verification\./gi, "");
+  normalized = normalized.replace(/\s*Original classification marking visible in PDF; verify\./gi, "");
+  normalized = normalized.replace(/\s*Verify [^.]+ before final FRUS treatment\./gi, "");
+  normalized = normalized.replace(
+    /\s*The displayed review PDF appends page 1 of the source packet as an annotation sheet\./gi,
+    " Review PDF includes a packet annotation sheet."
+  );
+  normalized = normalized.replace(/, release ([^,.]+), item ([^,.]+)\./gi, (_, release, item) => {
+    return `, Release ${release.trim()}, Item ${item.trim()}.`;
+  });
+  normalized = normalized.replace(/, item ([^,.]+)\./gi, (_, item) => `, Item ${item.trim()}.`);
+  normalized = normalized.replace(/, document (C\d+)\./gi, (_, documentId) => `, Document ${documentId}.`);
+  normalized = normalized.replace(/\s+\./g, ".");
+  if (!/[.!?]\)?$/.test(normalized)) normalized += ".";
+  return normalized;
+}
+
+function productionReviewFromSourceNote(note) {
+  if (!note) return "";
+  const match = note
+    .trim()
+    .replace(/\s+/g, " ")
+    .match(
+      /^Source: Clinton Library, Meetings and Telephone Calls with Foreign Leaders, master chronology[,;]\s*release packet [^.]+\.\s*(.+)$/i
+    );
+  if (!match) return "";
+  const detail = match[1].trim().replace(/\.\)\./g, ".)");
+  return /\b(Page audit|Page count audit|Dedup\/exclusion note|Strobe FOIA review|No .* text was found|not counted again|duplicate source copy|excluded)\b/i.test(
+    detail
+  )
+    ? `Source-note detail moved from displayed citation: ${detail}`
+    : "";
+}
+
+function sourceNoteAddendumFor(record) {
+  return [DEFAULT_SOURCE_NOTE_ADDENDUM, productionReviewFromSourceNote(record.sourceNote)]
+    .filter(Boolean)
+    .join(" ");
 }
 
 function toIsoDate(value, fallbackYear) {
@@ -230,11 +324,9 @@ function baseRecord(record, options) {
     washingtonTime: record.washingtonTime || "",
     placementNote: record.placementNote || "Verify final chronological placement against the source document.",
     subjectLine: record.subjectLine || record.compilerUse || record.descriptionExcerpt || title,
-    sourceNote: options.sourceNote,
+    sourceNote: normalizeSourceNote(options.sourceNote),
     sourceNoteStatus: options.sourceNoteStatus || "Draft",
-    sourceNoteAddendum:
-      options.sourceNoteAddendum ||
-      "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF.",
+    sourceNoteAddendum: options.sourceNoteAddendum || DEFAULT_SOURCE_NOTE_ADDENDUM,
     sourcePages: record.sourcePages || record.sourcePdfPages || "",
     originalClassification: record.originalClassification || record.classification || "",
     documentMarkings: options.documentMarkings || [],
@@ -330,6 +422,7 @@ function russiaRecord(record) {
     catalogUrl: record.catalogUrl || record.source?.url,
     pdfUrl: externalPdf({ ...record, __sourceSite: "Clinton-Russia-High-Level" }),
     sourceNote: record.sourceNote || `Source: ${record.source?.name || "National Archives Catalog"}, ${record.naid ? `NAID ${record.naid}` : record.id}.`,
+    sourceNoteAddendum: sourceNoteAddendumFor(record),
     source: {
       name: record.source?.name || "National Archives Catalog",
       url: record.catalogUrl || record.source?.url || "",

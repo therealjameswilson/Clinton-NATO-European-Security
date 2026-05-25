@@ -122,7 +122,7 @@ function sourceClearance(record) {
 }
 
 function createSourceNoteDraft(record) {
-  if (record.sourceNote) return [record.sourceNote, record.sourceNoteAddendum].filter(Boolean).join(" ");
+  if (record.sourceNote) return record.sourceNote;
 
   const path = sourcePathParts(record);
   if (!path.length) return "Source: Citation pending.";
@@ -136,8 +136,6 @@ function createSourceNoteDraft(record) {
   if (transmission) sentences.push(transmission);
   if (clearance) sentences.push(clearance);
   if (record.sourcePages || record.sourcePdfPages) sentences.push(`Source pages: ${record.sourcePages || record.sourcePdfPages}.`);
-  if (record.sourceNoteAddendum) sentences.push(record.sourceNoteAddendum);
-
   return sentences.join(" ").replace(/\s+/g, " ").trim();
 }
 
@@ -279,6 +277,10 @@ function createRecordRow(record) {
     createMeta(record),
     createParagraph("record-source-note", createSourceNoteDraft(record))
   );
+
+  if (record.sourceNoteAddendum) {
+    body.append(createParagraph("record-extraction-note", `Source-note review: ${record.sourceNoteAddendum}`));
+  }
 
   body.append(createProductionBlock(record));
 

@@ -1,0 +1,288 @@
+{
+  "generatedAt": "2026-05-25T12:01:09.630Z",
+  "model": [
+    {
+      "label": "FRUS 1989-1992, Volume XXXI, Document 1",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d1",
+      "pattern": "Source path; classification and handling markings; drafting, marginalia, attachment, or copy-context detail."
+    },
+    {
+      "label": "FRUS 1989-1992, Volume XXXI, Document 10",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d10",
+      "pattern": "Source path; classification."
+    },
+    {
+      "label": "FRUS 1989-1992, Volume XXXI, Document 50",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d50",
+      "pattern": "Source path; classification; meeting-location context."
+    }
+  ],
+  "styleRule": "Keep the displayed first footnote as a Source sentence only: repository and collection path first, exact folder/item identifier next, then classification/handling and document-context details when verified. Keep compiler warnings outside the Source sentence.",
+  "counts": {
+    "total": 596,
+    "bySource": {
+      "National Archives Catalog": 260,
+      "William J. Clinton Presidential Library & Museum": 60,
+      "Government Publishing Office, GovInfo": 66,
+      "Department of State FOIA Virtual Reading Room": 69,
+      "Clinton Library MDR release 2015-0782-M-1": 2,
+      "Clinton Digital Library item 101758, Declassified Documents": 1,
+      "Clinton Library MDR release 2015-0782-M-2": 34,
+      "Clinton Digital Library item 100503, MDR release 2016-0620-M": 1,
+      "Clinton Digital Library item 119190, Telcons - Memoranda of Telephone Conversation": 1,
+      "William J. Clinton Presidential Library, Clinton Digital Library": 85,
+      "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin": 2,
+      "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation": 1,
+      "Department of State, FOIA Virtual Reading Room": 11,
+      "National Archives and Records Administration, National Archives Catalog": 2,
+      "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A": 1
+    },
+    "byType": {
+      "Scout Lead": 260,
+      "Memcon": 70,
+      "Context": 66,
+      "Telcon": 60,
+      "Source Lead": 70,
+      "Release Packet": 70
+    },
+    "startsWithSource": 596,
+    "sourcePathPresent": 596,
+    "sourceNotesWithRawUrls": 0,
+    "sourceNotesWithProductionLanguage": 0,
+    "reviewNotesWithProductionLanguage": 530,
+    "notesNeedingMarkings": 542,
+    "fileUnitNotDocumentLevel": 260
+  },
+  "issueCounts": {
+    "needs-markings": 542,
+    "file-unit-not-document-level": 260,
+    "review-note-not-source-note": 530
+  },
+  "samples": {
+    "needsMarkings": [
+      {
+        "id": "nara-scout-23902171",
+        "type": "Scout Lead",
+        "title": "Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas, NAID 23902171.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-119044",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland, Item 119044.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101329",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Arpad Goncz of Hungary",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release 2015-0133-M, Item 101329.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-7388808-368557013",
+        "type": "Scout Lead",
+        "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994, NAID 368557013.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "govinfo-PPP-1994-book1-doc-pg37",
+        "type": "Context",
+        "title": "Remarks and an Exchange With Reporters Following Discussions With President Vaclav Havel of the Czech Republic in Prague",
+        "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton, PPP-1994-book1; PPP-1994-book1-doc-pg37.",
+        "sourceNoteAddendum": "Public record context; use for chronology, public explanation, and annotation rather than as a declassified archival source."
+      },
+      {
+        "id": "clinton-dl-118919",
+        "type": "Telcon",
+        "title": "Memorandum of Telephone Conversation with President Ulmanis of Latvia",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Telcons - Memoranda of Telephone Conversations, Release 2016-0314-M-2, Item 118919.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101379",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Arpad Goncz of Hungary and President Michal Kovac of Slovakia",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release 2015-0133-M, Item 101379.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101391",
+        "type": "Telcon",
+        "title": "Memorandum of Telephone Conversation - President Vaclav Havel of the Czech Republic",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Telcons - Memoranda of Telephone Conversations, Release 2015-0773-M, Item 101391.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "govinfo-PPP-1994-book1-doc-pg1207",
+        "type": "Context",
+        "title": "Remarks at a Dinner Hosted by President Lech Walesa of Poland in Warsaw",
+        "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton, PPP-1994-book1; PPP-1994-book1-doc-pg1207.",
+        "sourceNoteAddendum": "Public record context; use for chronology, public explanation, and annotation rather than as a declassified archival source."
+      },
+      {
+        "id": "govinfo-PPP-1994-book1-doc-pg1205",
+        "type": "Context",
+        "title": "Remarks Following Discussions With President Lech Walesa of Poland and an Exchange With Reporters in Warsaw",
+        "sourceNote": "Source: Government Publishing Office, GovInfo, Public Papers of the Presidents of the United States: William J. Clinton, PPP-1994-book1; PPP-1994-book1-doc-pg1205.",
+        "sourceNoteAddendum": "Public record context; use for chronology, public explanation, and annotation rather than as a declassified archival source."
+      }
+    ],
+    "fileUnitNotDocumentLevel": [
+      {
+        "id": "nara-scout-23902171",
+        "type": "Scout Lead",
+        "title": "Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas, NAID 23902171.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-7388808-368557013",
+        "type": "Scout Lead",
+        "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994, NAID 368557013.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23902170",
+        "type": "Scout Lead",
+        "title": "Lithuania - Meeting with Deputy Foreign Minister Usackas, November 13, 2000",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Lithuania - Meeting with Deputy Foreign Minister Usackas, November 13, 2000, NAID 23902170.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23901917",
+        "type": "Scout Lead",
+        "title": "Latvia [2]",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Richard Norland's Files, Latvia [2], NAID 23901917.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23901923",
+        "type": "Scout Lead",
+        "title": "Latvia: Russia-Latvia [1]",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Richard Norland's Files, Latvia: Russia-Latvia [1], NAID 23901923.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23902173",
+        "type": "Scout Lead",
+        "title": "Lithuania [1]",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Lithuania [1], NAID 23902173.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23902180",
+        "type": "Scout Lead",
+        "title": "Lithuania [8]",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Richard Norland's Files, Lithuania [8], NAID 23902180.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-23901636",
+        "type": "Scout Lead",
+        "title": "Estonia - Meeting with Minister of Defense Juri Luik, March 9, 2000",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Estonia - Meeting with Minister of Defense Juri Luik, March 9, 2000, NAID 23901636.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-7388808-147873393",
+        "type": "Scout Lead",
+        "title": "DC 0145 DC Meeting Regarding Conference on Security and Cooperation in Europe/CSCE/Summit in Budapest, 5 December 199",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, DC 0145 DC Meeting Regarding Conference on Security and Cooperation in Europe/CSCE/Summit in Budapest, 5 December 199, NAID 147873393.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-scout-147873129",
+        "type": "Scout Lead",
+        "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [1]",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council Executive Secretary (Clinton Administration), William Itoh's Files, CSCE [Conference on Security and Cooperation in Europe] December 1994 [1], NAID 147873129.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      }
+    ],
+    "rawUrlInSourceNote": [],
+    "reviewNoteNotSourceNote": [
+      {
+        "id": "nara-scout-23902171",
+        "type": "Scout Lead",
+        "title": "Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Records of the National Security Council European Affairs Office (Clinton Administration), Antony Blinken's Files, Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas, NAID 23902171.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-119044",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland, Item 119044.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101329",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Arpad Goncz of Hungary",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release 2015-0133-M, Item 101329.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "nara-7388808-368557013",
+        "type": "Scout Lead",
+        "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
+        "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994, NAID 368557013.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-118919",
+        "type": "Telcon",
+        "title": "Memorandum of Telephone Conversation with President Ulmanis of Latvia",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Telcons - Memoranda of Telephone Conversations, Release 2016-0314-M-2, Item 118919.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101379",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Arpad Goncz of Hungary and President Michal Kovac of Slovakia",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release 2015-0133-M, Item 101379.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101391",
+        "type": "Telcon",
+        "title": "Memorandum of Telephone Conversation - President Vaclav Havel of the Czech Republic",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Telcons - Memoranda of Telephone Conversations, Release 2015-0773-M, Item 101391.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101397",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Lech Walesa of Poland",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release LP-WJC/DOS-16-1, Item 101397.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101398",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - Prime Minister Waldemar Pawlak of Poland",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release LP-WJC/DOS-16-1, Item 101398.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      },
+      {
+        "id": "clinton-dl-101380",
+        "type": "Memcon",
+        "title": "Memorandum of Conversation - President Arpad Goncz of Hungary and President Michal Kovac of Slovakia",
+        "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release 2015-0133-M, Item 101380.",
+        "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF."
+      }
+    ]
+  },
+  "actions": [
+    "Do not append compiler verification language to the displayed Source note.",
+    "Normalize repository names: National Archives and Records Administration, National Archives Catalog; Department of State, FOIA Virtual Reading Room; William J. Clinton Presidential Library or FRUS-style Clinton Library shorthand.",
+    "Capitalize Release, Item, and Document identifiers inside source notes.",
+    "Replace raw source URLs in displayed Source notes with stable item, document, release, case, or NAID identifiers.",
+    "Before treating an Include candidate as FRUS-ready, verify classification, handling markings, page span, drafting/clearance, marginalia, attachments, and excisions from the original image or PDF.",
+    "Convert Scout Leads from file-unit source notes to document-level source notes only after onsite or digital-object inspection."
+  ]
+}

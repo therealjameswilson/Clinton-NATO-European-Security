@@ -49,6 +49,24 @@ Useful structured fields include `source.path`, `source.documentId`,
 `source.caseNumber`, `documentMarkings`, `handlingMarkings`, `communication`,
 `meetingLocation`, `clearance`, `sourcePages`, and `sourceNoteAddendum`.
 
+## Source Note Style Audit
+
+Run the style audit after any source-note refresh:
+
+```bash
+node scripts/audit-source-notes.js
+```
+
+The audit writes:
+
+- `reports/source-note-style-audit.md`
+- `reports/source-note-style-audit.json`
+
+It checks the displayed `Source:` sentence against FRUS-style source-path,
+classification/handling, and document-context expectations, and keeps compiler
+warnings or onsite-verification reminders in `sourceNoteAddendum` rather than
+inside the first footnote.
+
 ## FRUS Production Workflow
 
 The workbench is organized around the editorial and production practices
