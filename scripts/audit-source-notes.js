@@ -29,10 +29,11 @@ const FRUS_MODEL = [
 ];
 
 const CLASSIFICATION_PATTERN =
-  /\b(Top Secret|Secret|Confidential|Sensitive|Eyes Only|Nodis|No Foreign|Limited Official Use|Unclassified|P\d\/b\(\d\)|E\.O\.)\b/i;
+  /\b(Top Secret|Secret|Confidential|Sensitive|Eyes Only|Nodis|No Foreign|Limited Official Use|Unclassified|No classification marking|P\d\/b\(\d\)|E\.O\.)\b/i;
 const PRODUCTION_PATTERN =
   /\b(Compiler should|verify|pending|replace|sample only|not yet audited|page audit|page count audit|dedup\/exclusion|strobe foia review|not counted again|duplicate source copy|No .* text was found|excluded)\b/i;
 const URL_PATTERN = /https?:\/\//i;
+const NO_RELEASED_TEXT_PATTERN = /\bNo released\b|\bnot located\b|\bno .*pages located\b/i;
 
 function countBy(records, keyFn) {
   return records.reduce((counts, record) => {
@@ -54,6 +55,25 @@ function sourceIdentifier(record) {
   ].filter(Boolean);
 }
 
+function markingText(record) {
+  return [
+    record.sourceNote,
+    record.originalClassification,
+    ...(record.documentMarkings || []),
+    ...(record.handlingMarkings || [])
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
+
+function needsDocumentLevelMarkings(record) {
+  if (record.type === "Context") return false;
+  if (NO_RELEASED_TEXT_PATTERN.test(record.sourcePages || "")) return false;
+  if (/finding-aid summary/i.test(record.sourceNote || "") && !record.sourcePages && !record.pageCount) return false;
+  if (record.type === "Scout Lead" && !record.pageCount && !record.sourcePages) return false;
+  return true;
+}
+
 function issueList(record) {
   const note = record.sourceNote || "";
   const reviewNote = record.sourceNoteAddendum || "";
@@ -65,10 +85,8 @@ function issueList(record) {
   if (/, (release|item|document) [^,.]+\./.test(note)) issues.push("lowercase-release-item-document");
   if (URL_PATTERN.test(note)) issues.push("raw-url-in-source-note");
   if (PRODUCTION_PATTERN.test(note)) issues.push("production-language-in-source-note");
-  if (!CLASSIFICATION_PATTERN.test(note) && !CLASSIFICATION_PATTERN.test(reviewNote)) issues.push("needs-markings");
-  if (record.type === "Scout Lead" && !record.pageCount && !record.sourcePages) issues.push("file-unit-not-document-level");
+  if (needsDocumentLevelMarkings(record) && !CLASSIFICATION_PATTERN.test(markingText(record))) issues.push("needs-markings");
   if (!sourceIdentifier(record).length && !/Item\s+\d+|Document\s+\S+|NAID\s+\d+|PPP-\d{4}/i.test(note)) issues.push("missing-item-identifier");
-  if (reviewNote && PRODUCTION_PATTERN.test(reviewNote)) issues.push("review-note-not-source-note");
   return issues;
 }
 
@@ -103,9 +121,9 @@ function main() {
     sourcePathPresent: records.filter((record) => hasSourcePath(record.sourceNote)).length,
     sourceNotesWithRawUrls: issueCounts["raw-url-in-source-note"] || 0,
     sourceNotesWithProductionLanguage: issueCounts["production-language-in-source-note"] || 0,
-    reviewNotesWithProductionLanguage: issueCounts["review-note-not-source-note"] || 0,
+    reviewNotesWithProductionLanguage: records.filter((record) => PRODUCTION_PATTERN.test(record.sourceNoteAddendum || "")).length,
     notesNeedingMarkings: issueCounts["needs-markings"] || 0,
-    fileUnitNotDocumentLevel: issueCounts["file-unit-not-document-level"] || 0
+    scoutLeadsAwaitingDocumentSelection: records.filter((record) => record.type === "Scout Lead" && !record.pageCount && !record.sourcePages).length
   };
 
   const report = {
@@ -117,9 +135,17 @@ function main() {
     issueCounts,
     samples: {
       needsMarkings: sample(records, "needs-markings"),
-      fileUnitNotDocumentLevel: sample(records, "file-unit-not-document-level"),
-      rawUrlInSourceNote: sample(records, "raw-url-in-source-note"),
-      reviewNoteNotSourceNote: sample(records, "review-note-not-source-note")
+      scoutLeadsAwaitingDocumentSelection: records
+        .filter((record) => record.type === "Scout Lead" && !record.pageCount && !record.sourcePages)
+        .slice(0, 10)
+        .map((record) => ({
+          id: record.id,
+          type: record.type,
+          title: record.title,
+          sourceNote: record.sourceNote,
+          sourceNoteAddendum: record.sourceNoteAddendum || ""
+        })),
+      rawUrlInSourceNote: sample(records, "raw-url-in-source-note")
     },
     actions: [
       "Do not append compiler verification language to the displayed Source note.",
@@ -127,7 +153,7 @@ function main() {
       "Capitalize Release, Item, and Document identifiers inside source notes.",
       "Replace raw source URLs in displayed Source notes with stable item, document, release, case, or NAID identifiers.",
       "Before treating an Include candidate as FRUS-ready, verify classification, handling markings, page span, drafting/clearance, marginalia, attachments, and excisions from the original image or PDF.",
-      "Convert Scout Leads from file-unit source notes to document-level source notes only after onsite or digital-object inspection."
+      "Promote Scout Leads to document-level records only after digital-object inspection identifies a specific item for selection."
     ]
   };
 
@@ -153,7 +179,7 @@ function main() {
     `- Production language inside displayed Source note: ${counts.sourceNotesWithProductionLanguage}`,
     `- Production review notes kept outside Source note: ${counts.reviewNotesWithProductionLanguage}`,
     `- Notes still needing verified classification/handling/context details: ${counts.notesNeedingMarkings}`,
-    `- File-unit Scout Leads still needing document-level source notes: ${counts.fileUnitNotDocumentLevel}`,
+    `- Scout Leads retained as research backlog, not source-note style issues: ${counts.scoutLeadsAwaitingDocumentSelection}`,
     "",
     "## Issue Counts",
     "",

@@ -54,18 +54,24 @@ Useful structured fields include `source.path`, `source.documentId`,
 Run the style audit after any source-note refresh:
 
 ```bash
+node scripts/extract-source-markings.js
 node scripts/audit-source-notes.js
 ```
 
-The audit writes:
+The marking extraction and audit write:
 
+- `reports/source-marking-extraction.md`
+- `reports/source-marking-extraction.json`
 - `reports/source-note-style-audit.md`
 - `reports/source-note-style-audit.json`
 
-It checks the displayed `Source:` sentence against FRUS-style source-path,
-classification/handling, and document-context expectations, and keeps compiler
-warnings or onsite-verification reminders in `sourceNoteAddendum` rather than
-inside the first footnote.
+The extraction pass uses PDF text, OCR, item-image OCR, public-record context,
+and explicit visual source-image review. The audit checks the displayed
+`Source:` sentence against FRUS-style source-path, classification/handling, and
+document-context expectations, and keeps compiler warnings or onsite-verification
+reminders in `sourceNoteAddendum` rather than inside the first footnote. NARA
+Scout Leads remain a research backlog until digital-object inspection promotes
+specific documents into the compiler corpus.
 
 ## FRUS Production Workflow
 

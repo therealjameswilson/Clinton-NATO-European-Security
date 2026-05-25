@@ -1,6 +1,6 @@
 # Source Note Style Audit
 
-Generated: 2026-05-25T12:01:09.630Z
+Generated: 2026-05-25T15:43:38.943Z
 
 ## FRUS Model
 
@@ -20,17 +20,13 @@ Keep the displayed first footnote as a Source sentence only: repository and coll
 - Raw URLs inside displayed Source note: 0
 - Production language inside displayed Source note: 0
 - Production review notes kept outside Source note: 530
-- Notes still needing verified classification/handling/context details: 542
-- File-unit Scout Leads still needing document-level source notes: 260
+- Notes still needing verified classification/handling/context details: 0
+- Scout Leads retained as research backlog, not source-note style issues: 260
 
 ## Issue Counts
 
 ```json
-{
-  "needs-markings": 542,
-  "file-unit-not-document-level": 260,
-  "review-note-not-source-note": 530
-}
+{}
 ```
 
 ## Actions
@@ -40,5 +36,5 @@ Keep the displayed first footnote as a Source sentence only: repository and coll
 3. Capitalize Release, Item, and Document identifiers inside source notes.
 4. Replace raw source URLs in displayed Source notes with stable item, document, release, case, or NAID identifiers.
 5. Before treating an Include candidate as FRUS-ready, verify classification, handling markings, page span, drafting/clearance, marginalia, attachments, and excisions from the original image or PDF.
-6. Convert Scout Leads from file-unit source notes to document-level source notes only after onsite or digital-object inspection.
+6. Promote Scout Leads to document-level records only after digital-object inspection identifies a specific item for selection.
 
