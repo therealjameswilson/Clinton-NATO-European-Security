@@ -17,6 +17,8 @@ but starts as an empty compiler workbench rather than a finished document set.
 4. Crisis Security Files
 
 Records inside each lane should be arranged chronologically by `sortDate`.
+The public page now opens with a date-sorted declassified-document chronology
+before the lane browser so a compiler can read the released record first.
 
 ## Data Model
 

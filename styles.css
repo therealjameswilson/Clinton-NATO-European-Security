@@ -274,6 +274,18 @@ dd {
   margin-bottom: 28px;
 }
 
+.chronology-section {
+  padding-top: 52px;
+}
+
+.chronology-links {
+  margin: -8px 0 24px;
+}
+
+.chronology-root .record-chapter-header {
+  border-bottom-color: var(--red);
+}
+
 .gap-section {
   padding-top: 56px;
 }

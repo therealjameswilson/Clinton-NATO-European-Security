@@ -6,6 +6,7 @@ const CHAPTER_ORDER = [
 ];
 
 const recordsRoot = document.querySelector("#records-root");
+const chronologyRoot = document.querySelector("#chronology-root");
 const totalRecords = document.querySelector("#total-records");
 const decisionReady = document.querySelector("#decision-ready");
 const provenanceGaps = document.querySelector("#provenance-gaps");
@@ -39,6 +40,44 @@ function byChapterThenDate(a, b) {
     (a.sortDate || a.date).localeCompare(b.sortDate || b.date) ||
     a.title.localeCompare(b.title)
   );
+}
+
+function byChronology(a, b) {
+  return (
+    (a.sortDate || a.date || "9999-12-31").localeCompare(b.sortDate || b.date || "9999-12-31") ||
+    (a.washingtonTime || "").localeCompare(b.washingtonTime || "") ||
+    (a.title || "").localeCompare(b.title || "")
+  );
+}
+
+function isDeclassifiedChronologyRecord(record) {
+  if (["Scout Lead", "Source Lead"].includes(record.type)) return false;
+
+  const statusText = [
+    record.type,
+    record.releaseStatus,
+    record.declassificationStatus,
+    record.originalClassification,
+    record.source?.name,
+    record.source?.collection,
+    record.sourceNote
+  ]
+    .filter(Boolean)
+    .join(" ");
+
+  if (record.type === "Context" && /Government Publishing Office|Public Papers|Not applicable/i.test(statusText)) {
+    return false;
+  }
+
+  return (
+    ["Memcon", "Telcon", "Release Packet"].includes(record.type) ||
+    /\b(FOIA|MDR|released|declassified|unclassified|excisions?|Presidential Daily Diary)\b/i.test(statusText)
+  );
+}
+
+function chronologyYear(record) {
+  const value = (record.sortDate || record.date || "").slice(0, 4);
+  return /^\d{4}$/.test(value) ? value : "pending";
 }
 
 function hasValue(value) {
@@ -448,6 +487,50 @@ function renderRecords(records) {
   }
 }
 
+function renderChronology(records) {
+  if (!chronologyRoot) return;
+
+  const sorted = records.filter(isDeclassifiedChronologyRecord).sort(byChronology);
+  chronologyRoot.replaceChildren();
+
+  if (!sorted.length) {
+    chronologyRoot.innerHTML = `
+      <div class="empty-state">
+        <h3>No declassified documents in the chronology yet</h3>
+        <p>Promote released source leads into document-level records with dates, page spans, and source notes.</p>
+      </div>
+    `;
+    return;
+  }
+
+  const years = [...new Set(sorted.map(chronologyYear))];
+
+  for (const year of years) {
+    const yearRecords = sorted.filter((record) => chronologyYear(record) === year);
+    const section = document.createElement("section");
+    section.className = "record-chapter chronology-year";
+    section.id = `chronology-${year}`;
+
+    const header = document.createElement("div");
+    header.className = "record-chapter-header";
+
+    const heading = document.createElement("h3");
+    heading.textContent = year === "pending" ? "Date Pending" : year;
+
+    const count = document.createElement("p");
+    count.className = "record-count";
+    count.textContent = `${yearRecords.length} declassified or released records`;
+    header.append(heading, count);
+
+    const list = document.createElement("div");
+    list.className = "record-list";
+    for (const record of yearRecords) list.append(createRecordRow(record));
+
+    section.append(header, list);
+    chronologyRoot.append(section);
+  }
+}
+
 function filterRecords() {
   const query = searchInput?.value.trim().toLowerCase() || "";
   const records = allRecords.filter((record) => {
@@ -509,6 +592,7 @@ async function init() {
   try {
     allRecords = window.COMPILER_RECORDS || window.MEMCONS || (await loadRecords());
     setChapterCounts(allRecords);
+    renderChronology(allRecords);
     renderRecords(allRecords);
     enableFilters();
     enableChapterCards();
