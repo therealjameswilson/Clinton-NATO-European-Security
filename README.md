@@ -135,11 +135,35 @@ Use the plan as a pre-visit pull queue and same-day decision log template; do
 not promote a folder title into the public corpus until an actual document has
 date, participants, page span, markings, release status, and source-note path.
 
+## Presidential Daily Diary Search
+
+Run the Daily Diary pass after the collection source pass when you need
+chronology for calls, meetings, briefings, summit sessions, and trip events:
+
+```bash
+node scripts/search-presidential-daily-diary.js
+```
+
+The script searches the NARA Catalog Presidential Daily Diary releases, including
+the user-supplied `2010-0083-F` query and broader NATO/European-security terms,
+then writes:
+
+- `reports/presidential-daily-diary-search.md`
+- `reports/presidential-daily-diary-search.json`
+- 40 `pdd-` context records in `data/records.json` and `data/records.js`
+
+Treat these as chronology and source-control leads. The diary can identify that
+a relevant call, meeting, briefing, or summit event happened, but it does not
+replace the memcon, telcon, briefing book, trip file, or source-image review
+needed for final FRUS selection. The current report flags Madrid and Helsinki
+summit coverage as high-risk gaps.
+
 ## Source Anchors
 
 - FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security: <https://history.state.gov/historicaldocuments/frus1993-00v17>
 - FRUS production and editorial method: <https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries>
 - FRUS 1989-1992, Volume XXXI source-note model: <https://history.state.gov/historicaldocuments/frus1989-92v31>
+- NARA Presidential Daily Diary 2010-0083-F search: <https://catalog.archives.gov/search?q=%222010-0083-F%22&collectionIdentifier=WJC*>
 - Clinton Library research guide: <https://www.clintonlibrary.gov/research/guide>
 - Clinton Digital Library finding aids: <https://clinton.presidentiallibraries.us/items/browse?collection=82&sort_dir=a&sort_field=Dublin+Core%2CIdentifier>
 - Clinton Library Memcons and Telcons: <https://www.clintonlibrary.gov/research/memcons-and-telcons>
@@ -173,6 +197,9 @@ The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level
 cross-references, State FOIA/Strobe Talbott records, NARA Catalog/Scout leads,
 and GovInfo Public Papers context.
+
+The separate Presidential Daily Diary pass adds 40 chronology context records
+for calls and meetings pertinent to Volume XVII.
 
 ## Local Preview
 

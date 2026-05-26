@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-23T13:37:09.835Z",
+  "generatedAt": "2026-05-26T02:13:51.560Z",
   "officialVolumeStatus": {
     "status": "Planned",
     "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
@@ -34,35 +34,39 @@
       "url": "https://catalog.archives.gov/"
     },
     {
+      "label": "Presidential Daily Diary 2010-0083-F and related diary releases",
+      "url": "https://catalog.archives.gov/search?q=%222010-0083-F%22&collectionIdentifier=WJC*"
+    },
+    {
       "label": "GovInfo Public Papers of the Presidents",
       "url": "https://www.govinfo.gov/app/collection/PPP"
     }
   ],
-  "recordCount": 596,
+  "recordCount": 636,
   "counts": {
     "byChapter": {
-      "NATO Strategy and Enlargement": 27,
-      "NATO-Russia and Partnership": 85,
-      "European Security Architecture": 52,
-      "Crisis Security Files": 432
+      "NATO Strategy and Enlargement": 35,
+      "NATO-Russia and Partnership": 95,
+      "European Security Architecture": 53,
+      "Crisis Security Files": 453
     },
     "byType": {
       "Scout Lead": 260,
       "Memcon": 70,
-      "Context": 66,
+      "Context": 106,
       "Telcon": 60,
       "Source Lead": 70,
       "Release Packet": 70
     },
     "byYear": {
-      "1993": 127,
-      "1994": 106,
-      "1995": 149,
-      "1996": 60,
-      "1997": 44,
-      "1998": 49,
-      "1999": 44,
-      "2000": 17
+      "1993": 130,
+      "1994": 113,
+      "1995": 154,
+      "1996": 63,
+      "1997": 45,
+      "1998": 57,
+      "1999": 54,
+      "2000": 20
     },
     "topSources": [
       [
@@ -86,6 +90,10 @@
         60
       ],
       [
+        "National Archives and Records Administration, National Archives Catalog",
+        42
+      ],
+      [
         "Clinton Library MDR release 2015-0782-M-2",
         34
       ],
@@ -99,10 +107,6 @@
       ],
       [
         "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin",
-        2
-      ],
-      [
-        "National Archives and Records Administration, National Archives Catalog",
         2
       ],
       [
@@ -122,7 +126,7 @@
         1
       ],
       [
-        "Clinton Library MDR release 2014-0546-M-Release-A",
+        "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A",
         1
       ]
     ],
@@ -132,30 +136,30 @@
       "needs-source": 134
     },
     "sourceVerifyCount": 596,
-    "declassWatchCount": 493,
+    "declassWatchCount": 533,
     "placeholderDateCount": 260
   },
   "topicCoverage": [
     {
       "id": "enlargement",
       "label": "NATO enlargement, Madrid, accession, and Senate ratification",
-      "count": 114,
+      "count": 125,
       "minimum": 80,
       "status": "covered-by-count",
       "caveat": "NATO enlargement is a core volume subject, but the current set has too few direct decision records relative to the crisis material.",
       "byType": {
         "Scout Lead": 45,
         "Memcon": 18,
-        "Context": 31,
+        "Context": 42,
         "Telcon": 5,
         "Source Lead": 13,
         "Release Packet": 2
       },
       "byChapter": {
-        "NATO Strategy and Enlargement": 27,
+        "NATO Strategy and Enlargement": 35,
         "NATO-Russia and Partnership": 8,
         "European Security Architecture": 25,
-        "Crisis Security Files": 54
+        "Crisis Security Files": 57
       },
       "sampleRecords": [
         {
@@ -180,11 +184,25 @@
           "source": "William J. Clinton Presidential Library & Museum"
         },
         {
+          "id": "pdd-17368174-19931006",
+          "date": "1993-10-06",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: meeting with NATO Secretary General Manfred Woerner",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
           "id": "nara-7388808-368557013",
           "date": "1994-01-01",
           "type": "Scout Lead",
           "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
           "source": "National Archives Catalog"
+        },
+        {
+          "id": "pdd-147870783-19940103",
+          "date": "1994-01-03",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: NATO Summit preparation meetings",
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "govinfo-PPP-1994-book1-doc-pg37",
@@ -199,36 +217,23 @@
           "type": "Telcon",
           "title": "Memorandum of Telephone Conversation with President Ulmanis of Latvia",
           "source": "William J. Clinton Presidential Library & Museum"
-        },
-        {
-          "id": "clinton-dl-101379",
-          "date": "1994-06-21",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation - President Arpad Goncz of Hungary and President Michal Kovac of Slovakia",
-          "source": "William J. Clinton Presidential Library & Museum"
-        },
-        {
-          "id": "clinton-dl-101391",
-          "date": "1994-07-04",
-          "type": "Telcon",
-          "title": "Memorandum of Telephone Conversation - President Vaclav Havel of the Czech Republic",
-          "source": "William J. Clinton Presidential Library & Museum"
         }
       ]
     },
     {
       "id": "pfp",
       "label": "Partnership for Peace and NATO partnership policy",
-      "count": 49,
+      "count": 50,
       "minimum": 30,
       "status": "covered-by-count",
       "caveat": "Partnership for Peace appears mostly as context inside crisis or Russia records; it needs a dedicated policy-document search.",
       "byType": {
         "Scout Lead": 43,
+        "Context": 1,
         "Memcon": 6
       },
       "byChapter": {
-        "NATO Strategy and Enlargement": 1,
+        "NATO Strategy and Enlargement": 2,
         "NATO-Russia and Partnership": 1,
         "Crisis Security Files": 47
       },
@@ -239,6 +244,13 @@
           "type": "Scout Lead",
           "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
           "source": "National Archives Catalog"
+        },
+        {
+          "id": "pdd-147870783-19940103",
+          "date": "1994-01-03",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: NATO Summit preparation meetings",
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "clinton-dl-101354",
@@ -281,35 +293,28 @@
           "type": "Scout Lead",
           "title": "Bosnia - Letters [1]",
           "source": "National Archives Catalog"
-        },
-        {
-          "id": "nara-scout-40482461",
-          "date": "1993-01-01",
-          "type": "Scout Lead",
-          "title": "Bosnia - Letters [3]",
-          "source": "National Archives Catalog"
         }
       ]
     },
     {
       "id": "nato_russia",
       "label": "NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin",
-      "count": 175,
+      "count": 191,
       "minimum": 90,
       "status": "covered-by-count",
       "caveat": "The count is adequate, but many records are cross-references or crisis files; direct NATO-Russia negotiation files need prioritization.",
       "byType": {
         "Scout Lead": 57,
+        "Context": 18,
         "Source Lead": 49,
         "Memcon": 31,
         "Telcon": 34,
-        "Context": 2,
         "Release Packet": 2
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 85,
+        "NATO-Russia and Partnership": 95,
         "European Security Architecture": 4,
-        "Crisis Security Files": 86
+        "Crisis Security Files": 92
       },
       "sampleRecords": [
         {
@@ -341,6 +346,13 @@
           "source": "National Archives Catalog"
         },
         {
+          "id": "pdd-147870749-19930324",
+          "date": "1993-03-24",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: meeting with Russian Foreign Minister Andrey Kozyrev",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
           "id": "strobe-C09000054",
           "date": "1993-04-28",
           "type": "Source Lead",
@@ -360,20 +372,13 @@
           "type": "Memcon",
           "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
           "source": "William J. Clinton Presidential Library & Museum"
-        },
-        {
-          "id": "clinton-dl-101393",
-          "date": "1994-01-11",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation - President Vaclav Havel of the Czech Republic and Czech Leaders",
-          "source": "William J. Clinton Presidential Library & Museum"
         }
       ]
     },
     {
       "id": "bosnia",
       "label": "Bosnia, Dayton, IFOR, and SFOR",
-      "count": 417,
+      "count": 430,
       "minimum": 80,
       "status": "covered-by-count",
       "caveat": "Bosnia is overrepresented relative to the rest of the volume; the risk is crowding out enlargement and architecture files.",
@@ -381,13 +386,13 @@
         "Memcon": 41,
         "Telcon": 48,
         "Scout Lead": 238,
-        "Context": 20,
+        "Context": 33,
         "Release Packet": 67,
         "Source Lead": 3
       },
       "byChapter": {
         "NATO-Russia and Partnership": 28,
-        "Crisis Security Files": 389
+        "Crisis Security Files": 402
       },
       "sampleRecords": [
         {
@@ -451,7 +456,7 @@
     {
       "id": "kosovo",
       "label": "Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy",
-      "count": 340,
+      "count": 350,
       "minimum": 70,
       "status": "covered-by-count",
       "caveat": "Kosovo has enough leads, but needs document-level extraction and sorting by Washington time.",
@@ -459,13 +464,13 @@
         "Memcon": 23,
         "Telcon": 32,
         "Scout Lead": 245,
-        "Context": 27,
+        "Context": 37,
         "Release Packet": 1,
         "Source Lead": 12
       },
       "byChapter": {
         "NATO-Russia and Partnership": 28,
-        "Crisis Security Files": 312
+        "Crisis Security Files": 322
       },
       "sampleRecords": [
         {
@@ -529,19 +534,20 @@
     {
       "id": "osce",
       "label": "OSCE/CSCE",
-      "count": 99,
+      "count": 102,
       "minimum": 35,
       "status": "covered-by-count",
       "caveat": "OSCE/CSCE appears in source leads, but direct decision records are thin.",
       "byType": {
         "Source Lead": 10,
+        "Context": 3,
         "Scout Lead": 88,
         "Memcon": 1
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 4,
-        "European Security Architecture": 10,
-        "Crisis Security Files": 85
+        "NATO-Russia and Partnership": 5,
+        "European Security Architecture": 11,
+        "Crisis Security Files": 86
       },
       "sampleRecords": [
         {
@@ -573,6 +579,13 @@
           "source": "Department of State FOIA Virtual Reading Room"
         },
         {
+          "id": "pdd-17368195-19991118",
+          "date": "1999-11-18",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: OSCE Istanbul Summit and bilateral meeting with Yeltsin",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
           "id": "nara-7388808-147873393",
           "date": "1993-01-01",
           "type": "Scout Lead",
@@ -592,29 +605,24 @@
           "type": "Scout Lead",
           "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [2]",
           "source": "National Archives Catalog"
-        },
-        {
-          "id": "nara-scout-147873137",
-          "date": "1994-01-01",
-          "type": "Scout Lead",
-          "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [5]",
-          "source": "National Archives Catalog"
         }
       ]
     },
     {
       "id": "cfe",
       "label": "CFE and conventional forces",
-      "count": 4,
+      "count": 6,
       "minimum": 20,
       "status": "gap",
       "caveat": "CFE is materially undercovered for a European security volume.",
       "byType": {
         "Source Lead": 3,
+        "Context": 2,
         "Memcon": 1
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 3,
+        "NATO-Russia and Partnership": 4,
+        "European Security Architecture": 1,
         "Crisis Security Files": 1
       },
       "sampleRecords": [
@@ -640,6 +648,20 @@
           "source": "Department of State FOIA Virtual Reading Room"
         },
         {
+          "id": "pdd-17368195-19991118",
+          "date": "1999-11-18",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: OSCE Istanbul Summit and bilateral meeting with Yeltsin",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
+          "id": "pdd-147870987-19991119",
+          "date": "1999-11-19",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: CFE Treaty signing at Istanbul",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
           "id": "balkans-yeltsin-1995-10-23-hyde-park-one-on-one",
           "date": "1995-10-23",
           "type": "Memcon",
@@ -651,18 +673,19 @@
     {
       "id": "nac_usnato",
       "label": "NAC, USNATO, and North Atlantic Council traffic",
-      "count": 5,
+      "count": 6,
       "minimum": 25,
       "status": "gap",
       "caveat": "USNATO/NAC traffic is almost absent; this is a high-risk source gap for NATO institutional decision-making.",
       "byType": {
         "Source Lead": 2,
         "Telcon": 1,
-        "Memcon": 2
+        "Memcon": 2,
+        "Context": 1
       },
       "byChapter": {
         "NATO-Russia and Partnership": 1,
-        "Crisis Security Files": 4
+        "Crisis Security Files": 5
       },
       "sampleRecords": [
         {
@@ -699,28 +722,57 @@
           "type": "Memcon",
           "title": "Memorandum of Conversation with NATO Secretary General Javier Solana",
           "source": "William J. Clinton Presidential Library & Museum"
+        },
+        {
+          "id": "pdd-147870961-19990423",
+          "date": "1999-04-23",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: NATO 50th Anniversary Summit weekend",
+          "source": "National Archives and Records Administration, National Archives Catalog"
         }
       ]
     },
     {
       "id": "solana",
       "label": "NATO Secretary General Solana/Claes and alliance leadership",
-      "count": 21,
+      "count": 30,
       "minimum": 25,
-      "status": "gap",
+      "status": "covered-by-count",
       "caveat": "Alliance leadership contacts are underrepresented.",
       "byType": {
+        "Context": 14,
         "Source Lead": 4,
-        "Context": 5,
         "Telcon": 4,
         "Memcon": 8
       },
       "byChapter": {
+        "NATO Strategy and Enlargement": 3,
         "NATO-Russia and Partnership": 1,
         "European Security Architecture": 9,
-        "Crisis Security Files": 11
+        "Crisis Security Files": 17
       },
       "sampleRecords": [
+        {
+          "id": "pdd-17368174-19931006",
+          "date": "1993-10-06",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: meeting with NATO Secretary General Manfred Woerner",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
+          "id": "pdd-17368179-19950307",
+          "date": "1995-03-07",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: meeting with U.S. and NATO officials",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
+        {
+          "id": "pdd-147870915-19980508",
+          "date": "1998-05-08",
+          "type": "Context",
+          "title": "Presidential Daily Diary reference: calls with Javier Solana and Vaclav Havel",
+          "source": "National Archives and Records Administration, National Archives Catalog"
+        },
         {
           "id": "strobe-C09000076",
           "date": "1997-05-19",
@@ -754,27 +806,6 @@
           "date": "1998-02-15",
           "type": "Source Lead",
           "title": "February 15, 1998 Note From Strobe Talbott To Amb. Grossman",
-          "source": "Department of State FOIA Virtual Reading Room"
-        },
-        {
-          "id": "clinton-dl-118889",
-          "date": "1998-05-02",
-          "type": "Telcon",
-          "title": "Memorandum of Telephone conversation with NATO Secretary General Solana",
-          "source": "William J. Clinton Presidential Library & Museum"
-        },
-        {
-          "id": "govinfo-PPP-1999-book1-doc-pg372",
-          "date": "1999-03-15",
-          "type": "Context",
-          "title": "Remarks Prior to Discussions With NATO Secretary General Javier Solana and an Exchange With Reporters",
-          "source": "Government Publishing Office, GovInfo"
-        },
-        {
-          "id": "strobe-C09000029",
-          "date": "1999-04-22",
-          "type": "Source Lead",
-          "title": "Meeting with NATO Secretary General Javier Solana",
           "source": "Department of State FOIA Virtual Reading Room"
         }
       ]
@@ -863,7 +894,7 @@
       "id": "lane-imbalance",
       "severity": "high",
       "finding": "Crisis Security Files dominate the set.",
-      "evidence": "432 of 596 records are in the crisis lane.",
+      "evidence": "453 of 636 records are in the crisis lane.",
       "action": "Run targeted enlargement, NATO-Russia institutional, USNATO/NAC, CFE, and NATO-EU searches before using this as a selection base."
     },
     {
@@ -877,28 +908,28 @@
       "id": "source-note-risk",
       "severity": "high",
       "finding": "Source-note and declassification details remain draft-level.",
-      "evidence": "134 records fail the source-note gate; 596 records carry verify/pending language; 493 records remain on declassification watch.",
+      "evidence": "134 records fail the source-note gate; 596 records carry verify/pending language; 533 records remain on declassification watch.",
       "action": "Prioritize source-note completion for include candidates before expanding the corpus."
     },
     {
       "id": "institutional-nato-gap",
       "severity": "high",
       "finding": "NAC/USNATO traffic is underrepresented.",
-      "evidence": "5 records match NAC/USNATO terms.",
+      "evidence": "6 records match NAC/USNATO terms.",
       "action": "Search USNATO, North Atlantic Council, S/S-S, EUR/RPM, NATO Mission, and cable traffic sources."
     },
     {
       "id": "architecture-gap",
       "severity": "medium",
       "finding": "CFE and architecture records are thin.",
-      "evidence": "4 CFE matches; 52 architecture-lane records.",
+      "evidence": "6 CFE matches; 53 architecture-lane records.",
       "action": "Run a specific CFE/OSCE/NATO-EU architecture pass rather than relying on broad Europe searches."
     },
     {
       "id": "late-period-gap",
       "severity": "medium",
       "finding": "1997-2000 coverage is sparse relative to 1993-1995.",
-      "evidence": "1997: 44, 1998: 49, 1999: 44, 2000: 17.",
+      "evidence": "1997: 45, 1998: 57, 1999: 54, 2000: 20.",
       "action": "Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, and 2000 transition searches."
     }
   ],

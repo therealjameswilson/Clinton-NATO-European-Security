@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T15:43:38.943Z",
+  "generatedAt": "2026-05-26T02:13:12.854Z",
   "model": [
     {
       "label": "FRUS 1989-1992, Volume XXXI, Document 1",
@@ -19,10 +19,11 @@
   ],
   "styleRule": "Keep the displayed first footnote as a Source sentence only: repository and collection path first, exact folder/item identifier next, then classification/handling and document-context details when verified. Keep compiler warnings outside the Source sentence.",
   "counts": {
-    "total": 596,
+    "total": 636,
     "bySource": {
       "National Archives Catalog": 260,
       "William J. Clinton Presidential Library & Museum": 60,
+      "National Archives and Records Administration, National Archives Catalog": 42,
       "Government Publishing Office, GovInfo": 66,
       "Department of State FOIA Virtual Reading Room": 69,
       "Clinton Library MDR release 2015-0782-M-1": 2,
@@ -34,19 +35,18 @@
       "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin": 2,
       "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation": 1,
       "Department of State, FOIA Virtual Reading Room": 11,
-      "National Archives and Records Administration, National Archives Catalog": 2,
       "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A": 1
     },
     "byType": {
       "Scout Lead": 260,
       "Memcon": 70,
-      "Context": 66,
+      "Context": 106,
       "Telcon": 60,
       "Source Lead": 70,
       "Release Packet": 70
     },
-    "startsWithSource": 596,
-    "sourcePathPresent": 596,
+    "startsWithSource": 636,
+    "sourcePathPresent": 636,
     "sourceNotesWithRawUrls": 0,
     "sourceNotesWithProductionLanguage": 0,
     "reviewNotesWithProductionLanguage": 530,

@@ -39,6 +39,10 @@ const SOURCE_BASIS = [
     url: "https://catalog.archives.gov/"
   },
   {
+    label: "Presidential Daily Diary 2010-0083-F and related diary releases",
+    url: "https://catalog.archives.gov/search?q=%222010-0083-F%22&collectionIdentifier=WJC*"
+  },
+  {
     label: "GovInfo Public Papers of the Presidents",
     url: "https://www.govinfo.gov/app/collection/PPP"
   }

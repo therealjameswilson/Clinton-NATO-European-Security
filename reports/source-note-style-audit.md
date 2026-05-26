@@ -1,6 +1,6 @@
 # Source Note Style Audit
 
-Generated: 2026-05-25T15:43:38.943Z
+Generated: 2026-05-26T02:13:12.854Z
 
 ## FRUS Model
 
@@ -14,9 +14,9 @@ Keep the displayed first footnote as a Source sentence only: repository and coll
 
 ## Counts
 
-- Records audited: 596
-- Notes beginning with `Source:`: 596
-- Notes with a repository/path shape: 596
+- Records audited: 636
+- Notes beginning with `Source:`: 636
+- Notes with a repository/path shape: 636
 - Raw URLs inside displayed Source note: 0
 - Production language inside displayed Source note: 0
 - Production review notes kept outside Source note: 530

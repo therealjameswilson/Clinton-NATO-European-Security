@@ -304,6 +304,109 @@
     ]
   },
   {
+    "id": "pdd-17368174-19931006",
+    "date": "1993-10-06",
+    "sortDate": "1993-10-06",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting with NATO Secretary General Manfred Woerner",
+    "documentTitle": "Presidential Daily Diary reference: meeting with NATO Secretary General Manfred Woerner",
+    "participants": [
+      "Bill Clinton",
+      "Manfred Woerner"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368174",
+    "catalogUrl": "https://catalog.archives.gov/id/17368174",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_001/42-t-7262157-20100083F-001-005-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 83,
+    "dateLine": "1993-10-06",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a late-morning Oval Office meeting with NATO Secretary General Manfred Woerner.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93], NAID 17368174, Unclassified diary record. Source pages: page 5.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 5",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368174",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/74/3681/17368174/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_001/42-t-7262157-20100083F-001-005-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368174",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/93; 10/11/93; 10/18/93; 10/26/93; 11/6/93; 11/17/93; 11/18/93; 11/30/93]",
+        "NAID 17368174",
+        "page 5"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Manfred Woerner"
+    ],
+    "compilerNotes": [
+      "High-priority NATO lead; chase memcon, briefing book, and NSC European Affairs prep/follow-up files.",
+      "The diary records a late-morning Oval Office meeting with NATO Secretary General Manfred Woerner."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368174"
+    ]
+  },
+  {
     "id": "nara-7388808-368557013",
     "date": "1994-01-01",
     "sortDate": "1994-01-01",
@@ -399,6 +502,116 @@
     ],
     "relatedReleaseIds": [
       368557013
+    ]
+  },
+  {
+    "id": "pdd-147870783-19940103",
+    "date": "1994-01-03",
+    "sortDate": "1994-01-03",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO Summit preparation meetings",
+    "documentTitle": "Presidential Daily Diary reference: NATO Summit preparation meetings",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Anthony Lake",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870783",
+    "catalogUrl": "https://catalog.archives.gov/id/147870783",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-006-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-01-03",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records morning and afternoon meetings to prepare for the NATO Summit in Europe, including a Joint Chiefs of Staff session and an administration-policy session.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [01/01/1994-01/15/1994], NAID 147870783, Unclassified diary record. Source pages: pages 18 and 21.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 18 and 21",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870783",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-006-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870783",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[01/01/1994-01/15/1994]",
+        "NAID 147870783",
+        "pages 18 and 21"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "Partnership for Peace"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "Partnership for Peace"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "Partnership for Peace"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Anthony Lake",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use to structure the January 1994 NATO summit lead-up and target NSC/JCS preparatory material.",
+      "The diary records morning and afternoon meetings to prepare for the NATO Summit in Europe, including a Joint Chiefs of Staff session and an administration-policy session."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870783"
     ]
   },
   {
@@ -1333,6 +1546,113 @@
     ]
   },
   {
+    "id": "pdd-17368179-19950307",
+    "date": "1995-03-07",
+    "sortDate": "1995-03-07",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting with U.S. and NATO officials",
+    "documentTitle": "Presidential Daily Diary reference: meeting with U.S. and NATO officials",
+    "participants": [
+      "Bill Clinton",
+      "Willy Claes",
+      "Robert Hunter",
+      "Sandy Vershbow"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368179",
+    "catalogUrl": "https://catalog.archives.gov/id/17368179",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_001/42-t-7262157-20100083F-001-010-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 91,
+    "dateLine": "1995-03-07",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting with U.S. and NATO officials; the appendix lists Willy Claes, Robert Hunter, John Kornblum, Sandy Vershbow, and NATO staff.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95], NAID 17368179, Unclassified diary record. Source pages: pages 65 and 70.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 65 and 70",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368179",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/79/3681/17368179/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_001/42-t-7262157-20100083F-001-010-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368179",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy  1/9/95; 1/22/95; 1/26/95; 2/4/95; 2/8/95; 3/13/95; 3/13/95]",
+        "NAID 17368179",
+        "pages 65 and 70"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "NATO enlargement"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Willy Claes",
+      "Robert Hunter",
+      "Sandy Vershbow"
+    ],
+    "compilerNotes": [
+      "High-priority NATO institutional lead; chase memcon and briefing materials around Claes visit.",
+      "The diary records a meeting with U.S. and NATO officials; the appendix lists Willy Claes, Robert Hunter, John Kornblum, Sandy Vershbow, and NATO staff."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368179"
+    ]
+  },
+  {
     "id": "clinton-dl-101418",
     "date": "1995-06-06",
     "sortDate": "1995-06-06",
@@ -1841,6 +2161,113 @@
     ]
   },
   {
+    "id": "pdd-147870887-19970703",
+    "date": "1997-07-03",
+    "sortDate": "1997-07-03",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: pre-Madrid conference call with Helmut Kohl",
+    "documentTitle": "Presidential Daily Diary reference: pre-Madrid conference call with Helmut Kohl",
+    "participants": [
+      "Bill Clinton",
+      "Helmut Kohl"
+    ],
+    "countries": [
+      "United States",
+      "Germany",
+      "Spain"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870887",
+    "catalogUrl": "https://catalog.archives.gov/id/147870887",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-007-017-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1997-07-03",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a conference call with German Chancellor Helmut Kohl days before the Madrid NATO Summit.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [07/01/1997-07/31/1997], NAID 147870887, Unclassified diary record. Source pages: page 8.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 8",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870887",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-007-017-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870887",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[07/01/1997-07/31/1997]",
+        "NAID 147870887",
+        "page 8"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO enlargement",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "NATO enlargement",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "NATO enlargement",
+      "NATO Strategy",
+      "Germany",
+      "Spain"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Helmut Kohl"
+    ],
+    "compilerNotes": [
+      "Use as a Madrid/NATO-enlargement chronology lead; formal Madrid summit sessions remain a release gap in this diary pass.",
+      "The diary records a conference call with German Chancellor Helmut Kohl days before the Madrid NATO Summit."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870887"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1997-book2-doc-pg941",
     "date": "1997-07-10",
     "sortDate": "1997-07-10",
@@ -2127,6 +2554,228 @@
     ]
   },
   {
+    "id": "pdd-147870909-19980325",
+    "date": "1998-03-25",
+    "sortDate": "1998-03-25",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO enlargement ratification briefing and remarks",
+    "documentTitle": "Presidential Daily Diary reference: NATO enlargement ratification briefing and remarks",
+    "participants": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "Henry Shelton",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870909",
+    "catalogUrl": "https://catalog.archives.gov/id/147870909",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-008-011-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1998-03-25",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a briefing on the Senate's upcoming NATO enlargement ratification vote and remarks on enlargement.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [03/15/1998-03/31/1998], NAID 147870909, Unclassified diary record. Source pages: pages 52-53.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 52-53",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870909",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-008-011-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870909",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[03/15/1998-03/31/1998]",
+        "NAID 147870909",
+        "pages 52-53"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO enlargement"
+    ],
+    "topics": [
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "NATO enlargement",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "Henry Shelton",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use to align Senate-ratification records, public papers, and NSC congressional strategy files.",
+      "The diary records a briefing on the Senate's upcoming NATO enlargement ratification vote and remarks on enlargement."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870909"
+    ]
+  },
+  {
+    "id": "pdd-147870913-19980430",
+    "date": "1998-04-30",
+    "sortDate": "1998-04-30",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: bipartisan support meeting for NATO enlargement",
+    "documentTitle": "Presidential Daily Diary reference: bipartisan support meeting for NATO enlargement",
+    "participants": [
+      "Bill Clinton",
+      "Al Gore",
+      "Trent Lott",
+      "Thomas Daschle",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870913",
+    "catalogUrl": "https://catalog.archives.gov/id/147870913",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-002-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1998-04-30",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting on bipartisan support for NATO enlargement with Gore, Lott, Daschle, Bowles, Berger, Podesta, and others.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [04/15/1998-04/30/1998], NAID 147870913, Unclassified diary record. Source pages: page 81.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 81",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870913",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-002-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870913",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[04/15/1998-04/30/1998]",
+        "NAID 147870913",
+        "page 81"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO enlargement"
+    ],
+    "topics": [
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "NATO enlargement",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Al Gore",
+      "Trent Lott",
+      "Thomas Daschle",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use to fill the domestic strategy side of NATO enlargement ratification.",
+      "The diary records a meeting on bipartisan support for NATO enlargement with Gore, Lott, Daschle, Bowles, Berger, Podesta, and others."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870913"
+    ]
+  },
+  {
     "id": "strobe-C09000053",
     "date": "1998-05-05",
     "sortDate": "1998-05-05",
@@ -2216,6 +2865,223 @@
       "Strobe Talbott FOIA candidate. Rationale: high-level contact signal: PRIME MINISTER; document form signal: MEETING WITH, YOUR MEETING; topic signal: Western Europe Bilateral (ITALIAN)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870915-19980508",
+    "date": "1998-05-08",
+    "sortDate": "1998-05-08",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: calls with Javier Solana and Vaclav Havel",
+    "documentTitle": "Presidential Daily Diary reference: calls with Javier Solana and Vaclav Havel",
+    "participants": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Vaclav Havel"
+    ],
+    "countries": [
+      "United States",
+      "Czech Republic"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870915",
+    "catalogUrl": "https://catalog.archives.gov/id/147870915",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-003-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1998-05-08",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a conference call with NATO Secretary General Javier Solana and a later call with Czech President Vaclav Havel.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [05/01/1998-05/15/1998], NAID 147870915, Unclassified diary record. Source pages: pages 11 and 13.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 11 and 13",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870915",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-003-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870915",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[05/01/1998-05/15/1998]",
+        "NAID 147870915",
+        "pages 11 and 13"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO enlargement",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "NATO enlargement",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "NATO enlargement",
+      "NATO Strategy",
+      "Czech Republic"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Vaclav Havel"
+    ],
+    "compilerNotes": [
+      "Use as a NATO enlargement/accession lead; chase telcon records.",
+      "The diary records a conference call with NATO Secretary General Javier Solana and a later call with Czech President Vaclav Havel."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870915"
+    ]
+  },
+  {
+    "id": "pdd-17368188-19980512",
+    "date": "1998-05-12",
+    "sortDate": "1998-05-12",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO accession ratification ceremony",
+    "documentTitle": "Presidential Daily Diary reference: NATO accession ratification ceremony",
+    "participants": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "William Cohen",
+      "Joseph Ralston"
+    ],
+    "countries": [
+      "United States",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368188",
+    "catalogUrl": "https://catalog.archives.gov/id/17368188",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/88/3681/17368188/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-006-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 62,
+    "dateLine": "1998-05-12",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a briefing and ceremony to sign the instruments of ratification for Poland, Hungary, and the Czech Republic to join NATO.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 5/3/98; 5/21/98; 5/22/98; 5/24/98; 6/3/98; 6/11/98; 6/21/98], NAID 17368188, Unclassified diary record. Source pages: pages 12-13.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 12-13",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368188",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/88/3681/17368188/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-006-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368188",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 5/3/98; 5/21/98; 5/22/98; 5/24/98; 6/3/98; 6/11/98; 6/21/98]",
+        "NAID 17368188",
+        "pages 12-13"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO enlargement"
+    ],
+    "topics": [
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "NATO enlargement",
+      "Poland",
+      "Czech Republic",
+      "Hungary"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "William Cohen",
+      "Joseph Ralston"
+    ],
+    "compilerNotes": [
+      "Use as the public/action chronology for accession ratification; pair with treaty, Senate, and NSC records.",
+      "The diary records a briefing and ceremony to sign the instruments of ratification for Poland, Hungary, and the Czech Republic to join NATO."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368188"
+    ]
   },
   {
     "id": "clinton-dl-118917",
@@ -3098,6 +3964,115 @@
     ]
   },
   {
+    "id": "pdd-147870749-19930324",
+    "date": "1993-03-24",
+    "sortDate": "1993-03-24",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting with Russian Foreign Minister Andrey Kozyrev",
+    "documentTitle": "Presidential Daily Diary reference: meeting with Russian Foreign Minister Andrey Kozyrev",
+    "participants": [
+      "Bill Clinton",
+      "Andrey Kozyrev",
+      "Warren Christopher",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870749",
+    "catalogUrl": "https://catalog.archives.gov/id/147870749",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-001-005-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1993-03-24",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a White House meeting with Russian Foreign Minister Andrey Kozyrev, joined by Gore, Christopher, Talbott, Lake, Gati, Lukin, and interpreters.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [03/15/1993-03/31/1993], NAID 147870749, Unclassified diary record. Source pages: page 89.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 89",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870749",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-001-005-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870749",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[03/15/1993-03/31/1993]",
+        "NAID 147870749",
+        "page 89"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Andrey Kozyrev",
+      "Warren Christopher",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Use as an early Clinton-era Russia/European security chronology anchor and to chase any substantive memcon.",
+      "The diary records a White House meeting with Russian Foreign Minister Andrey Kozyrev, joined by Gore, Christopher, Talbott, Lake, Gati, Lukin, and interpreters."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870749"
+    ]
+  },
+  {
     "id": "strobe-C09000054",
     "date": "1993-04-28",
     "sortDate": "1993-04-28",
@@ -3438,6 +4413,111 @@
     ]
   },
   {
+    "id": "pdd-147870769-19930929",
+    "date": "1993-09-29",
+    "sortDate": "1993-09-29",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting with Russian Foreign Minister Andrey Kozyrev",
+    "documentTitle": "Presidential Daily Diary reference: meeting with Russian Foreign Minister Andrey Kozyrev",
+    "participants": [
+      "Bill Clinton",
+      "Andrey Kozyrev"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870769",
+    "catalogUrl": "https://catalog.archives.gov/id/147870769",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-002-007-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1993-09-29",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records an afternoon White House meeting with Russian Foreign Minister Andrey Kozyrev.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [09/16/1993-09/30/1993], NAID 147870769, Unclassified diary record. Source pages: page 90.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 90",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870769",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-002-007-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870769",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[09/16/1993-09/30/1993]",
+        "NAID 147870769",
+        "page 90"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Andrey Kozyrev"
+    ],
+    "compilerNotes": [
+      "Use to flag a likely source trail for Russia policy immediately before the October 1993 NATO contact.",
+      "The diary records an afternoon White House meeting with Russian Foreign Minister Andrey Kozyrev."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870769"
+    ]
+  },
+  {
     "id": "clinton-dl-101393",
     "date": "1994-01-11",
     "sortDate": "1994-01-11",
@@ -3555,6 +4635,115 @@
     ],
     "relatedReleaseIds": [
       "101393"
+    ]
+  },
+  {
+    "id": "pdd-147870783-19940114",
+    "date": "1994-01-14",
+    "sortDate": "1994-01-14",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: denuclearization signing with Yeltsin and Kravchuk",
+    "documentTitle": "Presidential Daily Diary reference: denuclearization signing with Yeltsin and Kravchuk",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Leonid Kravchuk"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Ukraine"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870783",
+    "catalogUrl": "https://catalog.archives.gov/id/147870783",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-006-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-01-14",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records Clinton participating in the Moscow signing ceremony for denuclearization agreements with Boris Yeltsin and Leonid Kravchuk.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [01/01/1994-01/15/1994], NAID 147870783, Unclassified diary record. Source pages: page 68.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 68",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870783",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-006-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870783",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[01/01/1994-01/15/1994]",
+        "NAID 147870783",
+        "page 68"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia",
+      "Ukraine"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Leonid Kravchuk"
+    ],
+    "compilerNotes": [
+      "Context for the Russia/Ukraine security architecture surrounding the January 1994 European trip.",
+      "The diary records Clinton participating in the Moscow signing ceremony for denuclearization agreements with Boris Yeltsin and Leonid Kravchuk."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870783"
     ]
   },
   {
@@ -4253,6 +5442,220 @@
       "Strobe Talbott FOIA candidate. Rationale: high-level contact signal: PRESIDENT; document form signal: LETTER FROM STROBE; topic signal: Russia-NATO Cross-Reference (RUSSIA, RUSSIAN)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870833-19950510",
+    "date": "1995-05-10",
+    "sortDate": "1995-05-10",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Moscow meetings and luncheon with Yeltsin",
+    "documentTitle": "Presidential Daily Diary reference: Moscow meetings and luncheon with Yeltsin",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Strobe Talbott",
+      "Anthony Lake"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870833",
+    "catalogUrl": "https://catalog.archives.gov/id/147870833",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-003-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1995-05-10",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records Clinton's Moscow briefing, Kremlin meetings with Yeltsin, and a private luncheon hosted by Yeltsin.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [05/01/1995-05/14/1995], NAID 147870833, Unclassified diary record. Source pages: pages 67-73.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 67-73",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870833",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-003-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870833",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[05/01/1995-05/14/1995]",
+        "NAID 147870833",
+        "pages 67-73"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Strobe Talbott",
+      "Anthony Lake"
+    ],
+    "compilerNotes": [
+      "Use for NATO-Russia and broader European security context; chase the Moscow summit memoranda.",
+      "The diary records Clinton's Moscow briefing, Kremlin meetings with Yeltsin, and a private luncheon hosted by Yeltsin."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870833"
+    ]
+  },
+  {
+    "id": "pdd-147870853-19960223",
+    "date": "1996-02-23",
+    "sortDate": "1996-02-23",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: conference call with Boris Yeltsin",
+    "documentTitle": "Presidential Daily Diary reference: conference call with Boris Yeltsin",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870853",
+    "catalogUrl": "https://catalog.archives.gov/id/147870853",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-013-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1996-02-23",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records an attempted Yeltsin call followed by a completed conference call with Yeltsin and NSC/Situation Room participants.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [02/01/1996-02/29/1996], NAID 147870853, Unclassified diary record. Source pages: page 36.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 36",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870853",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-013-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870853",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[02/01/1996-02/29/1996]",
+        "NAID 147870853",
+        "page 36"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "compilerNotes": [
+      "Use as a NATO-Russia consultation lead; verify substantive topic in telcon text.",
+      "The diary records an attempted Yeltsin call followed by a completed conference call with Yeltsin and NSC/Situation Room participants."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870853"
+    ]
   },
   {
     "id": "strobe-C09000077",
@@ -10254,6 +11657,115 @@
     ]
   },
   {
+    "id": "pdd-17368189-19980902",
+    "date": "1998-09-02",
+    "sortDate": "1998-09-02",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Moscow meeting with Yeltsin and common-security signing",
+    "documentTitle": "Presidential Daily Diary reference: Moscow meeting with Yeltsin and common-security signing",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Madeleine Albright",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368189",
+    "catalogUrl": "https://catalog.archives.gov/id/17368189",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/89/3681/17368189/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-007-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 92,
+    "dateLine": "1998-09-02",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a Kremlin meeting with Yeltsin, a signing ceremony for documents on common security at the threshold of the 21st century, and a joint news conference.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 7/7/98; 7/17/98; 7/19/98; 7/29/98; 8/1/98; 8/3/98; 8/21/98; 8/30/98; 9/2/98; 9/15/98; 9/18/98; 9/26/98], NAID 17368189, Unclassified diary record. Source pages: pages 57-58.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 57-58",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368189",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/89/3681/17368189/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-007-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368189",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/7/98; 7/17/98; 7/19/98; 7/29/98; 8/1/98; 8/3/98; 8/21/98; 8/30/98; 9/2/98; 9/15/98; 9/18/98; 9/26/98]",
+        "NAID 17368189",
+        "pages 57-58"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Madeleine Albright",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Use as a high-priority NATO-Russia/common security lead; chase summit memoranda and signed-document files.",
+      "The diary records a Kremlin meeting with Yeltsin, a signing ceremony for documents on common security at the threshold of the 21st century, and a joint news conference."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368189"
+    ]
+  },
+  {
     "id": "russia-cross-contact-1998-09-12-telcon-64",
     "date": "1998-09-12",
     "sortDate": "1998-09-12",
@@ -11166,6 +12678,122 @@
     "relatedReleaseIds": []
   },
   {
+    "id": "pdd-17368195-19991118",
+    "date": "1999-11-18",
+    "sortDate": "1999-11-18",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: OSCE Istanbul Summit and bilateral meeting with Yeltsin",
+    "documentTitle": "Presidential Daily Diary reference: OSCE Istanbul Summit and bilateral meeting with Yeltsin",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Madeleine Albright",
+      "James Steinberg",
+      "Antony Blinken"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Turkey"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368195",
+    "catalogUrl": "https://catalog.archives.gov/id/17368195",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/95/3681/17368195/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-012-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 77,
+    "dateLine": "1999-11-18",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records the OSCE Istanbul Summit program and a bilateral meeting with Boris Yeltsin; the appendix lists the U.S. and Russian participants.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/99; 10/11/99; 10/18/99; 10/28/99; 11/6/99; 10/11/99; 10/18/99; 10/28/99; 11/6/99; 11/17/99; 11/18/99; 11/30/99], NAID 17368195, Unclassified diary record. Source pages: pages 51-59.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 51-59",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368195",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/95/3681/17368195/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-012-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368195",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 10/6/99; 10/11/99; 10/18/99; 10/28/99; 11/6/99; 10/11/99; 10/18/99; 10/28/99; 11/6/99; 11/17/99; 11/18/99; 11/30/99]",
+        "NAID 17368195",
+        "pages 51-59"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "CFE"
+    ],
+    "topics": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "CFE"
+    ],
+    "indexTerms": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "CFE",
+      "Russia",
+      "Turkey"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Madeleine Albright",
+      "James Steinberg",
+      "Antony Blinken"
+    ],
+    "compilerNotes": [
+      "Use as an OSCE/CFE/NATO-Russia architecture lead; chase summit memcons and Istanbul files.",
+      "The diary records the OSCE Istanbul Summit program and a bilateral meeting with Boris Yeltsin; the appendix lists the U.S. and Russian participants."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368195"
+    ]
+  },
+  {
     "id": "clinton-dl-101582",
     "date": "1999-11-19",
     "sortDate": "1999-11-19",
@@ -11463,6 +13091,121 @@
     "relatedReleaseIds": []
   },
   {
+    "id": "pdd-147871021-20000603",
+    "date": "2000-06-03",
+    "sortDate": "2000-06-03",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Moscow meetings and dinner with Vladimir Putin",
+    "documentTitle": "Presidential Daily Diary reference: Moscow meetings and dinner with Vladimir Putin",
+    "participants": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott",
+      "Madeleine Albright",
+      "Samuel Berger",
+      "Igor Ivanov",
+      "Georgy Mamedov"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147871021",
+    "catalogUrl": "https://catalog.archives.gov/id/147871021",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-013-011-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "2000-06-03",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records Clinton's Moscow arrival, dinner with Vladimir Putin, the June 4 Putin meeting, expanded U.S.-Russian sessions, a Kremlin walk, and a joint news conference.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [06/01/2000-06/11/2000], NAID 147871021, Unclassified diary record. Source pages: pages 22-35.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 22-35",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147871021",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-013-011-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147871021",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[06/01/2000-06/11/2000]",
+        "NAID 147871021",
+        "pages 22-35"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott",
+      "Madeleine Albright",
+      "Samuel Berger",
+      "Igor Ivanov",
+      "Georgy Mamedov"
+    ],
+    "compilerNotes": [
+      "Use as late-volume NATO-Russia and strategic-stability context; chase Moscow summit memoranda.",
+      "The diary records Clinton's Moscow arrival, dinner with Vladimir Putin, the June 4 Putin meeting, expanded U.S.-Russian sessions, a Kremlin walk, and a joint news conference."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147871021"
+    ]
+  },
+  {
     "id": "strobe-C09000055",
     "date": "2000-06-04",
     "sortDate": "2000-06-04",
@@ -11651,6 +13394,226 @@
       "Strobe Talbott FOIA candidate. Rationale: document form signal: NOTE FROM STROBE; topic signal: NATO and European Security (NAC); Russia-NATO Cross-Reference (RUSSIA)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-17368201-20000721",
+    "date": "2000-07-21",
+    "sortDate": "2000-07-21",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Okinawa G-8 meeting with Vladimir Putin",
+    "documentTitle": "Presidential Daily Diary reference: Okinawa G-8 meeting with Vladimir Putin",
+    "participants": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott",
+      "James Steinberg",
+      "Mark Medish"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Japan"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368201",
+    "catalogUrl": "https://catalog.archives.gov/id/17368201",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/1/3682/17368201/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_003/42-t-7262157-20100083F-003-003-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 53,
+    "dateLine": "2000-07-21",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records Clinton greeting Putin and meeting with him at Okinawa, with a foreign-policy briefing appendix listing Russia/Eurasia staff.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/00; 4/1200; 4/25/00; 5/7/00; 5/18/00; 5/22/00; 5/26/00; 6/7/00; 6/8/00; 6/18/00], NAID 17368201, Unclassified diary record. Source pages: pages 12 and 16.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 12 and 16",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368201",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/1/3682/17368201/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_003/42-t-7262157-20100083F-003-003-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368201",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/00; 4/1200; 4/25/00; 5/7/00; 5/18/00; 5/22/00; 5/26/00; 6/7/00; 6/8/00; 6/18/00]",
+        "NAID 17368201",
+        "pages 12 and 16"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia",
+      "Japan"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott",
+      "James Steinberg",
+      "Mark Medish"
+    ],
+    "compilerNotes": [
+      "Use as late-volume Putin/NATO-Russia context; chase Okinawa summit memcons.",
+      "The diary records Clinton greeting Putin and meeting with him at Okinawa, with a foreign-policy briefing appendix listing Russia/Eurasia staff."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368201"
+    ]
+  },
+  {
+    "id": "pdd-17368201-20000906",
+    "date": "2000-09-06",
+    "sortDate": "2000-09-06",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: United Nations meeting with Putin and strategic stability signing",
+    "documentTitle": "Presidential Daily Diary reference: United Nations meeting with Putin and strategic stability signing",
+    "participants": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368201",
+    "catalogUrl": "https://catalog.archives.gov/id/17368201",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/1/3682/17368201/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_003/42-t-7262157-20100083F-003-003-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 53,
+    "dateLine": "2000-09-06",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a Waldorf Astoria meeting with Putin and a signing ceremony for the U.S.-Russia Strategic Stability Cooperation Initiative.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/00; 4/1200; 4/25/00; 5/7/00; 5/18/00; 5/22/00; 5/26/00; 6/7/00; 6/8/00; 6/18/00], NAID 17368201, Unclassified diary record. Source pages: pages 31-32.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 31-32",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368201",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/1/3682/17368201/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_003/42-t-7262157-20100083F-003-003-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368201",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/4/00; 4/1200; 4/25/00; 5/7/00; 5/18/00; 5/22/00; 5/26/00; 6/7/00; 6/8/00; 6/18/00]",
+        "NAID 17368201",
+        "pages 31-32"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Vladimir Putin",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Use as late-volume strategic-stability context and as a lead to UN Millennium Summit files.",
+      "The diary records a Waldorf Astoria meeting with Putin and a signing ceremony for the U.S.-Russia Strategic Stability Cooperation Initiative."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368201"
+    ]
   },
   {
     "id": "nara-7388808-147873393",
@@ -16134,6 +18097,114 @@
       "Public marker for NATO adaptation, enlargement, or transatlantic security policy."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870987-19991119",
+    "date": "1999-11-19",
+    "sortDate": "1999-11-19",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: CFE Treaty signing at Istanbul",
+    "documentTitle": "Presidential Daily Diary reference: CFE Treaty signing at Istanbul",
+    "participants": [
+      "Bill Clinton",
+      "Madeleine Albright"
+    ],
+    "countries": [
+      "United States",
+      "Turkey"
+    ],
+    "chapter": {
+      "number": 3,
+      "name": "European Security Architecture"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870987",
+    "catalogUrl": "https://catalog.archives.gov/id/147870987",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-012-005-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-11-19",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records Clinton's participation in the Conventional Armed Forces in Europe Treaty signing and lists attendees in the appendix.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [11/10/1999-11/19/1999], NAID 147870987, Unclassified diary record. Source pages: pages 72 and 79.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 72 and 79",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870987",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-012-005-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870987",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[11/10/1999-11/19/1999]",
+        "NAID 147870987",
+        "pages 72 and 79"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "OSCE/CSCE",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "CFE",
+      "OSCE/CSCE",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "CFE",
+      "OSCE/CSCE",
+      "European Security Architecture",
+      "Turkey"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Madeleine Albright"
+    ],
+    "compilerNotes": [
+      "Use as a CFE architecture anchor; chase treaty-signing files, OSCE Summit records, and source-note classification details.",
+      "The diary records Clinton's participation in the Conventional Armed Forces in Europe Treaty signing and lists attendees in the appendix."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870987"
+    ]
   },
   {
     "id": "govinfo-PPP-2000-book1-doc-pg162-2",
@@ -34519,6 +36590,226 @@
     ]
   },
   {
+    "id": "pdd-147870789-19940219",
+    "date": "1994-02-19",
+    "sortDate": "1994-02-19",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Bosnia briefing with administration officials",
+    "documentTitle": "Presidential Daily Diary reference: Bosnia briefing with administration officials",
+    "participants": [
+      "Bill Clinton",
+      "Warren Christopher",
+      "William Perry",
+      "John Shalikashvili"
+    ],
+    "countries": [
+      "United States",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870789",
+    "catalogUrl": "https://catalog.archives.gov/id/147870789",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-02-19",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a briefing on Bosnia and the radio address on the situation there; the appendix lists senior foreign-policy and defense participants.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [02/14/1994-02/28/1994], NAID 147870789, Unclassified diary record. Source pages: pages 53 and 58.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 53 and 58",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870789",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870789",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[02/14/1994-02/28/1994]",
+        "NAID 147870789",
+        "pages 53 and 58"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "NATO Strategy",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Warren Christopher",
+      "William Perry",
+      "John Shalikashvili"
+    ],
+    "compilerNotes": [
+      "Use as a Bosnia/NATO crisis chronology lead; chase Situation Room, NSC, and public address drafts.",
+      "The diary records a briefing on Bosnia and the radio address on the situation there; the appendix lists senior foreign-policy and defense participants."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870789"
+    ]
+  },
+  {
+    "id": "pdd-147870789-19940220",
+    "date": "1994-02-20",
+    "sortDate": "1994-02-20",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Bosnia calls with Woerner and Mitterrand",
+    "documentTitle": "Presidential Daily Diary reference: Bosnia calls with Woerner and Mitterrand",
+    "participants": [
+      "Bill Clinton",
+      "Manfred Woerner",
+      "Francois Mitterrand",
+      "Anthony Lake"
+    ],
+    "countries": [
+      "United States",
+      "France",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870789",
+    "catalogUrl": "https://catalog.archives.gov/id/147870789",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-02-20",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a conference call with NATO Secretary General Manfred Woerner, a call with French President Francois Mitterrand, a senior-adviser discussion on Bosnia, and a later call with Woerner in Brussels.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [02/14/1994-02/28/1994], NAID 147870789, Unclassified diary record. Source pages: pages 62-63.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 62-63",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870789",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870789",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[02/14/1994-02/28/1994]",
+        "NAID 147870789",
+        "pages 62-63"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "NATO Strategy",
+      "France",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Manfred Woerner",
+      "Francois Mitterrand",
+      "Anthony Lake"
+    ],
+    "compilerNotes": [
+      "High-value lead for NATO action on Bosnia; chase telcons and NSC crisis-management files.",
+      "The diary records a conference call with NATO Secretary General Manfred Woerner, a call with French President Francois Mitterrand, a senior-adviser discussion on Bosnia, and a later call with Woerner in Brussels."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870789"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1994-book1-doc-pg286",
     "date": "1994-02-20",
     "sortDate": "1994-02-20",
@@ -34622,6 +36913,109 @@
       "Public marker for NATO adaptation, enlargement, or transatlantic security policy."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870789-19940221",
+    "date": "1994-02-21",
+    "sortDate": "1994-02-21",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Bosnia and Sarajevo meeting and NATO-action statement",
+    "documentTitle": "Presidential Daily Diary reference: Bosnia and Sarajevo meeting and NATO-action statement",
+    "participants": [
+      "Bill Clinton"
+    ],
+    "countries": [
+      "United States",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870789",
+    "catalogUrl": "https://catalog.archives.gov/id/147870789",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-02-21",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting on Bosnia and Sarajevo and a statement on the results of NATO action.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [02/14/1994-02/28/1994], NAID 147870789, Unclassified diary record. Source pages: page 67.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 67",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870789",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870789",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[02/14/1994-02/28/1994]",
+        "NAID 147870789",
+        "page 67"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "NATO Strategy",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton"
+    ],
+    "compilerNotes": [
+      "Use to align Bosnia/Sarajevo chronology with NATO air-power documents and public framing.",
+      "The diary records a meeting on Bosnia and Sarajevo and a statement on the results of NATO action."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870789"
+    ]
   },
   {
     "id": "balkans-pcdc-1994-02-28-bosnia-summary",
@@ -35038,6 +37432,116 @@
       "Public record of the administration's Balkans crisis diplomacy and military-policy messaging."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870795-19940410",
+    "date": "1994-04-10",
+    "sortDate": "1994-04-10",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO bombing in Bosnia and Yeltsin conference call",
+    "documentTitle": "Presidential Daily Diary reference: NATO bombing in Bosnia and Yeltsin conference call",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870795",
+    "catalogUrl": "https://catalog.archives.gov/id/147870795",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-003-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-04-10",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a Situation Room meeting on the recent NATO bombing in Bosnia, a press statement, an attempted Yeltsin call, and a later conference call with Yeltsin.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [04/01/1994-04/15/1994], NAID 147870795, Unclassified diary record. Source pages: pages 50 and 53.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 50 and 53",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870795",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-003-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870795",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[04/01/1994-04/15/1994]",
+        "NAID 147870795",
+        "pages 50 and 53"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "NATO-Russia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Bosnia",
+      "NATO-Russia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "NATO-Russia",
+      "NATO Strategy",
+      "Russia",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "compilerNotes": [
+      "Use to connect Bosnia crisis management with Russia consultation; chase both briefing notes and telcon.",
+      "The diary records a Situation Room meeting on the recent NATO bombing in Bosnia, a press statement, an attempted Yeltsin call, and a later conference call with Yeltsin."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870795"
+    ]
   },
   {
     "id": "balkans-pcdc-1994-04-10-bosnia-principals-summary",
@@ -37592,6 +40096,127 @@
     ],
     "relatedReleaseIds": [
       "2011-0964-M"
+    ]
+  },
+  {
+    "id": "pdd-147870813-19941205",
+    "date": "1994-12-05",
+    "sortDate": "1994-12-05",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: CSCE Budapest Summit and meetings with Yeltsin, Kohl, Croatian and Bosnian officials",
+    "documentTitle": "Presidential Daily Diary reference: CSCE Budapest Summit and meetings with Yeltsin, Kohl, Croatian and Bosnian officials",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Helmut Kohl"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Germany",
+      "Bosnia and Herzegovina",
+      "Croatia",
+      "Hungary"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870813",
+    "catalogUrl": "https://catalog.archives.gov/id/147870813",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-012-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1994-12-05",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records the CSCE Budapest Summit plenary, the START I instruments signing with Yeltsin and other leaders, and meetings including Yeltsin, Kohl, and Croatian and Bosnian officials.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [12/01/1994-12/15/1994], NAID 147870813, Unclassified diary record. Source pages: pages 42-44.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 42-44",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870813",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-012-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870813",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[12/01/1994-12/15/1994]",
+        "NAID 147870813",
+        "pages 42-44"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "Bosnia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "Bosnia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "OSCE/CSCE",
+      "NATO-Russia",
+      "Bosnia",
+      "European Security Architecture",
+      "Russia",
+      "Germany",
+      "Bosnia and Herzegovina",
+      "Croatia",
+      "Hungary"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Helmut Kohl"
+    ],
+    "compilerNotes": [
+      "Use as an OSCE/CSCE and European security architecture anchor; chase summit memcons and delegation files.",
+      "The diary records the CSCE Budapest Summit plenary, the START I instruments signing with Yeltsin and other leaders, and meetings including Yeltsin, Kohl, and Croatian and Bosnian officials."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870813"
     ]
   },
   {
@@ -49188,6 +51813,111 @@
     ]
   },
   {
+    "id": "pdd-147870839-19950728",
+    "date": "1995-07-28",
+    "sortDate": "1995-07-28",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: conference call with Boris Yeltsin",
+    "documentTitle": "Presidential Daily Diary reference: conference call with Boris Yeltsin",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870839",
+    "catalogUrl": "https://catalog.archives.gov/id/147870839",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-006-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1995-07-28",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a morning conference call with Boris Yeltsin and NSC/Situation Room participants.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [07/01/1995-07/31/1995], NAID 147870839, Unclassified diary record. Source pages: page 50.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 50",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870839",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-006-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870839",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[07/01/1995-07/31/1995]",
+        "NAID 147870839",
+        "page 50"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "Bosnia"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "Bosnia"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "Bosnia",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin"
+    ],
+    "compilerNotes": [
+      "Use as a Russian consultation lead; chase telcon text for NATO/Bosnia relevance before inclusion.",
+      "The diary records a morning conference call with Boris Yeltsin and NSC/Situation Room participants."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870839"
+    ]
+  },
+  {
     "id": "balkans-pcdc-1995-08-01-bosnia-summary",
     "date": "1995-08-01",
     "sortDate": "1995-08-01",
@@ -51557,6 +54287,239 @@
     ],
     "relatedReleaseIds": [
       "2010-0533-M"
+    ]
+  },
+  {
+    "id": "pdd-147870847-19951120",
+    "date": "1995-11-20",
+    "sortDate": "1995-11-20",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Dayton calls with Christopher and Tudjman",
+    "documentTitle": "Presidential Daily Diary reference: Dayton calls with Christopher and Tudjman",
+    "participants": [
+      "Bill Clinton",
+      "Warren Christopher",
+      "Franjo Tudjman"
+    ],
+    "countries": [
+      "United States",
+      "Croatia",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870847",
+    "catalogUrl": "https://catalog.archives.gov/id/147870847",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1995-11-20",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records calls with Secretary Christopher in Dayton and a conference call with Croatian President Franjo Tudjman.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [11/01/1995-11/30/1995], NAID 147870847, Unclassified diary record. Source pages: pages 38-40.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 38-40",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870847",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870847",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[11/01/1995-11/30/1995]",
+        "NAID 147870847",
+        "pages 38-40"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "Dayton"
+    ],
+    "topics": [
+      "Bosnia",
+      "Dayton"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "Dayton",
+      "Croatia",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Warren Christopher",
+      "Franjo Tudjman"
+    ],
+    "compilerNotes": [
+      "Use to anchor the Dayton peace negotiation endgame and chase telcon/source packets.",
+      "The diary records calls with Secretary Christopher in Dayton and a conference call with Croatian President Franjo Tudjman."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870847"
+    ]
+  },
+  {
+    "id": "pdd-147870847-19951121",
+    "date": "1995-11-21",
+    "sortDate": "1995-11-21",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Dayton conference call with Tudjman, Izetbegovic, Milosevic, and Christopher",
+    "documentTitle": "Presidential Daily Diary reference: Dayton conference call with Tudjman, Izetbegovic, Milosevic, and Christopher",
+    "participants": [
+      "Bill Clinton",
+      "Franjo Tudjman",
+      "Alija Izetbegovic",
+      "Slobodan Milosevic",
+      "Warren Christopher",
+      "Lech Walesa",
+      "Aleksander Kwasniewski"
+    ],
+    "countries": [
+      "United States",
+      "Croatia",
+      "Bosnia and Herzegovina",
+      "Serbia",
+      "Poland"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870847",
+    "catalogUrl": "https://catalog.archives.gov/id/147870847",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1995-11-21",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a conference call with Franjo Tudjman, Alija Izetbegovic, Slobodan Milosevic, and Secretary Christopher, followed by calls with Lech Walesa and Aleksander Kwasniewski.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [11/01/1995-11/30/1995], NAID 147870847, Unclassified diary record. Source pages: pages 41-42.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 41-42",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870847",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870847",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[11/01/1995-11/30/1995]",
+        "NAID 147870847",
+        "pages 41-42"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "Dayton",
+      "NATO enlargement"
+    ],
+    "topics": [
+      "Bosnia",
+      "Dayton",
+      "NATO enlargement"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "Dayton",
+      "NATO enlargement",
+      "Croatia",
+      "Bosnia and Herzegovina",
+      "Serbia",
+      "Poland"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Franjo Tudjman",
+      "Alija Izetbegovic",
+      "Slobodan Milosevic",
+      "Warren Christopher",
+      "Lech Walesa",
+      "Aleksander Kwasniewski"
+    ],
+    "compilerNotes": [
+      "High-value Bosnia/Dayton and Central Europe lead; chase complete telcon records.",
+      "The diary records a conference call with Franjo Tudjman, Alija Izetbegovic, Slobodan Milosevic, and Secretary Christopher, followed by calls with Lech Walesa and Aleksander Kwasniewski."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870847"
     ]
   },
   {
@@ -56550,6 +59513,109 @@
     ]
   },
   {
+    "id": "pdd-147870851-19960112",
+    "date": "1996-01-12",
+    "sortDate": "1996-01-12",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: secure voice call with NATO Secretary General Javier Solana",
+    "documentTitle": "Presidential Daily Diary reference: secure voice call with NATO Secretary General Javier Solana",
+    "participants": [
+      "Bill Clinton",
+      "Javier Solana"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870851",
+    "catalogUrl": "https://catalog.archives.gov/id/147870851",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-012-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1996-01-12",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a secure voice call with NATO Secretary General Javier Solana.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [01/01/1996-01/31/1996], NAID 147870851, Unclassified diary record. Source pages: page 21.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 21",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870851",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-012-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870851",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[01/01/1996-01/31/1996]",
+        "NAID 147870851",
+        "page 21"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "Bosnia"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "Bosnia"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "Bosnia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Javier Solana"
+    ],
+    "compilerNotes": [
+      "Use as a NATO/IFOR-era telcon lead; chase conversation text before selecting.",
+      "The diary records a secure voice call with NATO Secretary General Javier Solana."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870851"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1996-book1-doc-pg62",
     "date": "1996-01-13",
     "sortDate": "1996-01-13",
@@ -56655,6 +59721,113 @@
       "Public record of the administration's Balkans crisis diplomacy and military-policy messaging."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870851-19960113",
+    "date": "1996-01-13",
+    "sortDate": "1996-01-13",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: call with Slobodan Milosevic",
+    "documentTitle": "Presidential Daily Diary reference: call with Slobodan Milosevic",
+    "participants": [
+      "Bill Clinton",
+      "Slobodan Milosevic"
+    ],
+    "countries": [
+      "United States",
+      "Serbia",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870851",
+    "catalogUrl": "https://catalog.archives.gov/id/147870851",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-012-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1996-01-13",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a call with Serbian President Slobodan Milosevic aboard Air Force One.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [01/01/1996-01/31/1996], NAID 147870851, Unclassified diary record. Source pages: page 22.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 22",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870851",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-012-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870851",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[01/01/1996-01/31/1996]",
+        "NAID 147870851",
+        "page 22"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Bosnia",
+      "Dayton"
+    ],
+    "topics": [
+      "Bosnia",
+      "Dayton"
+    ],
+    "indexTerms": [
+      "Bosnia",
+      "Dayton",
+      "Serbia",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Slobodan Milosevic"
+    ],
+    "compilerNotes": [
+      "Use as a Bosnia/Dayton implementation lead; chase telcon text.",
+      "The diary records a call with Serbian President Slobodan Milosevic aboard Air Force One."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870851"
+    ]
   },
   {
     "id": "govinfo-PPP-1996-book1-doc-pg60",
@@ -58376,6 +61549,230 @@
     ]
   },
   {
+    "id": "pdd-147870917-19980529",
+    "date": "1998-05-29",
+    "sortDate": "1998-05-29",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo meeting with Ibrahim Rugova and Dayton implementation briefing",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo meeting with Ibrahim Rugova and Dayton implementation briefing",
+    "participants": [
+      "Bill Clinton",
+      "Ibrahim Rugova",
+      "Al Gore",
+      "Samuel Berger",
+      "Robert Gelbard"
+    ],
+    "countries": [
+      "United States",
+      "Kosovo",
+      "Bosnia and Herzegovina"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870917",
+    "catalogUrl": "https://catalog.archives.gov/id/147870917",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-004-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1998-05-29",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting/briefing touching Dayton implementation, followed by a photo opportunity with Ibrahim Rugova and Kosovo Albanian leaders.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [05/16/1998-05/31/1998], NAID 147870917, Unclassified diary record. Source pages: pages 54-55.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 54-55",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870917",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-004-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870917",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[05/16/1998-05/31/1998]",
+        "NAID 147870917",
+        "pages 54-55"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "Bosnia",
+      "Dayton"
+    ],
+    "topics": [
+      "Kosovo",
+      "Bosnia",
+      "Dayton"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "Bosnia",
+      "Dayton",
+      "Bosnia and Herzegovina"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Ibrahim Rugova",
+      "Al Gore",
+      "Samuel Berger",
+      "Robert Gelbard"
+    ],
+    "compilerNotes": [
+      "Use as a Kosovo escalation lead; chase NSC Balkans files and any Rugova memcon.",
+      "The diary records a meeting/briefing touching Dayton implementation, followed by a photo opportunity with Ibrahim Rugova and Kosovo Albanian leaders."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870917"
+    ]
+  },
+  {
+    "id": "pdd-147870919-19980615",
+    "date": "1998-06-15",
+    "sortDate": "1998-06-15",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting and conference call with Boris Yeltsin",
+    "documentTitle": "Presidential Daily Diary reference: meeting and conference call with Boris Yeltsin",
+    "participants": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Strobe Talbott",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870919",
+    "catalogUrl": "https://catalog.archives.gov/id/147870919",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-005-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1998-06-15",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting with Talbott, Berger, and others overlapping a conference call with Boris Yeltsin.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [06/01/1998-06/15/1998], NAID 147870919, Unclassified diary record. Source pages: pages 101-103.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 101-103",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870919",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-005-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870919",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[06/01/1998-06/15/1998]",
+        "NAID 147870919",
+        "pages 101-103"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO-Russia",
+      "Bosnia"
+    ],
+    "topics": [
+      "NATO-Russia",
+      "Bosnia"
+    ],
+    "indexTerms": [
+      "NATO-Russia",
+      "Bosnia",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Boris Yeltsin",
+      "Strobe Talbott",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use as a NATO-Russia consultation lead; chase telcon and preparatory notes.",
+      "The diary records a meeting with Talbott, Berger, and others overlapping a conference call with Boris Yeltsin."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870919"
+    ]
+  },
+  {
     "id": "clinton-dl-118883",
     "date": "1998-07-16",
     "sortDate": "1998-07-16",
@@ -58837,6 +62234,111 @@
       "Strobe Talbott FOIA candidate. Rationale: document form signal: BRIEFING; topic signal: NATO and European Security (NATO, NAC); Balkans and Kosovo (KOSOVO)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-17368189-19980918",
+    "date": "1998-09-18",
+    "sortDate": "1998-09-18",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo meeting with Robert Dole",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo meeting with Robert Dole",
+    "participants": [
+      "Bill Clinton",
+      "Robert Dole",
+      "Madeleine Albright",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States",
+      "Kosovo"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368189",
+    "catalogUrl": "https://catalog.archives.gov/id/17368189",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/89/3681/17368189/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-007-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 92,
+    "dateLine": "1998-09-18",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records an Oval Office meeting to discuss Kosovo with former Senator Robert Dole, Sandy Berger, and others.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 7/7/98; 7/17/98; 7/19/98; 7/29/98; 8/1/98; 8/3/98; 8/21/98; 8/30/98; 9/2/98; 9/15/98; 9/18/98; 9/26/98], NAID 17368189, Unclassified diary record. Source pages: page 80.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 80",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368189",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/89/3681/17368189/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-007-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368189",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/7/98; 7/17/98; 7/19/98; 7/29/98; 8/1/98; 8/3/98; 8/21/98; 8/30/98; 9/2/98; 9/15/98; 9/18/98; 9/26/98]",
+        "NAID 17368189",
+        "page 80"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo"
+    ],
+    "topics": [
+      "Kosovo"
+    ],
+    "indexTerms": [
+      "Kosovo"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Robert Dole",
+      "Madeleine Albright",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use as a Kosovo diplomacy lead; chase memcon, Berger files, and congressional-contact files.",
+      "The diary records an Oval Office meeting to discuss Kosovo with former Senator Robert Dole, Sandy Berger, and others."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368189"
+    ]
   },
   {
     "id": "govinfo-PPP-1998-book2-doc-pg2191",
@@ -59452,6 +62954,118 @@
     ]
   },
   {
+    "id": "pdd-147870957-19990323",
+    "date": "1999-03-23",
+    "sortDate": "1999-03-23",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo briefings and congressional meeting",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo briefings and congressional meeting",
+    "participants": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "William Cohen",
+      "George Tenet",
+      "Henry Shelton"
+    ],
+    "countries": [
+      "United States",
+      "Kosovo",
+      "Serbia"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870957",
+    "catalogUrl": "https://catalog.archives.gov/id/147870957",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-03-23",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a Kosovo-era briefing and a meeting with members of Congress; the appendix lists Albright, Cohen, Tenet, Shelton, and congressional leaders.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [03/19/1999-03/31/1999], NAID 147870957, Unclassified diary record. Source pages: pages 26 and 33.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 26 and 33",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870957",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870957",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[03/19/1999-03/31/1999]",
+        "NAID 147870957",
+        "pages 26 and 33"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Kosovo",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "NATO Strategy",
+      "Serbia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "William Cohen",
+      "George Tenet",
+      "Henry Shelton"
+    ],
+    "compilerNotes": [
+      "Use as the pre-strike congressional and policy-briefing chronology.",
+      "The diary records a Kosovo-era briefing and a meeting with members of Congress; the appendix lists Albright, Cohen, Tenet, Shelton, and congressional leaders."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870957"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1999-book1-doc-pg451",
     "date": "1999-03-24",
     "sortDate": "1999-03-24",
@@ -59549,6 +63163,118 @@
       "Public record of the administration's Balkans crisis diplomacy and military-policy messaging."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870957-19990324",
+    "date": "1999-03-24",
+    "sortDate": "1999-03-24",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo air-strike briefing and statement",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo air-strike briefing and statement",
+    "participants": [
+      "Bill Clinton",
+      "Jean Chretien",
+      "Samuel Berger",
+      "James Steinberg"
+    ],
+    "countries": [
+      "United States",
+      "Canada",
+      "Serbia",
+      "Kosovo"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870957",
+    "catalogUrl": "https://catalog.archives.gov/id/147870957",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-03-24",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a call with Canadian Prime Minister Jean Chretien, a briefing on the air strikes against Serbian military targets, and a statement to the press.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [03/19/1999-03/31/1999], NAID 147870957, Unclassified diary record. Source pages: pages 37-38.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 37-38",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870957",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870957",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[03/19/1999-03/31/1999]",
+        "NAID 147870957",
+        "pages 37-38"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Kosovo",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "NATO Strategy",
+      "Canada",
+      "Serbia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Jean Chretien",
+      "Samuel Berger",
+      "James Steinberg"
+    ],
+    "compilerNotes": [
+      "Use as the start-of-air-campaign chronology; chase allied calls and speech/NSC drafts.",
+      "The diary records a call with Canadian Prime Minister Jean Chretien, a briefing on the air strikes against Serbian military targets, and a statement to the press."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870957"
+    ]
   },
   {
     "id": "russia-cross-contact-1999-03-24-telcon-68",
@@ -59792,6 +63518,119 @@
     ],
     "relatedReleaseIds": [
       "118887"
+    ]
+  },
+  {
+    "id": "pdd-17368193-19990406",
+    "date": "1999-04-06",
+    "sortDate": "1999-04-06",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo and Balkans briefing",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo and Balkans briefing",
+    "participants": [
+      "Bill Clinton",
+      "William Cohen",
+      "John Podesta",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States",
+      "Kosovo",
+      "Serbia"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368193",
+    "catalogUrl": "https://catalog.archives.gov/id/17368193",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 76,
+    "dateLine": "1999-04-06",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a morning briefing on Kosovo and the Balkans with Secretary Cohen and senior White House officials.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99], NAID 17368193, Unclassified diary record. Source pages: page 4.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "page 4",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368193",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368193",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99]",
+        "NAID 17368193",
+        "page 4"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Kosovo",
+      "Bosnia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "Bosnia",
+      "NATO Strategy",
+      "Serbia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "William Cohen",
+      "John Podesta",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use as a Kosovo campaign chronology lead; chase Defense/NSC briefing papers.",
+      "The diary records a morning briefing on Kosovo and the Balkans with Secretary Cohen and senior White House officials."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368193"
     ]
   },
   {
@@ -60360,6 +64199,111 @@
     ]
   },
   {
+    "id": "pdd-147870961-19990422",
+    "date": "1999-04-22",
+    "sortDate": "1999-04-22",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: meeting with NATO Secretary General Javier Solana",
+    "documentTitle": "Presidential Daily Diary reference: meeting with NATO Secretary General Javier Solana",
+    "participants": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Samuel Berger"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870961",
+    "catalogUrl": "https://catalog.archives.gov/id/147870961",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-004-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-04-22",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records a meeting with NATO Secretary General Javier Solana, a NATO Summit press statement, and a follow-on meeting with Solana and Berger.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [04/18/1999-04/30/1999], NAID 147870961, Unclassified diary record. Source pages: pages 35-36.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 35-36",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870961",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-004-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870961",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[04/18/1999-04/30/1999]",
+        "NAID 147870961",
+        "pages 35-36"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "Kosovo"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "Kosovo"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "Kosovo"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Samuel Berger"
+    ],
+    "compilerNotes": [
+      "Use as a Washington NATO Summit and Kosovo campaign lead; chase Solana memcon.",
+      "The diary records a meeting with NATO Secretary General Javier Solana, a NATO Summit press statement, and a follow-on meeting with Solana and Berger."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870961"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1999-book1-doc-pg607",
     "date": "1999-04-23",
     "sortDate": "1999-04-23",
@@ -60452,6 +64396,127 @@
       "Public record of the administration's Balkans crisis diplomacy and military-policy messaging."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870961-19990423",
+    "date": "1999-04-23",
+    "sortDate": "1999-04-23",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO 50th Anniversary Summit weekend",
+    "documentTitle": "Presidential Daily Diary reference: NATO 50th Anniversary Summit weekend",
+    "participants": [
+      "Bill Clinton",
+      "Jacques Chirac",
+      "Javier Solana",
+      "Boris Yeltsin",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "France",
+      "Russia",
+      "Ukraine"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870961",
+    "catalogUrl": "https://catalog.archives.gov/id/147870961",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-004-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-04-23",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records the NATO 50th Anniversary Summit, a Chirac meeting, the NATO dinner, North Atlantic Council sessions, the NATO-Ukraine Commission, and an attempted Yeltsin call during the summit weekend.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [04/18/1999-04/30/1999], NAID 147870961, Unclassified diary record. Source pages: pages 40-49.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 40-49",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870961",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-004-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870961",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[04/18/1999-04/30/1999]",
+        "NAID 147870961",
+        "pages 40-49"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "NATO-Russia",
+      "Kosovo"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "NATO-Russia",
+      "Kosovo"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "NATO enlargement",
+      "NATO-Russia",
+      "Kosovo",
+      "France",
+      "Russia",
+      "Ukraine"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Jacques Chirac",
+      "Javier Solana",
+      "Boris Yeltsin",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "High-priority summit chronology; chase summit memcons, NAC files, public papers, and allied telcons.",
+      "The diary records the NATO 50th Anniversary Summit, a Chirac meeting, the NATO dinner, North Atlantic Council sessions, the NATO-Ukraine Commission, and an attempted Yeltsin call during the summit weekend."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870961"
+    ]
   },
   {
     "id": "russia-cross-contact-1999-04-25-telcon-70",
@@ -60924,6 +64989,119 @@
     ],
     "relatedReleaseIds": [
       "118885"
+    ]
+  },
+  {
+    "id": "pdd-147870963-19990505",
+    "date": "1999-05-05",
+    "sortDate": "1999-05-05",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: NATO Headquarters visit and allied forces briefing",
+    "documentTitle": "Presidential Daily Diary reference: NATO Headquarters visit and allied forces briefing",
+    "participants": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Sandy Vershbow",
+      "Antony Blinken",
+      "Madeleine Albright",
+      "William Cohen"
+    ],
+    "countries": [
+      "United States",
+      "Belgium"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870963",
+    "catalogUrl": "https://catalog.archives.gov/id/147870963",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-005-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-05-05",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records arrival at NATO Headquarters, greeting by Solana, a meeting with U.S. and NATO officials, an allied forces briefing, and the appendix listing Vershbow, Blinken, Solana, and NATO staff.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [05/01/1999-05/14/1999], NAID 147870963, Unclassified diary record. Source pages: pages 19-24.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 19-24",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870963",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-005-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870963",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[05/01/1999-05/14/1999]",
+        "NAID 147870963",
+        "pages 19-24"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NATO Strategy",
+      "Kosovo"
+    ],
+    "topics": [
+      "NATO Strategy",
+      "Kosovo"
+    ],
+    "indexTerms": [
+      "NATO Strategy",
+      "Kosovo",
+      "Belgium"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Javier Solana",
+      "Sandy Vershbow",
+      "Antony Blinken",
+      "Madeleine Albright",
+      "William Cohen"
+    ],
+    "compilerNotes": [
+      "Use as a NATO Headquarters/Kosovo campaign lead; chase NATO and NSC European Affairs files.",
+      "The diary records arrival at NATO Headquarters, greeting by Solana, a meeting with U.S. and NATO officials, an allied forces briefing, and the appendix listing Vershbow, Blinken, Solana, and NATO staff."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870963"
     ]
   },
   {
@@ -61583,6 +65761,137 @@
       "Public record of the administration's Balkans crisis diplomacy and military-policy messaging."
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-17368193-19990610",
+    "date": "1999-06-10",
+    "sortDate": "1999-06-10",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo Military Technical Agreement calls",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo Military Technical Agreement calls",
+    "participants": [
+      "Bill Clinton",
+      "Wesley Clark",
+      "Javier Solana",
+      "Boris Yeltsin",
+      "Jacques Chirac",
+      "Massimo D'Alema",
+      "Jose Maria Aznar",
+      "Jean Chretien"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "France",
+      "Italy",
+      "Spain",
+      "Canada",
+      "Kosovo",
+      "Serbia"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "17368193",
+    "catalogUrl": "https://catalog.archives.gov/id/17368193",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
+    "pageCount": null,
+    "digitalObjects": 76,
+    "dateLine": "1999-06-10",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records calls with Wesley Clark, Javier Solana, Boris Yeltsin, Jacques Chirac, Massimo D'Alema, Jose Maria Aznar, and Jean Chretien around the Kosovo Military Technical Agreement.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2010-0083-F, [Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99], NAID 17368193, Unclassified diary record. Source pages: pages 59-61.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 59-61",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/17368193",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2010-0083-F",
+      "documentId": "17368193",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2010-0083-F",
+        "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99]",
+        "NAID 17368193",
+        "pages 59-61"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "NATO-Russia",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Kosovo",
+      "NATO-Russia",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "NATO-Russia",
+      "NATO Strategy",
+      "Russia",
+      "France",
+      "Italy",
+      "Spain",
+      "Canada",
+      "Serbia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Wesley Clark",
+      "Javier Solana",
+      "Boris Yeltsin",
+      "Jacques Chirac",
+      "Massimo D'Alema",
+      "Jose Maria Aznar",
+      "Jean Chretien"
+    ],
+    "compilerNotes": [
+      "High-priority Kosovo settlement lead; chase complete telcons and NATO/SACEUR traffic.",
+      "The diary records calls with Wesley Clark, Javier Solana, Boris Yeltsin, Jacques Chirac, Massimo D'Alema, Jose Maria Aznar, and Jean Chretien around the Kosovo Military Technical Agreement."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2010-0083-F",
+      "17368193"
+    ]
   },
   {
     "id": "russia-cross-contact-1999-06-10-telcon-74",
@@ -62366,6 +66675,119 @@
       "Strobe Talbott FOIA candidate. Rationale: high-level contact signal: FOREIGN MINISTER; document form signal: MEETING WITH, YOUR MEETING; topic signal: Balkans and Kosovo (KOSOVO); Central and Eastern Europe (BALTIC)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "pdd-147870989-19991123",
+    "date": "1999-11-23",
+    "sortDate": "1999-11-23",
+    "type": "Context",
+    "title": "Presidential Daily Diary reference: Kosovo visit, NATO officials, and Kosovar leaders",
+    "documentTitle": "Presidential Daily Diary reference: Kosovo visit, NATO officials, and Kosovar leaders",
+    "participants": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "Bernard Kouchner",
+      "Klaus Reinhardt",
+      "Wesley Clark"
+    ],
+    "countries": [
+      "United States",
+      "Kosovo"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "Catalog Context",
+    "selectionDecision": "Context candidate",
+    "naid": "147870989",
+    "catalogUrl": "https://catalog.archives.gov/id/147870989",
+    "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-012-006-2018.pdf",
+    "pageCount": null,
+    "digitalObjects": 1,
+    "dateLine": "1999-11-23",
+    "washingtonTime": "",
+    "placementNote": "Diary chronology; verify final placement against substantive memcon, telcon, briefing, or trip records.",
+    "subjectLine": "The diary records meetings at Pristina with U.S. and NATO officials, Kosovar leaders, and Camp Bondsteel personnel; appendices identify KFOR and UN Kosovo participants.",
+    "sourceNote": "Source: National Archives and Records Administration, National Archives Catalog, Clinton Presidential Records, Presidential Daily Diary, Ellen McCathran Files, Release LPWJC 2013-0549-F, [11/20/1999-11/30/1999], NAID 147870989, Unclassified diary record. Source pages: pages 37-43.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Presidential Daily Diary context record; use for chronology and to identify likely memcon, telcon, briefing, trip, or summit files rather than as a substitute for the substantive conversation text.",
+    "sourcePages": "pages 37-43",
+    "originalClassification": "Unclassified diary record",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Released with excisions",
+    "withheldMaterial": {
+      "status": "Partial release",
+      "note": "PDD packet includes withdrawal/redaction sheets or partial diary pages; verify against the source PDF."
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Diary OCR reviewed",
+    "source": {
+      "name": "National Archives and Records Administration, National Archives Catalog",
+      "url": "https://catalog.archives.gov/id/147870989",
+      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-012-006-2018.pdf",
+      "collection": "Clinton Presidential Records, Presidential Daily Diary",
+      "series": "Ellen McCathran Files",
+      "caseNumber": "LPWJC 2013-0549-F",
+      "documentId": "147870989",
+      "path": [
+        "Clinton Presidential Records",
+        "Presidential Daily Diary",
+        "Ellen McCathran Files",
+        "LPWJC 2013-0549-F",
+        "[11/20/1999-11/30/1999]",
+        "NAID 147870989",
+        "pages 37-43"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "Kosovo",
+      "KFOR",
+      "NATO Strategy"
+    ],
+    "topics": [
+      "Kosovo",
+      "KFOR",
+      "NATO Strategy"
+    ],
+    "indexTerms": [
+      "Kosovo",
+      "KFOR",
+      "NATO Strategy"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Madeleine Albright",
+      "Bernard Kouchner",
+      "Klaus Reinhardt",
+      "Wesley Clark"
+    ],
+    "compilerNotes": [
+      "Use as a post-conflict Kosovo/KFOR chronology lead; chase KFOR, UNMIK, and NSC trip files.",
+      "The diary records meetings at Pristina with U.S. and NATO officials, Kosovar leaders, and Camp Bondsteel personnel; appendices identify KFOR and UN Kosovo participants."
+    ],
+    "relatedReleaseIds": [
+      "LPWJC 2013-0549-F",
+      "147870989"
+    ]
   },
   {
     "id": "clinton-dl-101663",
