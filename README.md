@@ -180,10 +180,16 @@ books, and PC/DC meeting chronology. It writes:
 
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-research-plan.json`
+- `reports/clinton-library-pull-sheet.csv`
 
-Use the plan as a pre-visit pull queue and same-day decision log template; do
-not promote a folder title into the public corpus until an actual document has
-date, participants, page span, markings, release status, and source-note path.
+Use the site link or CSV as the pre-visit pull queue and same-day decision log;
+do not promote a folder title into the public corpus until an actual document
+has date, participants, page span, markings, release status, and source-note
+path. To rebuild the pull sheet after editing the structured plan, run:
+
+```bash
+node scripts/build-clinton-library-pull-sheet.js
+```
 
 ## Presidential Daily Diary Search
 
@@ -238,10 +244,14 @@ source URL or item identifier, and writes:
 - `data/records.json`
 - `data/records.js`
 - `reports/source-check.json`
+
+The companion reports tracked in this repository include:
+
 - `reports/compiler-gap-analysis.json`
 - `reports/compiler-gap-analysis.md`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
+- `reports/clinton-library-pull-sheet.csv`
 
 The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level

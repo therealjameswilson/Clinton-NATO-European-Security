@@ -89,6 +89,7 @@
           <a href="#records">Open lane browser</a>
           <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
           <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
+          <a href="reports/clinton-library-pull-sheet.csv" download>Clinton Library pull sheet</a>
           <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>
         </div>
         <div id="queue-root" class="queue-root" aria-live="polite">
@@ -269,6 +270,35 @@
           speechwriting files should support document-level extraction and public
           framing checks rather than widening the existing crisis imbalance.
         </p>
+        <div class="pull-sheet-panel" aria-label="Clinton Library onsite pull sheet">
+          <div>
+            <p class="pull-priority">Reading Room Sheet</p>
+            <h3>37 folder requests, already sorted for onsite work</h3>
+            <p>
+              The CSV turns the finding-aid plan into a request log with OA/ID,
+              folder title, office, finding-aid part, research value, request timing,
+              onsite action, and blank fields for withdrawals, scans, source-note
+              verification, and same-day selection decisions.
+            </p>
+          </div>
+          <dl class="pull-sheet-metrics">
+            <div>
+              <dt>17</dt>
+              <dd>first-pull targets</dd>
+            </div>
+            <div>
+              <dt>5</dt>
+              <dd>pull batches</dd>
+            </div>
+            <div>
+              <dt>3</dt>
+              <dd>finding-aid parts</dd>
+            </div>
+          </dl>
+          <a class="pull-sheet-download" href="reports/clinton-library-pull-sheet.csv" download>
+            Download pull sheet CSV
+          </a>
+        </div>
         <div class="library-grid" aria-label="Clinton Library pull batches">
           <article class="research-card">
             <p class="pull-priority">First Pull</p>
@@ -356,6 +386,7 @@
         </div>
         <div class="report-links" aria-label="Clinton Library research reports">
           <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library research plan</a>
+          <a href="reports/clinton-library-pull-sheet.csv" download>Onsite pull sheet CSV</a>
           <a href="reports/clinton-library-research-plan.json" rel="noreferrer">Structured pull queue</a>
           <a href="reports/presidential-daily-diary-search.md" rel="noreferrer">Daily Diary call and meeting report</a>
           <a href="reports/presidential-daily-diary-search.json" rel="noreferrer">Structured Daily Diary references</a>
@@ -716,6 +747,9 @@
           </a>
           <a href="reports/clinton-library-research-plan.md" rel="noreferrer">
             Clinton Library research plan
+          </a>
+          <a href="reports/clinton-library-pull-sheet.csv" download>
+            Clinton Library pull sheet CSV
           </a>
           <a href="reports/clinton-library-research-plan.json" rel="noreferrer">
             Structured Clinton Library pull queue

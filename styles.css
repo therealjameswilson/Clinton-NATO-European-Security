@@ -688,6 +688,91 @@ dd {
   line-height: 1.65;
 }
 
+.pull-sheet-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr) auto;
+  gap: 16px;
+  align-items: stretch;
+  margin-bottom: 18px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--red);
+  border-radius: 8px;
+}
+
+.pull-sheet-panel h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.5vw, 1.9rem);
+  line-height: 1.2;
+}
+
+.pull-sheet-panel p:not(.pull-priority) {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 750;
+  line-height: 1.55;
+}
+
+.pull-sheet-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.pull-sheet-metrics div {
+  display: grid;
+  align-content: center;
+  min-height: 120px;
+  padding: 12px;
+  background: rgba(47, 103, 95, 0.09);
+  border: 1px solid rgba(47, 103, 95, 0.14);
+  border-radius: 8px;
+}
+
+.pull-sheet-metrics dt {
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.pull-sheet-metrics dd {
+  margin: 8px 0 0;
+  color: var(--navy);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.pull-sheet-download {
+  display: inline-flex;
+  min-width: 150px;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 16px;
+  color: white;
+  font-size: 0.86rem;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background: var(--navy);
+  border-radius: 8px;
+}
+
+.pull-sheet-download:hover,
+.pull-sheet-download:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
 .library-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1445,11 +1530,21 @@ footer a {
   .citation-summary,
   .gap-summary,
   .library-grid,
+  .pull-sheet-panel,
   .onsite-rules,
   .source-note-guide,
   .queue-list,
   .source-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pull-sheet-panel {
+    align-items: start;
+  }
+
+  .pull-sheet-download {
+    min-height: 56px;
+    grid-column: 1 / -1;
   }
 
   .record-row {
@@ -1486,6 +1581,8 @@ footer a {
   .citation-summary,
   .gap-summary,
   .library-grid,
+  .pull-sheet-panel,
+  .pull-sheet-metrics,
   .onsite-rules,
   .source-note-guide,
   .queue-list,
