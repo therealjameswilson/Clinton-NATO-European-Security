@@ -20,6 +20,29 @@ Records inside each lane should be arranged chronologically by `sortDate`.
 The public page now opens with a date-sorted declassified-document chronology
 before the lane browser so a compiler can read the released record first.
 
+## Declassified Chronology Export
+
+The live page has a **Download chronology CSV** button beside the first
+chronology section. It exports the current 240-record declassified chronology
+from the browser for spreadsheet sorting.
+
+For a local Markdown/CSV/JSON export after refreshing `data/records.json`, run:
+
+```bash
+node scripts/build-declassified-chronology.js
+```
+
+The export filters out Scout Leads, Source Leads, and public-statement context,
+then writes a date-sorted working chronology for document review:
+
+- `reports/declassified-document-chronology.md`
+- `reports/declassified-document-chronology.csv`
+- `reports/declassified-document-chronology.json`
+
+Use the Markdown file for reading order and either CSV for spreadsheet sorting
+by date, document type, participants, source path, declassification status, and
+next compiler action.
+
 ## Data Model
 
 The canonical data file is `data/records.json`, with a generated

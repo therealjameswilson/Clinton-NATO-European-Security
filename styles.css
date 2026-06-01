@@ -379,22 +379,27 @@ dd {
   margin-top: 16px;
 }
 
-.report-links a {
+.report-links a,
+.report-links button {
   display: inline-flex;
   min-height: 40px;
   align-items: center;
   padding: 0 12px;
   color: var(--navy);
+  font: inherit;
   font-size: 0.84rem;
   font-weight: 900;
   text-decoration: none;
   background: rgba(37, 54, 79, 0.08);
   border: 1px solid rgba(37, 54, 79, 0.14);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .report-links a:hover,
-.report-links a:focus-visible {
+.report-links a:focus-visible,
+.report-links button:hover,
+.report-links button:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
   outline: none;
