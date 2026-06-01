@@ -439,6 +439,124 @@ dd {
   border-radius: 6px;
 }
 
+.citation-section {
+  padding-top: 56px;
+}
+
+.citation-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.citation-summary div {
+  min-height: 142px;
+  padding: 18px;
+  color: white;
+  background: var(--navy);
+  border-radius: 8px;
+}
+
+.citation-summary div:nth-child(2) {
+  background: var(--red);
+}
+
+.citation-summary div:nth-child(3) {
+  color: var(--ink);
+  background: var(--gold);
+}
+
+.citation-summary div:nth-child(4) {
+  background: var(--green);
+}
+
+.citation-summary span {
+  display: block;
+  margin-bottom: 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.citation-summary p {
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.citation-root {
+  display: grid;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.citation-group {
+  display: grid;
+  gap: 12px;
+}
+
+.citation-list {
+  display: grid;
+  gap: 10px;
+}
+
+.citation-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px 16px;
+  min-height: auto;
+  padding: 16px;
+}
+
+.citation-item > * {
+  min-width: 0;
+}
+
+.citation-item-top {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+  grid-column: 1 / -1;
+}
+
+.citation-item h4 {
+  margin: 2px 0 0;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.04rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.citation-status {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0 9px;
+  color: var(--navy);
+  font-size: 0.76rem;
+  font-weight: 900;
+  line-height: 1.2;
+  background: rgba(37, 54, 79, 0.08);
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.citation-note {
+  margin: 0;
+  padding: 12px 14px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  background: rgba(255, 255, 255, 0.72);
+  border-left: 3px solid var(--navy);
+  border-radius: 6px;
+}
+
 .gap-section {
   padding-top: 56px;
 }
@@ -1155,15 +1273,18 @@ footer {
 }
 
 .record-meta span,
-.record-links a {
+.record-links a,
+.record-links button {
   display: inline-flex;
   min-height: 28px;
   align-items: center;
   padding: 0 9px;
   color: var(--muted);
+  font: inherit;
   font-size: 0.78rem;
   font-weight: 800;
   background: rgba(37, 54, 79, 0.06);
+  border: 0;
   border-radius: 6px;
 }
 
@@ -1174,10 +1295,26 @@ footer {
   justify-content: flex-end;
 }
 
-.record-links a {
+.record-links a,
+.record-links button {
   color: var(--navy);
   text-decoration: none;
   background: rgba(37, 54, 79, 0.1);
+  cursor: pointer;
+}
+
+.record-links button:hover,
+.record-links button:focus-visible,
+.record-links a:hover,
+.record-links a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  outline: none;
+}
+
+.record-links button.is-copied {
+  color: white;
+  background: var(--green);
 }
 
 .loading,
@@ -1305,6 +1442,7 @@ footer a {
   .workbench-layout,
   .gate-grid,
   .queue-summary,
+  .citation-summary,
   .gap-summary,
   .library-grid,
   .onsite-rules,
@@ -1345,6 +1483,7 @@ footer a {
   .workbench-layout,
   .gate-grid,
   .queue-summary,
+  .citation-summary,
   .gap-summary,
   .library-grid,
   .onsite-rules,
@@ -1374,6 +1513,20 @@ footer a {
   .queue-score {
     width: fit-content;
     grid-column: 2;
+  }
+
+  .citation-item {
+    grid-template-columns: 1fr;
+  }
+
+  .citation-item-top {
+    grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .citation-status {
+    width: fit-content;
+    grid-column: 2;
+    white-space: normal;
   }
 
   .record-row {

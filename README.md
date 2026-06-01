@@ -56,6 +56,18 @@ late-volume coverage.
 Use **Download action queue CSV** on the live page to export the ranked work
 list for a research log or Clinton Library trip sheet.
 
+## Citation Desk
+
+The page also includes a generated **Citation Desk** after the action queue. It
+surfaces source-note repair work, chronology/time checks, declassification
+checks, and working first-note drafts. Record cards include **Copy source
+note** controls for moving working citations into a draft, and the citation desk
+has a **Download citation CSV** export for spreadsheet review.
+
+Treat copied notes as working FRUS first notes until the source image confirms
+markings, page span, excisions, marginalia, attachments, drafting, clearance,
+and final chronological placement.
+
 ## Data Model
 
 The canonical data file is `data/records.json`, with a generated

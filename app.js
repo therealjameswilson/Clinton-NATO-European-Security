@@ -8,8 +8,10 @@ const CHAPTER_ORDER = [
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
 let queueRoot = document.querySelector("#queue-root");
+const citationRoot = document.querySelector("#citation-root");
 let chronologyCsvControl = document.querySelector("#download-chronology-csv");
 let actionQueueCsvControl = document.querySelector("#download-action-queue-csv");
+let citationCsvControl = document.querySelector("#download-citation-csv");
 const totalRecords = document.querySelector("#total-records");
 const decisionReady = document.querySelector("#decision-ready");
 const provenanceGaps = document.querySelector("#provenance-gaps");
@@ -381,6 +383,44 @@ function createParagraph(className, text) {
   return paragraph;
 }
 
+async function copyText(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return;
+  }
+
+  const field = document.createElement("textarea");
+  field.value = text;
+  field.setAttribute("readonly", "");
+  field.style.position = "fixed";
+  field.style.opacity = "0";
+  document.body.append(field);
+  field.select();
+  document.execCommand("copy");
+  field.remove();
+}
+
+function createCopyButton(label, text) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = label;
+  button.addEventListener("click", async () => {
+    const original = button.textContent;
+    try {
+      await copyText(text);
+      button.textContent = "Copied";
+      button.classList.add("is-copied");
+    } catch (error) {
+      button.textContent = "Copy failed";
+    }
+    window.setTimeout(() => {
+      button.textContent = original;
+      button.classList.remove("is-copied");
+    }, 1800);
+  });
+  return button;
+}
+
 function createRecordRow(record) {
   const row = document.createElement("article");
   row.className = "record-row";
@@ -443,6 +483,11 @@ function createRecordRow(record) {
     transcript.rel = "noreferrer";
     transcript.textContent = "Transcript";
     links.append(transcript);
+  }
+
+  const sourceNoteDraft = createSourceNoteDraft(record);
+  if (sourceNoteDraft && !/Citation pending/i.test(sourceNoteDraft)) {
+    links.append(createCopyButton("Copy source note", sourceNoteDraft));
   }
 
   row.append(date, body, links);
@@ -871,11 +916,10 @@ function renderActionQueue(records) {
   if (!queueRoot) return;
 
   const fullQueue = buildActionQueue(records, Number.POSITIVE_INFINITY);
-  const visibleQueue = fullQueue.slice(0, 96);
   setActionQueueMetrics(fullQueue);
   queueRoot.replaceChildren();
 
-  if (!visibleQueue.length) {
+  if (!fullQueue.length) {
     queueRoot.innerHTML = `
       <div class="empty-state">
         <h3>No action queue items</h3>
@@ -886,7 +930,7 @@ function renderActionQueue(records) {
   }
 
   for (const groupName of QUEUE_GROUP_ORDER) {
-    const groupItems = visibleQueue.filter((item) => item.category === groupName);
+    const groupItems = fullQueue.filter((item) => item.category === groupName);
     if (!groupItems.length) continue;
 
     const section = document.createElement("section");
@@ -910,6 +954,264 @@ function renderActionQueue(records) {
 
     section.append(header, list);
     queueRoot.append(section);
+  }
+}
+
+const CITATION_GROUP_ORDER = [
+  "Repair First Note",
+  "Verify Time and Placement",
+  "Verify Declassification",
+  "Copy-Ready Drafts"
+];
+
+function isDeclassCheck(record) {
+  const status = [record.declassificationStatus, record.releaseStatus, record.withheldMaterial?.status].filter(Boolean).join(" ");
+  return /pending|excised|withheld|partial|mixed|not yet audited/i.test(status);
+}
+
+function citationStatus(record, issues) {
+  const note = createSourceNoteDraft(record);
+  if (!note || /Citation pending/i.test(note) || issues.includes("needs-source")) return "needs source-note repair";
+  if (issues.includes("needs-chronology")) return "needs time or placement check";
+  if (issues.includes("needs-declass") || isDeclassCheck(record)) return "needs declassification check";
+  if (/verify|pending review|not yet audited/i.test([record.sourceNoteAddendum, record.declassificationStatus].filter(Boolean).join(" "))) {
+    return "draft; verify against source image";
+  }
+  return "copy-ready draft";
+}
+
+function citationGroup(record, issues) {
+  if (issues.includes("needs-source")) return "Repair First Note";
+  if (issues.includes("needs-chronology")) return "Verify Time and Placement";
+  if (issues.includes("needs-declass") || isDeclassCheck(record)) return "Verify Declassification";
+  return "Copy-Ready Drafts";
+}
+
+function citationPriority(record, issues) {
+  const decision = record.selectionDecision || record.compilerDecision || "";
+  let score = 0;
+  if (decision === "Include candidate") score += 60;
+  else if (decision === "Context candidate") score += 42;
+  else if (decision === "Pending") score += 24;
+  if (["Memcon", "Telcon"].includes(record.type)) score += 20;
+  if (record.type === "Release Packet") score += 16;
+  if (issues.includes("needs-source")) score += 36;
+  if (issues.includes("needs-chronology")) score += 30;
+  if (issues.includes("needs-declass") || isDeclassCheck(record)) score += 24;
+  if (record.sourcePages || record.pageCount) score += 8;
+  if (record.pdfUrl || record.source?.pdfUrl) score += 6;
+  if (record.chapter?.name !== "Crisis Security Files") score += 8;
+  return score;
+}
+
+function citationNextAction(record, issues) {
+  if (issues.includes("needs-source")) {
+    return "Repair footnote 1 from the source image: repository path, exact item, markings, page span, channel, clearance, and excision note.";
+  }
+
+  if (issues.includes("needs-chronology")) {
+    return "Verify Washington time and date line before copying this citation into the document sequence.";
+  }
+
+  if (issues.includes("needs-declass") || isDeclassCheck(record)) {
+    return "Check withdrawal sheets, excisions, omitted pages or lines, and release status before final source-note use.";
+  }
+
+  if (/verify|pending review|not yet audited/i.test([record.sourceNoteAddendum, record.declassificationStatus].filter(Boolean).join(" "))) {
+    return "Copy as a working draft only; confirm markings, marginalia, attachments, and declassification details against the source image.";
+  }
+
+  return "Copy into the draft document and continue annotation, cross-reference, and index review.";
+}
+
+function buildCitationDesk(records, limit = 96) {
+  const items = records
+    .map((record) => {
+      const issues = getProductionIssues(record);
+      return {
+        record,
+        issues,
+        group: citationGroup(record, issues),
+        priority: citationPriority(record, issues),
+        status: citationStatus(record, issues),
+        nextAction: citationNextAction(record, issues),
+        sourceNote: createSourceNoteDraft(record)
+      };
+    })
+    .filter((item) => {
+      const decision = item.record.selectionDecision || item.record.compilerDecision || "";
+      return (
+        ["Include candidate", "Context candidate"].includes(decision) ||
+        item.issues.some((issue) => ["needs-source", "needs-chronology", "needs-declass"].includes(issue)) ||
+        item.group !== "Copy-Ready Drafts"
+      );
+    })
+    .sort((a, b) => {
+      return (
+        CITATION_GROUP_ORDER.indexOf(a.group) - CITATION_GROUP_ORDER.indexOf(b.group) ||
+        b.priority - a.priority ||
+        byChronology(a.record, b.record)
+      );
+    });
+
+  return items.slice(0, limit).map((item, index) => ({ ...item, rank: index + 1 }));
+}
+
+function buildCitationCsv(records) {
+  const columns = [
+    ["rank", (item) => item.rank],
+    ["citation_group", (item) => item.group],
+    ["priority_score", (item) => item.priority],
+    ["date", (item) => item.record.sortDate || item.record.date || ""],
+    ["type", (item) => item.record.type || ""],
+    ["title", (item) => item.record.documentTitle || item.record.title || ""],
+    ["chapter", (item) => item.record.chapter?.name || ""],
+    ["selection_decision", (item) => item.record.selectionDecision || item.record.compilerDecision || ""],
+    ["citation_status", (item) => item.status],
+    ["production_issues", (item) => item.issues.map(formatIssue).join("; ")],
+    ["source_path", (item) => sourcePathParts(item.record).join(" / ")],
+    ["markings", (item) => sourceMarkings(item.record)],
+    ["source_pages", (item) => item.record.sourcePages || item.record.sourcePdfPages || ""],
+    ["declassification", (item) => item.record.declassificationStatus || item.record.releaseStatus || ""],
+    ["next_action", (item) => item.nextAction],
+    ["source_note", (item) => item.sourceNote],
+    ["catalog_url", (item) => item.record.catalogUrl || item.record.source?.url || ""],
+    ["pdf_url", (item) => item.record.pdfUrl || item.record.source?.pdfUrl || ""]
+  ];
+
+  const desk = buildCitationDesk(records, Number.POSITIVE_INFINITY);
+  return [
+    columns.map(([name]) => name).join(","),
+    ...desk.map((item) => columns.map(([, getter]) => csvEscape(getter(item))).join(","))
+  ].join("\n");
+}
+
+function setCitationMetrics(records) {
+  const metrics = records.reduce(
+    (acc, record) => {
+      const issues = getProductionIssues(record);
+      const note = createSourceNoteDraft(record);
+      if (note && !/Citation pending/i.test(note) && !issues.includes("needs-source")) acc.copyReady += 1;
+      if (issues.includes("needs-source")) acc.sourceGaps += 1;
+      if (issues.includes("needs-chronology")) acc.timeGaps += 1;
+      if (issues.includes("needs-declass") || isDeclassCheck(record)) acc.declassChecks += 1;
+      return acc;
+    },
+    { copyReady: 0, sourceGaps: 0, timeGaps: 0, declassChecks: 0 }
+  );
+
+  for (const [key, value] of Object.entries(metrics)) {
+    const node = document.querySelector(`[data-citation-metric="${key}"]`);
+    if (node) node.textContent = value.toString();
+  }
+}
+
+function createCitationItem(item) {
+  const { record } = item;
+  const article = document.createElement("article");
+  article.className = "citation-item";
+
+  const top = document.createElement("div");
+  top.className = "citation-item-top";
+
+  const rank = document.createElement("span");
+  rank.className = "queue-rank";
+  rank.textContent = String(item.displayRank || item.rank).padStart(2, "0");
+
+  const title = document.createElement("h4");
+  title.textContent = record.documentTitle || record.title;
+
+  const status = document.createElement("span");
+  status.className = "citation-status";
+  status.textContent = item.status;
+  top.append(rank, title, status);
+
+  const meta = document.createElement("p");
+  meta.className = "queue-meta";
+  meta.textContent = [
+    formatDate(record.sortDate || record.date),
+    record.type,
+    record.chapter?.name,
+    record.selectionDecision || record.compilerDecision
+  ]
+    .filter(Boolean)
+    .join(" / ");
+
+  const note = document.createElement("p");
+  note.className = "citation-note";
+  note.textContent = item.sourceNote;
+
+  const action = document.createElement("p");
+  action.className = "queue-action";
+  action.textContent = item.nextAction;
+
+  const links = document.createElement("div");
+  links.className = "record-links";
+  links.append(createCopyButton("Copy source note", item.sourceNote));
+
+  if (record.catalogUrl || record.source?.url) {
+    const source = document.createElement("a");
+    source.href = record.catalogUrl || record.source.url;
+    source.rel = "noreferrer";
+    source.textContent = "Source";
+    links.append(source);
+  }
+
+  if (record.pdfUrl || record.source?.pdfUrl) {
+    const pdf = document.createElement("a");
+    pdf.href = record.pdfUrl || record.source.pdfUrl;
+    pdf.rel = "noreferrer";
+    pdf.target = "_blank";
+    pdf.textContent = "Open PDF";
+    links.append(pdf);
+  }
+
+  article.append(top, meta, note, action, links);
+  return article;
+}
+
+function renderCitationDesk(records) {
+  if (!citationRoot) return;
+
+  const fullDesk = buildCitationDesk(records, Number.POSITIVE_INFINITY);
+  setCitationMetrics(records);
+  citationRoot.replaceChildren();
+
+  if (!fullDesk.length) {
+    citationRoot.innerHTML = `
+      <div class="empty-state">
+        <h3>No citation work queued</h3>
+        <p>The current records do not expose source-note, chronology, or declassification citation work.</p>
+      </div>
+    `;
+    return;
+  }
+
+  for (const groupName of CITATION_GROUP_ORDER) {
+    const groupItems = fullDesk.filter((item) => item.group === groupName);
+    if (!groupItems.length) continue;
+
+    const section = document.createElement("section");
+    section.className = "citation-group";
+
+    const header = document.createElement("div");
+    header.className = "queue-group-header";
+
+    const heading = document.createElement("h3");
+    heading.textContent = groupName;
+
+    const count = document.createElement("p");
+    count.textContent = `${fullDesk.filter((item) => item.group === groupName).length} queued`;
+    header.append(heading, count);
+
+    const list = document.createElement("div");
+    list.className = "citation-list";
+    groupItems.slice(0, 12).forEach((item, index) => {
+      list.append(createCitationItem({ ...item, displayRank: index + 1 }));
+    });
+
+    section.append(header, list);
+    citationRoot.append(section);
   }
 }
 
@@ -1106,6 +1408,32 @@ function enableActionQueueExport() {
   });
 }
 
+function enableCitationExport() {
+  if (!citationCsvControl) {
+    const links = document.querySelector(".citation-links");
+    if (links) {
+      citationCsvControl = document.createElement("a");
+      citationCsvControl.id = "download-citation-csv";
+      citationCsvControl.href = "#";
+      citationCsvControl.textContent = "Download citation CSV";
+      links.insertBefore(citationCsvControl, links.children[1] || null);
+    }
+  }
+
+  citationCsvControl?.addEventListener("click", (event) => {
+    event.preventDefault();
+    const blob = new Blob([`${buildCitationCsv(allRecords)}\n`], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "frus-v17-citation-desk.csv";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  });
+}
+
 function enableChapterCards() {
   for (const card of document.querySelectorAll(".chapter-card")) {
     card.addEventListener("click", (event) => {
@@ -1135,10 +1463,12 @@ async function init() {
     setChapterCounts(allRecords);
     renderChronology(allRecords);
     renderActionQueue(allRecords);
+    renderCitationDesk(allRecords);
     renderRecords(allRecords);
     enableFilters();
     enableChronologyExport();
     enableActionQueueExport();
+    enableCitationExport();
     enableChapterCards();
     if (window.location.hash) document.querySelector(window.location.hash)?.scrollIntoView();
   } catch (error) {

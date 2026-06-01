@@ -19,6 +19,7 @@
       <nav aria-label="Primary navigation">
         <a href="#chronology">Chronology</a>
         <a href="#queue">Action Queue</a>
+        <a href="#citations">Citations</a>
         <a href="#gaps">Gaps</a>
         <a href="#workbench">Workbench</a>
         <a href="#clinton-library">Library Trip</a>
@@ -92,6 +93,45 @@
         </div>
         <div id="queue-root" class="queue-root" aria-live="polite">
           <p class="loading">Building compiler action queue...</p>
+        </div>
+      </section>
+
+      <section class="section citation-section" id="citations" aria-labelledby="citations-title">
+        <div class="section-heading">
+          <p class="kicker">Source Notes</p>
+          <h2 id="citations-title">Citation Desk</h2>
+        </div>
+        <p class="records-intro">
+          The citation desk is a source-note repair queue for FRUS first notes:
+          copy working citations, isolate records missing source, chronology, or
+          declassification detail, and export the whole repair ledger for review.
+        </p>
+        <div class="citation-summary" aria-label="Citation desk summary">
+          <div>
+            <span data-citation-metric="copyReady">0</span>
+            <p>working first-note drafts</p>
+          </div>
+          <div>
+            <span data-citation-metric="sourceGaps">0</span>
+            <p>source-note repair items</p>
+          </div>
+          <div>
+            <span data-citation-metric="timeGaps">0</span>
+            <p>chronology/time checks</p>
+          </div>
+          <div>
+            <span data-citation-metric="declassChecks">0</span>
+            <p>declassification checks</p>
+          </div>
+        </div>
+        <div class="report-links citation-links" aria-label="Citation exports and reports">
+          <a href="#records">Open record browser</a>
+          <button type="button" id="download-citation-csv">Download citation CSV</button>
+          <a href="reports/source-note-style-audit.md" rel="noreferrer">Source-note style audit</a>
+          <a href="reports/source-marking-extraction.md" rel="noreferrer">Source-marking extraction</a>
+        </div>
+        <div id="citation-root" class="citation-root" aria-live="polite">
+          <p class="loading">Building citation desk...</p>
         </div>
       </section>
 
