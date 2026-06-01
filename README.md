@@ -38,6 +38,7 @@ then writes a date-sorted working chronology for document review:
 - `reports/declassified-document-chronology.md`
 - `reports/declassified-document-chronology.csv`
 - `reports/declassified-document-chronology.json`
+- `reports/frus-v17-compiler-workbook.xlsx`
 
 Use the Markdown file for reading order and either CSV for spreadsheet sorting
 by date, document type, participants, source path, declassification status, and
@@ -67,6 +68,23 @@ has a **Download citation CSV** export for spreadsheet review.
 Treat copied notes as working FRUS first notes until the source image confirms
 markings, page span, excisions, marginalia, attachments, drafting, clearance,
 and final chronological placement.
+
+## Compiler Workbook
+
+The public site includes a consolidated workbook for spreadsheet-first review:
+
+- `reports/frus-v17-compiler-workbook.xlsx`
+
+The workbook has tabs for the start-here dashboard, declassified chronology,
+action queue, citation desk, Clinton Library pull sheet, Presidential Daily
+Diary chases, gap risks, source-note audit, and the full records index. To
+rebuild it from Codex or another environment with the spreadsheet runtime
+available after refreshing the component reports, run:
+
+```bash
+node scripts/build-declassified-chronology.js
+node scripts/build-compiler-workbook.mjs
+```
 
 ## Data Model
 
@@ -264,6 +282,7 @@ The companion reports tracked in this repository include:
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
 - `reports/presidential-daily-diary-chase-sheet.csv`
+- `reports/frus-v17-compiler-workbook.xlsx`
 
 The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level
