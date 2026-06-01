@@ -48,6 +48,7 @@
         <div class="report-links chronology-links" aria-label="Chronology support reports">
           <a href="#records">Open full lane browser</a>
           <button type="button" id="download-chronology-csv">Download chronology CSV</button>
+          <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet</a>
           <a href="reports/presidential-daily-diary-search.md" rel="noreferrer">Daily Diary call and meeting report</a>
           <a href="reports/source-note-style-audit.md" rel="noreferrer">Source-note style audit</a>
         </div>
@@ -88,9 +89,39 @@
         <div class="report-links action-queue-links" aria-label="Action queue exports">
           <a href="#records">Open lane browser</a>
           <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
+          <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet</a>
           <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
           <a href="reports/clinton-library-pull-sheet.csv" download>Clinton Library pull sheet</a>
           <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>
+        </div>
+        <div class="diary-chase-panel" aria-label="Presidential Daily Diary chase sheet">
+          <div>
+            <p class="pull-priority">Source-Control Worksheet</p>
+            <h3>Daily Diary calls and meetings to chase back to substance</h3>
+            <p>
+              The worksheet separates diary chronology from final FRUS evidence:
+              it keeps dates, NAIDs, page references, participants, topics, and
+              PDFs beside the next source to chase, with blank fields for the
+              memcon, telcon, trip file, source-note check, and selection decision.
+            </p>
+          </div>
+          <dl class="diary-chase-metrics">
+            <div>
+              <dt>40</dt>
+              <dd>diary leads</dd>
+            </div>
+            <div>
+              <dt>13</dt>
+              <dd>high-priority chases</dd>
+            </div>
+            <div>
+              <dt>2</dt>
+              <dd>PDD releases</dd>
+            </div>
+          </dl>
+          <a class="diary-chase-download" href="reports/presidential-daily-diary-chase-sheet.csv" download>
+            Download diary chase CSV
+          </a>
         </div>
         <div id="queue-root" class="queue-root" aria-live="polite">
           <p class="loading">Building compiler action queue...</p>
@@ -389,6 +420,7 @@
           <a href="reports/clinton-library-pull-sheet.csv" download>Onsite pull sheet CSV</a>
           <a href="reports/clinton-library-research-plan.json" rel="noreferrer">Structured pull queue</a>
           <a href="reports/presidential-daily-diary-search.md" rel="noreferrer">Daily Diary call and meeting report</a>
+          <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet CSV</a>
           <a href="reports/presidential-daily-diary-search.json" rel="noreferrer">Structured Daily Diary references</a>
           <a href="https://www.clintonlibrary.gov/research" rel="noreferrer">Clinton Library research</a>
         </div>
@@ -723,6 +755,9 @@
           </a>
           <a href="reports/presidential-daily-diary-search.md" rel="noreferrer">
             Daily Diary call and meeting report
+          </a>
+          <a href="reports/presidential-daily-diary-chase-sheet.csv" download>
+            Daily Diary chase sheet CSV
           </a>
           <a href="reports/presidential-daily-diary-search.json" rel="noreferrer">
             Structured Daily Diary references

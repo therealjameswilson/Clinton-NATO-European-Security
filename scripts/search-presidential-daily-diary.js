@@ -11,6 +11,7 @@ const DATA_PATH = path.join(DATA_DIR, "records.json");
 const DATA_JS_PATH = path.join(DATA_DIR, "records.js");
 const JSON_PATH = path.join(REPORT_DIR, "presidential-daily-diary-search.json");
 const MD_PATH = path.join(REPORT_DIR, "presidential-daily-diary-search.md");
+const CHASE_CSV_PATH = path.join(REPORT_DIR, "presidential-daily-diary-chase-sheet.csv");
 
 const USER_SEARCH_URL =
   "https://catalog.archives.gov/search?q=%222010-0083-F%22&collectionIdentifier=WJC*";
@@ -710,6 +711,10 @@ function buildMarkdown(report) {
     "",
     report.method,
     "",
+    "## Chase Sheet",
+    "",
+    "Use `presidential-daily-diary-chase-sheet.csv` as the working source-control log. It preserves the diary date, NAID, release, page reference, participants, topics, PDF link, and next source to chase, with blank fields for the substantive record, source-note check, and final selection decision.",
+    "",
     "## Selected Calls And Meetings",
     "",
     "Date | NAID | Source pages | Diary reference | Compiler use",
@@ -724,6 +729,117 @@ function buildMarkdown(report) {
     "",
     "PDD records are context citations. Keep the first footnote to repository, collection, release, date-range/file title, NAID, and source page. Put compiler warnings in review notes, not in the Source sentence.",
     ""
+  ].join("\n");
+}
+
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function list(value) {
+  if (Array.isArray(value)) return value.filter(Boolean);
+  return value ? [value] : [];
+}
+
+function eventText(reference) {
+  return [reference.title, reference.summary, reference.compilerUse, ...list(reference.topics)].filter(Boolean).join(" ");
+}
+
+function diaryEventType(reference) {
+  const title = reference.title || "";
+  if (/conference call|secure voice|telcon|\bcall/i.test(title)) return "Call or telcon lead";
+  if (/summit|trip|visit|dinner|luncheon|bilateral/i.test(title)) return "Summit or trip lead";
+  if (/signing|treaty|ceremony|ratification/i.test(title)) return "Treaty or public-action lead";
+  if (/briefing|prep|preparation/i.test(title)) return "Briefing lead";
+  if (/meeting|session/i.test(title)) return "Meeting lead";
+
+  const text = eventText(reference);
+  if (/conference call|secure voice|telcon|\bcall/i.test(text)) return "Call or telcon lead";
+  if (/summit|trip|visit|dinner|luncheon|bilateral/i.test(text)) return "Summit or trip lead";
+  if (/briefing|prep|preparation/i.test(text)) return "Briefing lead";
+  if (/signing|treaty|ceremony|ratification/i.test(text)) return "Treaty or public-action lead";
+  if (/meeting|session/i.test(text)) return "Meeting lead";
+  return "Diary chronology lead";
+}
+
+function diaryPriority(reference) {
+  const text = eventText(reference);
+  if (/High-priority|CFE|OSCE|Madrid|Washington NATO Summit|Military Technical Agreement|NATO Secretary General|NATO 50th|Founding Act/i.test(text)) {
+    return "High";
+  }
+  if (/NATO-Russia|enlargement|Kosovo|Bosnia|Dayton|Yeltsin|Putin|Solana|KFOR/i.test(text)) return "Medium-high";
+  return "Medium";
+}
+
+function diaryChaseTarget(reference) {
+  const text = eventText(reference);
+  if (/conference call|secure voice|telcon|\bcall/i.test(text)) {
+    return "Chase telcon text, call sheet, NSC prep notes, and same-day follow-up memoranda.";
+  }
+  if (/summit|trip|visit|bilateral|dinner|luncheon/i.test(text)) {
+    return "Chase summit memcons, trip book tabs, briefing materials, and delegation follow-up files.";
+  }
+  if (/briefing|prep|preparation/i.test(text)) {
+    return "Chase briefing papers, decision memoranda, staff notes, and meeting readouts.";
+  }
+  if (/signing|treaty|ceremony|ratification/i.test(text)) {
+    return "Chase treaty/signing files, public papers, NSC legal-policy files, and speech drafts.";
+  }
+  return "Chase substantive memcon, briefing book, source image, and NSC follow-up files.";
+}
+
+function diarySourceControl(reference) {
+  if (/2010-0083-F/i.test(reference.release || "")) {
+    return "User-supplied 2010-0083-F release; verify diary page image and any withdrawal sheets before citing.";
+  }
+  return "Broader PDD release; verify page image, date range, and OCR hit before citing.";
+}
+
+function buildChaseCsv(selectedReferences) {
+  const rows = selectedReferences
+    .slice()
+    .sort((a, b) => (a.date || "").localeCompare(b.date || "") || (a.title || "").localeCompare(b.title || ""))
+    .map((reference, index) => ({
+      chaseOrder: String(index + 1).padStart(2, "0"),
+      priority: diaryPriority(reference),
+      eventType: diaryEventType(reference),
+      chaseTarget: diaryChaseTarget(reference),
+      sourceControl: diarySourceControl(reference),
+      ...reference
+    }));
+
+  const columns = [
+    ["chase_order", (row) => row.chaseOrder],
+    ["priority", (row) => row.priority],
+    ["event_type", (row) => row.eventType],
+    ["date", (row) => row.date],
+    ["diary_reference", (row) => row.title],
+    ["source_pages", (row) => row.sourcePages],
+    ["naid", (row) => row.naid],
+    ["release", (row) => row.release],
+    ["catalog_title", (row) => row.catalogTitle],
+    ["participants", (row) => list(row.participants).join("; ")],
+    ["countries", (row) => list(row.countries).join("; ")],
+    ["topics", (row) => list(row.topics).join("; ")],
+    ["summary", (row) => row.summary],
+    ["compiler_use", (row) => row.compilerUse],
+    ["chase_target", (row) => row.chaseTarget],
+    ["source_control", (row) => row.sourceControl],
+    ["search_terms_hit", (row) => list(row.searchTermsHit).join("; ")],
+    ["catalog_url", (row) => row.catalogUrl],
+    ["pdf_url", (row) => row.pdfUrl],
+    ["pdf_filename", (row) => row.pdfFilename],
+    ["substantive_record_found", () => ""],
+    ["memcon_telcon_or_trip_file", () => ""],
+    ["source_note_verified", () => ""],
+    ["final_selection_decision", () => ""],
+    ["compiler_notes", () => ""]
+  ];
+
+  return [
+    columns.map(([name]) => name).join(","),
+    ...rows.map((row) => columns.map(([, getter]) => csvEscape(getter(row))).join(","))
   ].join("\n");
 }
 
@@ -912,9 +1028,15 @@ async function main() {
 
   fs.writeFileSync(JSON_PATH, `${JSON.stringify(report, null, 2)}\n`);
   fs.writeFileSync(MD_PATH, `${buildMarkdown(report)}\n`);
+  fs.writeFileSync(CHASE_CSV_PATH, `${buildChaseCsv(selectedReferences)}\n`);
   const recordUpdate = updateRecords(selectedReferences);
 
-  console.log(`Wrote ${path.relative(ROOT, JSON_PATH)} and ${path.relative(ROOT, MD_PATH)}.`);
+  console.log(
+    `Wrote ${path.relative(ROOT, JSON_PATH)}, ${path.relative(ROOT, MD_PATH)}, and ${path.relative(
+      ROOT,
+      CHASE_CSV_PATH
+    )}.`
+  );
   if (recordUpdate.updated) {
     console.log(
       `Updated ${path.relative(ROOT, DATA_PATH)} and ${path.relative(ROOT, DATA_JS_PATH)} with ${recordUpdate.added} PDD context records.`

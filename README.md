@@ -206,6 +206,7 @@ then writes:
 
 - `reports/presidential-daily-diary-search.md`
 - `reports/presidential-daily-diary-search.json`
+- `reports/presidential-daily-diary-chase-sheet.csv`
 - 40 `pdd-` context records in `data/records.json` and `data/records.js`
 
 Treat these as chronology and source-control leads. The diary can identify that
@@ -213,6 +214,16 @@ a relevant call, meeting, briefing, or summit event happened, but it does not
 replace the memcon, telcon, briefing book, trip file, or source-image review
 needed for final FRUS selection. The current report flags Madrid and Helsinki
 summit coverage as high-risk gaps.
+
+Use the chase-sheet CSV as the working log for turning diary references into
+substantive records. It keeps the NAID, release, page reference, participants,
+topics, PDF link, and next source to chase beside blank fields for the memcon,
+telcon, trip file, source-note check, and final selection decision. To rebuild
+just that worksheet after editing the structured report, run:
+
+```bash
+node scripts/build-daily-diary-chase-sheet.js
+```
 
 ## Source Anchors
 
@@ -252,6 +263,7 @@ The companion reports tracked in this repository include:
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
+- `reports/presidential-daily-diary-chase-sheet.csv`
 
 The current pass adds 596 compiler records across Clinton Library released
 memcons/telcons, Balkans source packets, Clinton-Russia high-level

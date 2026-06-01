@@ -596,6 +596,7 @@ function ensureActionQueueSurface() {
       <div class="report-links action-queue-links" aria-label="Action queue exports">
         <a href="#records">Open lane browser</a>
         <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
+        <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet</a>
         <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
         <a href="reports/clinton-library-pull-sheet.csv" download>Clinton Library pull sheet</a>
         <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>

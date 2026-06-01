@@ -14,6 +14,10 @@ Generated: 2026-05-26T02:09:53.555Z
 
 NARA Catalog proxy searches were run against the user-supplied 2010-0083-F release and broader Presidential Daily Diary term searches. PDF OCR text was reviewed with pdftotext -layout, and only high-confidence calls, meetings, summit sessions, and briefing entries relevant to FRUS Volume XVII were promoted as context records.
 
+## Chase Sheet
+
+Use `presidential-daily-diary-chase-sheet.csv` as the working source-control log. It preserves the diary date, NAID, release, page reference, participants, topics, PDF link, and next source to chase, with blank fields for the substantive record, source-note check, and final selection decision.
+
 ## Selected Calls And Meetings
 
 Date | NAID | Source pages | Diary reference | Compiler use
@@ -70,4 +74,3 @@ Date | NAID | Source pages | Diary reference | Compiler use
 ## Source Note Rule
 
 PDD records are context citations. Keep the first footnote to repository, collection, release, date-range/file title, NAID, and source page. Put compiler warnings in review notes, not in the Source sentence.
-

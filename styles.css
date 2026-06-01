@@ -688,7 +688,8 @@ dd {
   line-height: 1.65;
 }
 
-.pull-sheet-panel {
+.pull-sheet-panel,
+.diary-chase-panel {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr) auto;
   gap: 16px;
@@ -701,7 +702,14 @@ dd {
   border-radius: 8px;
 }
 
-.pull-sheet-panel h3 {
+.diary-chase-panel {
+  margin-top: -8px;
+  margin-bottom: 24px;
+  border-left-color: var(--green);
+}
+
+.pull-sheet-panel h3,
+.diary-chase-panel h3 {
   margin: 0 0 10px;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -709,21 +717,24 @@ dd {
   line-height: 1.2;
 }
 
-.pull-sheet-panel p:not(.pull-priority) {
+.pull-sheet-panel p:not(.pull-priority),
+.diary-chase-panel p:not(.pull-priority) {
   margin: 0;
   color: var(--muted);
   font-weight: 750;
   line-height: 1.55;
 }
 
-.pull-sheet-metrics {
+.pull-sheet-metrics,
+.diary-chase-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   margin: 0;
 }
 
-.pull-sheet-metrics div {
+.pull-sheet-metrics div,
+.diary-chase-metrics div {
   display: grid;
   align-content: center;
   min-height: 120px;
@@ -733,7 +744,13 @@ dd {
   border-radius: 8px;
 }
 
-.pull-sheet-metrics dt {
+.diary-chase-metrics div {
+  background: rgba(37, 54, 79, 0.07);
+  border-color: rgba(37, 54, 79, 0.12);
+}
+
+.pull-sheet-metrics dt,
+.diary-chase-metrics dt {
   color: var(--green);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
@@ -741,7 +758,12 @@ dd {
   line-height: 1;
 }
 
-.pull-sheet-metrics dd {
+.diary-chase-metrics dt {
+  color: var(--navy);
+}
+
+.pull-sheet-metrics dd,
+.diary-chase-metrics dd {
   margin: 8px 0 0;
   color: var(--navy);
   font-size: 0.82rem;
@@ -749,7 +771,8 @@ dd {
   line-height: 1.25;
 }
 
-.pull-sheet-download {
+.pull-sheet-download,
+.diary-chase-download {
   display: inline-flex;
   min-width: 150px;
   min-height: 100%;
@@ -766,8 +789,14 @@ dd {
   border-radius: 8px;
 }
 
+.diary-chase-download {
+  background: var(--green);
+}
+
 .pull-sheet-download:hover,
-.pull-sheet-download:focus-visible {
+.pull-sheet-download:focus-visible,
+.diary-chase-download:hover,
+.diary-chase-download:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
   outline: none;
@@ -1531,6 +1560,7 @@ footer a {
   .gap-summary,
   .library-grid,
   .pull-sheet-panel,
+  .diary-chase-panel,
   .onsite-rules,
   .source-note-guide,
   .queue-list,
@@ -1538,11 +1568,13 @@ footer a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .pull-sheet-panel {
+  .pull-sheet-panel,
+  .diary-chase-panel {
     align-items: start;
   }
 
-  .pull-sheet-download {
+  .pull-sheet-download,
+  .diary-chase-download {
     min-height: 56px;
     grid-column: 1 / -1;
   }
@@ -1583,6 +1615,8 @@ footer a {
   .library-grid,
   .pull-sheet-panel,
   .pull-sheet-metrics,
+  .diary-chase-panel,
+  .diary-chase-metrics,
   .onsite-rules,
   .source-note-guide,
   .queue-list,
