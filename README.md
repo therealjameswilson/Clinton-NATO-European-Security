@@ -43,6 +43,19 @@ Use the Markdown file for reading order and either CSV for spreadsheet sorting
 by date, document type, participants, source path, declassification status, and
 next compiler action.
 
+## Compiler Action Queue
+
+The page now includes a generated **Compiler Action Queue** immediately after
+the chronology. It ranks records by production risk and coverage value so a
+compiler can move from reading order into the next best work: promoting Scout
+Leads, splitting release packets, chasing Presidential Daily Diary events back
+to substantive records, repairing source-note/declassification gaps, and
+balancing weak CFE, NAC/USNATO, OSCE/CSCE, NATO-EU/ESDI, Madrid/accession, and
+late-volume coverage.
+
+Use **Download action queue CSV** on the live page to export the ranked work
+list for a research log or Clinton Library trip sheet.
+
 ## Data Model
 
 The canonical data file is `data/records.json`, with a generated

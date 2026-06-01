@@ -7,7 +7,9 @@ const CHAPTER_ORDER = [
 
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
+let queueRoot = document.querySelector("#queue-root");
 let chronologyCsvControl = document.querySelector("#download-chronology-csv");
+let actionQueueCsvControl = document.querySelector("#download-action-queue-csv");
 const totalRecords = document.querySelector("#total-records");
 const decisionReady = document.querySelector("#decision-ready");
 const provenanceGaps = document.querySelector("#provenance-gaps");
@@ -19,6 +21,24 @@ const issueButtons = [...document.querySelectorAll("[data-issue-filter]")];
 let allRecords = [];
 let activeFilter = "all";
 let activeIssueFilter = "all";
+
+const QUEUE_GROUP_ORDER = [
+  "Rebalance Coverage",
+  "Promote Leads",
+  "Chase Diary Leads",
+  "Fix Source and Declass",
+  "Selection Triage",
+  "Final Review"
+];
+
+const COVERAGE_SIGNALS = [
+  { label: "CFE gap", bonus: 36, pattern: /\bCFE\b|Conventional Forces/i },
+  { label: "NAC/USNATO gap", bonus: 36, pattern: /\bNAC\b|USNATO|North Atlantic Council|NATO Mission/i },
+  { label: "OSCE/CSCE architecture", bonus: 22, pattern: /\bOSCE\b|\bCSCE\b|Istanbul|Budapest/i },
+  { label: "NATO-EU/ESDI architecture", bonus: 18, pattern: /NATO-EU|\bESDI\b|European Union|\bEU\b/i },
+  { label: "Madrid/accession thread", bonus: 18, pattern: /Madrid|accession|ratification|enlargement|Poland|Hungary|Czech/i },
+  { label: "NATO-Russia thread", bonus: 18, pattern: /NATO-Russia|Founding Act|Yeltsin|Putin|Kozyrev|Primakov|Mamedov|Chernomyrdin/i }
+];
 
 function chapterId(chapterName) {
   return `chapter-${chapterName.toLowerCase().replaceAll(" ", "-")}`;
@@ -496,6 +516,403 @@ function formatIssue(issue) {
   }[issue] || issue;
 }
 
+function ensureActionQueueSurface() {
+  const nav = document.querySelector("nav");
+  if (nav && !nav.querySelector('a[href="#queue"]')) {
+    const link = document.createElement("a");
+    link.href = "#queue";
+    link.textContent = "Action Queue";
+    nav.insertBefore(link, nav.querySelector('a[href="#gaps"]') || nav.children[1] || null);
+  }
+
+  if (!queueRoot) {
+    const chronologySection = document.querySelector("#chronology");
+    const section = document.createElement("section");
+    section.className = "section queue-section";
+    section.id = "queue";
+    section.setAttribute("aria-labelledby", "queue-title");
+    section.innerHTML = `
+      <div class="section-heading">
+        <p class="kicker">Today's Work</p>
+        <h2 id="queue-title">Compiler Action Queue</h2>
+      </div>
+      <p class="records-intro">
+        This generated queue turns the corpus into a work order: promote the
+        highest-value file-unit leads, chase Daily Diary events back to
+        substantive records, repair source-note and declassification gaps, and
+        rebalance the volume away from crisis-heavy coverage.
+      </p>
+      <div class="queue-summary" aria-label="Action queue summary">
+        <div><span data-queue-metric="promotion">0</span><p>lead-promotion tasks</p></div>
+        <div><span data-queue-metric="source">0</span><p>source-note or declass fixes</p></div>
+        <div><span data-queue-metric="diary">0</span><p>Daily Diary chase items</p></div>
+        <div><span data-queue-metric="coverage">0</span><p>coverage-balancing leads</p></div>
+      </div>
+      <div class="report-links action-queue-links" aria-label="Action queue exports">
+        <a href="#records">Open lane browser</a>
+        <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
+        <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
+        <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>
+      </div>
+      <div id="queue-root" class="queue-root" aria-live="polite">
+        <p class="loading">Building compiler action queue...</p>
+      </div>
+    `;
+
+    if (chronologySection?.parentNode) {
+      chronologySection.parentNode.insertBefore(section, chronologySection.nextSibling);
+    }
+
+    queueRoot = section.querySelector("#queue-root");
+    actionQueueCsvControl = section.querySelector("#download-action-queue-csv");
+  }
+
+  if (!document.querySelector("#action-queue-fallback-styles")) {
+    const style = document.createElement("style");
+    style.id = "action-queue-fallback-styles";
+    style.textContent = `
+      .queue-section{padding-top:56px}.queue-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.queue-summary div{min-height:142px;padding:18px;color:white;background:var(--green);border-radius:8px}.queue-summary div:nth-child(2){background:var(--navy)}.queue-summary div:nth-child(3){background:var(--red)}.queue-summary div:nth-child(4){color:var(--ink);background:var(--gold)}.queue-summary span{display:block;margin-bottom:14px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1}.queue-summary p{margin:0;font-weight:800;line-height:1.45}.queue-root{display:grid;gap:28px;margin-top:24px}.queue-group{display:grid;gap:12px}.queue-group-header{display:flex;align-items:end;justify-content:space-between;gap:18px;padding-bottom:10px;border-bottom:2px solid var(--green)}.queue-group-header h3{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.5rem,3vw,2.1rem)}.queue-group-header p{margin:0;color:var(--muted);font-weight:900}.queue-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.queue-item{display:grid;gap:10px;min-height:auto;padding:16px}.queue-item-top{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:10px;align-items:start}.queue-rank,.queue-score{display:inline-flex;min-height:30px;align-items:center;justify-content:center;padding:0 9px;font-size:.76rem;font-weight:900;line-height:1;border-radius:6px}.queue-rank{color:white;background:var(--navy)}.queue-score{color:var(--navy);background:rgba(37,54,79,.08);white-space:nowrap}.queue-item h4{margin:2px 0 0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:1.02rem;line-height:1.35;overflow-wrap:anywhere}.queue-meta,.queue-reason,.queue-action{margin:0;font-size:.9rem;font-weight:800;line-height:1.48;overflow-wrap:anywhere}.queue-meta{color:var(--navy)}.queue-action{padding:10px 12px;color:var(--ink);background:rgba(47,103,95,.09);border-left:3px solid var(--green);border-radius:6px}.report-links button{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;color:var(--navy);font:inherit;font-size:.84rem;font-weight:900;text-decoration:none;background:rgba(37,54,79,.08);border:1px solid rgba(37,54,79,.14);border-radius:6px;cursor:pointer}@media(max-width:980px){.queue-summary,.queue-list{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:680px){.queue-summary,.queue-list{grid-template-columns:1fr}.queue-group-header{align-items:flex-start;flex-direction:column}.queue-item-top{grid-template-columns:40px minmax(0,1fr)}.queue-score{width:fit-content;grid-column:2}}
+    `;
+    document.head.append(style);
+  }
+}
+
+function coverageText(record) {
+  return [
+    record.title,
+    record.documentTitle,
+    record.subjectLine,
+    record.dateLine,
+    record.sourceNote,
+    record.source?.collection,
+    record.source?.series,
+    record.source?.fileUnit,
+    record.source?.folder,
+    record.source?.itemTitle,
+    ...(record.persons || []),
+    ...(record.participants || []),
+    ...(record.countries || []),
+    ...sourcePathParts(record)
+  ]
+    .filter(Boolean)
+    .join(" ");
+}
+
+function recordYear(record) {
+  const value = (record.sortDate || record.date || "").slice(0, 4);
+  return /^\d{4}$/.test(value) ? Number(value) : null;
+}
+
+function isDailyDiaryRecord(record) {
+  return (
+    /^pdd-/i.test(record.id || "") ||
+    /Presidential Daily Diary|2010-0083-F/i.test([record.sourceNote, record.sourceNoteAddendum, record.source?.collection].join(" "))
+  );
+}
+
+function coverageSignals(record) {
+  const text = coverageText(record);
+  const signals = COVERAGE_SIGNALS.filter((signal) => signal.pattern.test(text)).map(({ label }) => label);
+  const year = recordYear(record);
+
+  if (year && year >= 1997) signals.push("late-volume coverage");
+  if (record.chapter?.name && record.chapter.name !== "Crisis Security Files") signals.push("non-crisis lane");
+  return [...new Set(signals)];
+}
+
+function coverageBonus(record) {
+  const text = coverageText(record);
+  const patternBonus = COVERAGE_SIGNALS.reduce((sum, signal) => (signal.pattern.test(text) ? sum + signal.bonus : sum), 0);
+  const year = recordYear(record);
+  return (
+    patternBonus +
+    (year && year >= 1997 ? 10 : 0) +
+    (record.chapter?.name && record.chapter.name !== "Crisis Security Files" ? 16 : 0)
+  );
+}
+
+function actionQueueCategory(record, issues, signals) {
+  if (isDailyDiaryRecord(record)) return "Chase Diary Leads";
+  if (signals.some((signal) => /gap|architecture|late-volume|non-crisis/i.test(signal))) return "Rebalance Coverage";
+  if (record.type === "Scout Lead" || record.type === "Release Packet") return "Promote Leads";
+  if (issues.some((issue) => ["needs-source", "needs-chronology", "needs-declass"].includes(issue))) {
+    return "Fix Source and Declass";
+  }
+  if (issues.includes("needs-selection") || record.type === "Source Lead") return "Selection Triage";
+  return "Final Review";
+}
+
+function actionQueueNextStep(record, issues) {
+  if (isDailyDiaryRecord(record)) {
+    return "Use the diary entry as a time-and-participants lead, then chase the substantive memcon, telcon, briefing book, trip file, or summit file.";
+  }
+
+  if (record.type === "Scout Lead") {
+    return "Open the catalog PDF or digital object; extract only document-level items with actual dates, page spans, markings, and a FRUS-style source path.";
+  }
+
+  if (record.type === "Release Packet") {
+    return "Split the packet into document-level records and record the source page span, markings, excisions, and selection decision for each item.";
+  }
+
+  if (record.type === "Source Lead") {
+    return "Read the released PDF, decide include/context/exclude, and extract the title, date, page span, markings, source note, and annotation leads.";
+  }
+
+  if (issues.includes("needs-source")) {
+    return "Repair the first source note: repository path, collection or file, item identifier, markings, channel, clearance, page span, and excision note.";
+  }
+
+  if (issues.includes("needs-chronology")) {
+    return "Verify Washington time and chronological placement from the source image, diary, trip book, or call log.";
+  }
+
+  if (issues.includes("needs-declass")) {
+    return "Check the source image for release status, withheld pages or lines, excisions, and any withdrawal sheets.";
+  }
+
+  if (issues.includes("needs-selection")) {
+    return "Make the include, context, duplicate/source-control, or exclude decision before further annotation work.";
+  }
+
+  return chronologyNextAction(record);
+}
+
+function actionQueueScore(record) {
+  const issues = getProductionIssues(record);
+  const decision = record.selectionDecision || record.compilerDecision || "";
+  const year = recordYear(record);
+  let score = 0;
+
+  if (decision === "Include candidate") score += 44;
+  else if (decision === "Context candidate") score += 32;
+  else if (decision === "Pending") score += 20;
+  else score += 12;
+
+  score +=
+    {
+      "Release Packet": 24,
+      "Scout Lead": 22,
+      "Source Lead": 18,
+      Memcon: 18,
+      Telcon: 18,
+      Context: 10
+    }[record.type] || 8;
+
+  if (record.pdfUrl || record.source?.pdfUrl) score += 9;
+  if (record.catalogUrl || record.source?.url) score += 5;
+  if (record.date === "1993-01-01" && record.type === "Scout Lead") score += 10;
+  if (year && year >= 1997) score += 4;
+
+  score += coverageBonus(record);
+
+  if (record.chapter?.name === "Crisis Security Files") {
+    const gapSignals = coverageSignals(record).filter((signal) => /gap|architecture|late-volume/i.test(signal));
+    score -= gapSignals.length ? 18 : 42;
+    if (["Scout Lead", "Source Lead"].includes(record.type) && !gapSignals.length) score -= 28;
+  }
+
+  for (const issue of issues) {
+    score +=
+      {
+        "needs-source": 20,
+        "needs-chronology": 18,
+        "needs-declass": 16,
+        "needs-selection": 12,
+        "needs-annotation": 7,
+        "needs-index": 5
+      }[issue] || 0;
+  }
+
+  if (isDailyDiaryRecord(record)) score += 14;
+  return score;
+}
+
+function buildActionQueue(records, limit = 96) {
+  const scored = records
+    .map((record) => {
+      const issues = getProductionIssues(record);
+      const signals = coverageSignals(record);
+      return {
+        record,
+        issues,
+        signals,
+        score: actionQueueScore(record),
+        category: actionQueueCategory(record, issues, signals),
+        nextAction: actionQueueNextStep(record, issues)
+      };
+    })
+    .filter((item) => {
+      return (
+        item.score >= 58 ||
+        item.issues.some((issue) => ["needs-source", "needs-chronology", "needs-declass"].includes(issue)) ||
+        item.signals.some((signal) => /gap/i.test(signal)) ||
+        isDailyDiaryRecord(item.record)
+      );
+    })
+    .sort((a, b) => {
+      return (
+        b.score - a.score ||
+        QUEUE_GROUP_ORDER.indexOf(a.category) - QUEUE_GROUP_ORDER.indexOf(b.category) ||
+        byChronology(a.record, b.record)
+      );
+    });
+
+  return scored.slice(0, limit).map((item, index) => ({ ...item, rank: index + 1 }));
+}
+
+function buildActionQueueCsv(records) {
+  const columns = [
+    ["rank", (item) => item.rank],
+    ["category", (item) => item.category],
+    ["priority_score", (item) => item.score],
+    ["date", (item) => item.record.sortDate || item.record.date || ""],
+    ["type", (item) => item.record.type || ""],
+    ["title", (item) => item.record.documentTitle || item.record.title || ""],
+    ["chapter", (item) => item.record.chapter?.name || ""],
+    ["selection_decision", (item) => item.record.selectionDecision || item.record.compilerDecision || ""],
+    ["production_issues", (item) => item.issues.map(formatIssue).join("; ")],
+    ["coverage_signals", (item) => item.signals.join("; ")],
+    ["next_action", (item) => item.nextAction],
+    ["catalog_url", (item) => item.record.catalogUrl || item.record.source?.url || ""],
+    ["pdf_url", (item) => item.record.pdfUrl || item.record.source?.pdfUrl || ""],
+    ["source_note", (item) => createSourceNoteDraft(item.record)]
+  ];
+
+  const queue = buildActionQueue(records, Number.POSITIVE_INFINITY);
+  return [
+    columns.map(([name]) => name).join(","),
+    ...queue.map((item) => columns.map(([, getter]) => csvEscape(getter(item))).join(","))
+  ].join("\n");
+}
+
+function setActionQueueMetrics(items) {
+  const metrics = {
+    promotion: items.filter((item) => ["Scout Lead", "Source Lead", "Release Packet"].includes(item.record.type)).length,
+    source: items.filter((item) =>
+      item.issues.some((issue) => ["needs-source", "needs-chronology", "needs-declass"].includes(issue))
+    ).length,
+    diary: items.filter((item) => item.category === "Chase Diary Leads").length,
+    coverage: items.filter((item) => item.signals.length).length
+  };
+
+  for (const [key, value] of Object.entries(metrics)) {
+    const node = document.querySelector(`[data-queue-metric="${key}"]`);
+    if (node) node.textContent = value.toString();
+  }
+}
+
+function createQueueItem(item) {
+  const { record } = item;
+  const article = document.createElement("article");
+  article.className = "queue-item";
+
+  const top = document.createElement("div");
+  top.className = "queue-item-top";
+
+  const rank = document.createElement("span");
+  rank.className = "queue-rank";
+  rank.textContent = String(item.displayRank || item.rank).padStart(2, "0");
+
+  const title = document.createElement("h4");
+  title.textContent = record.documentTitle || record.title;
+
+  const score = document.createElement("span");
+  score.className = "queue-score";
+  score.textContent = `Priority ${item.score}`;
+  top.append(rank, title, score);
+
+  const meta = document.createElement("p");
+  meta.className = "queue-meta";
+  meta.textContent = [
+    formatDate(record.sortDate || record.date),
+    record.type,
+    record.chapter?.name,
+    record.selectionDecision || record.compilerDecision
+  ]
+    .filter(Boolean)
+    .join(" / ");
+
+  const reason = document.createElement("p");
+  reason.className = "queue-reason";
+  const issueText = item.issues.length ? item.issues.map(formatIssue).join(", ") : "ready-check";
+  const signalText = item.signals.length ? item.signals.join(", ") : "no special coverage signal";
+  reason.textContent = `Why: ${issueText}; ${signalText}.`;
+
+  const action = document.createElement("p");
+  action.className = "queue-action";
+  action.textContent = item.nextAction;
+
+  const links = document.createElement("div");
+  links.className = "record-links";
+
+  if (record.catalogUrl || record.source?.url) {
+    const source = document.createElement("a");
+    source.href = record.catalogUrl || record.source.url;
+    source.rel = "noreferrer";
+    source.textContent = "Source";
+    links.append(source);
+  }
+
+  if (record.pdfUrl || record.source?.pdfUrl) {
+    const pdf = document.createElement("a");
+    pdf.href = record.pdfUrl || record.source.pdfUrl;
+    pdf.rel = "noreferrer";
+    pdf.target = "_blank";
+    pdf.textContent = "Open PDF";
+    links.append(pdf);
+  }
+
+  article.append(top, meta, reason, action, links);
+  return article;
+}
+
+function renderActionQueue(records) {
+  if (!queueRoot) return;
+
+  const fullQueue = buildActionQueue(records, Number.POSITIVE_INFINITY);
+  const visibleQueue = fullQueue.slice(0, 96);
+  setActionQueueMetrics(fullQueue);
+  queueRoot.replaceChildren();
+
+  if (!visibleQueue.length) {
+    queueRoot.innerHTML = `
+      <div class="empty-state">
+        <h3>No action queue items</h3>
+        <p>The current records do not expose source, chronology, declassification, diary, or coverage-balancing work.</p>
+      </div>
+    `;
+    return;
+  }
+
+  for (const groupName of QUEUE_GROUP_ORDER) {
+    const groupItems = visibleQueue.filter((item) => item.category === groupName);
+    if (!groupItems.length) continue;
+
+    const section = document.createElement("section");
+    section.className = "queue-group";
+
+    const header = document.createElement("div");
+    header.className = "queue-group-header";
+
+    const heading = document.createElement("h3");
+    heading.textContent = groupName;
+
+    const count = document.createElement("p");
+    count.textContent = `${fullQueue.filter((item) => item.category === groupName).length} queued`;
+    header.append(heading, count);
+
+    const list = document.createElement("div");
+    list.className = "queue-list";
+    groupItems.slice(0, 12).forEach((item, index) => {
+      list.append(createQueueItem({ ...item, displayRank: index + 1 }));
+    });
+
+    section.append(header, list);
+    queueRoot.append(section);
+  }
+}
+
 function renderEmptyState() {
   recordsRoot.innerHTML = `
     <div class="empty-state">
@@ -663,6 +1080,32 @@ function enableChronologyExport() {
   });
 }
 
+function enableActionQueueExport() {
+  if (!actionQueueCsvControl) {
+    const links = document.querySelector(".action-queue-links");
+    if (links) {
+      actionQueueCsvControl = document.createElement("a");
+      actionQueueCsvControl.id = "download-action-queue-csv";
+      actionQueueCsvControl.href = "#";
+      actionQueueCsvControl.textContent = "Download action queue CSV";
+      links.insertBefore(actionQueueCsvControl, links.children[1] || null);
+    }
+  }
+
+  actionQueueCsvControl?.addEventListener("click", (event) => {
+    event.preventDefault();
+    const blob = new Blob([`${buildActionQueueCsv(allRecords)}\n`], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "frus-v17-compiler-action-queue.csv";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  });
+}
+
 function enableChapterCards() {
   for (const card of document.querySelectorAll(".chapter-card")) {
     card.addEventListener("click", (event) => {
@@ -688,11 +1131,14 @@ async function loadRecords() {
 async function init() {
   try {
     allRecords = window.COMPILER_RECORDS || window.MEMCONS || (await loadRecords());
+    ensureActionQueueSurface();
     setChapterCounts(allRecords);
     renderChronology(allRecords);
+    renderActionQueue(allRecords);
     renderRecords(allRecords);
     enableFilters();
     enableChronologyExport();
+    enableActionQueueExport();
     enableChapterCards();
     if (window.location.hash) document.querySelector(window.location.hash)?.scrollIntoView();
   } catch (error) {

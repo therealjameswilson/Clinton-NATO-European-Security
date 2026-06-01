@@ -18,6 +18,7 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="#chronology">Chronology</a>
+        <a href="#queue">Action Queue</a>
         <a href="#gaps">Gaps</a>
         <a href="#workbench">Workbench</a>
         <a href="#clinton-library">Library Trip</a>
@@ -51,6 +52,46 @@
         </div>
         <div id="chronology-root" class="records-root chronology-root" aria-live="polite">
           <p class="loading">Loading declassified document chronology...</p>
+        </div>
+      </section>
+
+      <section class="section queue-section" id="queue" aria-labelledby="queue-title">
+        <div class="section-heading">
+          <p class="kicker">Today's Work</p>
+          <h2 id="queue-title">Compiler Action Queue</h2>
+        </div>
+        <p class="records-intro">
+          This generated queue turns the corpus into a work order: promote the
+          highest-value file-unit leads, chase Daily Diary events back to
+          substantive records, repair source-note and declassification gaps, and
+          rebalance the volume away from crisis-heavy coverage.
+        </p>
+        <div class="queue-summary" aria-label="Action queue summary">
+          <div>
+            <span data-queue-metric="promotion">0</span>
+            <p>lead-promotion tasks</p>
+          </div>
+          <div>
+            <span data-queue-metric="source">0</span>
+            <p>source-note or declass fixes</p>
+          </div>
+          <div>
+            <span data-queue-metric="diary">0</span>
+            <p>Daily Diary chase items</p>
+          </div>
+          <div>
+            <span data-queue-metric="coverage">0</span>
+            <p>coverage-balancing leads</p>
+          </div>
+        </div>
+        <div class="report-links action-queue-links" aria-label="Action queue exports">
+          <a href="#records">Open lane browser</a>
+          <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
+          <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
+          <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>
+        </div>
+        <div id="queue-root" class="queue-root" aria-live="polite">
+          <p class="loading">Building compiler action queue...</p>
         </div>
       </section>
 
