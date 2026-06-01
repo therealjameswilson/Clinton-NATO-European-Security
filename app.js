@@ -7,6 +7,7 @@ const CHAPTER_ORDER = [
 
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
+let chronologyCsvControl = document.querySelector("#download-chronology-csv");
 const totalRecords = document.querySelector("#total-records");
 const decisionReady = document.querySelector("#decision-ready");
 const provenanceGaps = document.querySelector("#provenance-gaps");
@@ -127,6 +128,17 @@ function sourceMarkings(record) {
   return markings.join("; ");
 }
 
+function compactSource(record) {
+  return [
+    record.source?.name,
+    record.source?.caseNumber,
+    record.source?.documentId || record.naid,
+    record.sourcePages || record.sourcePdfPages
+  ]
+    .filter(Boolean)
+    .join("; ");
+}
+
 function sourceTransmission(record) {
   const communication = record.communication || {};
   const notes = [];
@@ -160,6 +172,33 @@ function sourceClearance(record) {
   return clauses.length ? `${clauses.join("; ")}.` : "";
 }
 
+function chronologyNextAction(record) {
+  const note = [record.sourceNoteAddendum, record.compilerNote, ...(record.compilerNotes || [])].filter(Boolean).join(" ");
+  const issues = getProductionIssues(record);
+
+  if (/Presidential Daily Diary context record/i.test(note)) {
+    return "Use as a chronology lead; chase the substantive memcon, telcon, briefing book, trip file, or summit file before selection.";
+  }
+
+  if (record.type === "Release Packet") {
+    return "Extract document-level items, actual dates, page spans, markings, and excision status from the packet.";
+  }
+
+  if (issues.includes("needs-chronology")) {
+    return "Verify Washington time and final chronological placement against the source image or PDF.";
+  }
+
+  if (/pending review|verify|requires|not yet audited/i.test([record.declassificationStatus, record.releaseStatus, record.sourceNoteAddendum].join(" "))) {
+    return "Verify markings, page span, declassification status, excisions, attachments, and clearance details.";
+  }
+
+  if (issues.includes("needs-selection")) {
+    return "Make the include/context/exclude decision and add annotation links.";
+  }
+
+  return "Review for final selection, annotation, and index treatment.";
+}
+
 function createSourceNoteDraft(record) {
   if (record.sourceNote) return record.sourceNote;
 
@@ -176,6 +215,37 @@ function createSourceNoteDraft(record) {
   if (clearance) sentences.push(clearance);
   if (record.sourcePages || record.sourcePdfPages) sentences.push(`Source pages: ${record.sourcePages || record.sourcePdfPages}.`);
   return sentences.join(" ").replace(/\s+/g, " ").trim();
+}
+
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function buildChronologyCsv(records) {
+  const columns = [
+    ["date", (record) => record.sortDate || record.date || ""],
+    ["washington_time", (record) => record.washingtonTime || ""],
+    ["type", (record) => record.type || ""],
+    ["title", (record) => record.documentTitle || record.title || ""],
+    ["participants", (record) => listValues(record.participants).join("; ")],
+    ["countries", (record) => listValues(record.countries).join("; ")],
+    ["chapter", (record) => record.chapter?.name || ""],
+    ["selection_decision", (record) => record.selectionDecision || record.compilerDecision || ""],
+    ["declassification", (record) => record.declassificationStatus || record.releaseStatus || ""],
+    ["source_id", compactSource],
+    ["markings", sourceMarkings],
+    ["source_pages", (record) => record.sourcePages || record.sourcePdfPages || ""],
+    ["catalog_url", (record) => record.catalogUrl || ""],
+    ["pdf_url", (record) => record.pdfUrl || ""],
+    ["source_note", createSourceNoteDraft],
+    ["next_action", chronologyNextAction]
+  ];
+
+  return [
+    columns.map(([name]) => name).join(","),
+    ...records.map((record) => columns.map(([, getter]) => csvEscape(getter(record))).join(","))
+  ].join("\n");
 }
 
 function hasSourceCitation(record) {
@@ -566,6 +636,33 @@ function enableFilters() {
   }
 }
 
+function enableChronologyExport() {
+  if (!chronologyCsvControl) {
+    const links = document.querySelector(".chronology-links");
+    if (links) {
+      chronologyCsvControl = document.createElement("a");
+      chronologyCsvControl.id = "download-chronology-csv";
+      chronologyCsvControl.href = "#";
+      chronologyCsvControl.textContent = "Download chronology CSV";
+      links.insertBefore(chronologyCsvControl, links.children[1] || null);
+    }
+  }
+
+  chronologyCsvControl?.addEventListener("click", (event) => {
+    event.preventDefault();
+    const records = allRecords.filter(isDeclassifiedChronologyRecord).sort(byChronology);
+    const blob = new Blob([`${buildChronologyCsv(records)}\n`], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "frus-v17-declassified-chronology.csv";
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+  });
+}
+
 function enableChapterCards() {
   for (const card of document.querySelectorAll(".chapter-card")) {
     card.addEventListener("click", (event) => {
@@ -595,6 +692,7 @@ async function init() {
     renderChronology(allRecords);
     renderRecords(allRecords);
     enableFilters();
+    enableChronologyExport();
     enableChapterCards();
     if (window.location.hash) document.querySelector(window.location.hash)?.scrollIntoView();
   } catch (error) {
