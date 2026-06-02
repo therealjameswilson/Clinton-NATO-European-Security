@@ -305,7 +305,7 @@ function main() {
     "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
     "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
-    "Add a coverage matrix for allies and institutions: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
+    "Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
   ];
 
   const report = {
@@ -397,6 +397,12 @@ function main() {
     "## Priority Next Actions",
     "",
     ...nextActions.map((action, index) => `${index + 1}. ${action}`),
+    "",
+    "## Companion Coverage Matrix",
+    "",
+    "- [Coverage matrix report](coverage-matrix.md)",
+    "- [Coverage matrix CSV](coverage-matrix.csv)",
+    "- [Structured coverage matrix](coverage-matrix.json)",
     ""
   ].join("\n");
 
