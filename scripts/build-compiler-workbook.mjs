@@ -573,6 +573,7 @@ function addDashboard(workbook, data) {
     ["Clinton Library pull rows", "", "Onsite request worksheet"],
     ["Daily Diary chase rows", "", "Chronology leads to chase into substance"],
     ["Coverage matrix rows", "", "Ally, institution, treaty, and crisis-balance controls"],
+    ["Search playbook rows", "", "Source-specific queries for hard and direct-document gaps"],
     ["Gap/risk rows", "", "Coverage-balancing review"]
   ];
 
@@ -583,8 +584,8 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C17").values = metricRows;
-  sheet.getRange("B9:B17").formulas = [
+  sheet.getRange("A8:C18").values = metricRows;
+  sheet.getRange("B9:B18").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
@@ -593,6 +594,7 @@ function addDashboard(workbook, data) {
     [`=COUNTA('Clinton Pulls'!A5:A${data.clintonPulls.length + 4})`],
     [`=COUNTA('Diary Chases'!A5:A${data.diaryChases.length + 4})`],
     [`=COUNTA('Coverage Matrix'!A5:A${data.coverageMatrix.length + 4})`],
+    [`=COUNTA('Search Playbook'!A5:A${data.searchPlaybook.length + 4})`],
     [`=COUNTA('Gap Risks'!A5:A${data.gapRows.length + 4})`]
   ];
 
@@ -646,6 +648,7 @@ async function main() {
   const clintonPulls = await readCsv("reports/clinton-library-pull-sheet.csv");
   const diaryChases = await readCsv("reports/presidential-daily-diary-chase-sheet.csv");
   const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
+  const searchPlaybook = await readCsv("reports/search-playbook.csv");
   const gapReport = await readJson("reports/compiler-gap-analysis.json");
   const sourceAudit = await readJson("reports/source-note-style-audit.json");
   const actionQueue = buildActionQueue(records);
@@ -825,6 +828,29 @@ async function main() {
     { key: "search_pattern", header: "Search Pattern", width: 260 }
   ]);
 
+  addDataSheet(workbook, "Search Playbook", "Source-specific query worksheet for hard gaps and direct-document gaps.", searchPlaybook, [
+    { key: "task_order", header: "Task Order", type: "number", width: 95 },
+    { key: "priority", header: "Priority", width: 165 },
+    { key: "gap_id", header: "Gap ID", width: 155 },
+    { key: "gap_label", header: "Gap Label", width: 340 },
+    { key: "coverage_status", header: "Coverage Status", width: 170 },
+    { key: "current_total_records", header: "Current Total", type: "number", width: 110 },
+    { key: "current_document_records", header: "Current Docs", type: "number", width: 110 },
+    { key: "direct_document_minimum", header: "Direct Minimum", type: "number", width: 125 },
+    { key: "search_source", header: "Search Source", width: 190 },
+    { key: "query", header: "Query", width: 340 },
+    { key: "search_url", header: "Search URL", width: 320 },
+    { key: "expected_record_type", header: "Expected Record Type", width: 280 },
+    { key: "target_evidence", header: "Target Evidence", width: 360 },
+    { key: "extraction_action", header: "Extraction Action", width: 430 },
+    { key: "promotion_queue_relation", header: "Promotion Queue Relation", width: 320 },
+    { key: "searched_on", header: "Searched On", width: 120 },
+    { key: "result_count", header: "Result Count", type: "number", width: 105 },
+    { key: "promising_hits", header: "Promising Hits", width: 320 },
+    { key: "promoted_record_ids", header: "Promoted Record IDs", width: 220 },
+    { key: "notes", header: "Notes", width: 300 }
+  ]);
+
   addDataSheet(workbook, "Source Audit", "Source-note model checks, counts, and repair actions.", auditRows, [
     { key: "section", header: "Section", width: 120 },
     { key: "label", header: "Label", width: 260 },
@@ -859,6 +885,7 @@ async function main() {
     clintonPulls,
     diaryChases,
     coverageMatrix,
+    searchPlaybook,
     recordsIndex: indexRows,
     gapRows: gaps
   });
@@ -888,6 +915,7 @@ async function main() {
         clintonPulls: clintonPulls.length,
         diaryChases: diaryChases.length,
         coverageMatrix: coverageMatrix.length,
+        searchPlaybook: searchPlaybook.length,
         gapRows: gaps.length,
         sourceAuditRows: auditRows.length
       },

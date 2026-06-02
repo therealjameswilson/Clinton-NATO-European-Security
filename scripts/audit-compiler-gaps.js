@@ -301,8 +301,8 @@ function main() {
 
   const nextActions = [
     "Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
-    "Run a targeted USNATO/NAC cable and file-unit search; current count is too low for compiler confidence.",
-    "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
+    "Use the search playbook to run targeted USNATO/NAC cable, file-unit, State FOIA, NARA Scout, and Clinton Library searches; current count is too low for compiler confidence.",
+    "Use the search playbook to run CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture searches, then separate direct decision documents from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
     "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
     "Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
@@ -409,6 +409,12 @@ function main() {
     "- [Promotion queue report](promotion-queue.md)",
     "- [Promotion queue CSV](promotion-queue.csv)",
     "- [Structured promotion queue](promotion-queue.json)",
+    "",
+    "## Companion Search Playbook",
+    "",
+    "- [Search playbook report](search-playbook.md)",
+    "- [Search playbook CSV](search-playbook.csv)",
+    "- [Structured search playbook](search-playbook.json)",
     ""
   ].join("\n");
 

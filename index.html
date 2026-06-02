@@ -441,12 +441,45 @@
             Download matrix CSV
           </a>
         </div>
+        <div class="search-playbook-panel" aria-label="Hard-gap search playbook summary">
+          <div>
+            <p class="pull-priority">Search Execution</p>
+            <h3>Source-specific query playbook for NAC, CFE, and direct-document gaps</h3>
+            <p>
+              The playbook turns the gap matrix into live search tasks across
+              NARA Catalog, NARA Scout, State FOIA, Clinton Library, Clinton Digital
+              Library, the Talbott FOIA manifest, and GovInfo. It keeps blank fields
+              for search date, result count, promising hits, promoted record IDs,
+              and compiler notes.
+            </p>
+          </div>
+          <dl class="search-playbook-metrics">
+            <div>
+              <dt>35</dt>
+              <dd>search tasks</dd>
+            </div>
+            <div>
+              <dt>13</dt>
+              <dd>hard-gap tasks</dd>
+            </div>
+            <div>
+              <dt>7</dt>
+              <dd>source classes</dd>
+            </div>
+          </dl>
+          <a class="search-playbook-download" href="reports/search-playbook.csv" download>
+            Download search CSV
+          </a>
+        </div>
         <div class="report-links" aria-label="Compiler gap reports">
           <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
           <a href="reports/compiler-gap-analysis.json" rel="noreferrer">Structured gap data</a>
           <a href="reports/coverage-matrix.md" rel="noreferrer">Coverage matrix report</a>
           <a href="reports/coverage-matrix.csv" download>Coverage matrix CSV</a>
           <a href="reports/coverage-matrix.json" rel="noreferrer">Structured coverage matrix</a>
+          <a href="reports/search-playbook.md" rel="noreferrer">Search playbook report</a>
+          <a href="reports/search-playbook.csv" download>Search playbook CSV</a>
+          <a href="reports/search-playbook.json" rel="noreferrer">Structured search playbook</a>
           <a href="reports/source-note-style-audit.md" rel="noreferrer">Source-note style audit</a>
           <a href="reports/source-marking-extraction.md" rel="noreferrer">Source-marking extraction</a>
           <a href="reports/source-check.json" rel="noreferrer">Source-check report</a>
@@ -968,6 +1001,15 @@
           </a>
           <a href="reports/coverage-matrix.json" rel="noreferrer">
             Structured coverage matrix
+          </a>
+          <a href="reports/search-playbook.md" rel="noreferrer">
+            Search playbook report
+          </a>
+          <a href="reports/search-playbook.csv" download>
+            Search playbook CSV
+          </a>
+          <a href="reports/search-playbook.json" rel="noreferrer">
+            Structured search playbook
           </a>
           <a href="reports/source-note-style-audit.md" rel="noreferrer">
             Source-note style audit

@@ -82,13 +82,15 @@ The public site includes a consolidated workbook for spreadsheet-first review:
 
 The workbook has tabs for the start-here dashboard, declassified chronology,
 action queue, promotion queue, citation desk, Clinton Library pull sheet,
-Presidential Daily Diary chases, gap risks, coverage matrix, source-note audit,
-and the full records index. To rebuild it from Codex or another environment with the
-spreadsheet runtime available after refreshing the component reports, run:
+Presidential Daily Diary chases, gap risks, coverage matrix, search playbook,
+source-note audit, and the full records index. To rebuild it from Codex or
+another environment with the spreadsheet runtime available after refreshing the
+component reports, run:
 
 ```bash
 node scripts/build-declassified-chronology.js
 node scripts/build-coverage-matrix.js
+node scripts/build-search-playbook.js
 node scripts/build-promotion-queue.js
 node scripts/build-compiler-workbook.mjs
 ```
@@ -201,6 +203,7 @@ Run the compiler-risk audit after refreshing records:
 ```bash
 node scripts/audit-compiler-gaps.js
 node scripts/build-coverage-matrix.js
+node scripts/build-search-playbook.js
 node scripts/build-promotion-queue.js
 ```
 
@@ -211,6 +214,9 @@ The audit writes:
 - `reports/coverage-matrix.md`
 - `reports/coverage-matrix.csv`
 - `reports/coverage-matrix.json`
+- `reports/search-playbook.md`
+- `reports/search-playbook.csv`
+- `reports/search-playbook.json`
 - `reports/promotion-queue.md`
 - `reports/promotion-queue.csv`
 - `reports/promotion-queue.json`
@@ -228,6 +234,13 @@ Hungary, Germany, France, the United Kingdom, EU/NATO-EU, OSCE/CSCE, CFE,
 enlargement, Partnership for Peace, and the Bosnia/Kosovo crisis-balance rows.
 It separates raw hits from document-level records so a high count does not hide
 thin usable FRUS evidence.
+
+The search playbook turns hard gaps and direct-document gaps into source-specific
+queries across NARA Catalog, NARA Scout, State FOIA, Clinton Library, Clinton
+Digital Library, the Strobe Talbott FOIA manifest, and GovInfo. Its CSV/workbook
+fields are designed for live compiler use: search date, result count, promising
+hits, promoted record IDs, and notes remain blank until the search is actually
+run and the hit is promoted into document-level evidence.
 
 ## Clinton Library Research Plan
 
@@ -332,6 +345,9 @@ The companion reports tracked in this repository include:
 - `reports/promotion-queue.json`
 - `reports/promotion-queue.md`
 - `reports/promotion-queue.csv`
+- `reports/search-playbook.json`
+- `reports/search-playbook.md`
+- `reports/search-playbook.csv`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
