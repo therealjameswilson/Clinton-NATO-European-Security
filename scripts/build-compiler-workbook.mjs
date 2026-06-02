@@ -9,6 +9,8 @@ const REPORT_DIR = path.join(ROOT, "reports");
 const OUTPUT_DIR = path.join(ROOT, "outputs", "frus-v17-compiler-workbook");
 const WORKBOOK_PATH = path.join(REPORT_DIR, "frus-v17-compiler-workbook.xlsx");
 const OUTPUT_WORKBOOK_PATH = path.join(OUTPUT_DIR, "frus-v17-compiler-workbook.xlsx");
+const ACTION_QUEUE_CSV_PATH = path.join(REPORT_DIR, "frus-v17-compiler-action-queue.csv");
+const CITATION_DESK_CSV_PATH = path.join(REPORT_DIR, "frus-v17-citation-desk.csv");
 
 const COVERAGE_SIGNALS = [
   { label: "CFE gap", bonus: 36, pattern: /\bCFE\b|Conventional Forces/i },
@@ -26,6 +28,38 @@ const QUEUE_GROUP_ORDER = [
   "Fix Source and Declass",
   "Selection Triage",
   "Final Review"
+];
+
+const ACTION_QUEUE_COLUMNS = [
+  { key: "rank", header: "Rank", type: "number", width: 70 },
+  { key: "category", header: "Category", width: 180 },
+  { key: "priority_score", header: "Priority Score", type: "number", width: 110 },
+  { key: "date", header: "Date", type: "date", width: 95 },
+  { key: "type", header: "Type", width: 110 },
+  { key: "title", header: "Title", width: 340 },
+  { key: "chapter", header: "Chapter", width: 220 },
+  { key: "selection_decision", header: "Selection Decision", width: 150 },
+  { key: "production_issues", header: "Production Issues", width: 190 },
+  { key: "coverage_signals", header: "Coverage Signals", width: 260 },
+  { key: "next_action", header: "Next Action", width: 360 },
+  { key: "catalog_url", header: "Catalog URL", width: 260 },
+  { key: "pdf_url", header: "PDF URL", width: 260 },
+  { key: "source_note", header: "Source Note", width: 420 }
+];
+
+const CITATION_DESK_COLUMNS = [
+  { key: "rank", header: "Rank", type: "number", width: 70 },
+  { key: "citation_group", header: "Citation Group", width: 190 },
+  { key: "priority_score", header: "Priority Score", type: "number", width: 110 },
+  { key: "status", header: "Status", width: 210 },
+  { key: "date", header: "Date", type: "date", width: 95 },
+  { key: "type", header: "Type", width: 110 },
+  { key: "title", header: "Title", width: 340 },
+  { key: "chapter", header: "Chapter", width: 220 },
+  { key: "next_action", header: "Next Action", width: 360 },
+  { key: "source_note_draft", header: "Source Note Draft", width: 440 },
+  { key: "catalog_url", header: "Catalog URL", width: 260 },
+  { key: "pdf_url", header: "PDF URL", width: 260 }
 ];
 
 function list(value) {
@@ -86,6 +120,18 @@ function parseCsv(text) {
   const rows = csvRows(text);
   const headers = rows.shift() || [];
   return rows.map((row) => Object.fromEntries(headers.map((header, index) => [header, row[index] || ""])));
+}
+
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function toCsv(rows, columns) {
+  return [
+    columns.map((column) => column.key).join(","),
+    ...rows.map((row) => columns.map((column) => csvEscape(row[column.key])).join(","))
+  ].join("\n");
 }
 
 async function readJson(relativePath) {
@@ -638,37 +684,21 @@ async function main() {
     { key: "source_note", header: "Source Note", width: 420 }
   ]);
 
-  addDataSheet(workbook, "Action Queue", "Ranked work queue for promotion, source repair, diary chase, and coverage balancing.", actionQueue, [
-    { key: "rank", header: "Rank", type: "number", width: 70 },
-    { key: "category", header: "Category", width: 180 },
-    { key: "priority_score", header: "Priority Score", type: "number", width: 110 },
-    { key: "date", header: "Date", type: "date", width: 95 },
-    { key: "type", header: "Type", width: 110 },
-    { key: "title", header: "Title", width: 340 },
-    { key: "chapter", header: "Chapter", width: 220 },
-    { key: "selection_decision", header: "Selection Decision", width: 150 },
-    { key: "production_issues", header: "Production Issues", width: 190 },
-    { key: "coverage_signals", header: "Coverage Signals", width: 260 },
-    { key: "next_action", header: "Next Action", width: 360 },
-    { key: "catalog_url", header: "Catalog URL", width: 260 },
-    { key: "pdf_url", header: "PDF URL", width: 260 },
-    { key: "source_note", header: "Source Note", width: 420 }
-  ]);
+  addDataSheet(
+    workbook,
+    "Action Queue",
+    "Ranked work queue for promotion, source repair, diary chase, and coverage balancing.",
+    actionQueue,
+    ACTION_QUEUE_COLUMNS
+  );
 
-  addDataSheet(workbook, "Citation Desk", "Working first-note drafts and source-note repair targets.", citationDesk, [
-    { key: "rank", header: "Rank", type: "number", width: 70 },
-    { key: "citation_group", header: "Citation Group", width: 190 },
-    { key: "priority_score", header: "Priority Score", type: "number", width: 110 },
-    { key: "status", header: "Status", width: 210 },
-    { key: "date", header: "Date", type: "date", width: 95 },
-    { key: "type", header: "Type", width: 110 },
-    { key: "title", header: "Title", width: 340 },
-    { key: "chapter", header: "Chapter", width: 220 },
-    { key: "next_action", header: "Next Action", width: 360 },
-    { key: "source_note_draft", header: "Source Note Draft", width: 440 },
-    { key: "catalog_url", header: "Catalog URL", width: 260 },
-    { key: "pdf_url", header: "PDF URL", width: 260 }
-  ]);
+  addDataSheet(
+    workbook,
+    "Citation Desk",
+    "Working first-note drafts and source-note repair targets.",
+    citationDesk,
+    CITATION_DESK_COLUMNS
+  );
 
   addDataSheet(workbook, "Clinton Pulls", "Onsite Clinton Library request and same-day decision log.", clintonPulls, [
     { key: "pull_order", header: "Pull Order", width: 90 },
@@ -762,9 +792,16 @@ async function main() {
   await fs.mkdir(REPORT_DIR, { recursive: true });
   await fs.mkdir(OUTPUT_DIR, { recursive: true });
   const output = await SpreadsheetFile.exportXlsx(workbook);
+  await fs.writeFile(ACTION_QUEUE_CSV_PATH, `${toCsv(actionQueue, ACTION_QUEUE_COLUMNS)}\n`);
+  await fs.writeFile(CITATION_DESK_CSV_PATH, `${toCsv(citationDesk, CITATION_DESK_COLUMNS)}\n`);
   await output.save(WORKBOOK_PATH);
   await output.save(OUTPUT_WORKBOOK_PATH);
-  console.log(`Wrote ${path.relative(ROOT, WORKBOOK_PATH)} and ${path.relative(ROOT, OUTPUT_WORKBOOK_PATH)}.`);
+  console.log(
+    `Wrote ${path.relative(ROOT, WORKBOOK_PATH)}, ${path.relative(ROOT, ACTION_QUEUE_CSV_PATH)}, ${path.relative(
+      ROOT,
+      CITATION_DESK_CSV_PATH
+    )}, and ${path.relative(ROOT, OUTPUT_WORKBOOK_PATH)}.`
+  );
   console.log(
     JSON.stringify(
       {

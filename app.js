@@ -596,6 +596,7 @@ function ensureActionQueueSurface() {
       <div class="report-links action-queue-links" aria-label="Action queue exports">
         <a href="#records">Open lane browser</a>
         <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
+        <a href="reports/frus-v17-compiler-action-queue.csv" download>Static action queue CSV</a>
         <a href="reports/frus-v17-compiler-workbook.xlsx" download>Compiler workbook</a>
         <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet</a>
         <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
@@ -1386,8 +1387,9 @@ function enableChronologyExport() {
 }
 
 function enableActionQueueExport() {
+  const links = document.querySelector(".action-queue-links");
+
   if (!actionQueueCsvControl) {
-    const links = document.querySelector(".action-queue-links");
     if (links) {
       actionQueueCsvControl = document.createElement("a");
       actionQueueCsvControl.id = "download-action-queue-csv";
@@ -1395,6 +1397,14 @@ function enableActionQueueExport() {
       actionQueueCsvControl.textContent = "Download action queue CSV";
       links.insertBefore(actionQueueCsvControl, links.children[1] || null);
     }
+  }
+
+  if (links && !links.querySelector('a[href="reports/frus-v17-compiler-action-queue.csv"]')) {
+    const staticLink = document.createElement("a");
+    staticLink.href = "reports/frus-v17-compiler-action-queue.csv";
+    staticLink.download = "";
+    staticLink.textContent = "Static action queue CSV";
+    links.insertBefore(staticLink, actionQueueCsvControl?.nextSibling || links.children[2] || null);
   }
 
   actionQueueCsvControl?.addEventListener("click", (event) => {
@@ -1412,8 +1422,9 @@ function enableActionQueueExport() {
 }
 
 function enableCitationExport() {
+  const links = document.querySelector(".citation-links");
+
   if (!citationCsvControl) {
-    const links = document.querySelector(".citation-links");
     if (links) {
       citationCsvControl = document.createElement("a");
       citationCsvControl.id = "download-citation-csv";
@@ -1421,6 +1432,14 @@ function enableCitationExport() {
       citationCsvControl.textContent = "Download citation CSV";
       links.insertBefore(citationCsvControl, links.children[1] || null);
     }
+  }
+
+  if (links && !links.querySelector('a[href="reports/frus-v17-citation-desk.csv"]')) {
+    const staticLink = document.createElement("a");
+    staticLink.href = "reports/frus-v17-citation-desk.csv";
+    staticLink.download = "";
+    staticLink.textContent = "Static citation desk CSV";
+    links.insertBefore(staticLink, citationCsvControl?.nextSibling || links.children[2] || null);
   }
 
   citationCsvControl?.addEventListener("click", (event) => {

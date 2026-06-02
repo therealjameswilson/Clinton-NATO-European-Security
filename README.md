@@ -54,8 +54,10 @@ to substantive records, repairing source-note/declassification gaps, and
 balancing weak CFE, NAC/USNATO, OSCE/CSCE, NATO-EU/ESDI, Madrid/accession, and
 late-volume coverage.
 
-Use **Download action queue CSV** on the live page to export the ranked work
-list for a research log or Clinton Library trip sheet.
+Use **Download action queue CSV** on the live page for an in-browser export, or
+download the committed static report for the same workbook-backed work queue:
+
+- `reports/frus-v17-compiler-action-queue.csv`
 
 ## Citation Desk
 
@@ -63,7 +65,10 @@ The page also includes a generated **Citation Desk** after the action queue. It
 surfaces source-note repair work, chronology/time checks, declassification
 checks, and working first-note drafts. Record cards include **Copy source
 note** controls for moving working citations into a draft, and the citation desk
-has a **Download citation CSV** export for spreadsheet review.
+has a **Download citation CSV** export for spreadsheet review. The committed
+static citation ledger is also available as:
+
+- `reports/frus-v17-citation-desk.csv`
 
 Treat copied notes as working FRUS first notes until the source image confirms
 markings, page span, excisions, marginalia, attachments, drafting, clearance,
@@ -85,6 +90,11 @@ available after refreshing the component reports, run:
 node scripts/build-declassified-chronology.js
 node scripts/build-compiler-workbook.mjs
 ```
+
+The workbook builder also refreshes:
+
+- `reports/frus-v17-compiler-action-queue.csv`
+- `reports/frus-v17-citation-desk.csv`
 
 ## Data Model
 
@@ -282,6 +292,8 @@ The companion reports tracked in this repository include:
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
 - `reports/presidential-daily-diary-chase-sheet.csv`
+- `reports/frus-v17-compiler-action-queue.csv`
+- `reports/frus-v17-citation-desk.csv`
 - `reports/frus-v17-compiler-workbook.xlsx`
 
 The current pass adds 596 compiler records across Clinton Library released
