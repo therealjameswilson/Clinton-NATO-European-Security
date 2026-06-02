@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T11:10:06.364Z",
+  "generatedAt": "2026-06-02T18:06:04.133Z",
   "recordCount": 649,
   "candidateCount": 343,
   "scoutLeadCount": 260,
@@ -1277,7 +1277,7 @@
       "next_action": "Open released PDF, decide include/context/exclude, capture page span, markings, declassification status, and final source note.",
       "catalog_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
-      "source_note_draft": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Source pages: 2 pages counted.",
+      "source_note_draft": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Unclassified. Source pages: 2 pages counted.",
       "inspection_status": "",
       "actual_document_date": "",
       "document_page_span": "",

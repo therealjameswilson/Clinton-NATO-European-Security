@@ -1,6 +1,6 @@
 # Source Note Style Audit
 
-Generated: 2026-06-02T11:10:05.744Z
+Generated: 2026-06-02T18:06:03.700Z
 
 ## FRUS Model
 
@@ -20,24 +20,19 @@ Keep the displayed first footnote as a Source sentence only: repository and coll
 - Raw URLs inside displayed Source note: 0
 - Production language inside displayed Source note: 0
 - Production review notes kept outside Source note: 543
-- Notes still needing verified classification/handling/context details: 1
+- Notes still needing verified classification/handling/context details: 0
 - Scout Leads retained as research backlog, not source-note style issues: 260
 
 ## Issue Counts
 
 ```json
-{
-  "needs-markings": 1
-}
+{}
 ```
 
 ## Markings Chase
 
-1 records need source-image or PDF review before their classification, handling markings, page span, attachments, and excisions can be treated as verified. Use [source-note-markings-chase.csv](source-note-markings-chase.csv) as the working sheet.
+No records currently require a markings chase.
 
-| Order | Record ID | Date | Type | Title | Compiler action |
-| ---: | --- | --- | --- | --- | --- |
-| 1 | strobe-hardgap-july2024-C09000038 | 1997-01-01 | Source Lead | On Course for Madrid | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
 
 ## Actions
 

@@ -2294,12 +2294,14 @@
     "washingtonTime": "",
     "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
     "subjectLine": "The manifest excerpt lays out an on-course-for-Madrid schedule with NATO-Russia, NAC, summit, ministerial, and military-committee milestones.",
-    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Source pages: 2 pages counted.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Unclassified. Source pages: 2 pages counted.",
     "sourceNoteStatus": "Draft",
-    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection. PDF page count extraction: 2 pages counted by pdfinfo.",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection. PDF page count extraction: 2 pages counted by pdfinfo. Source marking extraction: Unclassified found by visual source-image review of rotated left-margin marking.",
     "sourcePages": "PDF pages 1-2",
-    "originalClassification": "",
-    "documentMarkings": [],
+    "originalClassification": "Unclassified",
+    "documentMarkings": [
+      "Unclassified"
+    ],
     "handlingMarkings": [],
     "distribution": "",
     "draftingInfo": "",

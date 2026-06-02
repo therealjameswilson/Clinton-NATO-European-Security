@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T11:10:05.744Z",
+  "generatedAt": "2026-06-02T18:06:03.700Z",
   "model": [
     {
       "label": "FRUS 1989-1992, Volume XXXI, Document 1",
@@ -50,22 +50,12 @@
     "sourceNotesWithRawUrls": 0,
     "sourceNotesWithProductionLanguage": 0,
     "reviewNotesWithProductionLanguage": 543,
-    "notesNeedingMarkings": 1,
+    "notesNeedingMarkings": 0,
     "scoutLeadsAwaitingDocumentSelection": 260
   },
-  "issueCounts": {
-    "needs-markings": 1
-  },
+  "issueCounts": {},
   "samples": {
-    "needsMarkings": [
-      {
-        "id": "strobe-hardgap-july2024-C09000038",
-        "type": "Source Lead",
-        "title": "On Course for Madrid",
-        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Source pages: 2 pages counted.",
-        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection. PDF page count extraction: 2 pages counted by pdfinfo."
-      }
-    ],
+    "needsMarkings": [],
     "scoutLeadsAwaitingDocumentSelection": [
       {
         "id": "nara-scout-23902171",
@@ -142,7 +132,7 @@
   },
   "markingsChase": {
     "csv": "source-note-markings-chase.csv",
-    "count": 1
+    "count": 0
   },
   "actions": [
     "Do not append compiler verification language to the displayed Source note.",
