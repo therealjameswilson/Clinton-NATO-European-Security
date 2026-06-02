@@ -1,6 +1,6 @@
 # Promotion Queue
 
-Generated: 2026-06-02T10:32:16.869Z
+Generated: 2026-06-02T11:10:06.364Z
 
 Candidate count: 343 (260 Scout Leads; 83 Source Leads).
 

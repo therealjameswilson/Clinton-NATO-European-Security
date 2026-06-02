@@ -129,6 +129,36 @@ function insertMarkingIntoSourceNote(note, markings, qualifier = "") {
   return `${note.replace(/\s+$/, "")} ${sentence}`;
 }
 
+function pdfPageCount(filePath) {
+  if (!commandExists("pdfinfo")) return null;
+  const info = execFileSync("pdfinfo", [filePath], {
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "ignore"]
+  });
+  const match = info.match(/^Pages:\s+(\d+)/m);
+  return match ? Number(match[1]) : null;
+}
+
+function insertPageCountIntoSourceNote(note, count) {
+  if (!note || /Source pages:/i.test(note)) return note;
+  const unit = count === 1 ? "page" : "pages";
+  return `${note.replace(/\s+$/, "")} Source pages: ${count} ${unit} counted.`;
+}
+
+function addPdfPageCount(record, count, method) {
+  if (!Number.isFinite(count) || count < 1) return false;
+  const pageSpan = count === 1 ? "PDF page 1" : `PDF pages 1-${count}`;
+  const unit = count === 1 ? "page" : "pages";
+  record.pageCount = count;
+  record.sourcePages = record.sourcePages || pageSpan;
+  record.sourceNote = insertPageCountIntoSourceNote(record.sourceNote, count);
+  const extractionNote = `PDF page count extraction: ${count} ${unit} counted by ${method}.`;
+  if (!record.sourceNoteAddendum?.includes(extractionNote)) {
+    record.sourceNoteAddendum = [record.sourceNoteAddendum, extractionNote].filter(Boolean).join(" ");
+  }
+  return true;
+}
+
 function addMarkings(record, markings, method) {
   if (markings.classification) {
     record.originalClassification = markings.classification;
@@ -254,11 +284,24 @@ function main() {
 
   const records = readJson(DATA_PATH);
   const updated = [];
+  const pageCountUpdated = [];
   const unresolved = [];
   const failures = [];
   let publicContextUpdated = 0;
 
   for (const record of records) {
+    if (/^strobe-hardgap-/.test(record.id || "") && record.pdfUrl && (!record.pageCount || !record.sourcePages)) {
+      try {
+        const pdfPath = download(record.pdfUrl);
+        const count = pdfPageCount(pdfPath);
+        if (addPdfPageCount(record, count, "pdfinfo")) {
+          pageCountUpdated.push({ id: record.id, title: record.title, pageCount: count });
+        }
+      } catch (error) {
+        failures.push({ id: record.id, title: record.title, error: `page count: ${error.message}` });
+      }
+    }
+
     if (isPublicContext(record) && needsMarking(record)) {
       addPublicContextMarking(record);
       publicContextUpdated += 1;
@@ -287,13 +330,16 @@ function main() {
   const report = {
     generatedAt: new Date().toISOString(),
     updatedThisRun: updated.length,
+    pageCountsUpdatedThisRun: pageCountUpdated.length,
     recordsWithExtractedMarkings: records.filter((record) => record.sourceNoteAddendum?.includes("Source marking extraction:")).length,
+    recordsWithPdfPageCounts: records.filter((record) => record.pageCount || /PDF page count extraction:/.test(record.sourceNoteAddendum || "")).length,
     publicContextRecordsMarkedUnclassified: records.filter((record) => record.originalClassification === "Unclassified public record").length,
     publicContextUpdated,
     unresolved: unresolved.length,
     failureCount: failures.length,
     cacheDir: CACHE_DIR,
     updatedRecords: updated,
+    pageCountUpdatedRecords: pageCountUpdated,
     unresolvedRecords: unresolved,
     failureRecords: failures
   };
@@ -310,7 +356,9 @@ function main() {
       "## Counts",
       "",
       `- Records updated in this run: ${report.updatedThisRun}`,
+      `- PDF page counts updated in this run: ${report.pageCountsUpdatedThisRun}`,
       `- Records with extracted source markings: ${report.recordsWithExtractedMarkings}`,
+      `- Records with PDF page counts: ${report.recordsWithPdfPageCounts}`,
       `- Public context records marked unclassified: ${report.publicContextRecordsMarkedUnclassified}`,
       `- Unresolved source-marking extractions: ${report.unresolved}`,
       `- Extraction failures: ${report.failureCount}`,

@@ -1,13 +1,15 @@
 # Source Marking Extraction
 
-Generated: 2026-05-25T15:43:38.850Z
+Generated: 2026-06-02T10:56:37.263Z
 
 ## Counts
 
 - Records updated in this run: 0
-- Records with extracted source markings: 213
+- PDF page counts updated in this run: 13
+- Records with extracted source markings: 225
+- Records with PDF page counts: 151
 - Public context records marked unclassified: 66
-- Unresolved source-marking extractions: 0
+- Unresolved source-marking extractions: 1
 - Extraction failures: 0
 
 ## Method

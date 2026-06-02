@@ -295,6 +295,79 @@ function sourceNote(row) {
   ].join(", ") + ".";
 }
 
+function hasValue(value) {
+  if (Array.isArray(value)) return value.length > 0;
+  if (value && typeof value === "object") return Object.keys(value).length > 0;
+  return value !== null && typeof value !== "undefined" && String(value).trim() !== "";
+}
+
+function preserveIfPresent(target, existing, keys) {
+  if (!existing) return target;
+  for (const key of keys) {
+    if (hasValue(existing[key])) target[key] = existing[key];
+  }
+  return target;
+}
+
+function appendUniqueText(values) {
+  const seen = new Set();
+  return values
+    .flatMap((value) => (Array.isArray(value) ? value : [value]))
+    .filter(hasValue)
+    .filter((value) => {
+      const key = String(value);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+}
+
+function mergeSourceNoteAddendum(base, existing) {
+  if (!existing?.sourceNoteAddendum) return base.sourceNoteAddendum;
+  if (existing.sourceNoteAddendum.includes(base.sourceNoteAddendum)) return existing.sourceNoteAddendum;
+  return `${base.sourceNoteAddendum} ${existing.sourceNoteAddendum}`.replace(/\s+/g, " ").trim();
+}
+
+function mergeHarvestRecord(base, existing) {
+  if (!existing) return base;
+
+  const merged = {
+    ...base,
+    compilerNotes: appendUniqueText([base.compilerNotes, existing.compilerNotes]),
+    relatedReleaseIds: appendUniqueText([base.relatedReleaseIds, existing.relatedReleaseIds]),
+    sourceNoteAddendum: mergeSourceNoteAddendum(base, existing)
+  };
+
+  preserveIfPresent(merged, existing, [
+    "date",
+    "sortDate",
+    "dateLine",
+    "washingtonTime",
+    "placementNote",
+    "sourceNote",
+    "sourceNoteStatus",
+    "sourcePages",
+    "sourcePdfPages",
+    "pageCount",
+    "digitalObjects",
+    "originalClassification",
+    "documentMarkings",
+    "handlingMarkings",
+    "distribution",
+    "draftingInfo",
+    "clearance",
+    "communication",
+    "readBy",
+    "declassificationStatus",
+    "withheldMaterial",
+    "annotationStatus",
+    "annotation",
+    "extractionStatus"
+  ]);
+
+  return merged;
+}
+
 function sourcePath(row) {
   return ["State Department FOIA Library", "Strobe Talbott FOIA", `Release ${row.releaseLabel}`, `Document ${row.documentId}`];
 }
@@ -400,9 +473,12 @@ function main() {
   fs.mkdirSync(REPORT_DIR, { recursive: true });
   const records = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
   const harvestIds = new Set(HARVEST_ROWS.map((row) => row.harvestId));
+  const existingHarvestRecords = new Map(records.filter((record) => harvestIds.has(record.id)).map((record) => [record.id, record]));
   const cleanedRecords = records.filter((record) => !harvestIds.has(record.id));
   const existingPdfUrls = new Set(cleanedRecords.map((record) => record.pdfUrl).filter(Boolean));
-  const newRecords = HARVEST_ROWS.filter((row) => !existingPdfUrls.has(row.pdfUrl)).map(recordFor);
+  const newRecords = HARVEST_ROWS.filter((row) => !existingPdfUrls.has(row.pdfUrl)).map((row) =>
+    mergeHarvestRecord(recordFor(row), existingHarvestRecords.get(row.harvestId))
+  );
   const nextRecords = [...cleanedRecords, ...newRecords].sort(
     (a, b) =>
       a.chapter.number - b.chapter.number ||

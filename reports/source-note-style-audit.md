@@ -1,6 +1,6 @@
 # Source Note Style Audit
 
-Generated: 2026-06-02T10:33:37.891Z
+Generated: 2026-06-02T11:10:05.744Z
 
 ## FRUS Model
 
@@ -20,36 +20,24 @@ Keep the displayed first footnote as a Source sentence only: repository and coll
 - Raw URLs inside displayed Source note: 0
 - Production language inside displayed Source note: 0
 - Production review notes kept outside Source note: 543
-- Notes still needing verified classification/handling/context details: 13
+- Notes still needing verified classification/handling/context details: 1
 - Scout Leads retained as research backlog, not source-note style issues: 260
 
 ## Issue Counts
 
 ```json
 {
-  "needs-markings": 13
+  "needs-markings": 1
 }
 ```
 
 ## Markings Chase
 
-13 records need source-image or PDF review before their classification, handling markings, page span, attachments, and excisions can be treated as verified. Use [source-note-markings-chase.csv](source-note-markings-chase.csv) as the working sheet.
+1 records need source-image or PDF review before their classification, handling markings, page span, attachments, and excisions can be treated as verified. Use [source-note-markings-chase.csv](source-note-markings-chase.csv) as the working sheet.
 
 | Order | Record ID | Date | Type | Title | Compiler action |
 | ---: | --- | --- | --- | --- | --- |
-| 1 | strobe-hardgap-mar2023-C09000060 | 1997-01-01 | Source Lead | DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 2 | strobe-hardgap-july2024-C09000038 | 1997-01-01 | Source Lead | On Course for Madrid | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 3 | strobe-hardgap-july2024-C09000039 | 1997-01-01 | Source Lead | Additional Elements on CFE for NATO-Russia Document w/Attachment(s) | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 4 | strobe-hardgap-july2024-C09000043 | 1997-01-01 | Source Lead | Precis of Russian-CFE Counter-Proposal | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 5 | strobe-hardgap-feb2024-C09000122 | 1997-01-01 | Source Lead | ST notes on Kissinger piece | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 6 | strobe-hardgap-july2024-C09000044 | 1997-04-10 | Source Lead | Checklist For GEM 4/10/97 | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 7 | strobe-hardgap-july2022-C09000060 | 1998-09-28 | Source Lead | DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 8 | strobe-hardgap-july2022-C09000063 | 2000-06-08 | Source Lead | DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 9 | strobe-hardgap-oct2024-C09000035 | 1996-06-10 | Source Lead | The CFE Review Conference: A Retrospective w/Attachment(s) | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 10 | strobe-hardgap-apr2023-C09000073 | 1997-01-01 | Source Lead | Note from Strobe to Chris | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 11 | strobe-hardgap-feb2024-C09000026 | 1997-04-09 | Source Lead | CFE TREATY | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 12 | strobe-hardgap-sep2022-C09000027 | 1999-01-01 | Source Lead | CFE Rollout Meeting | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
-| 13 | strobe-hardgap-june2024-C09000017 | 1999-04-29 | Source Lead | NAC INTERVENTION 4/29/99 | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
+| 1 | strobe-hardgap-july2024-C09000038 | 1997-01-01 | Source Lead | On Course for Madrid | Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text. |
 
 ## Actions
 

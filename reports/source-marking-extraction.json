@@ -1,13 +1,89 @@
 {
-  "generatedAt": "2026-05-25T15:43:38.850Z",
+  "generatedAt": "2026-06-02T10:56:37.263Z",
   "updatedThisRun": 0,
-  "recordsWithExtractedMarkings": 213,
+  "pageCountsUpdatedThisRun": 13,
+  "recordsWithExtractedMarkings": 225,
+  "recordsWithPdfPageCounts": 151,
   "publicContextRecordsMarkedUnclassified": 66,
   "publicContextUpdated": 0,
-  "unresolved": 0,
+  "unresolved": 1,
   "failureCount": 0,
   "cacheDir": "/Users/jameswilson/Library/Caches/frus-source-pdfs",
   "updatedRecords": [],
-  "unresolvedRecords": [],
+  "pageCountUpdatedRecords": [
+    {
+      "id": "strobe-hardgap-mar2023-C09000060",
+      "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+      "pageCount": 4
+    },
+    {
+      "id": "strobe-hardgap-july2024-C09000038",
+      "title": "On Course for Madrid",
+      "pageCount": 2
+    },
+    {
+      "id": "strobe-hardgap-july2024-C09000039",
+      "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+      "pageCount": 4
+    },
+    {
+      "id": "strobe-hardgap-july2024-C09000043",
+      "title": "Precis of Russian-CFE Counter-Proposal",
+      "pageCount": 2
+    },
+    {
+      "id": "strobe-hardgap-feb2024-C09000122",
+      "title": "ST notes on Kissinger piece",
+      "pageCount": 5
+    },
+    {
+      "id": "strobe-hardgap-july2024-C09000044",
+      "title": "Checklist For GEM 4/10/97",
+      "pageCount": 2
+    },
+    {
+      "id": "strobe-hardgap-july2022-C09000060",
+      "title": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+      "pageCount": 8
+    },
+    {
+      "id": "strobe-hardgap-july2022-C09000063",
+      "title": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+      "pageCount": 8
+    },
+    {
+      "id": "strobe-hardgap-oct2024-C09000035",
+      "title": "The CFE Review Conference: A Retrospective w/Attachment(s)",
+      "pageCount": 7
+    },
+    {
+      "id": "strobe-hardgap-apr2023-C09000073",
+      "title": "Note from Strobe to Chris",
+      "pageCount": 6
+    },
+    {
+      "id": "strobe-hardgap-feb2024-C09000026",
+      "title": "CFE TREATY",
+      "pageCount": 2
+    },
+    {
+      "id": "strobe-hardgap-sep2022-C09000027",
+      "title": "CFE Rollout Meeting",
+      "pageCount": 1
+    },
+    {
+      "id": "strobe-hardgap-june2024-C09000017",
+      "title": "NAC INTERVENTION 4/29/99",
+      "pageCount": 6
+    }
+  ],
+  "unresolvedRecords": [
+    {
+      "id": "strobe-hardgap-july2024-C09000038",
+      "title": "On Course for Madrid",
+      "type": "Source Lead",
+      "sourcePages": "PDF pages 1-2"
+    }
+  ],
   "failureRecords": []
 }
