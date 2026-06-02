@@ -805,6 +805,10 @@ dd {
   border-color: rgba(47, 103, 95, 0.14);
 }
 
+.hard-gap-harvest-metrics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .promotion-queue-metrics div {
   background: rgba(185, 142, 54, 0.1);
   border-color: rgba(185, 142, 54, 0.18);
@@ -885,6 +889,15 @@ dd {
 
 .hard-gap-harvest-download {
   background: var(--green);
+}
+
+.hard-gap-harvest-actions {
+  display: grid;
+  gap: 8px;
+}
+
+.hard-gap-harvest-actions .hard-gap-harvest-download {
+  min-height: 56px;
 }
 
 .coverage-matrix-download {
@@ -1692,6 +1705,7 @@ footer a {
   .coverage-matrix-download,
   .search-playbook-download,
   .hard-gap-harvest-download,
+  .hard-gap-harvest-actions,
   .promotion-queue-download {
     min-height: 56px;
     grid-column: 1 / -1;

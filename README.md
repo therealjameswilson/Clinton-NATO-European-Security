@@ -83,16 +83,19 @@ The public site includes a consolidated workbook for spreadsheet-first review:
 The workbook has tabs for the start-here dashboard, declassified chronology,
 action queue, promotion queue, citation desk, source markings chase, Clinton
 Library pull sheet, Presidential Daily Diary chases, gap risks, coverage matrix,
-search playbook, source-note audit, and the full records index. To rebuild it
-from Codex or another environment with the spreadsheet runtime available after
-refreshing the component reports, run:
+search playbook, hard-gap PDF triage, source-note audit, and the full records
+index. To rebuild it from Codex or another environment with the spreadsheet
+runtime available after refreshing the component reports, run:
 
 ```bash
 node scripts/apply-hard-gap-harvest.js
+node scripts/build-hard-gap-pdf-triage.js
 node scripts/build-declassified-chronology.js
+node scripts/audit-compiler-gaps.js
 node scripts/build-coverage-matrix.js
 node scripts/build-search-playbook.js
 node scripts/build-promotion-queue.js
+node scripts/audit-source-notes.js
 node scripts/build-compiler-workbook.mjs
 ```
 
@@ -209,13 +212,14 @@ Run the compiler-risk audit after refreshing records:
 
 ```bash
 node scripts/apply-hard-gap-harvest.js
+node scripts/build-hard-gap-pdf-triage.js
 node scripts/audit-compiler-gaps.js
 node scripts/build-coverage-matrix.js
 node scripts/build-search-playbook.js
 node scripts/build-promotion-queue.js
 ```
 
-The audit writes:
+The refresh writes:
 
 - `reports/compiler-gap-analysis.md`
 - `reports/compiler-gap-analysis.json`
@@ -228,6 +232,9 @@ The audit writes:
 - `reports/hard-gap-harvest.md`
 - `reports/hard-gap-harvest.csv`
 - `reports/hard-gap-harvest.json`
+- `reports/hard-gap-pdf-triage.md`
+- `reports/hard-gap-pdf-triage.csv`
+- `reports/hard-gap-pdf-triage.json`
 - `reports/promotion-queue.md`
 - `reports/promotion-queue.csv`
 - `reports/promotion-queue.json`
@@ -256,9 +263,9 @@ run and the hit is promoted into document-level evidence.
 The hard-gap harvest applies a release-qualified Strobe Talbott FOIA supplement
 for the two hardest gaps. It adds source leads for CFE Review Conference, CFE
 Treaty, CFE rollout, NAC briefings/interventions, Madrid/NAC planning, and
-NATO-Russia CFE language. These rows still require PDF inspection before final
-FRUS selection, but they give the compiler concrete PDFs rather than only search
-queries.
+NATO-Russia CFE language. The follow-up PDF triage records source markings and
+page counts for all 13 hard-gap PDFs, then separates promote-first records from
+date/source-context checks and annotation or chronology support.
 
 ## Clinton Library Research Plan
 
@@ -369,6 +376,9 @@ The companion reports tracked in this repository include:
 - `reports/hard-gap-harvest.json`
 - `reports/hard-gap-harvest.md`
 - `reports/hard-gap-harvest.csv`
+- `reports/hard-gap-pdf-triage.json`
+- `reports/hard-gap-pdf-triage.md`
+- `reports/hard-gap-pdf-triage.csv`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
@@ -387,9 +397,10 @@ The separate Presidential Daily Diary pass adds 40 chronology context records
 for calls and meetings pertinent to Volume XVII.
 
 The hard-gap harvest adds 13 release-qualified Strobe Talbott FOIA source leads
-for NAC/USNATO and CFE. With the Daily Diary and hard-gap supplement applied,
-the public corpus currently has 649 records, including 83 Source Leads and 343
-promotion-queue candidates.
+for NAC/USNATO and CFE. The hard-gap PDF triage marks all 13 as source-ready and
+identifies 7 promote-first candidates. With the Daily Diary and hard-gap
+supplement applied, the public corpus currently has 649 records, including 83
+Source Leads and 343 promotion-queue candidates.
 
 ## Local Preview
 

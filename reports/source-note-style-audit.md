@@ -1,6 +1,6 @@
 # Source Note Style Audit
 
-Generated: 2026-06-02T18:06:03.700Z
+Generated: 2026-06-02T18:16:20.925Z
 
 ## FRUS Model
 

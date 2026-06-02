@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T18:06:03.783Z",
+  "generatedAt": "2026-06-02T18:16:20.437Z",
   "source": "data/records.json",
   "method": "Filtered out Scout Leads, Source Leads, and public-statement context; sorted remaining declassified/released document records by sortDate/date, Washington time, and title.",
   "counts": {

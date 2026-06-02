@@ -576,6 +576,7 @@ function addDashboard(workbook, data) {
     ["Coverage matrix rows", "", "Ally, institution, treaty, and crisis-balance controls"],
     ["Search playbook rows", "", "Source-specific queries for hard and direct-document gaps"],
     ["Hard-gap harvest rows", "", "Release-qualified Strobe FOIA source leads for NAC/USNATO and CFE"],
+    ["Hard-gap PDF triage rows", "", "Promotion lanes for source-ready Strobe hard-gap PDFs"],
     ["Gap/risk rows", "", "Coverage-balancing review"]
   ];
 
@@ -586,8 +587,8 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C20").values = metricRows;
-  sheet.getRange("B9:B20").formulas = [
+  sheet.getRange("A8:C21").values = metricRows;
+  sheet.getRange("B9:B21").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
@@ -599,6 +600,7 @@ function addDashboard(workbook, data) {
     [`=COUNTA('Coverage Matrix'!A5:A${data.coverageMatrix.length + 4})`],
     [`=COUNTA('Search Playbook'!A5:A${data.searchPlaybook.length + 4})`],
     [`=COUNTA('Hard-Gap Harvest'!A5:A${data.hardGapHarvest.length + 4})`],
+    [`=COUNTA('Hard-Gap Triage'!A5:A${data.hardGapTriage.length + 4})`],
     [`=COUNTA('Gap Risks'!A5:A${data.gapRows.length + 4})`]
   ];
 
@@ -655,6 +657,7 @@ async function main() {
   const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
   const searchPlaybook = await readCsv("reports/search-playbook.csv");
   const hardGapHarvest = await readCsv("reports/hard-gap-harvest.csv");
+  const hardGapTriage = await readCsv("reports/hard-gap-pdf-triage.csv");
   const gapReport = await readJson("reports/compiler-gap-analysis.json");
   const sourceAudit = await readJson("reports/source-note-style-audit.json");
   const actionQueue = buildActionQueue(records);
@@ -890,6 +893,28 @@ async function main() {
     { key: "notes", header: "Notes", width: 300 }
   ]);
 
+  addDataSheet(workbook, "Hard-Gap Triage", "Promotion triage for source-ready Strobe FOIA hard-gap PDFs.", hardGapTriage, [
+    { key: "triage_order", header: "Triage Order", type: "number", width: 105 },
+    { key: "record_id", header: "Record ID", width: 235 },
+    { key: "promotion_lane", header: "Promotion Lane", width: 180 },
+    { key: "direct_gap_credit", header: "Direct Gap Credit", width: 240 },
+    { key: "recommended_decision", header: "Recommended Decision", width: 170 },
+    { key: "date", header: "Date", type: "date", width: 95 },
+    { key: "date_status", header: "Date Status", width: 160 },
+    { key: "type", header: "Type", width: 110 },
+    { key: "title", header: "Title", width: 360 },
+    { key: "chapter", header: "Chapter", width: 220 },
+    { key: "classification", header: "Classification", width: 140 },
+    { key: "source_pages", header: "Source Pages", width: 140 },
+    { key: "page_count", header: "Page Count", type: "number", width: 100 },
+    { key: "source_ready", header: "Source Ready", width: 220 },
+    { key: "evidence_summary", header: "Evidence Summary", width: 420 },
+    { key: "blocking_issue", header: "Blocking Issue", width: 360 },
+    { key: "next_compiler_action", header: "Next Compiler Action", width: 430 },
+    { key: "source_note", header: "Source Note", width: 430 },
+    { key: "pdf_url", header: "PDF URL", width: 320 }
+  ]);
+
   addDataSheet(workbook, "Source Audit", "Source-note model checks, counts, and repair actions.", auditRows, [
     { key: "section", header: "Section", width: 120 },
     { key: "label", header: "Label", width: 260 },
@@ -927,6 +952,7 @@ async function main() {
     coverageMatrix,
     searchPlaybook,
     hardGapHarvest,
+    hardGapTriage,
     recordsIndex: indexRows,
     gapRows: gaps
   });
@@ -959,6 +985,7 @@ async function main() {
         coverageMatrix: coverageMatrix.length,
         searchPlaybook: searchPlaybook.length,
         hardGapHarvest: hardGapHarvest.length,
+        hardGapTriage: hardGapTriage.length,
         gapRows: gaps.length,
         sourceAuditRows: auditRows.length
       },
