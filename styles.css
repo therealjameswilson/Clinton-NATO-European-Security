@@ -690,7 +690,8 @@ dd {
 
 .pull-sheet-panel,
 .diary-chase-panel,
-.coverage-matrix-panel {
+.coverage-matrix-panel,
+.promotion-queue-panel {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr) auto;
   gap: 16px;
@@ -714,9 +715,16 @@ dd {
   border-left-color: var(--navy);
 }
 
+.promotion-queue-panel {
+  margin-top: 18px;
+  margin-bottom: 24px;
+  border-left-color: var(--gold);
+}
+
 .pull-sheet-panel h3,
 .diary-chase-panel h3,
-.coverage-matrix-panel h3 {
+.coverage-matrix-panel h3,
+.promotion-queue-panel h3 {
   margin: 0 0 10px;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -726,7 +734,8 @@ dd {
 
 .pull-sheet-panel p:not(.pull-priority),
 .diary-chase-panel p:not(.pull-priority),
-.coverage-matrix-panel p:not(.pull-priority) {
+.coverage-matrix-panel p:not(.pull-priority),
+.promotion-queue-panel p:not(.pull-priority) {
   margin: 0;
   color: var(--muted);
   font-weight: 750;
@@ -735,7 +744,8 @@ dd {
 
 .pull-sheet-metrics,
 .diary-chase-metrics,
-.coverage-matrix-metrics {
+.coverage-matrix-metrics,
+.promotion-queue-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
@@ -744,7 +754,8 @@ dd {
 
 .pull-sheet-metrics div,
 .diary-chase-metrics div,
-.coverage-matrix-metrics div {
+.coverage-matrix-metrics div,
+.promotion-queue-metrics div {
   display: grid;
   align-content: center;
   min-height: 120px;
@@ -764,9 +775,15 @@ dd {
   border-color: rgba(37, 54, 79, 0.12);
 }
 
+.promotion-queue-metrics div {
+  background: rgba(185, 142, 54, 0.1);
+  border-color: rgba(185, 142, 54, 0.18);
+}
+
 .pull-sheet-metrics dt,
 .diary-chase-metrics dt,
-.coverage-matrix-metrics dt {
+.coverage-matrix-metrics dt,
+.promotion-queue-metrics dt {
   color: var(--green);
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 3vw, 2.5rem);
@@ -779,9 +796,14 @@ dd {
   color: var(--navy);
 }
 
+.promotion-queue-metrics dt {
+  color: var(--gold);
+}
+
 .pull-sheet-metrics dd,
 .diary-chase-metrics dd,
-.coverage-matrix-metrics dd {
+.coverage-matrix-metrics dd,
+.promotion-queue-metrics dd {
   margin: 8px 0 0;
   color: var(--navy);
   font-size: 0.82rem;
@@ -791,7 +813,8 @@ dd {
 
 .pull-sheet-download,
 .diary-chase-download,
-.coverage-matrix-download {
+.coverage-matrix-download,
+.promotion-queue-download {
   display: inline-flex;
   min-width: 150px;
   min-height: 100%;
@@ -816,12 +839,18 @@ dd {
   background: var(--navy);
 }
 
+.promotion-queue-download {
+  background: var(--gold);
+}
+
 .pull-sheet-download:hover,
 .pull-sheet-download:focus-visible,
 .diary-chase-download:hover,
 .diary-chase-download:focus-visible,
 .coverage-matrix-download:hover,
-.coverage-matrix-download:focus-visible {
+.coverage-matrix-download:focus-visible,
+.promotion-queue-download:hover,
+.promotion-queue-download:focus-visible {
   text-decoration: underline;
   text-underline-offset: 3px;
   outline: none;
@@ -1587,6 +1616,7 @@ footer a {
   .pull-sheet-panel,
   .diary-chase-panel,
   .coverage-matrix-panel,
+  .promotion-queue-panel,
   .onsite-rules,
   .source-note-guide,
   .queue-list,
@@ -1596,13 +1626,15 @@ footer a {
 
   .pull-sheet-panel,
   .diary-chase-panel,
-  .coverage-matrix-panel {
+  .coverage-matrix-panel,
+  .promotion-queue-panel {
     align-items: start;
   }
 
   .pull-sheet-download,
   .diary-chase-download,
-  .coverage-matrix-download {
+  .coverage-matrix-download,
+  .promotion-queue-download {
     min-height: 56px;
     grid-column: 1 / -1;
   }
@@ -1647,6 +1679,8 @@ footer a {
   .diary-chase-metrics,
   .coverage-matrix-panel,
   .coverage-matrix-metrics,
+  .promotion-queue-panel,
+  .promotion-queue-metrics,
   .onsite-rules,
   .source-note-guide,
   .queue-list,

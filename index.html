@@ -188,11 +188,42 @@
           <a href="#records">Open lane browser</a>
           <button type="button" id="download-action-queue-csv">Download action queue CSV</button>
           <a href="reports/frus-v17-compiler-action-queue.csv" download>Static action queue CSV</a>
+          <a href="reports/promotion-queue.csv" download>Promotion queue CSV</a>
+          <a href="reports/promotion-queue.md" rel="noreferrer">Promotion queue report</a>
           <a href="reports/frus-v17-compiler-workbook.xlsx" download>Compiler workbook</a>
           <a href="reports/presidential-daily-diary-chase-sheet.csv" download>Daily Diary chase sheet</a>
           <a href="reports/compiler-gap-analysis.md" rel="noreferrer">Compiler gap report</a>
           <a href="reports/clinton-library-pull-sheet.csv" download>Clinton Library pull sheet</a>
           <a href="reports/clinton-library-research-plan.md" rel="noreferrer">Clinton Library pull queue</a>
+        </div>
+        <div class="promotion-queue-panel" aria-label="Scout and source lead promotion queue">
+          <div>
+            <p class="pull-priority">Document Promotion</p>
+            <h3>Top 40 Scout/Catalog extractions plus released-source triage</h3>
+            <p>
+              The worksheet turns file-unit and source leads into a promotion log:
+              open the PDF or catalog object, identify actual document dates and
+              page spans, verify markings and source-note text, then record the
+              promoted document ID and compiler decision.
+            </p>
+          </div>
+          <dl class="promotion-queue-metrics">
+            <div>
+              <dt>40</dt>
+              <dd>Scout/Catalog first batch</dd>
+            </div>
+            <div>
+              <dt>40</dt>
+              <dd>released-source triage</dd>
+            </div>
+            <div>
+              <dt>330</dt>
+              <dd>promotion candidates</dd>
+            </div>
+          </dl>
+          <a class="promotion-queue-download" href="reports/promotion-queue.csv" download>
+            Download promotion CSV
+          </a>
         </div>
         <div class="diary-chase-panel" aria-label="Presidential Daily Diary chase sheet">
           <div>
@@ -901,6 +932,15 @@
           </a>
           <a href="reports/frus-v17-compiler-action-queue.csv" download>
             Compiler action queue CSV
+          </a>
+          <a href="reports/promotion-queue.md" rel="noreferrer">
+            Promotion queue report
+          </a>
+          <a href="reports/promotion-queue.csv" download>
+            Promotion queue CSV
+          </a>
+          <a href="reports/promotion-queue.json" rel="noreferrer">
+            Structured promotion queue
           </a>
           <a href="reports/frus-v17-citation-desk.csv" download>
             Citation desk CSV

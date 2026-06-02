@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T01:31:19.480Z",
+  "generatedAt": "2026-06-02T01:48:28.020Z",
   "officialVolumeStatus": {
     "status": "Planned",
     "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
@@ -934,7 +934,7 @@
     }
   ],
   "nextActions": [
-    "Extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
+    "Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
     "Run a targeted USNATO/NAC cable and file-unit search; current count is too low for compiler confidence.",
     "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",

@@ -568,6 +568,7 @@ function addDashboard(workbook, data) {
     ["Total records", "", "Full source index"],
     ["Chronology records", "", "Date-sorted declassified reading order"],
     ["Action queue rows", "", "Ranked next compiler work"],
+    ["Promotion queue rows", "", "Scout/Catalog extraction and released-source triage worksheet"],
     ["Citation desk rows", "", "Source-note and declassification repair"],
     ["Clinton Library pull rows", "", "Onsite request worksheet"],
     ["Daily Diary chase rows", "", "Chronology leads to chase into substance"],
@@ -582,11 +583,12 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C16").values = metricRows;
-  sheet.getRange("B9:B16").formulas = [
+  sheet.getRange("A8:C17").values = metricRows;
+  sheet.getRange("B9:B17").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
+    [`=COUNTA('Promotion Queue'!A5:A${data.promotionQueue.length + 4})`],
     [`=COUNTA('Citation Desk'!A5:A${data.citationDesk.length + 4})`],
     [`=COUNTA('Clinton Pulls'!A5:A${data.clintonPulls.length + 4})`],
     [`=COUNTA('Diary Chases'!A5:A${data.diaryChases.length + 4})`],
@@ -640,6 +642,7 @@ function addDashboard(workbook, data) {
 async function main() {
   const records = await readJson("data/records.json");
   const chronology = await readCsv("reports/declassified-document-chronology.csv");
+  const promotionQueue = await readCsv("reports/promotion-queue.csv");
   const clintonPulls = await readCsv("reports/clinton-library-pull-sheet.csv");
   const diaryChases = await readCsv("reports/presidential-daily-diary-chase-sheet.csv");
   const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
@@ -695,6 +698,38 @@ async function main() {
     actionQueue,
     ACTION_QUEUE_COLUMNS
   );
+
+  addDataSheet(workbook, "Promotion Queue", "Scout/Catalog extraction and released-source triage worksheet.", promotionQueue, [
+    { key: "promotion_order", header: "Promotion Order", type: "number", width: 105 },
+    { key: "priority_batch", header: "Priority Batch", width: 220 },
+    { key: "scout_top_40_rank", header: "Scout Top 40", type: "number", width: 105 },
+    { key: "source_triage_rank", header: "Source Triage Rank", type: "number", width: 125 },
+    { key: "record_id", header: "Record ID", width: 190 },
+    { key: "score", header: "Score", type: "number", width: 80 },
+    { key: "source_type", header: "Source Type", width: 120 },
+    { key: "sort_date", header: "Sort Date", type: "date", width: 95 },
+    { key: "title", header: "Title", width: 360 },
+    { key: "chapter", header: "Chapter", width: 220 },
+    { key: "selection_decision", header: "Selection Decision", width: 150 },
+    { key: "source_name", header: "Source Name", width: 220 },
+    { key: "source_path", header: "Source Path", width: 420 },
+    { key: "coverage_status", header: "Coverage Status", width: 170 },
+    { key: "coverage_targets", header: "Coverage Targets", width: 420 },
+    { key: "coverage_target_ids", header: "Coverage Target IDs", width: 220 },
+    { key: "promotion_gate", header: "Promotion Gate", width: 180 },
+    { key: "next_action", header: "Next Action", width: 420 },
+    { key: "catalog_url", header: "Catalog URL", width: 260 },
+    { key: "pdf_url", header: "PDF URL", width: 260 },
+    { key: "source_note_draft", header: "Source Note Draft", width: 420 },
+    { key: "inspection_status", header: "Inspection Status", width: 150 },
+    { key: "actual_document_date", header: "Actual Document Date", width: 150 },
+    { key: "document_page_span", header: "Document Page Span", width: 150 },
+    { key: "markings_verified", header: "Markings Verified", width: 150 },
+    { key: "source_note_verified", header: "Source Note Verified", width: 160 },
+    { key: "promoted_record_id", header: "Promoted Record ID", width: 170 },
+    { key: "compiler_decision", header: "Compiler Decision", width: 160 },
+    { key: "compiler_notes", header: "Compiler Notes", width: 300 }
+  ]);
 
   addDataSheet(
     workbook,
@@ -819,6 +854,7 @@ async function main() {
     records,
     chronology,
     actionQueue,
+    promotionQueue,
     citationDesk,
     clintonPulls,
     diaryChases,
@@ -847,6 +883,7 @@ async function main() {
         records: records.length,
         chronology: chronology.length,
         actionQueue: actionQueue.length,
+        promotionQueue: promotionQueue.length,
         citationDesk: citationDesk.length,
         clintonPulls: clintonPulls.length,
         diaryChases: diaryChases.length,

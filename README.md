@@ -81,14 +81,15 @@ The public site includes a consolidated workbook for spreadsheet-first review:
 - `reports/frus-v17-compiler-workbook.xlsx`
 
 The workbook has tabs for the start-here dashboard, declassified chronology,
-action queue, citation desk, Clinton Library pull sheet, Presidential Daily
-Diary chases, gap risks, coverage matrix, source-note audit, and the full
-records index. To rebuild it from Codex or another environment with the
+action queue, promotion queue, citation desk, Clinton Library pull sheet,
+Presidential Daily Diary chases, gap risks, coverage matrix, source-note audit,
+and the full records index. To rebuild it from Codex or another environment with the
 spreadsheet runtime available after refreshing the component reports, run:
 
 ```bash
 node scripts/build-declassified-chronology.js
 node scripts/build-coverage-matrix.js
+node scripts/build-promotion-queue.js
 node scripts/build-compiler-workbook.mjs
 ```
 
@@ -96,6 +97,27 @@ The workbook builder also refreshes:
 
 - `reports/frus-v17-compiler-action-queue.csv`
 - `reports/frus-v17-citation-desk.csv`
+
+## Promotion Queue
+
+The **Promotion Queue** turns Scout Leads and Source Leads into a document-level
+extraction worksheet. It preserves the first 40 Scout/Catalog extraction targets
+as a distinct batch, adds the first 40 released-source triage targets, and
+provides blank fields for inspection status, actual document date, page span,
+markings verification, source-note verification, promoted record ID, and final
+compiler decision.
+
+Run:
+
+```bash
+node scripts/build-promotion-queue.js
+```
+
+The script writes:
+
+- `reports/promotion-queue.md`
+- `reports/promotion-queue.csv`
+- `reports/promotion-queue.json`
 
 ## Data Model
 
@@ -179,6 +201,7 @@ Run the compiler-risk audit after refreshing records:
 ```bash
 node scripts/audit-compiler-gaps.js
 node scripts/build-coverage-matrix.js
+node scripts/build-promotion-queue.js
 ```
 
 The audit writes:
@@ -188,6 +211,9 @@ The audit writes:
 - `reports/coverage-matrix.md`
 - `reports/coverage-matrix.csv`
 - `reports/coverage-matrix.json`
+- `reports/promotion-queue.md`
+- `reports/promotion-queue.csv`
+- `reports/promotion-queue.json`
 
 The current audit treats the corpus as a source-finding base, not as a
 selection-ready FRUS chapter set. It identifies six main gaps: crisis files
@@ -303,6 +329,9 @@ The companion reports tracked in this repository include:
 - `reports/coverage-matrix.json`
 - `reports/coverage-matrix.md`
 - `reports/coverage-matrix.csv`
+- `reports/promotion-queue.json`
+- `reports/promotion-queue.md`
+- `reports/promotion-queue.csv`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`

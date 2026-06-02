@@ -1,6 +1,6 @@
 # Compiler Gap Analysis
 
-Generated: 2026-06-02T01:31:19.480Z
+Generated: 2026-06-02T01:48:28.020Z
 
 ## Basis
 
@@ -126,7 +126,7 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 
 ## Priority Next Actions
 
-1. Extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.
+1. Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.
 2. Run a targeted USNATO/NAC cable and file-unit search; current count is too low for compiler confidence.
 3. Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.
 4. Audit source notes for all Include candidate records before adding more broad leads.
@@ -138,4 +138,10 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 - [Coverage matrix report](coverage-matrix.md)
 - [Coverage matrix CSV](coverage-matrix.csv)
 - [Structured coverage matrix](coverage-matrix.json)
+
+## Companion Promotion Queue
+
+- [Promotion queue report](promotion-queue.md)
+- [Promotion queue CSV](promotion-queue.csv)
+- [Structured promotion queue](promotion-queue.json)
 

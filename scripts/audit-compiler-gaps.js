@@ -300,7 +300,7 @@ function main() {
   ];
 
   const nextActions = [
-    "Extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
+    "Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
     "Run a targeted USNATO/NAC cable and file-unit search; current count is too low for compiler confidence.",
     "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
@@ -403,6 +403,12 @@ function main() {
     "- [Coverage matrix report](coverage-matrix.md)",
     "- [Coverage matrix CSV](coverage-matrix.csv)",
     "- [Structured coverage matrix](coverage-matrix.json)",
+    "",
+    "## Companion Promotion Queue",
+    "",
+    "- [Promotion queue report](promotion-queue.md)",
+    "- [Promotion queue CSV](promotion-queue.csv)",
+    "- [Structured promotion queue](promotion-queue.json)",
     ""
   ].join("\n");
 
