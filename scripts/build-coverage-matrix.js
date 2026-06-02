@@ -379,6 +379,10 @@ function mdEscape(value) {
   return String(value ?? "").replaceAll("|", "\\|").replace(/\s+/g, " ").trim();
 }
 
+function plural(count, singular, pluralValue = `${singular}s`) {
+  return `${count} ${count === 1 ? singular : pluralValue}`;
+}
+
 function markdownTable(rows) {
   const columns = [
     ["Coverage Dimension", "label"],
@@ -475,7 +479,13 @@ function main() {
     "",
     "## Highest-Priority Rows",
     "",
-    ...urgentRows.map((row) => `- **${row.status}: ${row.label}.** ${row.total_records} total records; ${row.document_records} document records. ${row.next_action}`),
+    ...urgentRows.map(
+      (row) =>
+        `- **${row.status}: ${row.label}.** ${plural(row.total_records, "total record")}; ${plural(
+          row.document_records,
+          "document record"
+        )}. ${row.next_action}`
+    ),
     "",
     "## Matrix",
     "",

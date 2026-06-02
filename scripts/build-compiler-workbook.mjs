@@ -508,6 +508,7 @@ function matrix(rows, columns) {
 
 function coerceValue(value, column) {
   if (column.type === "number") {
+    if (value === "" || value === null || typeof value === "undefined") return null;
     const number = Number(value);
     return Number.isFinite(number) ? number : null;
   }
@@ -526,8 +527,8 @@ function styleDataSheet(sheet, sheetName, rows, columns, subtitle) {
 
   sheet.getRange(`A1:${lastCol}1`).format.fill = "accent1";
   sheet.getRange(`A1:${lastCol}1`).format.font = { color: "lt1", bold: true, size: 16 };
-  sheet.getRange(`A2:${lastCol}2`).format.fill = { type: "solid", color: { type: "theme", value: "accent1", transform: { lighten: 82 } } };
-  sheet.getRange(`A2:${lastCol}2`).format.font = { color: "tx1", italic: true };
+  sheet.getRange(`A2:${lastCol}2`).format.fill = "lt2";
+  sheet.getRange(`A2:${lastCol}2`).format.font = { color: "dk1", italic: true };
   sheet.getRange(`A4:${lastCol}4`).format.fill = "accent2";
   sheet.getRange(`A4:${lastCol}4`).format.font = { color: "lt1", bold: true };
   sheet.getRange(`A4:${lastCol}4`).format.wrapText = true;
@@ -570,6 +571,7 @@ function addDashboard(workbook, data) {
     ["Citation desk rows", "", "Source-note and declassification repair"],
     ["Clinton Library pull rows", "", "Onsite request worksheet"],
     ["Daily Diary chase rows", "", "Chronology leads to chase into substance"],
+    ["Coverage matrix rows", "", "Ally, institution, treaty, and crisis-balance controls"],
     ["Gap/risk rows", "", "Coverage-balancing review"]
   ];
 
@@ -580,14 +582,15 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C15").values = metricRows;
-  sheet.getRange("B9:B15").formulas = [
+  sheet.getRange("A8:C16").values = metricRows;
+  sheet.getRange("B9:B16").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
     [`=COUNTA('Citation Desk'!A5:A${data.citationDesk.length + 4})`],
     [`=COUNTA('Clinton Pulls'!A5:A${data.clintonPulls.length + 4})`],
     [`=COUNTA('Diary Chases'!A5:A${data.diaryChases.length + 4})`],
+    [`=COUNTA('Coverage Matrix'!A5:A${data.coverageMatrix.length + 4})`],
     [`=COUNTA('Gap Risks'!A5:A${data.gapRows.length + 4})`]
   ];
 
@@ -600,7 +603,7 @@ function addDashboard(workbook, data) {
 
   sheet.getRange("A1:H1").format.fill = "accent1";
   sheet.getRange("A1:H1").format.font = { color: "lt1", bold: true, size: 18 };
-  sheet.getRange("A3:B6").format.fill = { type: "solid", color: { type: "theme", value: "accent1", transform: { lighten: 86 } } };
+  sheet.getRange("A3:B6").format.fill = "lt2";
   sheet.getRange("A8:C8").format.fill = "accent2";
   sheet.getRange("A8:C8").format.font = { color: "lt1", bold: true };
   sheet.getRange("E8:F8").format.fill = "accent2";
@@ -639,6 +642,7 @@ async function main() {
   const chronology = await readCsv("reports/declassified-document-chronology.csv");
   const clintonPulls = await readCsv("reports/clinton-library-pull-sheet.csv");
   const diaryChases = await readCsv("reports/presidential-daily-diary-chase-sheet.csv");
+  const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
   const gapReport = await readJson("reports/compiler-gap-analysis.json");
   const sourceAudit = await readJson("reports/source-note-style-audit.json");
   const actionQueue = buildActionQueue(records);
@@ -752,6 +756,40 @@ async function main() {
     { key: "action", header: "Action", width: 420 }
   ]);
 
+  addDataSheet(workbook, "Coverage Matrix", "Ally, institution, treaty, and crisis-balance coverage controls.", coverageMatrix, [
+    { key: "category", header: "Category", width: 130 },
+    { key: "id", header: "ID", width: 170 },
+    { key: "label", header: "Coverage Dimension", width: 320 },
+    { key: "status", header: "Status", width: 160 },
+    { key: "minimum_records", header: "Minimum", type: "number", width: 90 },
+    { key: "direct_document_minimum", header: "Direct Minimum", type: "number", width: 120 },
+    { key: "maximum_records", header: "Maximum", type: "number", width: 95 },
+    { key: "total_records", header: "Total Records", type: "number", width: 105 },
+    { key: "document_records", header: "Direct Docs", type: "number", width: 100 },
+    { key: "conversation_records", header: "Memcons/Telcons", type: "number", width: 150 },
+    { key: "release_packets", header: "Release Packets", type: "number", width: 135 },
+    { key: "context_records", header: "Context", type: "number", width: 90 },
+    { key: "scout_leads", header: "Scout Leads", type: "number", width: 100 },
+    { key: "source_leads", header: "Source Leads", type: "number", width: 100 },
+    { key: "include_candidates", header: "Include Candidates", type: "number", width: 130 },
+    { key: "context_candidates", header: "Context Candidates", type: "number", width: 130 },
+    { key: "pending_selection", header: "Pending Selection", type: "number", width: 125 },
+    { key: "needs_source", header: "Needs Source", type: "number", width: 105 },
+    { key: "needs_chronology", header: "Needs Chronology", type: "number", width: 130 },
+    { key: "needs_declass", header: "Needs Declass", type: "number", width: 110 },
+    { key: "crisis_lane", header: "Crisis Lane", type: "number", width: 100 },
+    { key: "non_crisis_lane", header: "Non-Crisis Lane", type: "number", width: 125 },
+    { key: "first_date", header: "First Date", type: "date", width: 95 },
+    { key: "last_date", header: "Last Date", type: "date", width: 95 },
+    { key: "years_covered", header: "Years Covered", width: 210 },
+    { key: "chapter_mix", header: "Chapter Mix", width: 340 },
+    { key: "type_mix", header: "Type Mix", width: 300 },
+    { key: "top_sources", header: "Top Sources", width: 340 },
+    { key: "next_action", header: "Next Action", width: 420 },
+    { key: "sample_records", header: "Sample Records", width: 520 },
+    { key: "search_pattern", header: "Search Pattern", width: 260 }
+  ]);
+
   addDataSheet(workbook, "Source Audit", "Source-note model checks, counts, and repair actions.", auditRows, [
     { key: "section", header: "Section", width: 120 },
     { key: "label", header: "Label", width: 260 },
@@ -784,6 +822,7 @@ async function main() {
     citationDesk,
     clintonPulls,
     diaryChases,
+    coverageMatrix,
     recordsIndex: indexRows,
     gapRows: gaps
   });
@@ -811,6 +850,7 @@ async function main() {
         citationDesk: citationDesk.length,
         clintonPulls: clintonPulls.length,
         diaryChases: diaryChases.length,
+        coverageMatrix: coverageMatrix.length,
         gapRows: gaps.length,
         sourceAuditRows: auditRows.length
       },

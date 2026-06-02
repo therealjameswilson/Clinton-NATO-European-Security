@@ -1,6 +1,6 @@
 # Coverage Matrix
 
-Generated: 2026-06-02T01:30:48.424Z
+Generated: 2026-06-02T01:40:16.527Z
 
 Record count: 636.
 
@@ -16,7 +16,7 @@ This matrix turns the gap-audit instruction into a working selection-control she
 ## Highest-Priority Rows
 
 - **gap: USNATO, NAC, and North Atlantic Council traffic.** 5 total records; 3 document records. Run targeted USNATO, North Atlantic Council, S/S-S, EUR/RPM, NATO Mission, and cable-traffic searches.
-- **gap: CFE and conventional forces.** 6 total records; 1 document records. Search CFE Treaty, adapted CFE, Istanbul, arms-control, and EUR/RPM files before relying on the architecture lane.
+- **gap: CFE and conventional forces.** 6 total records; 1 document record. Search CFE Treaty, adapted CFE, Istanbul, arms-control, and EUR/RPM files before relying on the architecture lane.
 - **direct-document gap: Germany.** 72 total records; 7 document records. Use German leader contacts and NATO policy files to test enlargement and NATO-Russia decision context.
 - **direct-document gap: United Kingdom.** 72 total records; 4 document records. Use UK contacts to balance enlargement, Bosnia/Kosovo, and alliance strategy decisions.
 - **direct-document gap: OSCE and CSCE.** 103 total records; 2 document records. Run an OSCE/CSCE architecture pass and distinguish summit decision records from crisis references.

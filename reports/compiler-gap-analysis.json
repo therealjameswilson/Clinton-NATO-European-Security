@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T02:13:51.560Z",
+  "generatedAt": "2026-06-02T01:31:19.480Z",
   "officialVolumeStatus": {
     "status": "Planned",
     "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
@@ -939,6 +939,6 @@
     "Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
     "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
-    "Add a coverage matrix for allies and institutions: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
+    "Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
   ]
 }

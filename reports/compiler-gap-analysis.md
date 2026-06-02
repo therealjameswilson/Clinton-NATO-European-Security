@@ -1,6 +1,6 @@
 # Compiler Gap Analysis
 
-Generated: 2026-05-26T02:13:51.560Z
+Generated: 2026-06-02T01:31:19.480Z
 
 ## Basis
 
@@ -131,5 +131,11 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 3. Run a CFE/OSCE/NATO-EU architecture pass and separate it from crisis material.
 4. Audit source notes for all Include candidate records before adding more broad leads.
 5. Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.
-6. Add a coverage matrix for allies and institutions: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE.
+6. Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE.
+
+## Companion Coverage Matrix
+
+- [Coverage matrix report](coverage-matrix.md)
+- [Coverage matrix CSV](coverage-matrix.csv)
+- [Structured coverage matrix](coverage-matrix.json)
 

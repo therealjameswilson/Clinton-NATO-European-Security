@@ -82,12 +82,13 @@ The public site includes a consolidated workbook for spreadsheet-first review:
 
 The workbook has tabs for the start-here dashboard, declassified chronology,
 action queue, citation desk, Clinton Library pull sheet, Presidential Daily
-Diary chases, gap risks, source-note audit, and the full records index. To
-rebuild it from Codex or another environment with the spreadsheet runtime
-available after refreshing the component reports, run:
+Diary chases, gap risks, coverage matrix, source-note audit, and the full
+records index. To rebuild it from Codex or another environment with the
+spreadsheet runtime available after refreshing the component reports, run:
 
 ```bash
 node scripts/build-declassified-chronology.js
+node scripts/build-coverage-matrix.js
 node scripts/build-compiler-workbook.mjs
 ```
 
@@ -177,12 +178,16 @@ Run the compiler-risk audit after refreshing records:
 
 ```bash
 node scripts/audit-compiler-gaps.js
+node scripts/build-coverage-matrix.js
 ```
 
 The audit writes:
 
 - `reports/compiler-gap-analysis.md`
 - `reports/compiler-gap-analysis.json`
+- `reports/coverage-matrix.md`
+- `reports/coverage-matrix.csv`
+- `reports/coverage-matrix.json`
 
 The current audit treats the corpus as a source-finding base, not as a
 selection-ready FRUS chapter set. It identifies six main gaps: crisis files
@@ -190,6 +195,13 @@ dominate the set, 260 Scout Leads still need document-level extraction, source
 notes and declassification details remain draft-level, NAC/USNATO traffic is
 underrepresented, CFE and security-architecture records are thin, and 1997-2000
 coverage is sparse relative to 1993-1995.
+
+The coverage matrix turns the audit's ally-and-institution control problem into
+a quota-style sheet for NATO, USNATO/NAC, Russia, Poland, Czech Republic,
+Hungary, Germany, France, the United Kingdom, EU/NATO-EU, OSCE/CSCE, CFE,
+enlargement, Partnership for Peace, and the Bosnia/Kosovo crisis-balance rows.
+It separates raw hits from document-level records so a high count does not hide
+thin usable FRUS evidence.
 
 ## Clinton Library Research Plan
 
@@ -288,6 +300,9 @@ The companion reports tracked in this repository include:
 
 - `reports/compiler-gap-analysis.json`
 - `reports/compiler-gap-analysis.md`
+- `reports/coverage-matrix.json`
+- `reports/coverage-matrix.md`
+- `reports/coverage-matrix.csv`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
