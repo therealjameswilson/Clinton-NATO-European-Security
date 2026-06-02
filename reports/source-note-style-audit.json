@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-26T02:13:12.854Z",
+  "generatedAt": "2026-06-02T10:33:37.891Z",
   "model": [
     {
       "label": "FRUS 1989-1992, Volume XXXI, Document 1",
@@ -19,12 +19,13 @@
   ],
   "styleRule": "Keep the displayed first footnote as a Source sentence only: repository and collection path first, exact folder/item identifier next, then classification/handling and document-context details when verified. Keep compiler warnings outside the Source sentence.",
   "counts": {
-    "total": 636,
+    "total": 649,
     "bySource": {
       "National Archives Catalog": 260,
       "William J. Clinton Presidential Library & Museum": 60,
       "National Archives and Records Administration, National Archives Catalog": 42,
       "Government Publishing Office, GovInfo": 66,
+      "Department of State, FOIA Virtual Reading Room": 24,
       "Department of State FOIA Virtual Reading Room": 69,
       "Clinton Library MDR release 2015-0782-M-1": 2,
       "Clinton Digital Library item 101758, Declassified Documents": 1,
@@ -34,7 +35,6 @@
       "William J. Clinton Presidential Library, Clinton Digital Library": 85,
       "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin": 2,
       "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation": 1,
-      "Department of State, FOIA Virtual Reading Room": 11,
       "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A": 1
     },
     "byType": {
@@ -42,20 +42,93 @@
       "Memcon": 70,
       "Context": 106,
       "Telcon": 60,
-      "Source Lead": 70,
+      "Source Lead": 83,
       "Release Packet": 70
     },
-    "startsWithSource": 636,
-    "sourcePathPresent": 636,
+    "startsWithSource": 649,
+    "sourcePathPresent": 649,
     "sourceNotesWithRawUrls": 0,
     "sourceNotesWithProductionLanguage": 0,
-    "reviewNotesWithProductionLanguage": 530,
-    "notesNeedingMarkings": 0,
+    "reviewNotesWithProductionLanguage": 543,
+    "notesNeedingMarkings": 13,
     "scoutLeadsAwaitingDocumentSelection": 260
   },
-  "issueCounts": {},
+  "issueCounts": {
+    "needs-markings": 13
+  },
   "samples": {
-    "needsMarkings": [],
+    "needsMarkings": [
+      {
+        "id": "strobe-hardgap-mar2023-C09000060",
+        "type": "Source Lead",
+        "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release March 2023, Document C09000060.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2024-C09000038",
+        "type": "Source Lead",
+        "title": "On Course for Madrid",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2024-C09000039",
+        "type": "Source Lead",
+        "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000039.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2024-C09000043",
+        "type": "Source Lead",
+        "title": "Precis of Russian-CFE Counter-Proposal",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000043.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-feb2024-C09000122",
+        "type": "Source Lead",
+        "title": "ST notes on Kissinger piece",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000122.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2024-C09000044",
+        "type": "Source Lead",
+        "title": "Checklist For GEM 4/10/97",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000044.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2022-C09000060",
+        "type": "Source Lead",
+        "title": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000060.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-july2022-C09000063",
+        "type": "Source Lead",
+        "title": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000063.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-oct2024-C09000035",
+        "type": "Source Lead",
+        "title": "The CFE Review Conference: A Retrospective w/Attachment(s)",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release October 2024, Document C09000035.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      },
+      {
+        "id": "strobe-hardgap-apr2023-C09000073",
+        "type": "Source Lead",
+        "title": "Note from Strobe to Chris",
+        "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release April 2023, Document C09000073.",
+        "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection."
+      }
+    ],
     "scoutLeadsAwaitingDocumentSelection": [
       {
         "id": "nara-scout-23902171",
@@ -129,6 +202,10 @@
       }
     ],
     "rawUrlInSourceNote": []
+  },
+  "markingsChase": {
+    "csv": "source-note-markings-chase.csv",
+    "count": 13
   },
   "actions": [
     "Do not append compiler verification language to the displayed Source note.",

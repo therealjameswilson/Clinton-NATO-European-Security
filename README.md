@@ -81,11 +81,11 @@ The public site includes a consolidated workbook for spreadsheet-first review:
 - `reports/frus-v17-compiler-workbook.xlsx`
 
 The workbook has tabs for the start-here dashboard, declassified chronology,
-action queue, promotion queue, citation desk, Clinton Library pull sheet,
-Presidential Daily Diary chases, gap risks, coverage matrix, search playbook,
-source-note audit, and the full records index. To rebuild it from Codex or
-another environment with the spreadsheet runtime available after refreshing the
-component reports, run:
+action queue, promotion queue, citation desk, source markings chase, Clinton
+Library pull sheet, Presidential Daily Diary chases, gap risks, coverage matrix,
+search playbook, source-note audit, and the full records index. To rebuild it
+from Codex or another environment with the spreadsheet runtime available after
+refreshing the component reports, run:
 
 ```bash
 node scripts/apply-hard-gap-harvest.js
@@ -168,6 +168,7 @@ The marking extraction and audit write:
 - `reports/source-marking-extraction.json`
 - `reports/source-note-style-audit.md`
 - `reports/source-note-style-audit.json`
+- `reports/source-note-markings-chase.csv`
 
 The extraction pass uses PDF text, OCR, item-image OCR, public-record context,
 and explicit visual source-image review. The audit checks the displayed
@@ -176,6 +177,11 @@ document-context expectations, and keeps compiler warnings or onsite-verificatio
 reminders in `sourceNoteAddendum` rather than inside the first footnote. NARA
 Scout Leads remain a research backlog until digital-object inspection promotes
 specific documents into the compiler corpus.
+
+Use `reports/source-note-markings-chase.csv` for the focused source-image
+review queue. It lists records whose first source note has the right repository
+shape but still needs PDF/image confirmation of classification, handling
+markings, page span, attachments, excisions, and final FRUS first-note text.
 
 ## FRUS Production Workflow
 
@@ -369,6 +375,7 @@ The companion reports tracked in this repository include:
 - `reports/presidential-daily-diary-chase-sheet.csv`
 - `reports/frus-v17-compiler-action-queue.csv`
 - `reports/frus-v17-citation-desk.csv`
+- `reports/source-note-markings-chase.csv`
 - `reports/frus-v17-compiler-workbook.xlsx`
 
 The current pass adds 596 compiler records across Clinton Library released

@@ -8,6 +8,7 @@ const DATA_PATH = path.join(ROOT, "data", "records.json");
 const REPORT_DIR = path.join(ROOT, "reports");
 const JSON_PATH = path.join(REPORT_DIR, "source-note-style-audit.json");
 const MD_PATH = path.join(REPORT_DIR, "source-note-style-audit.md");
+const MARKINGS_CHASE_CSV_PATH = path.join(REPORT_DIR, "source-note-markings-chase.csv");
 
 const FRUS_MODEL = [
   {
@@ -53,6 +54,18 @@ function sourceIdentifier(record) {
     record.source?.documentId ? `Document ${record.source.documentId}` : "",
     record.source?.caseNumber ? `Case ${record.source.caseNumber}` : ""
   ].filter(Boolean);
+}
+
+function csvEscape(value) {
+  const text = String(value ?? "");
+  return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+}
+
+function markdownCell(value) {
+  return String(value ?? "")
+    .replaceAll("|", "\\|")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function markingText(record) {
@@ -103,11 +116,53 @@ function sample(records, issue, limit = 10) {
     }));
 }
 
+function markingsChaseRows(records) {
+  return records
+    .filter((record) => issueList(record).includes("needs-markings"))
+    .map((record, index) => ({
+      chase_order: index + 1,
+      issue: "needs-markings",
+      record_id: record.id || "",
+      date: record.sortDate || record.date || "",
+      type: record.type || "",
+      title: record.documentTitle || record.title || "",
+      source_name: record.source?.name || "",
+      source_id: record.sourceId || record.source?.documentId || record.source?.caseNumber || record.naid || "",
+      source_note: record.sourceNote || "",
+      source_note_addendum: record.sourceNoteAddendum || "",
+      catalog_url: record.catalogUrl || record.source?.url || "",
+      pdf_url: record.pdfUrl || record.source?.pdfUrl || "",
+      compiler_action:
+        "Open the released PDF/source image; record classification, handling markings, source page span, attachments, excisions, and final FRUS first-note text."
+    }));
+}
+
+function writeCsv(filePath, rows) {
+  const columns = [
+    "chase_order",
+    "issue",
+    "record_id",
+    "date",
+    "type",
+    "title",
+    "source_name",
+    "source_id",
+    "source_note",
+    "source_note_addendum",
+    "catalog_url",
+    "pdf_url",
+    "compiler_action"
+  ];
+  const text = [columns.join(","), ...rows.map((row) => columns.map((column) => csvEscape(row[column])).join(","))].join("\n");
+  fs.writeFileSync(filePath, `${text}\n`);
+}
+
 function main() {
   const records = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
   fs.mkdirSync(REPORT_DIR, { recursive: true });
 
   const recordIssues = records.map((record) => ({ record, issues: issueList(record) }));
+  const markingsRows = markingsChaseRows(records);
   const issueCounts = recordIssues.reduce((counts, item) => {
     for (const issue of item.issues) counts[issue] = (counts[issue] || 0) + 1;
     return counts;
@@ -146,6 +201,10 @@ function main() {
           sourceNoteAddendum: record.sourceNoteAddendum || ""
         })),
       rawUrlInSourceNote: sample(records, "raw-url-in-source-note")
+    },
+    markingsChase: {
+      csv: "source-note-markings-chase.csv",
+      count: markingsRows.length
     },
     actions: [
       "Do not append compiler verification language to the displayed Source note.",
@@ -187,6 +246,30 @@ function main() {
     JSON.stringify(issueCounts, null, 2),
     "```",
     "",
+    "## Markings Chase",
+    "",
+    markingsRows.length
+      ? `${markingsRows.length} records need source-image or PDF review before their classification, handling markings, page span, attachments, and excisions can be treated as verified. Use [source-note-markings-chase.csv](source-note-markings-chase.csv) as the working sheet.`
+      : "No records currently require a markings chase.",
+    "",
+    ...(markingsRows.length
+      ? [
+          "| Order | Record ID | Date | Type | Title | Compiler action |",
+          "| ---: | --- | --- | --- | --- | --- |",
+          ...markingsRows.slice(0, 25).map(
+            (row) =>
+              `| ${[
+                row.chase_order,
+                markdownCell(row.record_id),
+                markdownCell(row.date),
+                markdownCell(row.type),
+                markdownCell(row.title),
+                markdownCell(row.compiler_action)
+              ].join(" | ")} |`
+          )
+        ]
+      : []),
+    "",
     "## Actions",
     "",
     ...report.actions.map((action, index) => `${index + 1}. ${action}`),
@@ -195,7 +278,13 @@ function main() {
 
   fs.writeFileSync(JSON_PATH, `${JSON.stringify(report, null, 2)}\n`);
   fs.writeFileSync(MD_PATH, `${md}\n`);
-  console.log(`Wrote ${path.relative(ROOT, JSON_PATH)} and ${path.relative(ROOT, MD_PATH)}.`);
+  writeCsv(MARKINGS_CHASE_CSV_PATH, markingsRows);
+  console.log(
+    `Wrote ${path.relative(ROOT, JSON_PATH)}, ${path.relative(ROOT, MD_PATH)}, and ${path.relative(
+      ROOT,
+      MARKINGS_CHASE_CSV_PATH
+    )}.`
+  );
 }
 
 main();

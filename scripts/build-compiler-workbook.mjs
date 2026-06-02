@@ -570,6 +570,7 @@ function addDashboard(workbook, data) {
     ["Action queue rows", "", "Ranked next compiler work"],
     ["Promotion queue rows", "", "Scout/Catalog extraction and released-source triage worksheet"],
     ["Citation desk rows", "", "Source-note and declassification repair"],
+    ["Source markings chase rows", "", "Records needing PDF/source-image marking verification"],
     ["Clinton Library pull rows", "", "Onsite request worksheet"],
     ["Daily Diary chase rows", "", "Chronology leads to chase into substance"],
     ["Coverage matrix rows", "", "Ally, institution, treaty, and crisis-balance controls"],
@@ -585,13 +586,14 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C19").values = metricRows;
-  sheet.getRange("B9:B19").formulas = [
+  sheet.getRange("A8:C20").values = metricRows;
+  sheet.getRange("B9:B20").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
     [`=COUNTA('Promotion Queue'!A5:A${data.promotionQueue.length + 4})`],
     [`=COUNTA('Citation Desk'!A5:A${data.citationDesk.length + 4})`],
+    [`=COUNTA('Markings Chase'!A5:A${data.sourceMarkingsChase.length + 4})`],
     [`=COUNTA('Clinton Pulls'!A5:A${data.clintonPulls.length + 4})`],
     [`=COUNTA('Diary Chases'!A5:A${data.diaryChases.length + 4})`],
     [`=COUNTA('Coverage Matrix'!A5:A${data.coverageMatrix.length + 4})`],
@@ -649,6 +651,7 @@ async function main() {
   const promotionQueue = await readCsv("reports/promotion-queue.csv");
   const clintonPulls = await readCsv("reports/clinton-library-pull-sheet.csv");
   const diaryChases = await readCsv("reports/presidential-daily-diary-chase-sheet.csv");
+  const sourceMarkingsChase = await readCsv("reports/source-note-markings-chase.csv");
   const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
   const searchPlaybook = await readCsv("reports/search-playbook.csv");
   const hardGapHarvest = await readCsv("reports/hard-gap-harvest.csv");
@@ -761,6 +764,22 @@ async function main() {
     { key: "documents_promoted_to_volume", header: "Documents Promoted", width: 180 },
     { key: "same_day_decision", header: "Same-Day Decision", width: 180 },
     { key: "compiler_notes", header: "Compiler Notes", width: 280 }
+  ]);
+
+  addDataSheet(workbook, "Markings Chase", "Source-note records needing PDF/source-image verification of markings, page spans, attachments, and excisions.", sourceMarkingsChase, [
+    { key: "chase_order", header: "Chase Order", type: "number", width: 95 },
+    { key: "issue", header: "Issue", width: 150 },
+    { key: "record_id", header: "Record ID", width: 235 },
+    { key: "date", header: "Date", type: "date", width: 95 },
+    { key: "type", header: "Type", width: 115 },
+    { key: "title", header: "Title", width: 360 },
+    { key: "source_name", header: "Source Name", width: 240 },
+    { key: "source_id", header: "Source ID", width: 220 },
+    { key: "source_note", header: "Source Note", width: 430 },
+    { key: "source_note_addendum", header: "Review Note", width: 430 },
+    { key: "catalog_url", header: "Catalog URL", width: 270 },
+    { key: "pdf_url", header: "PDF URL", width: 320 },
+    { key: "compiler_action", header: "Compiler Action", width: 430 }
   ]);
 
   addDataSheet(workbook, "Diary Chases", "Presidential Daily Diary chronology leads to chase into substantive records.", diaryChases, [
@@ -902,6 +921,7 @@ async function main() {
     actionQueue,
     promotionQueue,
     citationDesk,
+    sourceMarkingsChase,
     clintonPulls,
     diaryChases,
     coverageMatrix,
@@ -933,6 +953,7 @@ async function main() {
         actionQueue: actionQueue.length,
         promotionQueue: promotionQueue.length,
         citationDesk: citationDesk.length,
+        sourceMarkingsChase: sourceMarkingsChase.length,
         clintonPulls: clintonPulls.length,
         diaryChases: diaryChases.length,
         coverageMatrix: coverageMatrix.length,
