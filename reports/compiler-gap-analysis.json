@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T01:59:44.053Z",
+  "generatedAt": "2026-06-02T10:08:54.356Z",
   "officialVolumeStatus": {
     "status": "Planned",
     "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
@@ -42,31 +42,31 @@
       "url": "https://www.govinfo.gov/app/collection/PPP"
     }
   ],
-  "recordCount": 636,
+  "recordCount": 649,
   "counts": {
     "byChapter": {
-      "NATO Strategy and Enlargement": 35,
-      "NATO-Russia and Partnership": 95,
-      "European Security Architecture": 53,
-      "Crisis Security Files": 453
+      "NATO Strategy and Enlargement": 37,
+      "NATO-Russia and Partnership": 101,
+      "European Security Architecture": 57,
+      "Crisis Security Files": 454
     },
     "byType": {
       "Scout Lead": 260,
       "Memcon": 70,
       "Context": 106,
       "Telcon": 60,
-      "Source Lead": 70,
+      "Source Lead": 83,
       "Release Packet": 70
     },
     "byYear": {
       "1993": 130,
       "1994": 113,
       "1995": 154,
-      "1996": 63,
-      "1997": 45,
-      "1998": 57,
-      "1999": 54,
-      "2000": 20
+      "1996": 64,
+      "1997": 53,
+      "1998": 58,
+      "1999": 56,
+      "2000": 21
     },
     "topSources": [
       [
@@ -99,7 +99,7 @@
       ],
       [
         "Department of State, FOIA Virtual Reading Room",
-        11
+        24
       ],
       [
         "Clinton Library MDR release 2015-0782-M-1",
@@ -135,15 +135,15 @@
       "needs-chronology": 130,
       "needs-source": 134
     },
-    "sourceVerifyCount": 596,
-    "declassWatchCount": 533,
+    "sourceVerifyCount": 609,
+    "declassWatchCount": 546,
     "placeholderDateCount": 260
   },
   "topicCoverage": [
     {
       "id": "enlargement",
       "label": "NATO enlargement, Madrid, accession, and Senate ratification",
-      "count": 125,
+      "count": 127,
       "minimum": 80,
       "status": "covered-by-count",
       "caveat": "NATO enlargement is a core volume subject, but the current set has too few direct decision records relative to the crisis material.",
@@ -152,11 +152,11 @@
         "Memcon": 18,
         "Context": 42,
         "Telcon": 5,
-        "Source Lead": 13,
+        "Source Lead": 15,
         "Release Packet": 2
       },
       "byChapter": {
-        "NATO Strategy and Enlargement": 35,
+        "NATO Strategy and Enlargement": 37,
         "NATO-Russia and Partnership": 8,
         "European Security Architecture": 25,
         "Crisis Security Files": 57
@@ -299,24 +299,32 @@
     {
       "id": "nato_russia",
       "label": "NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin",
-      "count": 191,
+      "count": 199,
       "minimum": 90,
       "status": "covered-by-count",
       "caveat": "The count is adequate, but many records are cross-references or crisis files; direct NATO-Russia negotiation files need prioritization.",
       "byType": {
+        "Source Lead": 57,
         "Scout Lead": 57,
         "Context": 18,
-        "Source Lead": 49,
         "Memcon": 31,
         "Telcon": 34,
         "Release Packet": 2
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 95,
+        "NATO Strategy and Enlargement": 1,
+        "NATO-Russia and Partnership": 101,
         "European Security Architecture": 4,
-        "Crisis Security Files": 92
+        "Crisis Security Files": 93
       },
       "sampleRecords": [
+        {
+          "id": "strobe-hardgap-july2024-C09000038",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "On Course for Madrid",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
         {
           "id": "nara-scout-23901917",
           "date": "1993-01-01",
@@ -365,13 +373,6 @@
           "type": "Source Lead",
           "title": "Memon with President Boris Yeltsin of Russia w/Attached Cover Sheet",
           "source": "Department of State FOIA Virtual Reading Room"
-        },
-        {
-          "id": "clinton-dl-101346",
-          "date": "1993-09-17",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
-          "source": "William J. Clinton Presidential Library & Museum"
         }
       ]
     },
@@ -456,7 +457,7 @@
     {
       "id": "kosovo",
       "label": "Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy",
-      "count": 350,
+      "count": 351,
       "minimum": 70,
       "status": "covered-by-count",
       "caveat": "Kosovo has enough leads, but needs document-level extraction and sorting by Washington time.",
@@ -466,11 +467,11 @@
         "Scout Lead": 245,
         "Context": 37,
         "Release Packet": 1,
-        "Source Lead": 12
+        "Source Lead": 13
       },
       "byChapter": {
         "NATO-Russia and Partnership": 28,
-        "Crisis Security Files": 322
+        "Crisis Security Files": 323
       },
       "sampleRecords": [
         {
@@ -611,27 +612,63 @@
     {
       "id": "cfe",
       "label": "CFE and conventional forces",
-      "count": 6,
+      "count": 19,
       "minimum": 20,
       "status": "gap",
       "caveat": "CFE is materially undercovered for a European security volume.",
       "byType": {
-        "Source Lead": 3,
+        "Source Lead": 16,
         "Context": 2,
         "Memcon": 1
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 4,
-        "European Security Architecture": 1,
-        "Crisis Security Files": 1
+        "NATO Strategy and Enlargement": 2,
+        "NATO-Russia and Partnership": 10,
+        "European Security Architecture": 5,
+        "Crisis Security Files": 2
       },
       "sampleRecords": [
+        {
+          "id": "strobe-hardgap-mar2023-C09000060",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2024-C09000038",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "On Course for Madrid",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
         {
           "id": "strobe-C09000044",
           "date": "1996-05-08",
           "type": "Source Lead",
           "title": "PAPER FOR MAMEDOV ON CFE",
           "source": "Department of State FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2024-C09000039",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2024-C09000043",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "Precis of Russian-CFE Counter-Proposal",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-feb2024-C09000122",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "ST notes on Kissinger piece",
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000109",
@@ -641,94 +678,89 @@
           "source": "Department of State FOIA Virtual Reading Room"
         },
         {
-          "id": "strobe-C09000061",
-          "date": "1997-07-22",
+          "id": "strobe-hardgap-july2024-C09000044",
+          "date": "1997-04-10",
           "type": "Source Lead",
-          "title": "July 22, 1997 Letter From Strobe Talbott To H.E. G. E. Mamedov",
-          "source": "Department of State FOIA Virtual Reading Room"
-        },
-        {
-          "id": "pdd-17368195-19991118",
-          "date": "1999-11-18",
-          "type": "Context",
-          "title": "Presidential Daily Diary reference: OSCE Istanbul Summit and bilateral meeting with Yeltsin",
-          "source": "National Archives and Records Administration, National Archives Catalog"
-        },
-        {
-          "id": "pdd-147870987-19991119",
-          "date": "1999-11-19",
-          "type": "Context",
-          "title": "Presidential Daily Diary reference: CFE Treaty signing at Istanbul",
-          "source": "National Archives and Records Administration, National Archives Catalog"
-        },
-        {
-          "id": "balkans-yeltsin-1995-10-23-hyde-park-one-on-one",
-          "date": "1995-10-23",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation - Clinton-Yeltsin One-on-One at Hyde Park",
-          "source": "National Archives and Records Administration, National Archives Catalog"
+          "title": "Checklist For GEM 4/10/97",
+          "source": "Department of State, FOIA Virtual Reading Room"
         }
       ]
     },
     {
       "id": "nac_usnato",
       "label": "NAC, USNATO, and North Atlantic Council traffic",
-      "count": 6,
+      "count": 19,
       "minimum": 25,
       "status": "gap",
       "caveat": "USNATO/NAC traffic is almost absent; this is a high-risk source gap for NATO institutional decision-making.",
       "byType": {
-        "Source Lead": 2,
+        "Source Lead": 15,
         "Telcon": 1,
         "Memcon": 2,
         "Context": 1
       },
       "byChapter": {
-        "NATO-Russia and Partnership": 1,
-        "Crisis Security Files": 5
+        "NATO Strategy and Enlargement": 2,
+        "NATO-Russia and Partnership": 7,
+        "European Security Architecture": 4,
+        "Crisis Security Files": 6
       },
       "sampleRecords": [
         {
-          "id": "strobe-C09000008",
-          "date": "2000-07-15",
+          "id": "strobe-hardgap-mar2023-C09000060",
+          "date": "1997-01-01",
           "type": "Source Lead",
-          "title": "July 15, 2000 Note From Strobe Talbott To the Secretary",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
-          "id": "clinton-dl-101384",
-          "date": "1994-04-20",
-          "type": "Telcon",
-          "title": "Memorandum of Telephone Conversation - Prime Minister Jean Chretien of Canada",
-          "source": "William J. Clinton Presidential Library & Museum"
-        },
-        {
-          "id": "strobe-C09000059",
-          "date": "1998-09-18",
+          "id": "strobe-hardgap-july2024-C09000038",
+          "date": "1997-01-01",
           "type": "Source Lead",
-          "title": "OFFICIAL INFORMAL: DEPUTY SECRETARY AND AMB. HILL \"TOUR THE TABLE\" WITH THE NAC ON KOSOVO ISSUES FROM A POLITICAL SETTLEMENT TO UN MANDATE",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "title": "On Course for Madrid",
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
-          "id": "clinton-dl-118888",
-          "date": "1999-03-15",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation with Secretary General Javier Solana of NATO",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "id": "strobe-hardgap-july2024-C09000039",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
-          "id": "clinton-dl-118886",
-          "date": "1999-04-22",
-          "type": "Memcon",
-          "title": "Memorandum of Conversation with NATO Secretary General Javier Solana",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "id": "strobe-hardgap-july2024-C09000043",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "Precis of Russian-CFE Counter-Proposal",
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
-          "id": "pdd-147870961-19990423",
-          "date": "1999-04-23",
-          "type": "Context",
-          "title": "Presidential Daily Diary reference: NATO 50th Anniversary Summit weekend",
-          "source": "National Archives and Records Administration, National Archives Catalog"
+          "id": "strobe-hardgap-feb2024-C09000122",
+          "date": "1997-01-01",
+          "type": "Source Lead",
+          "title": "ST notes on Kissinger piece",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2024-C09000044",
+          "date": "1997-04-10",
+          "type": "Source Lead",
+          "title": "Checklist For GEM 4/10/97",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2022-C09000060",
+          "date": "1998-09-28",
+          "type": "Source Lead",
+          "title": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+          "source": "Department of State, FOIA Virtual Reading Room"
+        },
+        {
+          "id": "strobe-hardgap-july2022-C09000063",
+          "date": "2000-06-08",
+          "type": "Source Lead",
+          "title": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+          "source": "Department of State, FOIA Virtual Reading Room"
         }
       ]
     },
@@ -894,7 +926,7 @@
       "id": "lane-imbalance",
       "severity": "high",
       "finding": "Crisis Security Files dominate the set.",
-      "evidence": "453 of 636 records are in the crisis lane.",
+      "evidence": "454 of 649 records are in the crisis lane.",
       "action": "Run targeted enlargement, NATO-Russia institutional, USNATO/NAC, CFE, and NATO-EU searches before using this as a selection base."
     },
     {
@@ -908,35 +940,35 @@
       "id": "source-note-risk",
       "severity": "high",
       "finding": "Source-note and declassification details remain draft-level.",
-      "evidence": "134 records fail the source-note gate; 596 records carry verify/pending language; 533 records remain on declassification watch.",
+      "evidence": "134 records fail the source-note gate; 609 records carry verify/pending language; 546 records remain on declassification watch.",
       "action": "Prioritize source-note completion for include candidates before expanding the corpus."
     },
     {
       "id": "institutional-nato-gap",
       "severity": "high",
       "finding": "NAC/USNATO traffic is underrepresented.",
-      "evidence": "6 records match NAC/USNATO terms.",
+      "evidence": "19 records match NAC/USNATO terms.",
       "action": "Search USNATO, North Atlantic Council, S/S-S, EUR/RPM, NATO Mission, and cable traffic sources."
     },
     {
       "id": "architecture-gap",
       "severity": "medium",
       "finding": "CFE and architecture records are thin.",
-      "evidence": "6 CFE matches; 53 architecture-lane records.",
+      "evidence": "19 CFE matches; 57 architecture-lane records.",
       "action": "Run a specific CFE/OSCE/NATO-EU architecture pass rather than relying on broad Europe searches."
     },
     {
       "id": "late-period-gap",
       "severity": "medium",
       "finding": "1997-2000 coverage is sparse relative to 1993-1995.",
-      "evidence": "1997: 45, 1998: 57, 1999: 54, 2000: 20.",
+      "evidence": "1997: 53, 1998: 58, 1999: 56, 2000: 21.",
       "action": "Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, and 2000 transition searches."
     }
   ],
   "nextActions": [
     "Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
-    "Use the search playbook to run targeted USNATO/NAC cable, file-unit, State FOIA, NARA Scout, and Clinton Library searches; current count is too low for compiler confidence.",
-    "Use the search playbook to run CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture searches, then separate direct decision documents from crisis material.",
+    "Use the hard-gap harvest and search playbook to extract release-qualified USNATO/NAC source leads into direct document records with page spans and source notes.",
+    "Use the hard-gap harvest and search playbook to extract CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture records, then separate direct decision documents from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
     "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
     "Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."

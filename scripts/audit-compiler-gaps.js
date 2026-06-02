@@ -301,8 +301,8 @@ function main() {
 
   const nextActions = [
     "Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.",
-    "Use the search playbook to run targeted USNATO/NAC cable, file-unit, State FOIA, NARA Scout, and Clinton Library searches; current count is too low for compiler confidence.",
-    "Use the search playbook to run CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture searches, then separate direct decision documents from crisis material.",
+    "Use the hard-gap harvest and search playbook to extract release-qualified USNATO/NAC source leads into direct document records with page spans and source notes.",
+    "Use the hard-gap harvest and search playbook to extract CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture records, then separate direct decision documents from crisis material.",
     "Audit source notes for all Include candidate records before adding more broad leads.",
     "Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.",
     "Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE."
@@ -415,6 +415,12 @@ function main() {
     "- [Search playbook report](search-playbook.md)",
     "- [Search playbook CSV](search-playbook.csv)",
     "- [Structured search playbook](search-playbook.json)",
+    "",
+    "## Companion Hard-Gap Harvest",
+    "",
+    "- [Hard-gap harvest report](hard-gap-harvest.md)",
+    "- [Hard-gap harvest CSV](hard-gap-harvest.csv)",
+    "- [Structured hard-gap harvest](hard-gap-harvest.json)",
     ""
   ].join("\n");
 

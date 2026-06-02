@@ -2161,6 +2161,212 @@ window.COMPILER_RECORDS = [
     ]
   },
   {
+    "id": "strobe-hardgap-mar2023-C09000060",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+    "documentTitle": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-mar2023-C09000060",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt discusses modernizing the CFE Treaty and serious Russian engagement in Vienna.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release March 2023, Document C09000060.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000060 (March 2023)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release March 2023",
+        "Document C09000060"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "NATO enlargement",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "CFE",
+      "NATO enlargement",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "CFE",
+      "NATO enlargement",
+      "European Security Architecture"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Verify addressees and draft status; use to link CFE modernization with enlargement diplomacy.",
+      "The manifest excerpt discusses modernizing the CFE Treaty and serious Russian engagement in Vienna."
+    ],
+    "relatedReleaseIds": [
+      "C09000060",
+      "March 2023",
+      "strobe-hardgap-mar2023-C09000060"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-july2024-C09000038",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "On Course for Madrid",
+    "documentTitle": "On Course for Madrid",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 1,
+      "name": "NATO Strategy and Enlargement"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2024-C09000038",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt lays out an on-course-for-Madrid schedule with NATO-Russia, NAC, summit, ministerial, and military-committee milestones.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000038 (July 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2024",
+        "Document C09000038"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NAC/USNATO",
+      "NATO enlargement",
+      "NATO-Russia"
+    ],
+    "topics": [
+      "NAC/USNATO",
+      "NATO enlargement",
+      "NATO-Russia"
+    ],
+    "indexTerms": [
+      "NAC/USNATO",
+      "NATO enlargement",
+      "NATO-Russia",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Verify the date and use as a Madrid/NAC planning lead, not a final chronology item until the PDF is inspected.",
+      "The manifest excerpt lays out an on-course-for-Madrid schedule with NATO-Russia, NAC, summit, ministerial, and military-committee milestones."
+    ],
+    "relatedReleaseIds": [
+      "C09000038",
+      "July 2024",
+      "strobe-hardgap-july2024-C09000038"
+    ]
+  },
+  {
     "id": "pdd-147870887-19970703",
     "date": "1997-07-03",
     "sortDate": "1997-07-03",
@@ -6619,6 +6825,315 @@ window.COMPILER_RECORDS = [
     "relatedReleaseIds": []
   },
   {
+    "id": "strobe-hardgap-july2024-C09000039",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+    "documentTitle": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2024-C09000039",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies additional CFE elements for the NATO-Russia document and transparency conditions.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000039.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000039 (July 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2024",
+        "Document C09000039"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Verify date and attachment structure; promote if it shows CFE language in the NATO-Russia document.",
+      "The manifest identifies additional CFE elements for the NATO-Russia document and transparency conditions."
+    ],
+    "relatedReleaseIds": [
+      "C09000039",
+      "July 2024",
+      "strobe-hardgap-july2024-C09000039"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-july2024-C09000043",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "Precis of Russian-CFE Counter-Proposal",
+    "documentTitle": "Precis of Russian-CFE Counter-Proposal",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2024-C09000043",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies a precis of a Russian CFE counter-proposal for a draft framework agreement to adapt CFE.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000043.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000043 (July 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2024",
+        "Document C09000043"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Verify date, author, and attachment pages; use as a priority CFE adaptation lead.",
+      "The manifest identifies a precis of a Russian CFE counter-proposal for a draft framework agreement to adapt CFE."
+    ],
+    "relatedReleaseIds": [
+      "C09000043",
+      "July 2024",
+      "strobe-hardgap-july2024-C09000043"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-feb2024-C09000122",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "ST notes on Kissinger piece",
+    "documentTitle": "ST notes on Kissinger piece",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-feb2024-C09000122",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt says NATO remains NATO, the NAC remains NAC, and Russia will be in neither.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000122.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000122 (February 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release February 2024",
+        "Document C09000122"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NAC/USNATO",
+      "NATO-Russia"
+    ],
+    "topics": [
+      "NAC/USNATO",
+      "NATO-Russia"
+    ],
+    "indexTerms": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Use as an annotation/source-control lead unless PDF review shows direct policy-drafting value.",
+      "The manifest excerpt says NATO remains NATO, the NAC remains NAC, and Russia will be in neither."
+    ],
+    "relatedReleaseIds": [
+      "C09000122",
+      "February 2024",
+      "strobe-hardgap-feb2024-C09000122"
+    ]
+  },
+  {
     "id": "strobe-C09000069",
     "date": "1997-01-21",
     "sortDate": "1997-01-21",
@@ -7678,6 +8193,112 @@ window.COMPILER_RECORDS = [
     ],
     "relatedReleaseIds": [
       "2015-0782-M-2"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-july2024-C09000044",
+    "date": "1997-04-10",
+    "sortDate": "1997-04-10",
+    "type": "Source Lead",
+    "title": "Checklist For GEM 4/10/97",
+    "documentTitle": "Checklist For GEM 4/10/97",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Georgiy Mamedov"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2024-C09000044",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "1997-04-10",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt begins, \"CFE - Need Russian Counterproposal\" in a GEM checklist.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000044.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000044 (July 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2024",
+        "Document C09000044"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "CFE",
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Georgiy Mamedov"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Use as a CFE/Mamedov checklist lead; verify whether it belongs as document evidence or annotation support.",
+      "The manifest excerpt begins, \"CFE - Need Russian Counterproposal\" in a GEM checklist."
+    ],
+    "relatedReleaseIds": [
+      "C09000044",
+      "July 2024",
+      "strobe-hardgap-july2024-C09000044"
     ]
   },
   {
@@ -11880,6 +12501,110 @@ window.COMPILER_RECORDS = [
     ]
   },
   {
+    "id": "strobe-hardgap-july2022-C09000060",
+    "date": "1998-09-28",
+    "sortDate": "1998-09-28",
+    "type": "Source Lead",
+    "title": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+    "documentTitle": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2022-C09000060",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "1998-09-28",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt says USNATO printed a release-in-part briefing to the NAC on the Moscow summit and the way ahead with Russia.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000060.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000060 (July 2022)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2022",
+        "Document C09000060"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Extract cable header, USNATO number, release-in-part excisions, and NAC briefing summary.",
+      "The manifest excerpt says USNATO printed a release-in-part briefing to the NAC on the Moscow summit and the way ahead with Russia."
+    ],
+    "relatedReleaseIds": [
+      "C09000060",
+      "July 2022",
+      "strobe-hardgap-july2022-C09000060"
+    ]
+  },
+  {
     "id": "strobe-C09000014",
     "date": "1998-09-29",
     "sortDate": "1998-09-29",
@@ -13298,6 +14023,110 @@ window.COMPILER_RECORDS = [
       "Strobe Talbott FOIA candidate. Rationale: high-level contact signal: PRESIDENT; topic signal: Russia-NATO Cross-Reference (RUSSIA, RUSSIAN)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "strobe-hardgap-july2022-C09000063",
+    "date": "2000-06-08",
+    "sortDate": "2000-06-08",
+    "type": "Source Lead",
+    "title": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+    "documentTitle": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 2,
+      "name": "NATO-Russia and Partnership"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-july2022-C09000063",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "2000-06-08",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt says USNATO 1314, EXDIS, release in part, briefing the NAC on the Moscow summit.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000063.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000063 (July 2022)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release July 2022",
+        "Document C09000063"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "topics": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture"
+    ],
+    "indexTerms": [
+      "NAC/USNATO",
+      "NATO-Russia",
+      "European Security Architecture",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Extract cable metadata, release-in-part declassification, and the NAC briefing substance.",
+      "The manifest excerpt says USNATO 1314, EXDIS, release in part, briefing the NAC on the Moscow summit."
+    ],
+    "relatedReleaseIds": [
+      "C09000063",
+      "July 2022",
+      "strobe-hardgap-july2022-C09000063"
+    ]
   },
   {
     "id": "strobe-C09000008",
@@ -14732,6 +15561,108 @@ window.COMPILER_RECORDS = [
     "relatedReleaseIds": []
   },
   {
+    "id": "strobe-hardgap-oct2024-C09000035",
+    "date": "1996-06-10",
+    "sortDate": "1996-06-10",
+    "type": "Source Lead",
+    "title": "The CFE Review Conference: A Retrospective w/Attachment(s)",
+    "documentTitle": "The CFE Review Conference: A Retrospective w/Attachment(s)",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 3,
+      "name": "European Security Architecture"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-oct2024-C09000035",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "1996-06-10",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies this as a CFE Review Conference retrospective with attachments and handling language.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release October 2024, Document C09000035.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000035 (October 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release October 2024",
+        "Document C09000035"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "topics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "indexTerms": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Inspect attachments and promote any dated retrospective or negotiating-summary document with source pages.",
+      "The manifest identifies this as a CFE Review Conference retrospective with attachments and handling language."
+    ],
+    "relatedReleaseIds": [
+      "C09000035",
+      "October 2024",
+      "strobe-hardgap-oct2024-C09000035"
+    ]
+  },
+  {
     "id": "govinfo-PPP-1996-book1-doc-pg901",
     "date": "1996-06-12",
     "sortDate": "1996-06-12",
@@ -15102,6 +16033,112 @@ window.COMPILER_RECORDS = [
     "relatedReleaseIds": []
   },
   {
+    "id": "strobe-hardgap-apr2023-C09000073",
+    "date": "1997-01-01",
+    "sortDate": "1997-01-01",
+    "type": "Source Lead",
+    "title": "Note from Strobe to Chris",
+    "documentTitle": "Note from Strobe to Chris",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Warren Christopher"
+    ],
+    "countries": [
+      "United States",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 3,
+      "name": "European Security Architecture"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-apr2023-C09000073",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest excerpt says Talbott wanted to brief Christopher on where they stood on CFE and ABM/TMD.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release April 2023, Document C09000073.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000073 (April 2023)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release April 2023",
+        "Document C09000073"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "topics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "indexTerms": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott",
+      "Warren Christopher"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Use as a CFE status lead; promote only after PDF review establishes date, context, and substance.",
+      "The manifest excerpt says Talbott wanted to brief Christopher on where they stood on CFE and ABM/TMD."
+    ],
+    "relatedReleaseIds": [
+      "C09000073",
+      "April 2023",
+      "strobe-hardgap-apr2023-C09000073"
+    ]
+  },
+  {
     "id": "clinton-dl-101474",
     "date": "1997-03-05",
     "sortDate": "1997-03-05",
@@ -15202,6 +16239,112 @@ window.COMPILER_RECORDS = [
     ],
     "relatedReleaseIds": [
       "101474"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-feb2024-C09000026",
+    "date": "1997-04-09",
+    "sortDate": "1997-04-09",
+    "type": "Source Lead",
+    "title": "CFE TREATY",
+    "documentTitle": "CFE TREATY",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Ukraine",
+      "Russia"
+    ],
+    "chapter": {
+      "number": 3,
+      "name": "European Security Architecture"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-feb2024-C09000026",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "1997-04-09",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies a Kyiv telegram for Strobe Talbott, with TAGS MARR/PARM/CFE and a CFE Treaty subject.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000026.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000026 (February 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release February 2024",
+        "Document C09000026"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "topics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "indexTerms": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control",
+      "Ukraine",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Extract telegram metadata, TAGS, addressees, classification, and whether this is direct CFE policy evidence.",
+      "The manifest identifies a Kyiv telegram for Strobe Talbott, with TAGS MARR/PARM/CFE and a CFE Treaty subject."
+    ],
+    "relatedReleaseIds": [
+      "C09000026",
+      "February 2024",
+      "strobe-hardgap-feb2024-C09000026"
     ]
   },
   {
@@ -17430,6 +18573,108 @@ window.COMPILER_RECORDS = [
       "Strobe Talbott FOIA candidate. Rationale: document form signal: LETTER FROM STROBE; topic signal: Central and Eastern Europe (POLAND); EU, OSCE, and Summits (OSCE)"
     ],
     "relatedReleaseIds": []
+  },
+  {
+    "id": "strobe-hardgap-sep2022-C09000027",
+    "date": "1999-01-01",
+    "sortDate": "1999-01-01",
+    "type": "Source Lead",
+    "title": "CFE Rollout Meeting",
+    "documentTitle": "CFE Rollout Meeting",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States"
+    ],
+    "chapter": {
+      "number": 3,
+      "name": "European Security Architecture"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-sep2022-C09000027",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "Date pending in Strobe Talbott FOIA manifest; verify from the source PDF before chronology use.",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies a CFE rollout meeting and says CFE is important as the next step in Euro-security.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release September 2022, Document C09000027.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000027 (September 2022)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release September 2022",
+        "Document C09000027"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "topics": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "indexTerms": [
+      "CFE",
+      "European Security Architecture",
+      "Arms Control"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Verify date and attendees; promote if it explains CFE rollout decisions or interagency assignments.",
+      "The manifest identifies a CFE rollout meeting and says CFE is important as the next step in Euro-security."
+    ],
+    "relatedReleaseIds": [
+      "C09000027",
+      "September 2022",
+      "strobe-hardgap-sep2022-C09000027"
+    ]
   },
   {
     "id": "govinfo-PPP-1999-book1-doc-pg372",
@@ -64746,6 +65991,111 @@ window.COMPILER_RECORDS = [
     ],
     "relatedReleaseIds": [
       "118884"
+    ]
+  },
+  {
+    "id": "strobe-hardgap-june2024-C09000017",
+    "date": "1999-04-29",
+    "sortDate": "1999-04-29",
+    "type": "Source Lead",
+    "title": "NAC INTERVENTION 4/29/99",
+    "documentTitle": "NAC INTERVENTION 4/29/99",
+    "participants": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "countries": [
+      "United States",
+      "Russia",
+      "Kosovo"
+    ],
+    "chapter": {
+      "number": 4,
+      "name": "Crisis Security Files"
+    },
+    "releaseStatus": "FOIA/MDR Lead",
+    "selectionDecision": "Include candidate",
+    "naid": "strobe-hardgap-june2024-C09000017",
+    "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+    "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+    "pageCount": null,
+    "digitalObjects": null,
+    "dateLine": "1999-04-29",
+    "washingtonTime": "",
+    "placementNote": "Source lead only; verify final date and chronological placement from the PDF before selection.",
+    "subjectLine": "The manifest identifies this as a NAC intervention on April 29, 1999.",
+    "sourceNote": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release June 2024, Document C09000017.",
+    "sourceNoteStatus": "Draft",
+    "sourceNoteAddendum": "Hard-gap Strobe Talbott FOIA manifest lead. Verify PDF image, classification and handling markings, attachments, page span, excisions, and final source-note path before selection.",
+    "sourcePages": "",
+    "originalClassification": "",
+    "documentMarkings": [],
+    "handlingMarkings": [],
+    "distribution": "",
+    "draftingInfo": "",
+    "clearance": {},
+    "communication": {},
+    "readBy": [],
+    "declassificationStatus": "Pending review",
+    "withheldMaterial": {
+      "status": "Not yet audited"
+    },
+    "annotationStatus": "Pending",
+    "annotation": {
+      "firstFootnote": "",
+      "relatedDocuments": [],
+      "publicStatements": [],
+      "memoirs": []
+    },
+    "extractionStatus": "Hard-gap source lead harvested from the Strobe Talbott FOIA manifest; document-level extraction pending.",
+    "source": {
+      "name": "Department of State, FOIA Virtual Reading Room",
+      "url": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+      "collection": "Strobe Talbott FOIA release",
+      "documentId": "C09000017 (June 2024)",
+      "path": [
+        "State Department FOIA Library",
+        "Strobe Talbott FOIA",
+        "Release June 2024",
+        "Document C09000017"
+      ]
+    },
+    "frusVolume": {
+      "id": "frus1993-00v17",
+      "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
+      "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
+      "status": "Planned"
+    },
+    "frusTopics": [
+      "NAC/USNATO",
+      "Kosovo",
+      "NATO-Russia"
+    ],
+    "topics": [
+      "NAC/USNATO",
+      "Kosovo",
+      "NATO-Russia"
+    ],
+    "indexTerms": [
+      "NAC/USNATO",
+      "Kosovo",
+      "NATO-Russia",
+      "Russia"
+    ],
+    "persons": [
+      "Bill Clinton",
+      "Strobe Talbott"
+    ],
+    "compilerNotes": [
+      "Supplemental hard-gap lead added to improve NAC/USNATO and CFE source coverage.",
+      "Extract intervention text and decide whether it is direct NAC decision evidence or Kosovo context.",
+      "The manifest identifies this as a NAC intervention on April 29, 1999."
+    ],
+    "relatedReleaseIds": [
+      "C09000017",
+      "June 2024",
+      "strobe-hardgap-june2024-C09000017"
     ]
   },
   {

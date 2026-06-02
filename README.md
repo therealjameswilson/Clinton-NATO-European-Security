@@ -88,6 +88,7 @@ another environment with the spreadsheet runtime available after refreshing the
 component reports, run:
 
 ```bash
+node scripts/apply-hard-gap-harvest.js
 node scripts/build-declassified-chronology.js
 node scripts/build-coverage-matrix.js
 node scripts/build-search-playbook.js
@@ -201,6 +202,7 @@ chronology, declassification, annotation, and index-term metadata.
 Run the compiler-risk audit after refreshing records:
 
 ```bash
+node scripts/apply-hard-gap-harvest.js
 node scripts/audit-compiler-gaps.js
 node scripts/build-coverage-matrix.js
 node scripts/build-search-playbook.js
@@ -217,6 +219,9 @@ The audit writes:
 - `reports/search-playbook.md`
 - `reports/search-playbook.csv`
 - `reports/search-playbook.json`
+- `reports/hard-gap-harvest.md`
+- `reports/hard-gap-harvest.csv`
+- `reports/hard-gap-harvest.json`
 - `reports/promotion-queue.md`
 - `reports/promotion-queue.csv`
 - `reports/promotion-queue.json`
@@ -241,6 +246,13 @@ Digital Library, the Strobe Talbott FOIA manifest, and GovInfo. Its CSV/workbook
 fields are designed for live compiler use: search date, result count, promising
 hits, promoted record IDs, and notes remain blank until the search is actually
 run and the hit is promoted into document-level evidence.
+
+The hard-gap harvest applies a release-qualified Strobe Talbott FOIA supplement
+for the two hardest gaps. It adds source leads for CFE Review Conference, CFE
+Treaty, CFE rollout, NAC briefings/interventions, Madrid/NAC planning, and
+NATO-Russia CFE language. These rows still require PDF inspection before final
+FRUS selection, but they give the compiler concrete PDFs rather than only search
+queries.
 
 ## Clinton Library Research Plan
 
@@ -348,6 +360,9 @@ The companion reports tracked in this repository include:
 - `reports/search-playbook.json`
 - `reports/search-playbook.md`
 - `reports/search-playbook.csv`
+- `reports/hard-gap-harvest.json`
+- `reports/hard-gap-harvest.md`
+- `reports/hard-gap-harvest.csv`
 - `reports/clinton-library-research-plan.json`
 - `reports/clinton-library-research-plan.md`
 - `reports/clinton-library-pull-sheet.csv`
@@ -363,6 +378,11 @@ and GovInfo Public Papers context.
 
 The separate Presidential Daily Diary pass adds 40 chronology context records
 for calls and meetings pertinent to Volume XVII.
+
+The hard-gap harvest adds 13 release-qualified Strobe Talbott FOIA source leads
+for NAC/USNATO and CFE. With the Daily Diary and hard-gap supplement applied,
+the public corpus currently has 649 records, including 83 Source Leads and 343
+promotion-queue candidates.
 
 ## Local Preview
 

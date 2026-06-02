@@ -1480,7 +1480,11 @@ async function loadRecords() {
 
 async function init() {
   try {
-    allRecords = window.COMPILER_RECORDS || window.MEMCONS || (await loadRecords());
+    allRecords =
+      window.location.protocol === "file:"
+        ? window.COMPILER_RECORDS || window.MEMCONS || []
+        : await loadRecords().catch(() => window.COMPILER_RECORDS || window.MEMCONS || []);
+    if (!allRecords.length) throw new Error("No compiler records available.");
     ensureActionQueueSurface();
     setChapterCounts(allRecords);
     renderChronology(allRecords);

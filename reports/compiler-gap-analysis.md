@@ -1,11 +1,11 @@
 # Compiler Gap Analysis
 
-Generated: 2026-06-02T01:59:44.053Z
+Generated: 2026-06-02T10:08:54.356Z
 
 ## Basis
 
 - Official FRUS Volume XVII status: Planned.
-- Current record count: 636.
+- Current record count: 649.
 - This is a source-finding corpus, not a selection-ready FRUS chapter base.
 - Count coverage does not equal FRUS coverage until individual documents have verified dates, source notes, declassification accounting, and selection decisions.
 
@@ -26,15 +26,15 @@ Generated: 2026-06-02T01:59:44.053Z
 - Needs selection decision: 277
 - Needs chronology cleanup: 130
 - Needs source-note completion: 134
-- Source verification language present: 596
-- Declassification watch items: 533
+- Source verification language present: 609
+- Declassification watch items: 546
 - Placeholder January 1 Scout Lead dates: 260
 
 ## Highest-Risk Gaps
 
 ### HIGH: Crisis Security Files dominate the set.
 
-Evidence: 453 of 636 records are in the crisis lane.
+Evidence: 454 of 649 records are in the crisis lane.
 
 Action: Run targeted enlargement, NATO-Russia institutional, USNATO/NAC, CFE, and NATO-EU searches before using this as a selection base.
 
@@ -46,25 +46,25 @@ Action: Promote high-value NARA file-unit leads to document-level rows only afte
 
 ### HIGH: Source-note and declassification details remain draft-level.
 
-Evidence: 134 records fail the source-note gate; 596 records carry verify/pending language; 533 records remain on declassification watch.
+Evidence: 134 records fail the source-note gate; 609 records carry verify/pending language; 546 records remain on declassification watch.
 
 Action: Prioritize source-note completion for include candidates before expanding the corpus.
 
 ### HIGH: NAC/USNATO traffic is underrepresented.
 
-Evidence: 6 records match NAC/USNATO terms.
+Evidence: 19 records match NAC/USNATO terms.
 
 Action: Search USNATO, North Atlantic Council, S/S-S, EUR/RPM, NATO Mission, and cable traffic sources.
 
 ### MEDIUM: CFE and architecture records are thin.
 
-Evidence: 6 CFE matches; 53 architecture-lane records.
+Evidence: 19 CFE matches; 57 architecture-lane records.
 
 Action: Run a specific CFE/OSCE/NATO-EU architecture pass rather than relying on broad Europe searches.
 
 ### MEDIUM: 1997-2000 coverage is sparse relative to 1993-1995.
 
-Evidence: 1997: 45, 1998: 57, 1999: 54, 2000: 20.
+Evidence: 1997: 53, 1998: 58, 1999: 56, 2000: 21.
 
 Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, and 2000 transition searches.
 
@@ -72,14 +72,14 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 
 | Topic | Count | Minimum | Status |
 | --- | ---: | ---: | --- |
-| NATO enlargement, Madrid, accession, and Senate ratification | 125 | 80 | covered-by-count |
+| NATO enlargement, Madrid, accession, and Senate ratification | 127 | 80 | covered-by-count |
 | Partnership for Peace and NATO partnership policy | 50 | 30 | covered-by-count |
-| NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin | 191 | 90 | covered-by-count |
+| NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin | 199 | 90 | covered-by-count |
 | Bosnia, Dayton, IFOR, and SFOR | 430 | 80 | covered-by-count |
-| Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy | 350 | 70 | covered-by-count |
+| Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy | 351 | 70 | covered-by-count |
 | OSCE/CSCE | 102 | 35 | covered-by-count |
-| CFE and conventional forces | 6 | 20 | gap |
-| NAC, USNATO, and North Atlantic Council traffic | 6 | 25 | gap |
+| CFE and conventional forces | 19 | 20 | gap |
+| NAC, USNATO, and North Atlantic Council traffic | 19 | 25 | gap |
 | NATO Secretary General Solana/Claes and alliance leadership | 30 | 25 | covered-by-count |
 | NATO-EU, EU, and European security architecture | 114 | 35 | covered-by-count |
 
@@ -89,10 +89,10 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 
 ```json
 {
-  "NATO Strategy and Enlargement": 35,
-  "NATO-Russia and Partnership": 95,
-  "European Security Architecture": 53,
-  "Crisis Security Files": 453
+  "NATO Strategy and Enlargement": 37,
+  "NATO-Russia and Partnership": 101,
+  "European Security Architecture": 57,
+  "Crisis Security Files": 454
 }
 ```
 
@@ -104,7 +104,7 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
   "Memcon": 70,
   "Context": 106,
   "Telcon": 60,
-  "Source Lead": 70,
+  "Source Lead": 83,
   "Release Packet": 70
 }
 ```
@@ -116,19 +116,19 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
   "1993": 130,
   "1994": 113,
   "1995": 154,
-  "1996": 63,
-  "1997": 45,
-  "1998": 57,
-  "1999": 54,
-  "2000": 20
+  "1996": 64,
+  "1997": 53,
+  "1998": 58,
+  "1999": 56,
+  "2000": 21
 }
 ```
 
 ## Priority Next Actions
 
 1. Use the promotion queue to extract top 40 NARA Scout/Catalog leads into document-level records with page spans and actual dates.
-2. Use the search playbook to run targeted USNATO/NAC cable, file-unit, State FOIA, NARA Scout, and Clinton Library searches; current count is too low for compiler confidence.
-3. Use the search playbook to run CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture searches, then separate direct decision documents from crisis material.
+2. Use the hard-gap harvest and search playbook to extract release-qualified USNATO/NAC source leads into direct document records with page spans and source notes.
+3. Use the hard-gap harvest and search playbook to extract CFE, OSCE/CSCE, NATO-EU/ESDI, and architecture records, then separate direct decision documents from crisis material.
 4. Audit source notes for all Include candidate records before adding more broad leads.
 5. Split Bosnia/Kosovo crisis records into direct decision documents vs public/context material.
 6. Use the coverage matrix to set ally and institution quotas before final selection: NATO, USNATO/NAC, Russia, Poland, Czech Republic, Hungary, Germany, France, United Kingdom, EU, OSCE, and CFE.
@@ -150,4 +150,10 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 - [Search playbook report](search-playbook.md)
 - [Search playbook CSV](search-playbook.csv)
 - [Structured search playbook](search-playbook.json)
+
+## Companion Hard-Gap Harvest
+
+- [Hard-gap harvest report](hard-gap-harvest.md)
+- [Hard-gap harvest CSV](hard-gap-harvest.csv)
+- [Structured hard-gap harvest](hard-gap-harvest.json)
 

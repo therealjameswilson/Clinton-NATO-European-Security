@@ -1,0 +1,286 @@
+{
+  "generatedAt": "2026-06-02T10:08:53.833Z",
+  "manifestUrl": "https://therealjameswilson.github.io/strobe-talbott-foia/manifest.html",
+  "basis": "Supplemental hard-gap harvest from the live Strobe Talbott FOIA manifest for source leads that improve NAC/USNATO and CFE coverage.",
+  "harvestCount": 14,
+  "addedRecords": 13,
+  "skippedExistingPdfRecords": 1,
+  "gapCounts": {
+    "cfe": 9,
+    "nato_russia": 6,
+    "usnato_nac": 5,
+    "enlargement": 2
+  },
+  "releaseCounts": {
+    "June 2024": 2,
+    "October 2024": 1,
+    "February 2024": 2,
+    "July 2024": 4,
+    "July 2022": 2,
+    "September 2022": 1,
+    "March 2023": 1,
+    "April 2023": 1
+  },
+  "rows": [
+    {
+      "harvest_order": 1,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-june2024-C09000044",
+      "date": "1996-05-08",
+      "source_document": "C09000044 (June 2024)",
+      "title": "PAPER FOR MAMEDOV ON CFE",
+      "release_label": "June 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+      "manifest_excerpt": "The manifest says the text begins with a non-paper for DFM Mamedov on the CFE flank issue and agreed elements.",
+      "compiler_action": "Read PDF and extract the non-paper, agreed elements, markings, addressees, and page span.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 2,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-oct2024-C09000035",
+      "date": "1996-06-10",
+      "source_document": "C09000035 (October 2024)",
+      "title": "The CFE Review Conference: A Retrospective w/Attachment(s)",
+      "release_label": "October 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf",
+      "manifest_excerpt": "The manifest identifies this as a CFE Review Conference retrospective with attachments and handling language.",
+      "compiler_action": "Inspect attachments and promote any dated retrospective or negotiating-summary document with source pages.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 3,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-feb2024-C09000026",
+      "date": "1997-04-09",
+      "source_document": "C09000026 (February 2024)",
+      "title": "CFE TREATY",
+      "release_label": "February 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf",
+      "manifest_excerpt": "The manifest identifies a Kyiv telegram for Strobe Talbott, with TAGS MARR/PARM/CFE and a CFE Treaty subject.",
+      "compiler_action": "Extract telegram metadata, TAGS, addressees, classification, and whether this is direct CFE policy evidence.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 4,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-july2024-C09000044",
+      "date": "1997-04-10",
+      "source_document": "C09000044 (July 2024)",
+      "title": "Checklist For GEM 4/10/97",
+      "release_label": "July 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf",
+      "manifest_excerpt": "The manifest excerpt begins, \"CFE - Need Russian Counterproposal\" in a GEM checklist.",
+      "compiler_action": "Use as a CFE/Mamedov checklist lead; verify whether it belongs as document evidence or annotation support.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 5,
+      "gap_ids": [
+        "cfe",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-july2024-C09000039",
+      "date": "date pending",
+      "source_document": "C09000039 (July 2024)",
+      "title": "Additional Elements on CFE for NATO-Russia Document w/Attachment(s)",
+      "release_label": "July 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf",
+      "manifest_excerpt": "The manifest identifies additional CFE elements for the NATO-Russia document and transparency conditions.",
+      "compiler_action": "Verify date and attachment structure; promote if it shows CFE language in the NATO-Russia document.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 6,
+      "gap_ids": [
+        "cfe",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-july2024-C09000043",
+      "date": "date pending",
+      "source_document": "C09000043 (July 2024)",
+      "title": "Precis of Russian-CFE Counter-Proposal",
+      "release_label": "July 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf",
+      "manifest_excerpt": "The manifest identifies a precis of a Russian CFE counter-proposal for a draft framework agreement to adapt CFE.",
+      "compiler_action": "Verify date, author, and attachment pages; use as a priority CFE adaptation lead.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 7,
+      "gap_ids": [
+        "usnato_nac",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-july2022-C09000060",
+      "date": "1998-09-28",
+      "source_document": "C09000060 (July 2022)",
+      "title": "DEPUTY SECRETARY TALBOTT BRIEFING TOTHE NAC ON MOSCOW SUMMIT, THE WAY AHEAD WITH RUSIA",
+      "release_label": "July 2022",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "manifest_excerpt": "The manifest excerpt says USNATO printed a release-in-part briefing to the NAC on the Moscow summit and the way ahead with Russia.",
+      "compiler_action": "Extract cable header, USNATO number, release-in-part excisions, and NAC briefing summary.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 8,
+      "gap_ids": [
+        "usnato_nac"
+      ],
+      "record_id": "strobe-hardgap-june2024-C09000017",
+      "date": "1999-04-29",
+      "source_document": "C09000017 (June 2024)",
+      "title": "NAC INTERVENTION 4/29/99",
+      "release_label": "June 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf",
+      "manifest_excerpt": "The manifest identifies this as a NAC intervention on April 29, 1999.",
+      "compiler_action": "Extract intervention text and decide whether it is direct NAC decision evidence or Kosovo context.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 9,
+      "gap_ids": [
+        "usnato_nac",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-july2022-C09000063",
+      "date": "2000-06-08",
+      "source_document": "C09000063 (July 2022)",
+      "title": "DEPUTY SECRETARY BRIEFS THE NAC ON MOSCOW SUMMIT",
+      "release_label": "July 2022",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf",
+      "manifest_excerpt": "The manifest excerpt says USNATO 1314, EXDIS, release in part, briefing the NAC on the Moscow summit.",
+      "compiler_action": "Extract cable metadata, release-in-part declassification, and the NAC briefing substance.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 10,
+      "gap_ids": [
+        "usnato_nac",
+        "enlargement",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-july2024-C09000038",
+      "date": "date pending",
+      "source_document": "C09000038 (July 2024)",
+      "title": "On Course for Madrid",
+      "release_label": "July 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf",
+      "manifest_excerpt": "The manifest excerpt lays out an on-course-for-Madrid schedule with NATO-Russia, NAC, summit, ministerial, and military-committee milestones.",
+      "compiler_action": "Verify the date and use as a Madrid/NAC planning lead, not a final chronology item until the PDF is inspected.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 11,
+      "gap_ids": [
+        "usnato_nac",
+        "nato_russia"
+      ],
+      "record_id": "strobe-hardgap-feb2024-C09000122",
+      "date": "date pending",
+      "source_document": "C09000122 (February 2024)",
+      "title": "ST notes on Kissinger piece",
+      "release_label": "February 2024",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf",
+      "manifest_excerpt": "The manifest excerpt says NATO remains NATO, the NAC remains NAC, and Russia will be in neither.",
+      "compiler_action": "Use as an annotation/source-control lead unless PDF review shows direct policy-drafting value.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 12,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-sep2022-C09000027",
+      "date": "date pending",
+      "source_document": "C09000027 (September 2022)",
+      "title": "CFE Rollout Meeting",
+      "release_label": "September 2022",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf",
+      "manifest_excerpt": "The manifest identifies a CFE rollout meeting and says CFE is important as the next step in Euro-security.",
+      "compiler_action": "Verify date and attendees; promote if it explains CFE rollout decisions or interagency assignments.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 13,
+      "gap_ids": [
+        "cfe",
+        "enlargement"
+      ],
+      "record_id": "strobe-hardgap-mar2023-C09000060",
+      "date": "date pending",
+      "source_document": "C09000060 (March 2023)",
+      "title": "DRAFT LETTER FROM THE SECRETARY TO CENTRAL EUROPEAN COUNTERPARTS w/Attached Facsimile Transmission",
+      "release_label": "March 2023",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf",
+      "manifest_excerpt": "The manifest excerpt discusses modernizing the CFE Treaty and serious Russian engagement in Vienna.",
+      "compiler_action": "Verify addressees and draft status; use to link CFE modernization with enlargement diplomacy.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    },
+    {
+      "harvest_order": 14,
+      "gap_ids": [
+        "cfe"
+      ],
+      "record_id": "strobe-hardgap-apr2023-C09000073",
+      "date": "date pending",
+      "source_document": "C09000073 (April 2023)",
+      "title": "Note from Strobe to Chris",
+      "release_label": "April 2023",
+      "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf",
+      "manifest_excerpt": "The manifest excerpt says Talbott wanted to brief Christopher on where they stood on CFE and ABM/TMD.",
+      "compiler_action": "Use as a CFE status lead; promote only after PDF review establishes date, context, and substance.",
+      "promoted_record_id": "",
+      "source_note_verified": "",
+      "selection_decision": "",
+      "notes": ""
+    }
+  ]
+}

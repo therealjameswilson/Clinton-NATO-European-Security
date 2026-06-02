@@ -574,6 +574,7 @@ function addDashboard(workbook, data) {
     ["Daily Diary chase rows", "", "Chronology leads to chase into substance"],
     ["Coverage matrix rows", "", "Ally, institution, treaty, and crisis-balance controls"],
     ["Search playbook rows", "", "Source-specific queries for hard and direct-document gaps"],
+    ["Hard-gap harvest rows", "", "Release-qualified Strobe FOIA source leads for NAC/USNATO and CFE"],
     ["Gap/risk rows", "", "Coverage-balancing review"]
   ];
 
@@ -584,8 +585,8 @@ function addDashboard(workbook, data) {
     ["Volume", "FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security"],
     ["Working rule", "Use diary/folder/title leads only to chase substantive records with dates, page spans, markings, and source-note paths."]
   ];
-  sheet.getRange("A8:C18").values = metricRows;
-  sheet.getRange("B9:B18").formulas = [
+  sheet.getRange("A8:C19").values = metricRows;
+  sheet.getRange("B9:B19").formulas = [
     [`=COUNTA('Records Index'!A5:A${data.recordsIndex.length + 4})`],
     [`=COUNTA(Chronology!A5:A${data.chronology.length + 4})`],
     [`=COUNTA('Action Queue'!A5:A${data.actionQueue.length + 4})`],
@@ -595,6 +596,7 @@ function addDashboard(workbook, data) {
     [`=COUNTA('Diary Chases'!A5:A${data.diaryChases.length + 4})`],
     [`=COUNTA('Coverage Matrix'!A5:A${data.coverageMatrix.length + 4})`],
     [`=COUNTA('Search Playbook'!A5:A${data.searchPlaybook.length + 4})`],
+    [`=COUNTA('Hard-Gap Harvest'!A5:A${data.hardGapHarvest.length + 4})`],
     [`=COUNTA('Gap Risks'!A5:A${data.gapRows.length + 4})`]
   ];
 
@@ -649,6 +651,7 @@ async function main() {
   const diaryChases = await readCsv("reports/presidential-daily-diary-chase-sheet.csv");
   const coverageMatrix = await readCsv("reports/coverage-matrix.csv");
   const searchPlaybook = await readCsv("reports/search-playbook.csv");
+  const hardGapHarvest = await readCsv("reports/hard-gap-harvest.csv");
   const gapReport = await readJson("reports/compiler-gap-analysis.json");
   const sourceAudit = await readJson("reports/source-note-style-audit.json");
   const actionQueue = buildActionQueue(records);
@@ -851,6 +854,23 @@ async function main() {
     { key: "notes", header: "Notes", width: 300 }
   ]);
 
+  addDataSheet(workbook, "Hard-Gap Harvest", "Release-qualified Strobe FOIA source leads added for NAC/USNATO and CFE gaps.", hardGapHarvest, [
+    { key: "harvest_order", header: "Harvest Order", type: "number", width: 105 },
+    { key: "gap_ids", header: "Gap IDs", width: 180 },
+    { key: "record_id", header: "Record ID", width: 235 },
+    { key: "date", header: "Date", width: 120 },
+    { key: "source_document", header: "Source Document", width: 190 },
+    { key: "title", header: "Title", width: 360 },
+    { key: "release_label", header: "Release Label", width: 135 },
+    { key: "pdf_url", header: "PDF URL", width: 320 },
+    { key: "manifest_excerpt", header: "Manifest Excerpt", width: 430 },
+    { key: "compiler_action", header: "Compiler Action", width: 430 },
+    { key: "promoted_record_id", header: "Promoted Record ID", width: 180 },
+    { key: "source_note_verified", header: "Source Note Verified", width: 180 },
+    { key: "selection_decision", header: "Selection Decision", width: 170 },
+    { key: "notes", header: "Notes", width: 300 }
+  ]);
+
   addDataSheet(workbook, "Source Audit", "Source-note model checks, counts, and repair actions.", auditRows, [
     { key: "section", header: "Section", width: 120 },
     { key: "label", header: "Label", width: 260 },
@@ -886,6 +906,7 @@ async function main() {
     diaryChases,
     coverageMatrix,
     searchPlaybook,
+    hardGapHarvest,
     recordsIndex: indexRows,
     gapRows: gaps
   });
@@ -916,6 +937,7 @@ async function main() {
         diaryChases: diaryChases.length,
         coverageMatrix: coverageMatrix.length,
         searchPlaybook: searchPlaybook.length,
+        hardGapHarvest: hardGapHarvest.length,
         gapRows: gaps.length,
         sourceAuditRows: auditRows.length
       },

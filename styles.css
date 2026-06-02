@@ -692,6 +692,7 @@ dd {
 .diary-chase-panel,
 .coverage-matrix-panel,
 .search-playbook-panel,
+.hard-gap-harvest-panel,
 .promotion-queue-panel {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.9fr) auto;
@@ -721,6 +722,11 @@ dd {
   border-left-color: var(--red);
 }
 
+.hard-gap-harvest-panel {
+  margin-top: 18px;
+  border-left-color: var(--green);
+}
+
 .promotion-queue-panel {
   margin-top: 18px;
   margin-bottom: 24px;
@@ -731,6 +737,7 @@ dd {
 .diary-chase-panel h3,
 .coverage-matrix-panel h3,
 .search-playbook-panel h3,
+.hard-gap-harvest-panel h3,
 .promotion-queue-panel h3 {
   margin: 0 0 10px;
   color: var(--ink);
@@ -743,6 +750,7 @@ dd {
 .diary-chase-panel p:not(.pull-priority),
 .coverage-matrix-panel p:not(.pull-priority),
 .search-playbook-panel p:not(.pull-priority),
+.hard-gap-harvest-panel p:not(.pull-priority),
 .promotion-queue-panel p:not(.pull-priority) {
   margin: 0;
   color: var(--muted);
@@ -754,6 +762,7 @@ dd {
 .diary-chase-metrics,
 .coverage-matrix-metrics,
 .search-playbook-metrics,
+.hard-gap-harvest-metrics,
 .promotion-queue-metrics {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -765,6 +774,7 @@ dd {
 .diary-chase-metrics div,
 .coverage-matrix-metrics div,
 .search-playbook-metrics div,
+.hard-gap-harvest-metrics div,
 .promotion-queue-metrics div {
   display: grid;
   align-content: center;
@@ -790,6 +800,11 @@ dd {
   border-color: rgba(184, 74, 58, 0.15);
 }
 
+.hard-gap-harvest-metrics div {
+  background: rgba(47, 103, 95, 0.09);
+  border-color: rgba(47, 103, 95, 0.14);
+}
+
 .promotion-queue-metrics div {
   background: rgba(185, 142, 54, 0.1);
   border-color: rgba(185, 142, 54, 0.18);
@@ -799,6 +814,7 @@ dd {
 .diary-chase-metrics dt,
 .coverage-matrix-metrics dt,
 .search-playbook-metrics dt,
+.hard-gap-harvest-metrics dt,
 .promotion-queue-metrics dt {
   color: var(--green);
   font-family: Georgia, "Times New Roman", serif;
@@ -816,6 +832,10 @@ dd {
   color: var(--red);
 }
 
+.hard-gap-harvest-metrics dt {
+  color: var(--green);
+}
+
 .promotion-queue-metrics dt {
   color: var(--gold);
 }
@@ -824,6 +844,7 @@ dd {
 .diary-chase-metrics dd,
 .coverage-matrix-metrics dd,
 .search-playbook-metrics dd,
+.hard-gap-harvest-metrics dd,
 .promotion-queue-metrics dd {
   margin: 8px 0 0;
   color: var(--navy);
@@ -836,6 +857,7 @@ dd {
 .diary-chase-download,
 .coverage-matrix-download,
 .search-playbook-download,
+.hard-gap-harvest-download,
 .promotion-queue-download {
   display: inline-flex;
   min-width: 150px;
@@ -859,6 +881,10 @@ dd {
 
 .search-playbook-download {
   background: var(--red);
+}
+
+.hard-gap-harvest-download {
+  background: var(--green);
 }
 
 .coverage-matrix-download {
@@ -1643,6 +1669,7 @@ footer a {
   .diary-chase-panel,
   .coverage-matrix-panel,
   .search-playbook-panel,
+  .hard-gap-harvest-panel,
   .promotion-queue-panel,
   .onsite-rules,
   .source-note-guide,
@@ -1655,6 +1682,7 @@ footer a {
   .diary-chase-panel,
   .coverage-matrix-panel,
   .search-playbook-panel,
+  .hard-gap-harvest-panel,
   .promotion-queue-panel {
     align-items: start;
   }
@@ -1663,6 +1691,7 @@ footer a {
   .diary-chase-download,
   .coverage-matrix-download,
   .search-playbook-download,
+  .hard-gap-harvest-download,
   .promotion-queue-download {
     min-height: 56px;
     grid-column: 1 / -1;
@@ -1710,6 +1739,8 @@ footer a {
   .coverage-matrix-metrics,
   .search-playbook-panel,
   .search-playbook-metrics,
+  .hard-gap-harvest-panel,
+  .hard-gap-harvest-metrics,
   .promotion-queue-panel,
   .promotion-queue-metrics,
   .onsite-rules,
