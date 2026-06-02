@@ -1,6 +1,6 @@
 # Search Playbook
 
-Generated: 2026-06-02T18:16:20.751Z
+Generated: 2026-06-02T18:22:37.237Z
 
 Task count: 35. Hard-gap tasks: 13.
 

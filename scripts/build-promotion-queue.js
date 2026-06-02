@@ -6,6 +6,7 @@ const path = require("node:path");
 const ROOT = path.resolve(__dirname, "..");
 const DATA_PATH = path.join(ROOT, "data", "records.json");
 const MATRIX_PATH = path.join(ROOT, "reports", "coverage-matrix.json");
+const HARD_GAP_TRIAGE_PATH = path.join(ROOT, "reports", "hard-gap-pdf-triage.json");
 const REPORT_DIR = path.join(ROOT, "reports");
 const CSV_PATH = path.join(REPORT_DIR, "promotion-queue.csv");
 const JSON_PATH = path.join(REPORT_DIR, "promotion-queue.json");
@@ -27,9 +28,21 @@ const PRIORITY_BATCH_ORDER = [
   "Promotion backlog"
 ];
 
+const HARD_GAP_LANE_ORDER = {
+  "Promote first": 1,
+  "Promote after date/source check": 2,
+  "Annotation/context": 3
+};
+
 function list(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
   return value ? [value] : [];
+}
+
+function readHardGapTriage() {
+  if (!fs.existsSync(HARD_GAP_TRIAGE_PATH)) return new Map();
+  const report = JSON.parse(fs.readFileSync(HARD_GAP_TRIAGE_PATH, "utf8"));
+  return new Map((report.rows || []).map((row) => [row.record_id, row]));
 }
 
 function sourcePathParts(record) {
@@ -128,15 +141,24 @@ function highestTargetStatus(targets) {
   return order.find((status) => targets.some((target) => target.status === status)) || "";
 }
 
-function scoreRecord(record, targets) {
+function scoreRecord(record, targets, hardGapTriage) {
   const targetBonus = targets.reduce((max, target) => Math.max(max, STATUS_BONUS[target.status] || 0), 0);
   const decision = record.selectionDecision || record.compilerDecision || "";
   const year = Number((record.sortDate || record.date || "").slice(0, 4));
   const sourceName = record.source?.name || "";
   const sourceText = sourcePathParts(record).join(" ");
+  const hardGapBonus =
+    hardGapTriage?.promotion_lane === "Promote first"
+      ? 180
+      : hardGapTriage?.promotion_lane === "Promote after date/source check"
+        ? 120
+        : hardGapTriage?.promotion_lane === "Annotation/context"
+          ? 40
+          : 0;
 
   return (
     (record.type === "Source Lead" ? 52 : 44) +
+    hardGapBonus +
     targetBonus +
     Math.min(targets.length * 4, 16) +
     (/National Archives|NARA|Catalog/i.test(sourceName) ? 14 : 0) +
@@ -151,7 +173,8 @@ function scoreRecord(record, targets) {
   );
 }
 
-function promotionAction(record, highestStatus) {
+function promotionAction(record, highestStatus, hardGapTriage) {
+  if (hardGapTriage?.next_compiler_action) return hardGapTriage.next_compiler_action;
   if (record.type === "Source Lead") {
     return "Open released PDF, decide include/context/exclude, capture page span, markings, declassification status, and final source note.";
   }
@@ -164,12 +187,15 @@ function promotionAction(record, highestStatus) {
   return "Inspect digital object and promote only specific document-level items with dates, page spans, markings, and source path.";
 }
 
-function promotionGate(record) {
+function promotionGate(record, hardGapTriage) {
+  if (hardGapTriage?.promotion_lane === "Promote first") return "hard-gap PDF promotion";
+  if (hardGapTriage?.promotion_lane === "Promote after date/source check") return "hard-gap date/source check";
+  if (hardGapTriage?.promotion_lane === "Annotation/context") return "hard-gap annotation/context";
   if (record.type === "Source Lead") return "released-source triage";
   return "file-unit extraction";
 }
 
-function rowFor(record, targets, score) {
+function rowFor(record, targets, score, hardGapTriage) {
   const highestStatus = highestTargetStatus(targets);
   return {
     record_id: record.id || "",
@@ -184,8 +210,14 @@ function rowFor(record, targets, score) {
     coverage_status: highestStatus,
     coverage_targets: targetSummary(targets),
     coverage_target_ids: targetIds(targets),
-    promotion_gate: promotionGate(record),
-    next_action: promotionAction(record, highestStatus),
+    hard_gap_triage_order: hardGapTriage?.triage_order || "",
+    hard_gap_promotion_lane: hardGapTriage?.promotion_lane || "",
+    hard_gap_direct_credit: hardGapTriage?.direct_gap_credit || "",
+    hard_gap_decision: hardGapTriage?.recommended_decision || "",
+    hard_gap_blocking_issue: hardGapTriage?.blocking_issue || "",
+    source_ready: hardGapTriage?.source_ready || "",
+    promotion_gate: promotionGate(record, hardGapTriage),
+    next_action: promotionAction(record, highestStatus, hardGapTriage),
     catalog_url: record.catalogUrl || record.source?.url || "",
     pdf_url: record.pdfUrl || record.source?.pdfUrl || "",
     source_note_draft: record.sourceNote || "",
@@ -208,9 +240,28 @@ function byCandidatePriority(a, b) {
   );
 }
 
+function hardGapLaneRank(row) {
+  if (!row.hard_gap_promotion_lane) return 99;
+  return HARD_GAP_LANE_ORDER[row.hard_gap_promotion_lane] || 90;
+}
+
+function bySourcePriority(a, b) {
+  const hardGapDelta = hardGapLaneRank(a) - hardGapLaneRank(b);
+  if (hardGapDelta) return hardGapDelta;
+  const orderA = Number(a.hard_gap_triage_order) || 999;
+  const orderB = Number(b.hard_gap_triage_order) || 999;
+  return orderA - orderB || byCandidatePriority(a, b);
+}
+
+function batchRank(row) {
+  if (row.priority_batch === "First 40 Scout/Catalog extractions") return Number(row.scout_top_40_rank) || 9999;
+  if (row.priority_batch === "First 40 released-source triage") return Number(row.source_triage_rank) || 9999;
+  return 9999;
+}
+
 function assignRanks(rows) {
   const scoutRows = rows.filter((row) => row.source_type === "Scout Lead").sort(byCandidatePriority);
-  const sourceRows = rows.filter((row) => row.source_type === "Source Lead").sort(byCandidatePriority);
+  const sourceRows = rows.filter((row) => row.source_type === "Source Lead").sort(bySourcePriority);
   const scoutRank = new Map(scoutRows.map((row, index) => [row.record_id, index + 1]));
   const sourceRank = new Map(sourceRows.map((row, index) => [row.record_id, index + 1]));
 
@@ -239,7 +290,7 @@ function assignRanks(rows) {
   return ranked
     .sort((a, b) => {
       const batchDelta = PRIORITY_BATCH_ORDER.indexOf(a.priority_batch) - PRIORITY_BATCH_ORDER.indexOf(b.priority_batch);
-      return batchDelta || byCandidatePriority(a, b);
+      return batchDelta || batchRank(a) - batchRank(b) || byCandidatePriority(a, b);
     })
     .map((row, index) => ({ promotion_order: index + 1, ...row }));
 }
@@ -273,6 +324,8 @@ function markdownTable(rows) {
     ["Order", "promotion_order"],
     ["Scout 40", "scout_top_40_rank"],
     ["Source 40", "source_triage_rank"],
+    ["Hard Gap", "hard_gap_promotion_lane"],
+    ["Triage", "hard_gap_triage_order"],
     ["Status", "coverage_status"],
     ["Date", "sort_date"],
     ["Type", "source_type"],
@@ -289,6 +342,7 @@ function markdownTable(rows) {
 function main() {
   const records = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
   const matrix = JSON.parse(fs.readFileSync(MATRIX_PATH, "utf8"));
+  const hardGapTriageById = readHardGapTriage();
   const matrixRows = compileMatrixPatterns(matrix.rows || []);
   fs.mkdirSync(REPORT_DIR, { recursive: true });
 
@@ -296,7 +350,8 @@ function main() {
     .filter((record) => record.type === "Scout Lead" || record.type === "Source Lead")
     .map((record) => {
       const targets = matchingTargets(record, matrixRows);
-      return rowFor(record, targets, scoreRecord(record, targets));
+      const hardGapTriage = hardGapTriageById.get(record.id);
+      return rowFor(record, targets, scoreRecord(record, targets, hardGapTriage), hardGapTriage);
     });
   const rows = assignRanks(candidates);
   const statusCounts = countBy(rows, (row) => row.coverage_status || "no matrix target");
@@ -319,6 +374,12 @@ function main() {
     "coverage_status",
     "coverage_targets",
     "coverage_target_ids",
+    "hard_gap_triage_order",
+    "hard_gap_promotion_lane",
+    "hard_gap_direct_credit",
+    "hard_gap_decision",
+    "hard_gap_blocking_issue",
+    "source_ready",
     "promotion_gate",
     "next_action",
     "catalog_url",
@@ -342,7 +403,8 @@ function main() {
     sourceLeadCount: rows.filter((row) => row.source_type === "Source Lead").length,
     statusCounts,
     batchCounts,
-    basis: "Promotion queue generated from data/records.json and reports/coverage-matrix.json to operationalize the gap-audit instruction to extract top Scout/Catalog leads into document-level records.",
+    hardGapTriageCounts: countBy(rows.filter((row) => row.hard_gap_promotion_lane), (row) => row.hard_gap_promotion_lane),
+    basis: "Promotion queue generated from data/records.json, reports/coverage-matrix.json, and reports/hard-gap-pdf-triage.json to operationalize Scout/Catalog extraction and released-source promotion.",
     rows
   };
 
@@ -358,7 +420,7 @@ function main() {
     "",
     `Candidate count: ${rows.length} (${report.scoutLeadCount} Scout Leads; ${report.sourceLeadCount} Source Leads).`,
     "",
-    "This queue turns file-unit and released-source leads into a worksheet for promotion into document-level FRUS evidence. The first batch is the top 40 Scout/Catalog extractions; the second batch is the top 40 released-source triage targets. Blank fields in the CSV/workbook are intended for inspection status, actual document date, page span, markings, source-note verification, promoted record ID, and final compiler decision.",
+    "This queue turns file-unit and released-source leads into a worksheet for promotion into document-level FRUS evidence. The first batch is the top 40 Scout/Catalog extractions; the second batch is the top 40 released-source triage targets, ordered first by the hard-gap PDF triage lanes. The CSV/workbook expose hard-gap lane, direct gap credit, blocking issue, source readiness, inspection status, actual document date, page span, markings, source-note verification, promoted record ID, and final compiler decision.",
     "",
     "## Batch Counts",
     "",
@@ -367,6 +429,10 @@ function main() {
     "## Coverage Status Counts",
     "",
     ...Object.entries(statusCounts).map(([status, count]) => `- ${status}: ${count}`),
+    "",
+    "## Hard-Gap PDF Triage In Queue",
+    "",
+    ...Object.entries(report.hardGapTriageCounts).map(([lane, count]) => `- ${lane}: ${count}`),
     "",
     "## First 40 Scout/Catalog Extractions",
     "",

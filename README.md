@@ -108,10 +108,12 @@ The workbook builder also refreshes:
 
 The **Promotion Queue** turns Scout Leads and Source Leads into a document-level
 extraction worksheet. It preserves the first 40 Scout/Catalog extraction targets
-as a distinct batch, adds the first 40 released-source triage targets, and
-provides blank fields for inspection status, actual document date, page span,
-markings verification, source-note verification, promoted record ID, and final
-compiler decision.
+as a distinct batch, then orders the first 40 released-source triage targets by
+the hard-gap PDF lanes: promote-first CFE/NAC PDFs, date/source checks,
+annotation/context support, then the wider released-source backlog. It provides
+fields for triage lane, direct gap credit, blocking issue, source readiness,
+inspection status, actual document date, page span, markings verification,
+source-note verification, promoted record ID, and final compiler decision.
 
 Run:
 
