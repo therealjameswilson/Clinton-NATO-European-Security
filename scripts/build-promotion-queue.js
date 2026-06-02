@@ -21,7 +21,7 @@ const STATUS_BONUS = {
 };
 
 const PRIORITY_BATCH_ORDER = [
-  "First 40 Scout/Catalog extractions",
+  "Gap-first Scout/Catalog extractions",
   "First 40 released-source triage",
   "Coverage-gap backlog",
   "Crisis split backlog",
@@ -254,13 +254,15 @@ function bySourcePriority(a, b) {
 }
 
 function batchRank(row) {
-  if (row.priority_batch === "First 40 Scout/Catalog extractions") return Number(row.scout_top_40_rank) || 9999;
+  if (row.priority_batch === "Gap-first Scout/Catalog extractions") return Number(row.scout_top_40_rank) || 9999;
   if (row.priority_batch === "First 40 released-source triage") return Number(row.source_triage_rank) || 9999;
   return 9999;
 }
 
 function assignRanks(rows) {
-  const scoutRows = rows.filter((row) => row.source_type === "Scout Lead").sort(byCandidatePriority);
+  const scoutRows = rows
+    .filter((row) => row.source_type === "Scout Lead" && row.coverage_status !== "overweight")
+    .sort(byCandidatePriority);
   const sourceRows = rows.filter((row) => row.source_type === "Source Lead").sort(bySourcePriority);
   const scoutRank = new Map(scoutRows.map((row, index) => [row.record_id, index + 1]));
   const sourceRank = new Map(sourceRows.map((row, index) => [row.record_id, index + 1]));
@@ -269,8 +271,8 @@ function assignRanks(rows) {
     const scout_top_40_rank = scoutRank.get(row.record_id) || "";
     const source_triage_rank = sourceRank.get(row.record_id) || "";
     const priority_batch =
-      scout_top_40_rank && scout_top_40_rank <= 40
-        ? "First 40 Scout/Catalog extractions"
+      scout_top_40_rank
+        ? "Gap-first Scout/Catalog extractions"
         : source_triage_rank && source_triage_rank <= 40
           ? "First 40 released-source triage"
           : ["gap", "direct-document gap"].includes(row.coverage_status)
@@ -322,7 +324,7 @@ function mdEscape(value) {
 function markdownTable(rows) {
   const columns = [
     ["Order", "promotion_order"],
-    ["Scout 40", "scout_top_40_rank"],
+    ["Scout Gap", "scout_top_40_rank"],
     ["Source 40", "source_triage_rank"],
     ["Hard Gap", "hard_gap_promotion_lane"],
     ["Triage", "hard_gap_triage_order"],
@@ -420,7 +422,7 @@ function main() {
     "",
     `Candidate count: ${rows.length} (${report.scoutLeadCount} Scout Leads; ${report.sourceLeadCount} Source Leads).`,
     "",
-    "This queue turns file-unit and released-source leads into a worksheet for promotion into document-level FRUS evidence. The first batch is the top 40 Scout/Catalog extractions; the second batch is the top 40 released-source triage targets, ordered first by the hard-gap PDF triage lanes. The CSV/workbook expose hard-gap lane, direct gap credit, blocking issue, source readiness, inspection status, actual document date, page span, markings, source-note verification, promoted record ID, and final compiler decision.",
+    "This queue turns file-unit and released-source leads into a worksheet for promotion into document-level FRUS evidence. The first batch is gap-first Scout/Catalog extraction work: non-overweight file-unit leads that can fill direct-document gaps or nearby architecture/enlargement coverage before the compiler opens the crisis split backlog. The second batch is the top 40 released-source triage targets, ordered first by the hard-gap PDF triage lanes. The CSV/workbook expose hard-gap lane, direct gap credit, blocking issue, source readiness, inspection status, actual document date, page span, markings, source-note verification, promoted record ID, and final compiler decision.",
     "",
     "## Batch Counts",
     "",
@@ -434,7 +436,7 @@ function main() {
     "",
     ...Object.entries(report.hardGapTriageCounts).map(([lane, count]) => `- ${lane}: ${count}`),
     "",
-    "## First 40 Scout/Catalog Extractions",
+    "## Gap-First Scout/Catalog Extractions",
     "",
     markdownTable(topScout),
     "",

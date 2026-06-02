@@ -568,7 +568,7 @@ function addDashboard(workbook, data) {
     ["Total records", "", "Full source index"],
     ["Chronology records", "", "Date-sorted declassified reading order"],
     ["Action queue rows", "", "Ranked next compiler work"],
-    ["Promotion queue rows", "", "Scout/Catalog extraction and released-source triage worksheet"],
+    ["Promotion queue rows", "", "Gap-first Scout/Catalog extraction and released-source triage worksheet"],
     ["Citation desk rows", "", "Source-note and declassification repair"],
     ["Source markings chase rows", "", "Records needing PDF/source-image marking verification"],
     ["Clinton Library pull rows", "", "Onsite request worksheet"],
@@ -711,10 +711,10 @@ async function main() {
     ACTION_QUEUE_COLUMNS
   );
 
-  addDataSheet(workbook, "Promotion Queue", "Scout/Catalog extraction and released-source triage worksheet.", promotionQueue, [
+  addDataSheet(workbook, "Promotion Queue", "Gap-first Scout/Catalog extraction and released-source triage worksheet.", promotionQueue, [
     { key: "promotion_order", header: "Promotion Order", type: "number", width: 105 },
     { key: "priority_batch", header: "Priority Batch", width: 220 },
-    { key: "scout_top_40_rank", header: "Scout Top 40", type: "number", width: 105 },
+    { key: "scout_top_40_rank", header: "Scout Gap Rank", type: "number", width: 120 },
     { key: "source_triage_rank", header: "Source Triage Rank", type: "number", width: 125 },
     { key: "record_id", header: "Record ID", width: 190 },
     { key: "score", header: "Score", type: "number", width: 80 },
