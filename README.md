@@ -1,8 +1,12 @@
 # FRUS 1993-2000 Volume XVII NATO and European Security Files
 
-A GitHub Pages working site for the compiler assembling source leads for
+A GitHub Pages source-first working site for the compiler assembling source leads for
 *Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic
 Treaty Organization; European Security*.
+
+The site is meant to be auditable, not opaque: it keeps sources, reasons,
+exports, and open gaps visible so automated ordering can be checked, revised, or
+ignored by the compiler.
 
 The Office of the Historian currently lists this FRUS volume as **Planned**.
 This repository follows the static-site pattern used by
@@ -46,13 +50,14 @@ next compiler action.
 
 ## Compiler Action Queue
 
-The page now includes a generated **Compiler Action Queue** immediately after
+The page now includes a source-first **Compiler Action Queue** immediately after
 the chronology. It ranks records by production risk and coverage value so a
 compiler can move from reading order into the next best work: promoting Scout
 Leads, splitting release packets, chasing Presidential Daily Diary events back
 to substantive records, repairing source-note/declassification gaps, and
 balancing weak CFE, NAC/USNATO, OSCE/CSCE, NATO-EU/ESDI, Madrid/accession, and
-late-volume coverage.
+late-volume coverage. Treat the ranking as a transparent work order, not a
+selection decision.
 
 Use **Download action queue CSV** on the live page for an in-browser export, or
 download the committed static report for the same workbook-backed work queue:

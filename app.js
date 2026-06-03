@@ -582,10 +582,12 @@ function ensureActionQueueSurface() {
         <h2 id="queue-title">Compiler Action Queue</h2>
       </div>
       <p class="records-intro">
-        This generated queue turns the corpus into a work order: promote the
+        This source-first queue turns the corpus into a work order: promote the
         highest-value file-unit leads, chase Daily Diary events back to
         substantive records, repair source-note and declassification gaps, and
-        rebalance the volume away from crisis-heavy coverage.
+        rebalance the volume away from crisis-heavy coverage. Each card keeps
+        the reason and source link visible so the compiler can accept, revise,
+        or discard the recommendation.
       </p>
       <div class="queue-summary" aria-label="Action queue summary">
         <div><span data-queue-metric="promotion">0</span><p>lead-promotion tasks</p></div>

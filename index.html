@@ -6,7 +6,7 @@
     <title>FRUS 1993-2000 Volume XVII NATO and European Security Files</title>
     <meta
       name="description"
-      content="A public compiler workbench for source leads related to FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security."
+      content="A public, source-first compiler workbench for source leads related to FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security."
     />
     <link rel="stylesheet" href="styles.css" />
     <style id="compiler-network-style">
@@ -139,7 +139,9 @@
           document records: memcons, telcons, release packets, and Presidential
           Daily Diary context entries. Scout leads, source leads, and
           public-statement context stay in later work queues until they are
-          promoted to document-level evidence.
+          promoted to document-level evidence. Treat the page as an auditable
+          checklist: every recommendation should point back to a source image,
+          and final selection remains a compiler judgment.
         </p>
         <div class="report-links chronology-links" aria-label="Chronology support reports">
           <a href="#records">Open full lane browser</a>
@@ -161,10 +163,12 @@
           <h2 id="queue-title">Compiler Action Queue</h2>
         </div>
         <p class="records-intro">
-          This generated queue turns the corpus into a work order: promote the
+          This source-first queue turns the corpus into a work order: promote the
           highest-value file-unit leads, chase Daily Diary events back to
           substantive records, repair source-note and declassification gaps, and
-          rebalance the volume away from crisis-heavy coverage.
+          rebalance the volume away from crisis-heavy coverage. Each card keeps
+          the reason and source link visible so the compiler can accept, revise,
+          or discard the recommendation.
         </p>
         <div class="queue-summary" aria-label="Action queue summary">
           <div>
@@ -310,11 +314,12 @@
           <p class="kicker">FRUS 1993-2000, Volume XVII</p>
           <h1 id="hero-title">NATO and European Security Files</h1>
           <p class="lede">
-            A public compiler workbench for the planned <em>Foreign Relations of the
+            A public, source-first compiler workbench for the planned <em>Foreign Relations of the
             United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization;
             European Security</em>. The site is structured to collect released documents,
             source leads, and provenance notes across NATO enlargement, NATO-Russia,
-            European security architecture, and crisis-security files.
+            European security architecture, and crisis-security files, with transparent
+            worksheets and final decisions left to the compiler.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#chronology">Read Chronology</a>
@@ -907,7 +912,8 @@
             <p>
               Records are grouped by compiler lane and sorted by date inside each lane.
               Every entry should preserve the source trail alongside any cleaned
-              document link so later FRUS review can retrace the path.
+              document link so later FRUS review can retrace, challenge, or revise
+              the path.
             </p>
           </div>
         </div>
@@ -1157,7 +1163,7 @@
       <a href="https://github.com/therealjameswilson/Clinton-NATO-European-Security">Repository</a>
     </footer>
     <script src="data/records.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=20260602-source-first"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
