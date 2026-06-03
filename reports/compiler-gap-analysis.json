@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T18:22:37.046Z",
+  "generatedAt": "2026-06-03T02:16:45.198Z",
   "officialVolumeStatus": {
     "status": "Planned",
     "checkedUrl": "https://history.state.gov/historicaldocuments/frus1993-00v17"
@@ -70,63 +70,55 @@
     },
     "topSources": [
       [
-        "National Archives Catalog",
-        260
+        "National Archives and Records Administration, National Archives Catalog",
+        302
+      ],
+      [
+        "Department of State, FOIA Virtual Reading Room",
+        93
       ],
       [
         "William J. Clinton Presidential Library, Clinton Digital Library",
         85
       ],
       [
-        "Department of State FOIA Virtual Reading Room",
-        69
-      ],
-      [
         "Government Publishing Office, GovInfo",
         66
       ],
       [
-        "William J. Clinton Presidential Library & Museum",
+        "William J. Clinton Presidential Library",
         60
       ],
       [
-        "National Archives and Records Administration, National Archives Catalog",
-        42
-      ],
-      [
-        "Clinton Library MDR release 2015-0782-M-2",
+        "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2",
         34
       ],
       [
-        "Department of State, FOIA Virtual Reading Room",
-        24
-      ],
-      [
-        "Clinton Library MDR release 2015-0782-M-1",
+        "William J. Clinton Presidential Library, MDR Release 2015-0782-M-1",
         2
       ],
       [
-        "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin",
+        "National Archives and Records Administration, National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin",
         2
       ],
       [
-        "Clinton Digital Library item 101758, Declassified Documents",
+        "William J. Clinton Presidential Library, Clinton Digital Library, Item 101758, Declassified Documents",
         1
       ],
       [
-        "Clinton Digital Library item 100503, MDR release 2016-0620-M",
+        "William J. Clinton Presidential Library, Clinton Digital Library, Item 100503, MDR release 2016-0620-M",
         1
       ],
       [
-        "Clinton Digital Library item 119190, Telcons - Memoranda of Telephone Conversation",
+        "William J. Clinton Presidential Library, Clinton Digital Library, Item 119190, Telcons - Memoranda of Telephone Conversation",
         1
       ],
       [
-        "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation",
+        "William J. Clinton Presidential Library, Clinton Digital Library, Item 101370, Memcons - Memoranda of Conversation",
         1
       ],
       [
-        "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A",
+        "William J. Clinton Presidential Library, MDR Release 2014-0546-M-Release-A",
         1
       ]
     ],
@@ -167,21 +159,21 @@
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Lithuania - Meeting with Deputy Foreign Minister Vygaudas Usackas",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "clinton-dl-119044",
           "date": "1993-04-21",
           "type": "Memcon",
           "title": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "clinton-dl-101329",
           "date": "1993-04-21",
           "type": "Memcon",
           "title": "Memorandum of Conversation - President Arpad Goncz of Hungary",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "pdd-17368174-19931006",
@@ -195,7 +187,7 @@
           "date": "1994-01-01",
           "type": "Scout Lead",
           "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "pdd-147870783-19940103",
@@ -216,7 +208,7 @@
           "date": "1994-01-20",
           "type": "Telcon",
           "title": "Memorandum of Telephone Conversation with President Ulmanis of Latvia",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         }
       ]
     },
@@ -243,7 +235,7 @@
           "date": "1994-01-01",
           "type": "Scout Lead",
           "title": "Briefing Books - POTUS Trip to Prague, Czech Republic, January 11-12, 1994",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "pdd-147870783-19940103",
@@ -257,42 +249,42 @@
           "date": "1994-03-04",
           "type": "Memcon",
           "title": "Memorandum of Conversation - President Leonid Kravchuk of Ukraine",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "nara-scout-40482321",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Bosnia - Hercegovina, February 1993 [2]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-40482344",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Bosnia - Hercegovina, May - June 1993 [3]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-40482349",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Bosnia - Hercegovina, May - June 1993 [8]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-40482350",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Bosnia - Hercegovina, May - June 1993 [9]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-40482459",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Bosnia - Letters [1]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         }
       ]
     },
@@ -330,28 +322,28 @@
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Latvia [2]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-23901923",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Latvia: Russia-Latvia [1]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-23902173",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Lithuania [1]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-23902180",
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "Lithuania [8]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "pdd-147870749-19930324",
@@ -365,14 +357,14 @@
           "date": "1993-04-28",
           "type": "Source Lead",
           "title": "Proposed Message to President Yeltsin",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000001",
           "date": "1993-07-16",
           "type": "Source Lead",
           "title": "Memon with President Boris Yeltsin of Russia w/Attached Cover Sheet",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         }
       ]
     },
@@ -401,56 +393,56 @@
           "date": "1994-07-10",
           "type": "Memcon",
           "title": "Meeting with President Boris Yeltsin of Russia, July 10, 1994, Naples Italy",
-          "source": "Clinton Library MDR release 2015-0782-M-1"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-1"
         },
         {
           "id": "russia-cross-clinton-standalone-1994-09-28-second-one-on-one",
           "date": "1994-09-28",
           "type": "Memcon",
           "title": "Informal record: Second Clinton/Yeltsin One-on-One",
-          "source": "Clinton Digital Library item 101758, Declassified Documents"
+          "source": "William J. Clinton Presidential Library, Clinton Digital Library, Item 101758, Declassified Documents"
         },
         {
           "id": "russia-cross-contact-1997-02-27-telcon-43",
           "date": "1997-02-27",
           "type": "Telcon",
           "title": "Telephone call with President Boris Yeltsin of Russia, February 27, 1997, White House declassified in full",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-afternoon",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Afternoon Meeting with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-morning",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Morning Meeting with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-private-dinner",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Private Dinner with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-working-lunch",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Working Lunch with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-05-27-memcon-45",
           "date": "1997-05-27",
           "type": "Memcon",
           "title": "Meeting with President Boris Yeltsin of Russia, May 27, 1997, Paris, France declassified in part",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         }
       ]
     },
@@ -479,56 +471,56 @@
           "date": "1994-07-10",
           "type": "Memcon",
           "title": "Meeting with President Boris Yeltsin of Russia, July 10, 1994, Naples Italy",
-          "source": "Clinton Library MDR release 2015-0782-M-1"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-1"
         },
         {
           "id": "russia-cross-clinton-standalone-1994-09-28-second-one-on-one",
           "date": "1994-09-28",
           "type": "Memcon",
           "title": "Informal record: Second Clinton/Yeltsin One-on-One",
-          "source": "Clinton Digital Library item 101758, Declassified Documents"
+          "source": "William J. Clinton Presidential Library, Clinton Digital Library, Item 101758, Declassified Documents"
         },
         {
           "id": "russia-cross-contact-1997-02-27-telcon-43",
           "date": "1997-02-27",
           "type": "Telcon",
           "title": "Telephone call with President Boris Yeltsin of Russia, February 27, 1997, White House declassified in full",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-afternoon",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Afternoon Meeting with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-morning",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Morning Meeting with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-private-dinner",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Private Dinner with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-03-21-memcon-helsinki-working-lunch",
           "date": "1997-03-21",
           "type": "Memcon",
           "title": "Memorandum of conversation: Helsinki Working Lunch with President Boris Yeltsin",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         },
         {
           "id": "russia-cross-contact-1997-05-27-memcon-45",
           "date": "1997-05-27",
           "type": "Memcon",
           "title": "Meeting with President Boris Yeltsin of Russia, May 27, 1997, Paris, France declassified in part",
-          "source": "Clinton Library MDR release 2015-0782-M-2"
+          "source": "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2"
         }
       ]
     },
@@ -556,28 +548,28 @@
           "date": "1996-06-10",
           "type": "Source Lead",
           "title": "BILATERAL PRESIDENTIAL MEETING AT LYON SUMMIT",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000096",
           "date": "1997-03-08",
           "type": "Source Lead",
           "title": "March 8, 1997 Note From Strobe Talbott To Barbara Larkin",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000097",
           "date": "1997-03-19",
           "type": "Source Lead",
           "title": "March 19, 1997 Note From Strobe Talbott To Jeremy Rosner w/Attachment(s)",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000046",
           "date": "1997-06-19",
           "type": "Source Lead",
           "title": "MEMCON OF SECRETARY ALBRIGHT/RUSSIAN FOREIGN MINISTER PRIMAKOV DINNER AT THE G-8 DENVER SUMMIT, BUCKHORN EXCHANGE, JUNE 19, 1997",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "pdd-17368195-19991118",
@@ -591,21 +583,21 @@
           "date": "1993-01-01",
           "type": "Scout Lead",
           "title": "DC 0145 DC Meeting Regarding Conference on Security and Cooperation in Europe/CSCE/Summit in Budapest, 5 December 199",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-147873129",
           "date": "1994-01-01",
           "type": "Scout Lead",
           "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [1]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         },
         {
           "id": "nara-scout-147873131",
           "date": "1994-01-01",
           "type": "Scout Lead",
           "title": "CSCE [Conference on Security and Cooperation in Europe] December 1994 [2]",
-          "source": "National Archives Catalog"
+          "source": "National Archives and Records Administration, National Archives Catalog"
         }
       ]
     },
@@ -647,7 +639,7 @@
           "date": "1996-05-08",
           "type": "Source Lead",
           "title": "PAPER FOR MAMEDOV ON CFE",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-hardgap-july2024-C09000039",
@@ -675,7 +667,7 @@
           "date": "1997-02-10",
           "type": "Source Lead",
           "title": "Prep meeting for Albright/Primakov Ministerial NATO-Russia Interagency flying squad 4:30 p.m. February 10, 1997",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-hardgap-july2024-C09000044",
@@ -810,7 +802,7 @@
           "date": "1997-05-19",
           "type": "Source Lead",
           "title": "May 19, 1997 Letter From Boris Yeltsin To William J. Clinton",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "govinfo-PPP-1994-book2-doc-pg1467",
@@ -824,7 +816,7 @@
           "date": "1996-11-18",
           "type": "Source Lead",
           "title": "November 18, 1996 Letter From Strobe Talbott To Javier Solana",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "govinfo-PPP-1997-book1-doc-pg618",
@@ -838,7 +830,7 @@
           "date": "1998-02-15",
           "type": "Source Lead",
           "title": "February 15, 1998 Note From Strobe Talbott To Amb. Grossman",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         }
       ]
     },
@@ -867,56 +859,56 @@
           "date": "1993-09-17",
           "type": "Memcon",
           "title": "Memorandum of Conversation - Prime Minister Carlo Ciampi of Italy",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "clinton-dl-101354",
           "date": "1994-03-04",
           "type": "Memcon",
           "title": "Memorandum of Conversation - President Leonid Kravchuk of Ukraine",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "clinton-dl-118984",
           "date": "1994-07-08",
           "type": "Memcon",
           "title": "Memorandum of Conversation between President Clinton and Italian Prime Minister Berlusconi",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         },
         {
           "id": "strobe-C09000036",
           "date": "1996-06-10",
           "type": "Source Lead",
           "title": "BILATERAL PRESIDENTIAL MEETING AT LYON SUMMIT",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000096",
           "date": "1997-03-08",
           "type": "Source Lead",
           "title": "March 8, 1997 Note From Strobe Talbott To Barbara Larkin",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000097",
           "date": "1997-03-19",
           "type": "Source Lead",
           "title": "March 19, 1997 Note From Strobe Talbott To Jeremy Rosner w/Attachment(s)",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "strobe-C09000046",
           "date": "1997-06-19",
           "type": "Source Lead",
           "title": "MEMCON OF SECRETARY ALBRIGHT/RUSSIAN FOREIGN MINISTER PRIMAKOV DINNER AT THE G-8 DENVER SUMMIT, BUCKHORN EXCHANGE, JUNE 19, 1997",
-          "source": "Department of State FOIA Virtual Reading Room"
+          "source": "Department of State, FOIA Virtual Reading Room"
         },
         {
           "id": "clinton-dl-101470",
           "date": "1997-07-09",
           "type": "Memcon",
           "title": "Memorandum of Conversation - President Leonid Kuchma of Ukraine",
-          "source": "William J. Clinton Presidential Library & Museum"
+          "source": "William J. Clinton Presidential Library"
         }
       ]
     }

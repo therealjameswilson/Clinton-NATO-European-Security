@@ -1,6 +1,11 @@
 {
-  "generatedAt": "2026-06-02T18:22:37.338Z",
+  "generatedAt": "2026-06-03T02:16:44.781Z",
   "model": [
+    {
+      "label": "FRUS 1989-1992, Volume XXXI, About the Series",
+      "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries",
+      "pattern": "First footnote gives source, original classification, distribution, drafting information, important background, and read-by context when known."
+    },
     {
       "label": "FRUS 1989-1992, Volume XXXI, Document 1",
       "url": "https://history.state.gov/historicaldocuments/frus1989-92v31/d1",
@@ -17,25 +22,23 @@
       "pattern": "Source path; classification; meeting-location context."
     }
   ],
-  "styleRule": "Keep the displayed first footnote as a Source sentence only: repository and collection path first, exact folder/item identifier next, then classification/handling and document-context details when verified. Keep compiler warnings outside the Source sentence.",
+  "styleRule": "Keep the displayed first footnote as a FRUS-style Source note: repository and collection path first, exact folder/item identifier next, then original classification, distribution/handling, drafting/clearance, meeting/context, marginalia, attachment, or declassification details when verified. Keep compiler warnings, OCR/page-count audit text, and working page spans outside the displayed Source note.",
   "counts": {
     "total": 649,
     "bySource": {
-      "National Archives Catalog": 260,
-      "William J. Clinton Presidential Library & Museum": 60,
-      "National Archives and Records Administration, National Archives Catalog": 42,
+      "National Archives and Records Administration, National Archives Catalog": 302,
+      "William J. Clinton Presidential Library": 60,
       "Government Publishing Office, GovInfo": 66,
-      "Department of State, FOIA Virtual Reading Room": 24,
-      "Department of State FOIA Virtual Reading Room": 69,
-      "Clinton Library MDR release 2015-0782-M-1": 2,
-      "Clinton Digital Library item 101758, Declassified Documents": 1,
-      "Clinton Library MDR release 2015-0782-M-2": 34,
-      "Clinton Digital Library item 100503, MDR release 2016-0620-M": 1,
-      "Clinton Digital Library item 119190, Telcons - Memoranda of Telephone Conversation": 1,
+      "Department of State, FOIA Virtual Reading Room": 93,
+      "William J. Clinton Presidential Library, MDR Release 2015-0782-M-1": 2,
+      "William J. Clinton Presidential Library, Clinton Digital Library, Item 101758, Declassified Documents": 1,
+      "William J. Clinton Presidential Library, MDR Release 2015-0782-M-2": 34,
+      "William J. Clinton Presidential Library, Clinton Digital Library, Item 100503, MDR release 2016-0620-M": 1,
+      "William J. Clinton Presidential Library, Clinton Digital Library, Item 119190, Telcons - Memoranda of Telephone Conversation": 1,
       "William J. Clinton Presidential Library, Clinton Digital Library": 85,
-      "National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin": 2,
-      "Clinton Digital Library item 101370, Memcons - Memoranda of Conversation": 1,
-      "William J. Clinton Presidential Library MDR Release 2014-0546-M-Release-A": 1
+      "National Archives and Records Administration, National Archives Catalog, Memcons between President William Jefferson Clinton and President Boris Yeltsin": 2,
+      "William J. Clinton Presidential Library, Clinton Digital Library, Item 101370, Memcons - Memoranda of Conversation": 1,
+      "William J. Clinton Presidential Library, MDR Release 2014-0546-M-Release-A": 1
     },
     "byType": {
       "Scout Lead": 260,
@@ -49,6 +52,8 @@
     "sourcePathPresent": 649,
     "sourceNotesWithRawUrls": 0,
     "sourceNotesWithProductionLanguage": 0,
+    "sourceNotesWithWorkingPageCounts": 0,
+    "sourceNotesWithLooseRepositoryNames": 0,
     "reviewNotesWithProductionLanguage": 543,
     "notesNeedingMarkings": 0,
     "scoutLeadsAwaitingDocumentSelection": 260
@@ -56,6 +61,8 @@
   "issueCounts": {},
   "samples": {
     "needsMarkings": [],
+    "workingPageCountInSourceNote": [],
+    "looseRepositoryName": [],
     "scoutLeadsAwaitingDocumentSelection": [
       {
         "id": "nara-scout-23902171",
@@ -136,6 +143,7 @@
   },
   "actions": [
     "Do not append compiler verification language to the displayed Source note.",
+    "Keep page spans and PDF/OCR page-count evidence in sourcePages, pageCount, sourceNoteAddendum, or workbook columns unless the note is accounting for missing or omitted pages in FRUS style.",
     "Normalize repository names: National Archives and Records Administration, National Archives Catalog; Department of State, FOIA Virtual Reading Room; William J. Clinton Presidential Library or FRUS-style Clinton Library shorthand.",
     "Capitalize Release, Item, and Document identifiers inside source notes.",
     "Replace raw source URLs in displayed Source notes with stable item, document, release, case, or NAID identifiers.",

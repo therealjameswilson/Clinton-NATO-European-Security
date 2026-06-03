@@ -139,19 +139,12 @@ function pdfPageCount(filePath) {
   return match ? Number(match[1]) : null;
 }
 
-function insertPageCountIntoSourceNote(note, count) {
-  if (!note || /Source pages:/i.test(note)) return note;
-  const unit = count === 1 ? "page" : "pages";
-  return `${note.replace(/\s+$/, "")} Source pages: ${count} ${unit} counted.`;
-}
-
 function addPdfPageCount(record, count, method) {
   if (!Number.isFinite(count) || count < 1) return false;
   const pageSpan = count === 1 ? "PDF page 1" : `PDF pages 1-${count}`;
   const unit = count === 1 ? "page" : "pages";
   record.pageCount = count;
   record.sourcePages = record.sourcePages || pageSpan;
-  record.sourceNote = insertPageCountIntoSourceNote(record.sourceNote, count);
   const extractionNote = `PDF page count extraction: ${count} ${unit} counted by ${method}.`;
   if (!record.sourceNoteAddendum?.includes(extractionNote)) {
     record.sourceNoteAddendum = [record.sourceNoteAddendum, extractionNote].filter(Boolean).join(" ");

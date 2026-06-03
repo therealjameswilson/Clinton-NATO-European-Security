@@ -12,6 +12,12 @@ const MARKINGS_CHASE_CSV_PATH = path.join(REPORT_DIR, "source-note-markings-chas
 
 const FRUS_MODEL = [
   {
+    label: "FRUS 1989-1992, Volume XXXI, About the Series",
+    url: "https://history.state.gov/historicaldocuments/frus1989-92v31/abouttheseries",
+    pattern:
+      "First footnote gives source, original classification, distribution, drafting information, important background, and read-by context when known."
+  },
+  {
     label: "FRUS 1989-1992, Volume XXXI, Document 1",
     url: "https://history.state.gov/historicaldocuments/frus1989-92v31/d1",
     pattern:
@@ -32,7 +38,9 @@ const FRUS_MODEL = [
 const CLASSIFICATION_PATTERN =
   /\b(Top Secret|Secret|Confidential|Sensitive|Eyes Only|Nodis|No Foreign|Limited Official Use|Unclassified|No classification marking|P\d\/b\(\d\)|E\.O\.)\b/i;
 const PRODUCTION_PATTERN =
-  /\b(Compiler should|verify|pending|replace|sample only|not yet audited|page audit|page count audit|dedup\/exclusion|strobe foia review|not counted again|duplicate source copy|No .* text was found|excluded)\b/i;
+  /\b(Compiler should|verify|pending|replace|sample only|not yet audited|page audit|page count audit|dedup\/exclusion|strobe foia review|not counted again|duplicate source copy|No .* text was found|excluded|Date inferred for chronological placement)\b/i;
+const WORKING_PAGE_COUNT_PATTERN =
+  /\bSource pages?:|\bpages? counted\b|\bdocument pages? counted\b|\bconversation pages\b|\bExtracted from source packet PDF pages\b|\bReview PDF includes\b/i;
 const URL_PATTERN = /https?:\/\//i;
 const NO_RELEASED_TEXT_PATTERN = /\bNo released\b|\bnot located\b|\bno .*pages located\b/i;
 
@@ -95,9 +103,12 @@ function issueList(record) {
   if (!hasSourcePath(note)) issues.push("thin-source-path");
   if (/^Source: National Archives Catalog,/.test(note)) issues.push("unnormalized-nara-repository");
   if (/^Source: Department of State FOIA Virtual Reading Room,/.test(note)) issues.push("unnormalized-state-repository");
+  if (/^Source: Clinton Library,/.test(note)) issues.push("unnormalized-clinton-repository");
+  if (/^Source: Clinton Digital Library item/i.test(note)) issues.push("unnormalized-clinton-digital-library");
   if (/, (release|item|document) [^,.]+\./.test(note)) issues.push("lowercase-release-item-document");
   if (URL_PATTERN.test(note)) issues.push("raw-url-in-source-note");
   if (PRODUCTION_PATTERN.test(note)) issues.push("production-language-in-source-note");
+  if (WORKING_PAGE_COUNT_PATTERN.test(note)) issues.push("working-page-count-in-source-note");
   if (needsDocumentLevelMarkings(record) && !CLASSIFICATION_PATTERN.test(markingText(record))) issues.push("needs-markings");
   if (!sourceIdentifier(record).length && !/Item\s+\d+|Document\s+\S+|NAID\s+\d+|PPP-\d{4}/i.test(note)) issues.push("missing-item-identifier");
   return issues;
@@ -176,6 +187,12 @@ function main() {
     sourcePathPresent: records.filter((record) => hasSourcePath(record.sourceNote)).length,
     sourceNotesWithRawUrls: issueCounts["raw-url-in-source-note"] || 0,
     sourceNotesWithProductionLanguage: issueCounts["production-language-in-source-note"] || 0,
+    sourceNotesWithWorkingPageCounts: issueCounts["working-page-count-in-source-note"] || 0,
+    sourceNotesWithLooseRepositoryNames:
+      (issueCounts["unnormalized-nara-repository"] || 0) +
+      (issueCounts["unnormalized-state-repository"] || 0) +
+      (issueCounts["unnormalized-clinton-repository"] || 0) +
+      (issueCounts["unnormalized-clinton-digital-library"] || 0),
     reviewNotesWithProductionLanguage: records.filter((record) => PRODUCTION_PATTERN.test(record.sourceNoteAddendum || "")).length,
     notesNeedingMarkings: issueCounts["needs-markings"] || 0,
     scoutLeadsAwaitingDocumentSelection: records.filter((record) => record.type === "Scout Lead" && !record.pageCount && !record.sourcePages).length
@@ -185,11 +202,18 @@ function main() {
     generatedAt: new Date().toISOString(),
     model: FRUS_MODEL,
     styleRule:
-      "Keep the displayed first footnote as a Source sentence only: repository and collection path first, exact folder/item identifier next, then classification/handling and document-context details when verified. Keep compiler warnings outside the Source sentence.",
+      "Keep the displayed first footnote as a FRUS-style Source note: repository and collection path first, exact folder/item identifier next, then original classification, distribution/handling, drafting/clearance, meeting/context, marginalia, attachment, or declassification details when verified. Keep compiler warnings, OCR/page-count audit text, and working page spans outside the displayed Source note.",
     counts,
     issueCounts,
     samples: {
       needsMarkings: sample(records, "needs-markings"),
+      workingPageCountInSourceNote: sample(records, "working-page-count-in-source-note"),
+      looseRepositoryName: [
+        ...sample(records, "unnormalized-nara-repository", 5),
+        ...sample(records, "unnormalized-state-repository", 5),
+        ...sample(records, "unnormalized-clinton-repository", 5),
+        ...sample(records, "unnormalized-clinton-digital-library", 5)
+      ],
       scoutLeadsAwaitingDocumentSelection: records
         .filter((record) => record.type === "Scout Lead" && !record.pageCount && !record.sourcePages)
         .slice(0, 10)
@@ -208,6 +232,7 @@ function main() {
     },
     actions: [
       "Do not append compiler verification language to the displayed Source note.",
+      "Keep page spans and PDF/OCR page-count evidence in sourcePages, pageCount, sourceNoteAddendum, or workbook columns unless the note is accounting for missing or omitted pages in FRUS style.",
       "Normalize repository names: National Archives and Records Administration, National Archives Catalog; Department of State, FOIA Virtual Reading Room; William J. Clinton Presidential Library or FRUS-style Clinton Library shorthand.",
       "Capitalize Release, Item, and Document identifiers inside source notes.",
       "Replace raw source URLs in displayed Source notes with stable item, document, release, case, or NAID identifiers.",
@@ -236,6 +261,8 @@ function main() {
     `- Notes with a repository/path shape: ${counts.sourcePathPresent}`,
     `- Raw URLs inside displayed Source note: ${counts.sourceNotesWithRawUrls}`,
     `- Production language inside displayed Source note: ${counts.sourceNotesWithProductionLanguage}`,
+    `- Working page-count/span language inside displayed Source note: ${counts.sourceNotesWithWorkingPageCounts}`,
+    `- Loose repository names inside displayed Source note: ${counts.sourceNotesWithLooseRepositoryNames}`,
     `- Production review notes kept outside Source note: ${counts.reviewNotesWithProductionLanguage}`,
     `- Notes still needing verified classification/handling/context details: ${counts.notesNeedingMarkings}`,
     `- Scout Leads retained as research backlog, not source-note style issues: ${counts.scoutLeadsAwaitingDocumentSelection}`,

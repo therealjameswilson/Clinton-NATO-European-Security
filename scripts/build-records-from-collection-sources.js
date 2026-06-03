@@ -444,9 +444,9 @@ function strobeRecord(record) {
     declassificationStatus: "Pending review",
     catalogUrl: record.pdfUrl,
     pdfUrl: record.pdfUrl,
-    sourceNote: `Source: Department of State FOIA Virtual Reading Room, Strobe Talbott FOIA release, document ${record.id}.`,
+    sourceNote: `Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Document ${record.id}.`,
     source: {
-      name: "Department of State FOIA Virtual Reading Room",
+      name: "Department of State, FOIA Virtual Reading Room",
       url: record.pdfUrl || SOURCE_URLS.stateFoia,
       pdfUrl: record.pdfUrl,
       collection: "Strobe Talbott FOIA release",
@@ -470,9 +470,12 @@ function naraRecord(record, prefix) {
     catalogUrl: record.catalogUrl || (naid ? `https://catalog.archives.gov/id/${naid}` : SOURCE_URLS.naraCatalog),
     pdfUrl: digitalUrl,
     naid,
-    sourceNote: `Source: National Archives Catalog, ${ancestors.concat([record.title, naid ? `NAID ${naid}` : ""]).filter(Boolean).join(", ")}.`,
+    sourceNote: `Source: National Archives and Records Administration, National Archives Catalog, ${ancestors
+      .concat([record.title, naid ? `NAID ${naid}` : ""])
+      .filter(Boolean)
+      .join(", ")}.`,
     source: {
-      name: "National Archives Catalog",
+      name: "National Archives and Records Administration, National Archives Catalog",
       url: record.catalogUrl || (naid ? `https://catalog.archives.gov/id/${naid}` : SOURCE_URLS.naraCatalog),
       pdfUrl: digitalUrl,
       collection: ancestors[0] || "NARA Catalog lead",

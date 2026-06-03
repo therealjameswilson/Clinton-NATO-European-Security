@@ -159,12 +159,15 @@ Preferred order:
 1. Repository, collection, series, file unit, box, folder, and item identifier.
 2. Original classification, precedence, distribution, and handling markings.
 3. Transmission channel, addressees, meeting place, or document context.
-4. Drafting, clearance, approval, marginalia, attachments, and source-page
-   details.
+4. Drafting, clearance, approval, marginalia, attachments, declassification,
+   and missing/omitted-page details when those are part of the FRUS note.
 
 Useful structured fields include `source.path`, `source.documentId`,
 `source.caseNumber`, `documentMarkings`, `handlingMarkings`, `communication`,
 `meetingLocation`, `clearance`, `sourcePages`, and `sourceNoteAddendum`.
+Keep working page spans, PDF/OCR page counts, duplicate-copy notes, and
+compiler-verification reminders in those structured fields or workbook columns,
+not in the displayed `Source:` sentence.
 
 ## Source Note Style Audit
 
@@ -186,8 +189,9 @@ The marking extraction and audit write:
 The extraction pass uses PDF text, OCR, item-image OCR, public-record context,
 and explicit visual source-image review. The audit checks the displayed
 `Source:` sentence against FRUS-style source-path, classification/handling, and
-document-context expectations, and keeps compiler warnings or onsite-verification
-reminders in `sourceNoteAddendum` rather than inside the first footnote. NARA
+document-context expectations, flags working page-count language and loose
+repository names, and keeps compiler warnings or onsite-verification reminders
+in `sourceNoteAddendum` rather than inside the first footnote. NARA
 Scout Leads remain a research backlog until digital-object inspection promotes
 specific documents into the compiler corpus.
 

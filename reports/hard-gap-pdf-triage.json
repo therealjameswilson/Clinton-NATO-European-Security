@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-02T18:22:36.702Z",
+  "generatedAt": "2026-06-03T02:16:45.287Z",
   "basis": "Compiler triage of release-qualified Strobe Talbott FOIA hard-gap PDFs after source markings and PDF page counts were extracted.",
   "counts": {
     "total": 13,
@@ -44,7 +44,7 @@
       "evidence_summary": "Additional CFE elements for the NATO-Russia document; useful for tracing adapted-CFE language in the Founding Act track.",
       "blocking_issue": "Verify actual document date and attachment structure before final chronology.",
       "next_compiler_action": "Promote as a document-level CFE/NATO-Russia drafting record; capture author/date from the PDF image.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000039. Unclassified. Source pages: 4 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000039. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000039/C09000039.pdf"
     },
     {
@@ -65,7 +65,7 @@
       "evidence_summary": "Precis of Russian counter-proposal for adapting CFE; directly addresses CFE negotiation substance.",
       "blocking_issue": "Verify date, author, and whether the precis is an attachment or standalone paper.",
       "next_compiler_action": "Promote as a priority CFE adaptation lead; connect to NATO-Russia framework drafting.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000043. Unclassified. Source pages: 2 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000043. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000043/C09000043.pdf"
     },
     {
@@ -86,7 +86,7 @@
       "evidence_summary": "Confidential memorandum on the CFE Review Conference with attachments and retrospective negotiation analysis.",
       "blocking_issue": "Confirm whether the attachment or covering memo is the selectable document.",
       "next_compiler_action": "Promote the strongest dated CFE retrospective/summary item and preserve attachment accounting.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release October 2024, Document C09000035. Confidential. Source pages: 7 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release October 2024, Document C09000035. Confidential.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Oct2024/FL-2017-13804/DOC_0C09000035/C09000035.pdf"
     },
     {
@@ -107,7 +107,7 @@
       "evidence_summary": "Telegram subject is CFE Treaty, with CFE/TAGS and Ukraine-Russia troop-presence implications.",
       "blocking_issue": "Extract cable metadata, addressees, and full date line.",
       "next_compiler_action": "Promote as CFE Treaty direct evidence if the full cable confirms policy discussion rather than only reporting.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000026. Unclassified. Source pages: 2 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000026. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000026/C09000026.pdf"
     },
     {
@@ -128,7 +128,7 @@
       "evidence_summary": "USNATO cable records Talbott briefing the NAC after the Moscow summit and discusses Russia, Kosovo, Latvia, CFE, and NATO-Russia partnership.",
       "blocking_issue": "Extract cable number, release-in-part excisions, MRN, addressees, and date-time line.",
       "next_compiler_action": "Promote as direct NAC/USNATO evidence; use in the NATO-Russia institutional lane.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000060. Unclassified. Source pages: 8 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000060. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000060/C09000060.pdf"
     },
     {
@@ -149,7 +149,7 @@
       "evidence_summary": "USNATO 1314/EXDIS cable records Talbott briefing the NAC on the Moscow summit, ABM/NMD, NATO-Russia, and CFE.",
       "blocking_issue": "Record EXDIS/release-in-part details and declassification accounting.",
       "next_compiler_action": "Promote as direct NAC/USNATO evidence; pair with Moscow summit memcons and strategic-stability files.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000063. Unclassified. Source pages: 8 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2022, Document C09000063. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2022/FL-2017-13804/DOC_0C09000063/C09000063.pdf"
     },
     {
@@ -170,7 +170,7 @@
       "evidence_summary": "NAC intervention dated April 29, 1999, during Kosovo campaign diplomacy and Russia consultations.",
       "blocking_issue": "Verify whether the intervention was delivered text, talking points, or meeting note.",
       "next_compiler_action": "Promote if delivered to/for NAC; otherwise retain as high-value Kosovo/NAC annotation support.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release June 2024, Document C09000017. Unclassified. Source pages: 6 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release June 2024, Document C09000017. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_June2024/FL-2017-13804/DOC_0C09000017/C09000017.pdf"
     },
     {
@@ -191,7 +191,7 @@
       "evidence_summary": "Draft Secretary letter to Central European counterparts links CFE modernization, NATO-Russia document, and Madrid enlargement diplomacy.",
       "blocking_issue": "Verify addressees, draft status, and actual date from source image.",
       "next_compiler_action": "Promote after confirming whether the draft was sent or should be cited as a draft policy text.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release March 2023, Document C09000060. Unclassified. Source pages: 4 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release March 2023, Document C09000060. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Mar2023/FL-2017-13804/DOC_0C09000060/C09000060.pdf"
     },
     {
@@ -212,7 +212,7 @@
       "evidence_summary": "Checklist notes need for Russian CFE counter-proposal before the April 10, 1997 GEM contact.",
       "blocking_issue": "Determine author, meeting context, and whether notes are selectable or annotation support.",
       "next_compiler_action": "Use as a CFE/Mamedov chronology lead; promote only if source context is clear.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000044. Unclassified. Source pages: 2 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000044. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000044/C09000044.pdf"
     },
     {
@@ -233,7 +233,7 @@
       "evidence_summary": "Talbott note to Christopher flags CFE and ABM/TMD before Yeltsin/Primakov-related preparations.",
       "blocking_issue": "Verify actual date, addressee, and placement in the Christopher/Yeltsin briefing sequence.",
       "next_compiler_action": "Promote if the note frames CFE policy for Secretary-level discussion; otherwise use as annotation support.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release April 2023, Document C09000073. Unclassified. Source pages: 6 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release April 2023, Document C09000073. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Apr2023/FL-2017-13804/DOC_0C09000073/C09000073.pdf"
     },
     {
@@ -254,7 +254,7 @@
       "evidence_summary": "One-page CFE rollout meeting note says CFE is a key next step in Euro-security.",
       "blocking_issue": "Verify date, attendees, and meeting ownership.",
       "next_compiler_action": "Promote if meeting context can be established; otherwise use as a lead to interagency rollout files.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release September 2022, Document C09000027. Unclassified. Source pages: 1 page counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release September 2022, Document C09000027. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Sep2022/FL-2017-13804/DOC_0C09000027/C09000027.pdf"
     },
     {
@@ -275,7 +275,7 @@
       "evidence_summary": "Two-page Madrid timeline chart maps MC/CS, NATO-Russia summit, NAC ministerial, NAC/D, and NATO summit milestones.",
       "blocking_issue": "Date remains inferred from release/manifest rather than a document date.",
       "next_compiler_action": "Use for Madrid chronology/annotation unless a source image or companion file proves authorship and date.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Unclassified. Source pages: 2 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release July 2024, Document C09000038. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_July2024/FL-2017-13804/DOC_0C09000038/C09000038.pdf"
     },
     {
@@ -296,7 +296,7 @@
       "evidence_summary": "Talbott notes on a Kissinger piece explain that NATO remains NATO, the NAC remains NAC, and Russia is not in either.",
       "blocking_issue": "Likely analytical/commentary support rather than a decision document.",
       "next_compiler_action": "Use for annotation or narrative context unless provenance shows direct policy-drafting value.",
-      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000122. Unclassified. Source pages: 5 pages counted.",
+      "source_note": "Source: Department of State, FOIA Virtual Reading Room, Strobe Talbott FOIA release, Release February 2024, Document C09000122. Unclassified.",
       "pdf_url": "https://foia.state.gov/DOCUMENTS/FOIA_L_Feb2024/FL-2017-13804/DOC_0C09000122/C09000122.pdf"
     }
   ]

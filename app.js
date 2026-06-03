@@ -5,6 +5,8 @@ const CHAPTER_ORDER = [
   "Crisis Security Files"
 ];
 
+const DATA_VERSION = "20260602-source-note-provenance";
+
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
 let queueRoot = document.querySelector("#queue-root");
@@ -1475,7 +1477,7 @@ function enableChapterCards() {
 }
 
 async function loadRecords() {
-  const response = await fetch("data/records.json");
+  const response = await fetch(`data/records.json?v=${DATA_VERSION}`);
   if (!response.ok) throw new Error(`Could not load records: ${response.status}`);
   return response.json();
 }

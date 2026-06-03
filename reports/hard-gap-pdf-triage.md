@@ -1,6 +1,6 @@
 # Hard-Gap PDF Triage
 
-Generated: 2026-06-02T18:22:36.702Z
+Generated: 2026-06-03T02:16:45.287Z
 
 This report turns the release-qualified Strobe Talbott FOIA hard-gap PDFs into a promotion worksheet. It does not make final FRUS selections; it tells the compiler which PDFs should be promoted first, which need date/source-context checks, and which are better used as annotation or chronology support.
 

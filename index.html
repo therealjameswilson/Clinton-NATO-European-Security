@@ -714,7 +714,7 @@
             <p>
               Draft the first note in FRUS order: repository trail, collection or series,
               exact file or item identifier, markings, then transmission, meeting, drafting,
-              clearance, approval, or marginalia details.
+              clearance, approval, marginalia, attachment, or declassification details.
             </p>
             <span>Fields: sourceNote, source.path, documentMarkings, handlingMarkings, clearance</span>
           </article>
@@ -753,14 +753,16 @@
               The Volume XXXI source notes consistently begin with <code>Source:</code>,
               move from repository to file path, then add classification and handling
               markings before editorial details such as channel, drafting, clearance,
-              approval, attachments, handwritten notes, or omitted material.
+              approval, attachments, handwritten notes, or omitted material. Working
+              page spans stay in source fields and workbook columns unless they account
+              for missing or omitted pages in FRUS style.
             </p>
           </div>
           <ol>
             <li>Repository and collection path</li>
             <li>File unit, folder, document ID, NAID, or case number</li>
             <li>Original classification, precedence, and handling markings</li>
-            <li>Drafted by, cleared by, approved by, channel, or meeting location</li>
+            <li>Drafted by, cleared by, approved by, channel, meeting location, or omissions</li>
           </ol>
           <a href="https://history.state.gov/historicaldocuments/frus1989-92v31" rel="noreferrer">
             Volume XXXI source-note model
@@ -1162,8 +1164,8 @@
       <p>Published with GitHub Pages as a working companion archive.</p>
       <a href="https://github.com/therealjameswilson/Clinton-NATO-European-Security">Repository</a>
     </footer>
-    <script src="data/records.js"></script>
-    <script src="app.js?v=20260602-source-first"></script>
+    <script src="data/records.js?v=20260602-source-note-provenance"></script>
+    <script src="app.js?v=20260602-source-note-provenance"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");
