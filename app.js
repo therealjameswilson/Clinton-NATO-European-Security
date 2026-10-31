@@ -5,7 +5,7 @@ const CHAPTER_ORDER = [
   "Crisis Security Files"
 ];
 
-const DATA_VERSION = "20260602-source-note-provenance";
+const DATA_VERSION = "20261030-release-review";
 
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
@@ -423,6 +423,50 @@ function createCopyButton(label, text) {
   return button;
 }
 
+function createReleaseReviewDetails(record) {
+  if (!record.releaseReview) return null;
+  const review = record.releaseReview;
+  const details = document.createElement("details");
+  details.className = "source-note-details release-review-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "October 30 release: evidence and compiler use";
+  details.append(summary);
+  for (const [label, value] of [
+    ["Compiler use", review.rationale],
+    ["Chronological placement", review.dateNote],
+    ["Cross-volume connections", review.crossVolumeNote],
+    ["Evidence gaps", review.gaps],
+    ["Selection", "Pending compiler decision. Page evidence below is searchable PDF/OCR text, not a source-image verification or final FRUS source note."]
+  ]) {
+    if (value) details.append(createParagraph("record-extraction-note", `${label}: ${value}`));
+  }
+  if (review.relatedCopies?.length) {
+    const copyList = document.createElement("p");
+    copyList.className = "record-extraction-note";
+    copyList.append(document.createTextNode("Distinct companion copies: "));
+    for (const copy of review.relatedCopies) {
+      const link = document.createElement("a");
+      link.href = copy.pdfUrl;
+      link.rel = "noreferrer";
+      link.textContent = copy.title;
+      copyList.append(link, document.createTextNode("; "));
+    }
+    details.append(copyList);
+  }
+  for (const evidence of review.evidence || []) {
+    const item = document.createElement("p");
+    item.className = "record-extraction-note";
+    const link = document.createElement("a");
+    link.href = `${record.source.pdfUrl}#page=${evidence.page}`;
+    link.rel = "noreferrer";
+    link.target = "_blank";
+    link.textContent = `Physical PDF page ${evidence.page}`;
+    item.append(link, document.createTextNode(` — ${evidence.note || evidence.excerpt}`));
+    details.append(item);
+  }
+  return details;
+}
+
 function createRecordRow(record) {
   const row = document.createElement("article");
   row.className = "record-row";
@@ -452,6 +496,9 @@ function createRecordRow(record) {
   if (record.sourceNoteAddendum) {
     body.append(createParagraph("record-extraction-note", `Source-note review: ${record.sourceNoteAddendum}`));
   }
+
+  const releaseReview = createReleaseReviewDetails(record);
+  if (releaseReview) body.append(releaseReview);
 
   body.append(createProductionBlock(record));
 

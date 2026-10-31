@@ -432,3 +432,15 @@ This repository deploys through GitHub Pages with `.github/workflows/deploy-page
 
 The repository Pages source is configured for **GitHub Actions**. The public site
 is expected at <https://therealjameswilson.github.io/Clinton-NATO-European-Security/>.
+
+## October 30, 2026 release review
+
+The October release adds 54 body-text-reviewed documentary leads, each with an official State Department PDF link, physical-page citations, historical/catalog date distinctions, compiler-use rationale, cross-volume connections and unresolved evidence gaps. All selection decisions remain pending; searchable PDF/OCR text review is not source-image verification. Existing records and decisions are retained.
+
+- [Searchable review](reports/october-2026-release-review.html)
+- [Compiler review CSV](reports/october-2026-release-review.csv)
+- [Review data and 198-record reconciliation](reports/october-2026-release-review.json)
+
+The reconciliation retains every Russia/NATO/high-level candidate's stable release hash and full official PDF URL. Unimported candidates remain a visible follow-up queue rather than inferred exclusions. Translations, original-language copies, covers and repeated case copies retain distinct identifiers. Physical PDF extent is separate from unique document or conversation extent.
+
+Search the live records for `2026-10-30` to isolate this batch. Earlier static workbooks and packets retain their earlier scope; the dedicated review and live data are the current handoff for these additions. Do not regenerate the core corpus from absent sibling inputs.
