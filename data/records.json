@@ -102,7 +102,6 @@
     "documentTitle": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
     "participants": [
       "Bill Clinton",
-      "Vaclav Havel",
       "Lech Walesa"
     ],
     "countries": [
@@ -116,19 +115,19 @@
     },
     "releaseStatus": "FOIA/MDR Lead",
     "selectionDecision": "Include candidate",
-    "naid": "119044",
-    "catalogUrl": "https://clinton.presidentiallibraries.us/items/show/119044",
-    "pdfUrl": "",
-    "pageCount": null,
+    "naid": "",
+    "catalogUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=2",
+    "pdfUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=2",
+    "pageCount": 4,
     "digitalObjects": null,
     "dateLine": "April 21, 1993",
-    "washingtonTime": "",
-    "placementNote": "Verify final chronological placement against the source document.",
+    "washingtonTime": "2–3 p.m.",
+    "placementNote": "Washington local time, as recorded on the memorandum.",
     "subjectLine": "Memorandum of Conversation - Meeting with President Lech Walesa of Poland",
-    "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland, Item 119044. Confidential.",
+    "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, OA/ID 147, Document ID 9302874. Confidential. The meeting took place in the Oval Office. Charles Kupchan of the National Security Council staff served as notetaker.",
     "sourceNoteStatus": "Draft",
-    "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF. Source marking extraction: Confidential found by item-image OCR.",
-    "sourcePages": "",
+    "sourceNoteAddendum": "The Clinton Library release marker (PDF p. 1) gives the OA/ID and Document ID; no folder title or NAID is supplied. The source text is labeled Clinton Library photocopy. Legacy Omeka item 119044 is a digital portal identifier, not a NAID.",
+    "sourcePages": "Release PDF pp. 2–5; administrative marker p. 1.",
     "originalClassification": "Confidential",
     "documentMarkings": [
       "Confidential"
@@ -153,17 +152,16 @@
     "extractionStatus": "",
     "source": {
       "name": "William J. Clinton Presidential Library",
-      "url": "https://clinton.presidentiallibraries.us/items/show/119044",
-      "pdfUrl": "",
-      "collection": "Clinton Digital Library, Declassified Documents",
-      "series": "Memcons - Memoranda of Conversation",
-      "documentId": "119044",
+      "url": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=2",
+      "pdfUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=2",
+      "collection": "Clinton Presidential Records",
+      "documentId": "9302874",
       "path": [
-        "Clinton Digital Library",
-        "Memcons - Memoranda of Conversation",
-        "Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland",
-        "Item 119044"
-      ]
+        "Clinton Presidential Records",
+        "OA/ID 147",
+        "Document ID 9302874"
+      ],
+      "caseNumber": "2009-0223-M; 2015-0780-M; 2016-0423-M"
     },
     "frusVolume": {
       "id": "frus1993-00v17",
@@ -190,7 +188,6 @@
     ],
     "persons": [
       "Bill Clinton",
-      "Vaclav Havel",
       "Lech Walesa"
     ],
     "compilerNotes": [
@@ -199,7 +196,8 @@
     ],
     "relatedReleaseIds": [
       "119044"
-    ]
+    ],
+    "meetingLocation": "Oval Office, Washington"
   },
   {
     "id": "clinton-dl-101329",
@@ -30273,8 +30271,7 @@
     "documentTitle": "Memorandum of Conversation - Meeting with President Vaclav Havel of the Czech Republic",
     "participants": [
       "Bill Clinton",
-      "Vaclav Havel",
-      "Lech Walesa"
+      "Vaclav Havel"
     ],
     "countries": [
       "United States",
@@ -30289,19 +30286,19 @@
     },
     "releaseStatus": "FOIA/MDR Lead",
     "selectionDecision": "Include candidate",
-    "naid": "119030",
-    "catalogUrl": "https://clinton.presidentiallibraries.us/items/show/119030",
-    "pdfUrl": "",
-    "pageCount": null,
+    "naid": "",
+    "catalogUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=7",
+    "pdfUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=7",
+    "pageCount": 4,
     "digitalObjects": null,
     "dateLine": "April 20, 1993",
-    "washingtonTime": "",
-    "placementNote": "Verify final chronological placement against the source document.",
+    "washingtonTime": "5–6 p.m.",
+    "placementNote": "Washington local time, as recorded on the memorandum.",
     "subjectLine": "Memorandum of Conversation - Meeting with President Vaclav Havel of the Czech Republic",
-    "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Digital Library, Declassified Documents, Memcons - Memoranda of Conversation, Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland, Item 119030. Confidential.",
+    "sourceNote": "Source: William J. Clinton Presidential Library, Clinton Presidential Records, OA/ID 147, Document ID 9302875. Confidential. The meeting took place in the Oval Office. Charles Kupchan of the National Security Council staff served as notetaker.",
     "sourceNoteStatus": "Draft",
-    "sourceNoteAddendum": "Compiler should verify classification, handling markings, drafting, clearance, attachments, marginalia, and excisions against the original source image or PDF. Source marking extraction: Confidential found by item-image OCR.",
-    "sourcePages": "",
+    "sourceNoteAddendum": "The Clinton Library release marker (PDF p. 6) gives the OA/ID and Document ID; no folder title or NAID is supplied. The source text is labeled Clinton Library photocopy. Legacy Omeka item 119030 is a digital portal identifier, not a NAID.",
+    "sourcePages": "Release PDF pp. 7–10; administrative marker p. 6.",
     "originalClassification": "Confidential",
     "documentMarkings": [
       "Confidential"
@@ -30326,17 +30323,16 @@
     "extractionStatus": "",
     "source": {
       "name": "William J. Clinton Presidential Library",
-      "url": "https://clinton.presidentiallibraries.us/items/show/119030",
-      "pdfUrl": "",
-      "collection": "Clinton Digital Library, Declassified Documents",
-      "series": "Memcons - Memoranda of Conversation",
-      "documentId": "119030",
+      "url": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=7",
+      "pdfUrl": "https://www.clintonlibrary.gov/sites/default/files/finding_aids_a_z/2026-02/2016-0423-M.pdf#page=7",
+      "collection": "Clinton Presidential Records",
+      "documentId": "9302875",
       "path": [
-        "Clinton Digital Library",
-        "Memcons - Memoranda of Conversation",
-        "Release Declassified Documents Concerning President Vaclav Havel of the Czech Republic and President Lech Walesa of Poland",
-        "Item 119030"
-      ]
+        "Clinton Presidential Records",
+        "OA/ID 147",
+        "Document ID 9302875"
+      ],
+      "caseNumber": "2009-0223-M; 2016-0423-M"
     },
     "frusVolume": {
       "id": "frus1993-00v17",
@@ -30396,8 +30392,7 @@
     ],
     "persons": [
       "Bill Clinton",
-      "Vaclav Havel",
-      "Lech Walesa"
+      "Vaclav Havel"
     ],
     "compilerNotes": [
       "Declassified Clinton Library memcon/telcon lead harvested by the Europe companion site.",
@@ -30405,7 +30400,8 @@
     ],
     "relatedReleaseIds": [
       "119030"
-    ]
+    ],
+    "meetingLocation": "Oval Office, Washington"
   },
   {
     "id": "balkans-mitterrand-1993-04-20",

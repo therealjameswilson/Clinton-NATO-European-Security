@@ -5,7 +5,7 @@ const CHAPTER_ORDER = [
   "Crisis Security Files"
 ];
 
-const DATA_VERSION = "20261030-release-review";
+const DATA_VERSION = "20261119-presidential-provenance";
 
 const recordsRoot = document.querySelector("#records-root");
 const chronologyRoot = document.querySelector("#chronology-root");
