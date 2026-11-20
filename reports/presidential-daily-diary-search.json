@@ -77,21 +77,6 @@
       "returned": 11,
       "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Putin%22&collectionIdentifier=WJC*&limit=100&page=1"
     },
-    "Bosnia": {
-      "total": 33,
-      "returned": 33,
-      "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Bosnia%22&collectionIdentifier=WJC*&limit=100&page=1"
-    },
-    "Kosovo": {
-      "total": 19,
-      "returned": 19,
-      "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Kosovo%22&collectionIdentifier=WJC*&limit=100&page=1"
-    },
-    "Milosevic": {
-      "total": 2,
-      "returned": 2,
-      "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Milosevic%22&collectionIdentifier=WJC*&limit=100&page=1"
-    },
     "Havel": {
       "total": 5,
       "returned": 5,
@@ -166,16 +151,6 @@
       "total": 1,
       "returned": 1,
       "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Washington%20Summit%22&collectionIdentifier=WJC*&limit=100&page=1"
-    },
-    "Dayton": {
-      "total": 12,
-      "returned": 12,
-      "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22Dayton%22&collectionIdentifier=WJC*&limit=100&page=1"
-    },
-    "KFOR": {
-      "total": 2,
-      "returned": 2,
-      "apiUrl": "https://catalog.archives.gov/proxy/v3/records/search?q=%22Presidential%20Daily%20Diary%22%20%22KFOR%22&collectionIdentifier=WJC*&limit=100&page=1"
     }
   },
   "counts": {
@@ -356,188 +331,6 @@
       ]
     },
     {
-      "date": "1994-02-19",
-      "naid": "147870789",
-      "sourcePages": "pages 53 and 58",
-      "title": "Presidential Daily Diary reference: Bosnia briefing with administration officials",
-      "summary": "The diary records a briefing on Bosnia and the radio address on the situation there; the appendix lists senior foreign-policy and defense participants.",
-      "compilerUse": "Use as a Bosnia/NATO crisis chronology lead; chase Situation Room, NSC, and public address drafts.",
-      "topics": [
-        "Bosnia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Warren Christopher",
-        "William Perry",
-        "John Shalikashvili"
-      ],
-      "countries": [
-        "United States",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[02/14/1994-02/28/1994]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870789",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-003-009-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Brussels",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1994-02-20",
-      "naid": "147870789",
-      "sourcePages": "pages 62-63",
-      "title": "Presidential Daily Diary reference: Bosnia calls with Woerner and Mitterrand",
-      "summary": "The diary records a conference call with NATO Secretary General Manfred Woerner, a call with French President Francois Mitterrand, a senior-adviser discussion on Bosnia, and a later call with Woerner in Brussels.",
-      "compilerUse": "High-value lead for NATO action on Bosnia; chase telcons and NSC crisis-management files.",
-      "topics": [
-        "Bosnia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Manfred Woerner",
-        "Francois Mitterrand",
-        "Anthony Lake"
-      ],
-      "countries": [
-        "United States",
-        "France",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[02/14/1994-02/28/1994]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870789",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-003-009-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Brussels",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1994-02-21",
-      "naid": "147870789",
-      "sourcePages": "page 67",
-      "title": "Presidential Daily Diary reference: Bosnia and Sarajevo meeting and NATO-action statement",
-      "summary": "The diary records a meeting on Bosnia and Sarajevo and a statement on the results of NATO action.",
-      "compilerUse": "Use to align Bosnia/Sarajevo chronology with NATO air-power documents and public framing.",
-      "topics": [
-        "Bosnia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton"
-      ],
-      "countries": [
-        "United States",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[02/14/1994-02/28/1994]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870789",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-003-009-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Brussels",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1994-04-10",
-      "naid": "147870795",
-      "sourcePages": "pages 50 and 53",
-      "title": "Presidential Daily Diary reference: NATO bombing in Bosnia and Yeltsin conference call",
-      "summary": "The diary records a Situation Room meeting on the recent NATO bombing in Bosnia, a press statement, an attempted Yeltsin call, and a later conference call with Yeltsin.",
-      "compilerUse": "Use to connect Bosnia crisis management with Russia consultation; chase both briefing notes and telcon.",
-      "topics": [
-        "Bosnia",
-        "NATO-Russia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Boris Yeltsin"
-      ],
-      "countries": [
-        "United States",
-        "Russia",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[04/01/1994-04/15/1994]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870795",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-003-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-004-003-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "2010-0083-F",
-        "Bosnia",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1994-12-05",
-      "naid": "147870813",
-      "sourcePages": "pages 42-44",
-      "title": "Presidential Daily Diary reference: CSCE Budapest Summit and meetings with Yeltsin, Kohl, Croatian and Bosnian officials",
-      "summary": "The diary records the CSCE Budapest Summit plenary, the START I instruments signing with Yeltsin and other leaders, and meetings including Yeltsin, Kohl, and Croatian and Bosnian officials.",
-      "compilerUse": "Use as an OSCE/CSCE and European security architecture anchor; chase summit memcons and delegation files.",
-      "topics": [
-        "OSCE/CSCE",
-        "NATO-Russia",
-        "Bosnia",
-        "European Security Architecture"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Boris Yeltsin",
-        "Helmut Kohl"
-      ],
-      "countries": [
-        "United States",
-        "Russia",
-        "Germany",
-        "Bosnia and Herzegovina",
-        "Croatia",
-        "Hungary"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[12/01/1994-12/15/1994]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870813",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-012-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-004-012-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "2010-0083-F",
-        "CSCE",
-        "Dayton",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
       "date": "1995-03-07",
       "naid": "17368179",
       "sourcePages": "pages 65 and 70",
@@ -637,79 +430,6 @@
       ]
     },
     {
-      "date": "1995-11-20",
-      "naid": "147870847",
-      "sourcePages": "pages 38-40",
-      "title": "Presidential Daily Diary reference: Dayton calls with Christopher and Tudjman",
-      "summary": "The diary records calls with Secretary Christopher in Dayton and a conference call with Croatian President Franjo Tudjman.",
-      "compilerUse": "Use to anchor the Dayton peace negotiation endgame and chase telcon/source packets.",
-      "topics": [
-        "Bosnia",
-        "Dayton"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Warren Christopher",
-        "Franjo Tudjman"
-      ],
-      "countries": [
-        "United States",
-        "Croatia",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[11/01/1995-11/30/1995]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870847",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-006-010-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Dayton",
-        "Walesa"
-      ]
-    },
-    {
-      "date": "1995-11-21",
-      "naid": "147870847",
-      "sourcePages": "pages 41-42",
-      "title": "Presidential Daily Diary reference: Dayton conference call with Tudjman, Izetbegovic, Milosevic, and Christopher",
-      "summary": "The diary records a conference call with Franjo Tudjman, Alija Izetbegovic, Slobodan Milosevic, and Secretary Christopher, followed by calls with Lech Walesa and Aleksander Kwasniewski.",
-      "compilerUse": "High-value Bosnia/Dayton and Central Europe lead; chase complete telcon records.",
-      "topics": [
-        "Bosnia",
-        "Dayton",
-        "NATO enlargement"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Franjo Tudjman",
-        "Alija Izetbegovic",
-        "Slobodan Milosevic",
-        "Warren Christopher",
-        "Lech Walesa",
-        "Aleksander Kwasniewski"
-      ],
-      "countries": [
-        "United States",
-        "Croatia",
-        "Bosnia and Herzegovina",
-        "Serbia",
-        "Poland"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[11/01/1995-11/30/1995]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870847",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-006-010-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Dayton",
-        "Walesa"
-      ]
-    },
-    {
       "date": "1996-01-12",
       "naid": "147870851",
       "sourcePages": "page 21",
@@ -726,42 +446,6 @@
       ],
       "countries": [
         "United States"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[01/01/1996-01/31/1996]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870851",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-012-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-006-012-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Milosevic",
-        "NATO",
-        "North Atlantic",
-        "Russia",
-        "Russian",
-        "Solana",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1996-01-13",
-      "naid": "147870851",
-      "sourcePages": "page 22",
-      "title": "Presidential Daily Diary reference: call with Slobodan Milosevic",
-      "summary": "The diary records a call with Serbian President Slobodan Milosevic aboard Air Force One.",
-      "compilerUse": "Use as a Bosnia/Dayton implementation lead; chase telcon text.",
-      "topics": [
-        "Bosnia",
-        "Dayton"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Slobodan Milosevic"
-      ],
-      "countries": [
-        "United States",
-        "Serbia",
-        "Bosnia and Herzegovina"
       ],
       "release": "LPWJC 2013-0549-F",
       "catalogTitle": "[01/01/1996-01/31/1996]",
@@ -990,44 +674,6 @@
       ]
     },
     {
-      "date": "1998-05-29",
-      "naid": "147870917",
-      "sourcePages": "pages 54-55",
-      "title": "Presidential Daily Diary reference: Kosovo meeting with Ibrahim Rugova and Dayton implementation briefing",
-      "summary": "The diary records a meeting/briefing touching Dayton implementation, followed by a photo opportunity with Ibrahim Rugova and Kosovo Albanian leaders.",
-      "compilerUse": "Use as a Kosovo escalation lead; chase NSC Balkans files and any Rugova memcon.",
-      "topics": [
-        "Kosovo",
-        "Bosnia",
-        "Dayton"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Ibrahim Rugova",
-        "Al Gore",
-        "Samuel Berger",
-        "Robert Gelbard"
-      ],
-      "countries": [
-        "United States",
-        "Kosovo",
-        "Bosnia and Herzegovina"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[05/16/1998-05/31/1998]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870917",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-009-004-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-009-004-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Dayton",
-        "Kosovo",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
       "date": "1998-06-15",
       "naid": "147870919",
       "sourcePages": "pages 101-103",
@@ -1095,161 +741,6 @@
         "NATO",
         "Russia",
         "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1998-09-18",
-      "naid": "17368189",
-      "sourcePages": "page 80",
-      "title": "Presidential Daily Diary reference: Kosovo meeting with Robert Dole",
-      "summary": "The diary records an Oval Office meeting to discuss Kosovo with former Senator Robert Dole, Sandy Berger, and others.",
-      "compilerUse": "Use as a Kosovo diplomacy lead; chase memcon, Berger files, and congressional-contact files.",
-      "topics": [
-        "Kosovo"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Robert Dole",
-        "Madeleine Albright",
-        "Samuel Berger"
-      ],
-      "countries": [
-        "United States",
-        "Kosovo"
-      ],
-      "release": "LPWJC 2010-0083-F",
-      "catalogTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 7/7/98; 7/17/98; 7/19/98; 7/29/98; 8/1/98; 8/3/98; 8/21/98; 8/30/98; 9/2/98; 9/15/98; 9/18/98; 9/26/98]",
-      "catalogUrl": "https://catalog.archives.gov/id/17368189",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/89/3681/17368189/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-007-2015.pdf",
-      "pdfFilename": "42-t-7262157-20100083F-002-007-2015.pdf",
-      "digitalObjects": 92,
-      "searchTermsHit": [
-        "2010-0083-F",
-        "Havel",
-        "Kosovo",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1999-03-23",
-      "naid": "147870957",
-      "sourcePages": "pages 26 and 33",
-      "title": "Presidential Daily Diary reference: Kosovo briefings and congressional meeting",
-      "summary": "The diary records a Kosovo-era briefing and a meeting with members of Congress; the appendix lists Albright, Cohen, Tenet, Shelton, and congressional leaders.",
-      "compilerUse": "Use as the pre-strike congressional and policy-briefing chronology.",
-      "topics": [
-        "Kosovo",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Madeleine Albright",
-        "William Cohen",
-        "George Tenet",
-        "Henry Shelton"
-      ],
-      "countries": [
-        "United States",
-        "Kosovo",
-        "Serbia"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[03/19/1999-03/31/1999]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870957",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-011-002-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Kosovo",
-        "NATO",
-        "North Atlantic",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1999-03-24",
-      "naid": "147870957",
-      "sourcePages": "pages 37-38",
-      "title": "Presidential Daily Diary reference: Kosovo air-strike briefing and statement",
-      "summary": "The diary records a call with Canadian Prime Minister Jean Chretien, a briefing on the air strikes against Serbian military targets, and a statement to the press.",
-      "compilerUse": "Use as the start-of-air-campaign chronology; chase allied calls and speech/NSC drafts.",
-      "topics": [
-        "Kosovo",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Jean Chretien",
-        "Samuel Berger",
-        "James Steinberg"
-      ],
-      "countries": [
-        "United States",
-        "Canada",
-        "Serbia",
-        "Kosovo"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[03/19/1999-03/31/1999]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870957",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-011-002-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-011-002-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Bosnia",
-        "Kosovo",
-        "NATO",
-        "North Atlantic",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
-      "date": "1999-04-06",
-      "naid": "17368193",
-      "sourcePages": "page 4",
-      "title": "Presidential Daily Diary reference: Kosovo and Balkans briefing",
-      "summary": "The diary records a morning briefing on Kosovo and the Balkans with Secretary Cohen and senior White House officials.",
-      "compilerUse": "Use as a Kosovo campaign chronology lead; chase Defense/NSC briefing papers.",
-      "topics": [
-        "Kosovo",
-        "Bosnia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "William Cohen",
-        "John Podesta",
-        "Samuel Berger"
-      ],
-      "countries": [
-        "United States",
-        "Kosovo",
-        "Serbia"
-      ],
-      "release": "LPWJC 2010-0083-F",
-      "catalogTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99]",
-      "catalogUrl": "https://catalog.archives.gov/id/17368193",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
-      "pdfFilename": "42-t-7262157-20100083F-002-010-2015.pdf",
-      "digitalObjects": 76,
-      "searchTermsHit": [
-        "2010-0083-F",
-        "Bosnia",
-        "Kosovo",
-        "NATO",
-        "North Atlantic",
-        "Russia",
-        "Russian",
-        "Solana",
         "Yeltsin"
       ]
     },
@@ -1374,56 +865,6 @@
       ]
     },
     {
-      "date": "1999-06-10",
-      "naid": "17368193",
-      "sourcePages": "pages 59-61",
-      "title": "Presidential Daily Diary reference: Kosovo Military Technical Agreement calls",
-      "summary": "The diary records calls with Wesley Clark, Javier Solana, Boris Yeltsin, Jacques Chirac, Massimo D'Alema, Jose Maria Aznar, and Jean Chretien around the Kosovo Military Technical Agreement.",
-      "compilerUse": "High-priority Kosovo settlement lead; chase complete telcons and NATO/SACEUR traffic.",
-      "topics": [
-        "Kosovo",
-        "NATO-Russia",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Wesley Clark",
-        "Javier Solana",
-        "Boris Yeltsin",
-        "Jacques Chirac",
-        "Massimo D'Alema",
-        "Jose Maria Aznar",
-        "Jean Chretien"
-      ],
-      "countries": [
-        "United States",
-        "Russia",
-        "France",
-        "Italy",
-        "Spain",
-        "Canada",
-        "Kosovo",
-        "Serbia"
-      ],
-      "release": "LPWJC 2010-0083-F",
-      "catalogTitle": "[Ellen McCathran - Presidential Daily Diary - Hardcopy 4/9/99; 4/14/99; 4/27/99; 4/30/99; 5/2/99; 5/20/99; 5/24/99; 5/28/99; 6/2/99; 6/10/99; 6/20/99]",
-      "catalogUrl": "https://catalog.archives.gov/id/17368193",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/opastorage/live/93/3681/17368193/content/presidential-libraries/clinton/foia/2010-0083-F/2010-0083-F-PDF/Box_002/42-t-7262157-20100083F-002-010-2015.pdf",
-      "pdfFilename": "42-t-7262157-20100083F-002-010-2015.pdf",
-      "digitalObjects": 76,
-      "searchTermsHit": [
-        "2010-0083-F",
-        "Bosnia",
-        "Kosovo",
-        "NATO",
-        "North Atlantic",
-        "Russia",
-        "Russian",
-        "Solana",
-        "Yeltsin"
-      ]
-    },
-    {
       "date": "1999-11-18",
       "naid": "17368195",
       "sourcePages": "pages 51-59",
@@ -1494,40 +935,6 @@
         "Istanbul",
         "OSCE",
         "Russia"
-      ]
-    },
-    {
-      "date": "1999-11-23",
-      "naid": "147870989",
-      "sourcePages": "pages 37-43",
-      "title": "Presidential Daily Diary reference: Kosovo visit, NATO officials, and Kosovar leaders",
-      "summary": "The diary records meetings at Pristina with U.S. and NATO officials, Kosovar leaders, and Camp Bondsteel personnel; appendices identify KFOR and UN Kosovo participants.",
-      "compilerUse": "Use as a post-conflict Kosovo/KFOR chronology lead; chase KFOR, UNMIK, and NSC trip files.",
-      "topics": [
-        "Kosovo",
-        "KFOR",
-        "NATO Strategy"
-      ],
-      "participants": [
-        "Bill Clinton",
-        "Madeleine Albright",
-        "Bernard Kouchner",
-        "Klaus Reinhardt",
-        "Wesley Clark"
-      ],
-      "countries": [
-        "United States",
-        "Kosovo"
-      ],
-      "release": "LPWJC 2013-0549-F",
-      "catalogTitle": "[11/20/1999-11/30/1999]",
-      "catalogUrl": "https://catalog.archives.gov/id/147870989",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-012-006-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-012-006-2018.pdf",
-      "digitalObjects": 1,
-      "searchTermsHit": [
-        "Kosovo",
-        "NATO"
       ]
     },
     {
@@ -1965,23 +1372,6 @@
       ]
     },
     {
-      "naid": "147870789",
-      "title": "[02/14/1994-02/28/1994]",
-      "release": "LPWJC 2013-0549-F",
-      "catalogUrl": "https://catalog.archives.gov/id/147870789",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-003-009-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-003-009-2018.pdf",
-      "digitalObjects": 1,
-      "terms": [
-        "Bosnia",
-        "Brussels",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
-      ]
-    },
-    {
       "naid": "147870791",
       "title": "[03/01/1994-03/15/1994]",
       "release": "LPWJC 2013-0549-F",
@@ -2005,23 +1395,6 @@
       "digitalObjects": 1,
       "terms": [
         "Bosnia"
-      ]
-    },
-    {
-      "naid": "147870795",
-      "title": "[04/01/1994-04/15/1994]",
-      "release": "LPWJC 2013-0549-F",
-      "catalogUrl": "https://catalog.archives.gov/id/147870795",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-003-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-004-003-2018.pdf",
-      "digitalObjects": 1,
-      "terms": [
-        "2010-0083-F",
-        "Bosnia",
-        "NATO",
-        "Russia",
-        "Russian",
-        "Yeltsin"
       ]
     },
     {
@@ -2075,22 +1448,6 @@
       "digitalObjects": 1,
       "terms": [
         "Russian"
-      ]
-    },
-    {
-      "naid": "147870813",
-      "title": "[12/01/1994-12/15/1994]",
-      "release": "LPWJC 2013-0549-F",
-      "catalogUrl": "https://catalog.archives.gov/id/147870813",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-004-012-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-004-012-2018.pdf",
-      "digitalObjects": 1,
-      "terms": [
-        "2010-0083-F",
-        "CSCE",
-        "Dayton",
-        "Russian",
-        "Yeltsin"
       ]
     },
     {
@@ -2265,20 +1622,6 @@
       "terms": [
         "Madrid",
         "Russia"
-      ]
-    },
-    {
-      "naid": "147870847",
-      "title": "[11/01/1995-11/30/1995]",
-      "release": "LPWJC 2013-0549-F",
-      "catalogUrl": "https://catalog.archives.gov/id/147870847",
-      "pdfUrl": "https://s3.amazonaws.com/NARAprodstorage/lz/presidential-libraries/clinton/foia/2013/2013-0549-F/42-t-101784486-20130549F-006-010-2018.pdf",
-      "pdfFilename": "42-t-101784486-20130549F-006-010-2018.pdf",
-      "digitalObjects": 1,
-      "terms": [
-        "Bosnia",
-        "Dayton",
-        "Walesa"
       ]
     },
     {

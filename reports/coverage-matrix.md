@@ -38,8 +38,6 @@ This matrix turns the gap-audit instruction into a working selection-control she
 | Poland | 63 | 7 | 8 | 39 | 41 | direct-document gap | Verify accession-state representation with direct Polish leader contacts and enlargement policy files. |
 | NATO enlargement, Madrid, accession, and ratification | 118 | 21 | 22 | 44 | 57 | direct-document gap | Keep extracting direct Madrid, accession, Senate ratification, and new-member consultation records. |
 | Partnership for Peace and partnership policy | 50 | 6 | 5 | 43 | 47 | direct-document gap | Chase policy memoranda and alliance consultations where PFP is the main subject rather than background. |
-| Bosnia, Dayton, IFOR, and SFOR | 391 | 118 | 48 | 238 | 391 | overweight | Split direct NATO decision records from implementation/context records so Bosnia does not crowd out the volume's architecture subjects. |
-| Kosovo, KFOR, and NATO air campaign diplomacy | 323 | 28 | 19 | 245 | 323 | overweight | Separate direct NATO decision records, public statements, and operational context before final selection. |
 | France | 80 | 24 | 23 | 52 | 70 | covered for triage | Verify selection, source notes, declassification accounting, and chronological placement. |
 | EU, NATO-EU, ESDI, and WEU | 114 | 22 | 24 | 66 | 78 | covered for triage | Verify selection, source notes, declassification accounting, and chronological placement. |
 | NATO and Atlantic Alliance core | 334 | 117 | 81 | 86 | 174 | covered for triage | Verify selection, source notes, declassification accounting, and chronological placement. |

@@ -58,7 +58,6 @@ for Peace, and NAC/North Atlantic Council material.
 
 | OA/ID | Folder focus | Office / staff file | Use |
 | --- | --- | --- | --- |
-| 1404 | Former Yugoslavia-NAC (North Atlantic Council), August 1993 | Staff Director-Soderberg, Nancy | NAC coverage for institutional NATO decision-making |
 | 1416 | CSCE [Conference on Security and Cooperation in Europe] | Staff Director-Soderberg, Nancy | OSCE/CSCE architecture file |
 | 1417 | NATO Summit; Partnership for Peace | Staff Director-Soderberg, Nancy | Senior NSC staff files for NATO summit and PfP |
 | 1732 | CFE [Conventional Armed Forces in Europe] | Central and Eastern European Affairs-Flanagan, Stephen | Direct CFE gap filler |
@@ -66,7 +65,6 @@ for Peace, and NAC/North Atlantic Council material.
 | 3110 | OSCE [Organization for Security and Cooperation in Europe] | Legal Advisor-Krass, Caroline | Legal/policy angle on OSCE architecture |
 | 3115 | CFE [Conventional Forces Europe] | Legal Advisor-Krass, Caroline | Legal CFE coverage |
 | 3390 | CFE (Conventional Forces in Europe) | Legal Advisor-Derosa, Mary | Second legal CFE file |
-| 3410 | ICTY-Kosovo; ICTY-NATO Operations | Legal Advisor-Derosa, Mary | Legal authority and operations link for Kosovo/NATO |
 
 ### Second Pull: Trip Books, Executive Secretary Files, and PC/DC Chronology
 
@@ -91,13 +89,6 @@ leads into document-level records, not to further imbalance the corpus.
 
 | OA/ID | Folder focus | Office / staff file | Use |
 | --- | --- | --- | --- |
-| 1394 | Soderberg Notes from Bosnia PC/DC Meetings, 1993-1996 | Staff Director-Soderberg, Nancy | Meeting-note spine for Bosnia decisions |
-| 1710 | NATO Reports; Kosovo Executive Committee Plans/Play of Day/Daily Digest; PC/DC/EXCOMM | Bosnia-Hurley, Michael | High-yield Bosnia/Kosovo decision files |
-| 1713 | NAC [North Atlantic Council] | Bosnia-Hurley, Michael | Institutional NATO angle within crisis files |
-| 2989 | NATO Intelligence; SFOR; Kosovo-PCs [Meetings]; NATO | Southeast European Affairs-Von Lipsey, Roderick | Kosovo/SFOR/NATO operational-policy files |
-| 3062 | KFOR/SFOR 6 Month Review; Pol-Mil Plan; NATO | Southeast European Affairs-Hurley, Michael | Late Kosovo/SFOR military-policy review |
-| 3141 | Bosnia; Kosovo; Federal Republic of Yugoslavia; Pittman Chron Files | Southeast European Affairs-Pittman, Dean | Southeast Europe chronology and policy files |
-| 3776 | UNMIK-KFOR preparation; Kosovo Concept of Operations; POTUS Weekly Briefings on KFOR/SFOR; DIA Briefing on the Balkans | Southeast European Affairs-Greenwood, Thomas | KFOR/SFOR and post-conflict Kosovo implementation |
 
 ### Control Pull: Speechwriting and Public Framing
 

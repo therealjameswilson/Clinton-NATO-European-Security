@@ -75,8 +75,6 @@ Action: Run post-Madrid implementation, Kosovo endgame, NATO 50th anniversary, a
 | NATO enlargement, Madrid, accession, and Senate ratification | 127 | 80 | covered-by-count |
 | Partnership for Peace and NATO partnership policy | 50 | 30 | covered-by-count |
 | NATO-Russia, Founding Act, PJC, Primakov/Mamedov/Chernomyrdin | 199 | 90 | covered-by-count |
-| Bosnia, Dayton, IFOR, and SFOR | 430 | 80 | covered-by-count |
-| Kosovo, KFOR, and 1998-1999 NATO air campaign diplomacy | 351 | 70 | covered-by-count |
 | OSCE/CSCE | 102 | 35 | covered-by-count |
 | CFE and conventional forces | 19 | 20 | gap |
 | NAC, USNATO, and North Atlantic Council traffic | 19 | 25 | gap |

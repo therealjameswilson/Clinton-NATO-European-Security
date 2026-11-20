@@ -8,137 +8,6 @@
   "selectedDocumentCount": 0,
   "reviewedLeads": [
     {
-      "id": "state-oct2026-e9dbc0b3732ef9cd86a5",
-      "dedupeKey": "e9dbc0b3732ef9cd86a5|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-      "date": "1993-02-26",
-      "sortDate": "1993-02-26",
-      "dateLine": "Meeting February 26; USNATO 001043 dispatch March 4, 1993.",
-      "type": "Source Lead",
-      "title": "SECRETARY'S MEETING WITH NATO SYG WOERNER, FEBRUARY 26, 1993",
-      "documentTitle": "SECRETARY'S MEETING WITH NATO SYG WOERNER, FEBRUARY 26, 1993",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 1,
-        "name": "NATO Strategy and Enlargement"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 7,
-      "sourcePages": "1, 3, 4, 5",
-      "sourcePdfPages": "1, 3, 4, 5",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Establish early discussions of a NATO-led Bosnia settlement-enforcement role, significant U.S. ground participation and alliance leadership.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11710, document C09000002.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11710, document C09000002.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. A contingent discussion of a possible settlement, not authorization or a completed deployment. Obtain the associated NAC record and UN expert invitation.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Meeting February 26; USNATO 001043 dispatch March 4, 1993.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11710",
-        "documentId": "C09000002",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11710",
-          "C09000002"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "NATO enlargement and European security architecture",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "NATO enlargement and European security architecture"
-      ],
-      "compilerNotes": [
-        "Establish early discussions of a NATO-led Bosnia settlement-enforcement role, significant U.S. ground participation and alliance leadership.",
-        "A contingent discussion of a possible settlement, not authorization or a completed deployment. Obtain the associated NAC record and UN expert invitation.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "e9dbc0b3732ef9cd86a5"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "e9dbc0b3732ef9cd86a5",
-        "historicalDate": "1993-02-26",
-        "rationale": "Establish early discussions of a NATO-led Bosnia settlement-enforcement role, significant U.S. ground participation and alliance leadership.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Summary identifies the February 26 Christopher–Woerner meeting."
-          },
-          {
-            "page": 3,
-            "note": "Woerner argues for substantial U.S. ground participation and NATO responsibility."
-          },
-          {
-            "page": 4,
-            "note": "Woerner distinguishes UN authority from NATO command and urges U.S. leadership."
-          },
-          {
-            "page": 5,
-            "note": "Christopher regards NATO as best placed to enforce a settlement while leaving the exact U.S. contribution unresolved."
-          }
-        ],
-        "gaps": "A contingent discussion of a possible settlement, not authorization or a completed deployment. Obtain the associated NAC record and UN expert invitation.",
-        "crossVolumeNote": "XVII core, XV 1993–95 Bosnia policy and XXIII European security policy.",
-        "dateNote": "Meeting February 26; USNATO 001043 dispatch March 4, 1993.",
-        "selection": "Pending compiler decision",
-        "evidenceBasis": "Reviewed physical-page search text from the release microsite; not source-image verified.",
-        "title": "SECRETARY'S MEETING WITH NATO SYG WOERNER, FEBRUARY 26, 1993",
-        "catalogDate": "1993-03-04",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11710",
-        "documentId": "C09000002",
-        "date": "1993-02-26",
-        "topic": "NATO enlargement and European security architecture",
-        "reviewStatus": "Reviewed searchable body text on cited physical pages; not facsimile verified",
-        "selectionDecision": "Pending",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000002",
-        "documentDate": "1993-03-04",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11710",
-        "messageNumber": "1993 USNATO 001043",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
       "id": "state-oct2026-eed28e3cfd9adfc9be32",
       "dedupeKey": "eed28e3cfd9adfc9be32|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000003/C09000003.pdf",
       "date": "1993-02-26",
@@ -264,129 +133,6 @@
       "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
     },
     {
-      "id": "state-oct2026-1ccd55bf615471fed9bb",
-      "dedupeKey": "1ccd55bf615471fed9bb|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-      "date": "1993-02-27",
-      "sortDate": "1993-02-27",
-      "dateLine": "Cable dated February 27, 1993; companion fuller record identifies Woerner meeting as February 26. Do not collapse reporting date and meeting date.",
-      "type": "Source Lead",
-      "title": "NIGHT NOTE: BRUSSELS MEETINGS WITH MANFRED WOERNER AND THE NATO FOREIGN MINISTERS",
-      "documentTitle": "NIGHT NOTE: BRUSSELS MEETINGS WITH MANFRED WOERNER AND THE NATO FOREIGN MINISTERS",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 1,
-        "name": "NATO Strategy and Enlargement"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 2,
-      "sourcePages": "1, 2",
-      "sourcePdfPages": "1, 2",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Compare Christopher’s short report to the President with the fuller Woerner meeting record to trace early U.S. leadership and UN/NATO command debates over Bosnia.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11710, document C09000001.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11710, document C09000001.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. A selective report to the President, not a complete NAC record. Compare with USNATO 001043 and separately locate the ministerial discussion.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Cable dated February 27, 1993; companion fuller record identifies Woerner meeting as February 26. Do not collapse reporting date and meeting date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11710",
-        "documentId": "C09000001",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11710",
-          "C09000001"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "NATO enlargement and European security architecture",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "NATO enlargement and European security architecture"
-      ],
-      "compilerNotes": [
-        "Compare Christopher’s short report to the President with the fuller Woerner meeting record to trace early U.S. leadership and UN/NATO command debates over Bosnia.",
-        "A selective report to the President, not a complete NAC record. Compare with USNATO 001043 and separately locate the ministerial discussion.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "1ccd55bf615471fed9bb"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "1ccd55bf615471fed9bb",
-        "historicalDate": "1993-02-27",
-        "rationale": "Compare Christopher’s short report to the President with the fuller Woerner meeting record to trace early U.S. leadership and UN/NATO command debates over Bosnia.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Night note reports Woerner’s concerns over U.S. force reductions and Dumas’s insistence on UN command for any Bosnia implementation force."
-          },
-          {
-            "page": 2,
-            "note": "Christopher assesses French opposition and briefly reports a separate Middle East contact."
-          }
-        ],
-        "gaps": "A selective report to the President, not a complete NAC record. Compare with USNATO 001043 and separately locate the ministerial discussion.",
-        "crossVolumeNote": "XVII and XV 1993–95 core connection; XXIII French/allied policy context.",
-        "dateNote": "Cable dated February 27, 1993; companion fuller record identifies Woerner meeting as February 26. Do not collapse reporting date and meeting date.",
-        "selection": "Pending compiler decision",
-        "evidenceBasis": "Reviewed physical-page search text from the release microsite; not source-image verified.",
-        "title": "NIGHT NOTE: BRUSSELS MEETINGS WITH MANFRED WOERNER AND THE NATO FOREIGN MINISTERS",
-        "catalogDate": "1993-02-27",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11710",
-        "documentId": "C09000001",
-        "date": "1993-02-27",
-        "topic": "NATO enlargement and European security architecture",
-        "reviewStatus": "Reviewed searchable body text on cited physical pages; not facsimile verified",
-        "selectionDecision": "Pending",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000001",
-        "documentDate": "1993-02-27",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11710",
-        "messageNumber": "1993 SECTO 004059",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
       "id": "state-oct2026-ccceab03cacbd6ccb4ce",
       "dedupeKey": "ccceab03cacbd6ccb4ce|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000002/C09000002.pdf",
       "date": "1993-05-07",
@@ -507,256 +253,6 @@
         "classification": "UNCLASS",
         "caseNumber": "M-2017-11839",
         "messageNumber": "1993 STATE 140322",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-05095da35aa330bb7725",
-      "dedupeKey": "05095da35aa330bb7725|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-      "date": "1993-05-08",
-      "sortDate": "1993-05-08",
-      "dateLine": "Catalog/body working date 1993-05-08; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-      "type": "Source Lead",
-      "title": "TALBOTT/MCCAFFREY BOSNIA CONSULTATIONS IN MOSCOW, MAY 7-8:   BOTTOM LINE",
-      "documentTitle": "TALBOTT/MCCAFFREY BOSNIA CONSULTATIONS IN MOSCOW, MAY 7-8:   BOTTOM LINE",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 4,
-        "name": "Crisis Security Files"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 5,
-      "sourcePages": "1, 2",
-      "sourcePdfPages": "1, 2",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Trace the Russian response to proposed Bosnia coercion: waiting for the referendum, resistance to lifting the embargo and the possibility of a Security Council veto.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11839, document C09000001.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11839, document C09000001.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. Report covers May 7–8 consultations; May 8 is the report/end date. Core cross-reference to XV (1993–1995).",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Catalog/body working date 1993-05-08; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11839",
-        "documentId": "C09000001",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11839",
-          "C09000001"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "Bosnia diplomacy",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "Bosnia diplomacy"
-      ],
-      "compilerNotes": [
-        "Trace the Russian response to proposed Bosnia coercion: waiting for the referendum, resistance to lifting the embargo and the possibility of a Security Council veto.",
-        "Report covers May 7–8 consultations; May 8 is the report/end date. Core cross-reference to XV (1993–1995).",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "05095da35aa330bb7725"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "05095da35aa330bb7725",
-        "date": "1993-05-08",
-        "dateNote": "Catalog/body working date 1993-05-08; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-        "rationale": "Trace the Russian response to proposed Bosnia coercion: waiting for the referendum, resistance to lifting the embargo and the possibility of a Security Council veto.",
-        "topic": "Bosnia diplomacy",
-        "nato": true,
-        "gaps": "Report covers May 7–8 consultations; May 8 is the report/end date. Core cross-reference to XV (1993–1995).",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Evidence for the review rationale on physical PDF page 1; consult the linked source in context."
-          },
-          {
-            "page": 2,
-            "note": "Evidence for the review rationale on physical PDF page 2; consult the linked source in context."
-          }
-        ],
-        "reviewedPages": [
-          1,
-          2
-        ],
-        "sourceId": "05095da35aa330bb7725",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11839",
-        "catalogDate": "1993-05-08",
-        "physicalPageCount": 5,
-        "selectionDecision": "Pending",
-        "reviewStatus": "Reviewed searchable body text on cited pages; not facsimile verified",
-        "crossVolumeNote": "XVII NATO/European Security and XVIII Russia: compare negotiating channels, with Western European policy/contacts where relevant.",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000001",
-        "documentDate": "1993-05-08",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11839",
-        "messageNumber": "1993 MOSCOW 013590",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-2f999cdc340f2c81318c",
-      "dedupeKey": "2f999cdc340f2c81318c|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-      "date": "1994-01-14",
-      "sortDate": "1994-01-14",
-      "dateLine": "Provisional placement 1994-01-14. Catalog document/report date: 1994-01-20. October 30, 2026 is the posting date, not the historical date.",
-      "type": "Source Lead",
-      "title": "PRESIDENT'S DINNER WITH PRESIDENT YELTSIN JANUARY 14, 1994",
-      "documentTitle": "PRESIDENT'S DINNER WITH PRESIDENT YELTSIN JANUARY 14, 1994",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 2,
-        "name": "NATO-Russia and Partnership"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 17,
-      "sourcePages": "1, 2",
-      "sourcePdfPages": "1, 2",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Use the dinner report for the linkage between the Ukrainian trilateral agreement, Russian domestic politics, Bosnia and Partnership for Peace; resolve its conflicting dinner dates before final placement.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11827, document C09000001.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11827, document C09000001.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. Date conflict inside the source: title and page 2 say January 14, while page 1 summary says evening January 13. January 14 is provisional, not a resolved correction.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Provisional placement 1994-01-14. Catalog document/report date: 1994-01-20. October 30, 2026 is the posting date, not the historical date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11827",
-        "documentId": "C09000001",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11827",
-          "C09000001"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "Summit diplomacy",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "Summit diplomacy"
-      ],
-      "compilerNotes": [
-        "Use the dinner report for the linkage between the Ukrainian trilateral agreement, Russian domestic politics, Bosnia and Partnership for Peace; resolve its conflicting dinner dates before final placement.",
-        "Date conflict inside the source: title and page 2 say January 14, while page 1 summary says evening January 13. January 14 is provisional, not a resolved correction.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "2f999cdc340f2c81318c"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "2f999cdc340f2c81318c",
-        "date": "1994-01-14",
-        "dateNote": "Provisional placement 1994-01-14. Catalog document/report date: 1994-01-20. October 30, 2026 is the posting date, not the historical date.",
-        "rationale": "Use the dinner report for the linkage between the Ukrainian trilateral agreement, Russian domestic politics, Bosnia and Partnership for Peace; resolve its conflicting dinner dates before final placement.",
-        "topic": "Summit diplomacy",
-        "nato": true,
-        "gaps": "Date conflict inside the source: title and page 2 say January 14, while page 1 summary says evening January 13. January 14 is provisional, not a resolved correction.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Evidence for the review rationale on physical PDF page 1; consult the linked source in context."
-          },
-          {
-            "page": 2,
-            "note": "Evidence for the review rationale on physical PDF page 2; consult the linked source in context."
-          }
-        ],
-        "reviewedPages": [
-          1,
-          2
-        ],
-        "sourceId": "2f999cdc340f2c81318c",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11827",
-        "catalogDate": "1994-01-20",
-        "physicalPageCount": 17,
-        "selectionDecision": "Pending",
-        "reviewStatus": "Reviewed searchable body text on cited pages; not facsimile verified",
-        "crossVolumeNote": "XVII NATO/European Security and XVIII Russia: compare negotiating channels, with Western European policy/contacts where relevant.",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000001",
-        "documentDate": "1994-01-20",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11827",
-        "messageNumber": "1994 MOSCOW 001457",
         "pdfSha256": null
       },
       "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
@@ -2929,133 +2425,6 @@
         "caseNumber": "M-2017-11708",
         "messageNumber": "1996 SECTO 026006",
         "pdfSha256": "2d85cf5855e74cc8787d076b851e893de154a3779431f540d396a8738917fabd"
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-590b8353873d54b0d697",
-      "dedupeKey": "590b8353873d54b0d697|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-      "date": "1996-12-10",
-      "sortDate": "1996-12-10",
-      "dateLine": "Meeting December 10, 1996; dispatch December 11.",
-      "type": "Source Lead",
-      "title": "DECEMBER 10 NAC MINISTERIAL: OPENING AND MORNING RESTRICTED SESSION",
-      "documentTitle": "DECEMBER 10 NAC MINISTERIAL: OPENING AND MORNING RESTRICTED SESSION",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 1,
-        "name": "NATO Strategy and Enlargement"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 12,
-      "sourcePages": "1, 2, 3",
-      "sourcePdfPages": "1, 2, 3",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Connect NATO’s new-missions agenda and enlargement preparations with the transition from IFOR to SFOR and civilian implementation in Bosnia.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11708, document C09000002.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11708, document C09000002.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. Separate from the adaptation/APC segment. Locate the SFOR operations plan and cited peace-implementation conference documents. Future approvals described in remarks require corroboration.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Meeting December 10, 1996; dispatch December 11.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11708",
-        "documentId": "C09000002",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11708",
-          "C09000002"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "NATO enlargement and European security architecture",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "NATO enlargement and European security architecture"
-      ],
-      "compilerNotes": [
-        "Connect NATO’s new-missions agenda and enlargement preparations with the transition from IFOR to SFOR and civilian implementation in Bosnia.",
-        "Separate from the adaptation/APC segment. Locate the SFOR operations plan and cited peace-implementation conference documents. Future approvals described in remarks require corroboration.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "590b8353873d54b0d697"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "590b8353873d54b0d697",
-        "historicalDate": "1996-12-10",
-        "rationale": "Connect NATO’s new-missions agenda and enlargement preparations with the transition from IFOR to SFOR and civilian implementation in Bosnia.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Report identifies the December 10 opening and morning restricted session."
-          },
-          {
-            "page": 2,
-            "note": "Summary links enhanced PfP, NATO-WEU arrangements, Brcko arbitration and the civilian implementation burden."
-          },
-          {
-            "page": 3,
-            "note": "Solana sets out new NATO structures, Russia/Ukraine cooperation and SFOR preparations."
-          }
-        ],
-        "gaps": "Separate from the adaptation/APC segment. Locate the SFOR operations plan and cited peace-implementation conference documents. Future approvals described in remarks require corroboration.",
-        "crossVolumeNote": "XVII core; XXIII European policy. Bosnia 1996 is post-XV context, not XV 1993–95 chronology.",
-        "dateNote": "Meeting December 10, 1996; dispatch December 11.",
-        "selection": "Pending compiler decision",
-        "evidenceBasis": "Reviewed physical-page search text from the release microsite; not source-image verified.",
-        "title": "DECEMBER 10 NAC MINISTERIAL: OPENING AND MORNING RESTRICTED SESSION",
-        "catalogDate": "1996-12-11",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11708",
-        "documentId": "C09000002",
-        "date": "1996-12-10",
-        "topic": "NATO enlargement and European security architecture",
-        "reviewStatus": "Reviewed searchable body text on cited physical pages; not facsimile verified",
-        "selectionDecision": "Pending",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000002",
-        "documentDate": "1996-12-11",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11708",
-        "messageNumber": "1996 SECTO 026004",
-        "pdfSha256": null
       },
       "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
     },
@@ -5356,257 +4725,6 @@
       "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
     },
     {
-      "id": "state-oct2026-6a7a73f8c4f1f3220325",
-      "dedupeKey": "6a7a73f8c4f1f3220325|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-      "date": "1997-12-17",
-      "sortDate": "1997-12-17",
-      "dateLine": "Catalog/body working date 1997-12-17; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-      "type": "Source Lead",
-      "title": "SECRETARY'S MEETING WITH THE NATO-RUSSIA PERMANENT JOINT COUNCIL, DECEMBER 17, 1997 BRUSSELS, BELGIUM",
-      "documentTitle": "SECRETARY'S MEETING WITH THE NATO-RUSSIA PERMANENT JOINT COUNCIL, DECEMBER 17, 1997 BRUSSELS, BELGIUM",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 2,
-        "name": "NATO-Russia and Partnership"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 12,
-      "sourcePages": "2, 3",
-      "sourcePdfPages": "2, 3",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Compare the first-year Permanent Joint Council work programme with the Founding Act negotiations: peacekeeping, Bosnia cooperation and Russian demands about forces and infrastructure.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11727, document C09000002.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11727, document C09000002.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. Surviving summary and some text only; much of the 12-page file is excised. Do not describe the entire meeting as available.",
-      "declassificationStatus": "Catalog release decision RIP; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Catalog/body working date 1997-12-17; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11727",
-        "documentId": "C09000002",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11727",
-          "C09000002"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "NATO-Russia",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "NATO-Russia"
-      ],
-      "compilerNotes": [
-        "Compare the first-year Permanent Joint Council work programme with the Founding Act negotiations: peacekeeping, Bosnia cooperation and Russian demands about forces and infrastructure.",
-        "Surviving summary and some text only; much of the 12-page file is excised. Do not describe the entire meeting as available.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "6a7a73f8c4f1f3220325"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "6a7a73f8c4f1f3220325",
-        "date": "1997-12-17",
-        "dateNote": "Catalog/body working date 1997-12-17; confirm final chronological placement against the source image. October 30, 2026 is the posting date.",
-        "rationale": "Compare the first-year Permanent Joint Council work programme with the Founding Act negotiations: peacekeeping, Bosnia cooperation and Russian demands about forces and infrastructure.",
-        "topic": "NATO-Russia",
-        "nato": true,
-        "gaps": "Surviving summary and some text only; much of the 12-page file is excised. Do not describe the entire meeting as available.",
-        "evidence": [
-          {
-            "page": 2,
-            "note": "Evidence for the review rationale on physical PDF page 2; consult the linked source in context."
-          },
-          {
-            "page": 3,
-            "note": "Evidence for the review rationale on physical PDF page 3; consult the linked source in context."
-          }
-        ],
-        "reviewedPages": [
-          2,
-          3
-        ],
-        "sourceId": "6a7a73f8c4f1f3220325",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-        "caseNumber": "M-2017-11727",
-        "catalogDate": "1997-12-17",
-        "physicalPageCount": 12,
-        "selectionDecision": "Pending",
-        "reviewStatus": "Reviewed searchable body text on cited pages; not facsimile verified",
-        "crossVolumeNote": "XVII NATO/European Security and XVIII Russia: compare negotiating channels, with Western European policy/contacts where relevant.",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "independentAudit": "12-page PJC cable retains summary and Albright statements; much of later body is redacted. Use surviving sections and record the gap.",
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000002",
-        "documentDate": "1997-12-17",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIP",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11727",
-        "messageNumber": "1997 STATE 235583",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-c3aff77a30ff33f26b01",
-      "dedupeKey": "c3aff77a30ff33f26b01|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-      "date": "1998-08-31",
-      "sortDate": "1998-08-31",
-      "dateLine": "Provisional placement 1998-08-31. Catalog document/report date: 1998-09-15. October 30, 2026 is the posting date, not the historical date.",
-      "type": "Source Lead",
-      "title": "SECRETARY'S MEETING WITH RUSSIAN  FOREIGN MINISTER YEVGENIY PRIMAKOV ON AUGUST 31, 1998",
-      "documentTitle": "SECRETARY'S MEETING WITH RUSSIAN  FOREIGN MINISTER YEVGENIY PRIMAKOV ON AUGUST 31, 1998",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 4,
-        "name": "Crisis Security Files"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 9,
-      "sourcePages": "2, 3",
-      "sourcePdfPages": "2, 3",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Place summit preparation during the Russian financial crisis alongside Primakov’s economic-policy explanation and U.S.-Russian disagreement over Kosovo implementation.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11738, document C09000001.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11738, document C09000001.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. The summary describes other regional issues; inspect their full passages before selecting them separately.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Provisional placement 1998-08-31. Catalog document/report date: 1998-09-15. October 30, 2026 is the posting date, not the historical date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11738",
-        "documentId": "C09000001",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11738",
-          "C09000001"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "Economic reform and Kosovo",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "Economic reform and Kosovo"
-      ],
-      "compilerNotes": [
-        "Place summit preparation during the Russian financial crisis alongside Primakov’s economic-policy explanation and U.S.-Russian disagreement over Kosovo implementation.",
-        "The summary describes other regional issues; inspect their full passages before selecting them separately.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "c3aff77a30ff33f26b01"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "c3aff77a30ff33f26b01",
-        "date": "1998-08-31",
-        "dateNote": "Provisional placement 1998-08-31. Catalog document/report date: 1998-09-15. October 30, 2026 is the posting date, not the historical date.",
-        "rationale": "Place summit preparation during the Russian financial crisis alongside Primakov’s economic-policy explanation and U.S.-Russian disagreement over Kosovo implementation.",
-        "topic": "Economic reform and Kosovo",
-        "nato": true,
-        "gaps": "The summary describes other regional issues; inspect their full passages before selecting them separately.",
-        "evidence": [
-          {
-            "page": 2,
-            "note": "Evidence for the review rationale on physical PDF page 2; consult the linked source in context."
-          },
-          {
-            "page": 3,
-            "note": "Evidence for the review rationale on physical PDF page 3; consult the linked source in context."
-          }
-        ],
-        "reviewedPages": [
-          2,
-          3
-        ],
-        "sourceId": "c3aff77a30ff33f26b01",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-        "caseNumber": "M-2017-11738",
-        "catalogDate": "1998-09-15",
-        "physicalPageCount": 9,
-        "selectionDecision": "Pending",
-        "reviewStatus": "Reviewed searchable body text on cited pages; not facsimile verified",
-        "crossVolumeNote": "XVII NATO/European Security and XVIII Russia: compare negotiating channels, with Western European policy/contacts where relevant.",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000001",
-        "documentDate": "1998-09-15",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11738",
-        "messageNumber": "1998 STATE 169960",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
       "id": "state-oct2026-acd2e1893e199070012e",
       "dedupeKey": "acd2e1893e199070012e|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11755/DOC_0C09000008/C09000008.pdf",
       "date": "1998-12-09",
@@ -6107,262 +5225,6 @@
         "classification": "UNCLASS",
         "caseNumber": "M-2017-11852",
         "messageNumber": "1999 STATE 108473",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-741bf5ab33f6e299e661",
-      "dedupeKey": "741bf5ab33f6e299e661|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-      "date": "1999-06-09",
-      "sortDate": "1999-06-09",
-      "dateLine": "Provisional placement 1999-06-09. Catalog document/report date: 1999-06-22. October 30, 2026 is the posting date, not the historical date.",
-      "type": "Source Lead",
-      "title": "SECRETARY'S MEETING WITH RUSSIAN FOREIGN MINISTER IVANOV, COLOGNE, GERMANY",
-      "documentTitle": "SECRETARY'S MEETING WITH RUSSIAN FOREIGN MINISTER IVANOV, COLOGNE, GERMANY",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 4,
-        "name": "Crisis Security Files"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 26,
-      "sourcePages": "1, 2",
-      "sourcePdfPages": "1, 2",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Reconstruct the disagreement over sequencing a bombing halt and Security Council resolution, and Russian participation in the Kosovo security force.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11772, document C09000003.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11772, document C09000003.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. The 26-page PDF is a repeated cable transmission. Do not count physical pages as unique conversation pages; collate duplicate sections first.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Provisional placement 1999-06-09. Catalog document/report date: 1999-06-22. October 30, 2026 is the posting date, not the historical date.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-        "caseNumber": "M-2017-11772",
-        "documentId": "C09000003",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11772",
-          "C09000003"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "Kosovo diplomacy",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "Kosovo diplomacy"
-      ],
-      "compilerNotes": [
-        "Reconstruct the disagreement over sequencing a bombing halt and Security Council resolution, and Russian participation in the Kosovo security force.",
-        "The 26-page PDF is a repeated cable transmission. Do not count physical pages as unique conversation pages; collate duplicate sections first.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "741bf5ab33f6e299e661"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "741bf5ab33f6e299e661",
-        "date": "1999-06-09",
-        "dateNote": "Provisional placement 1999-06-09. Catalog document/report date: 1999-06-22. October 30, 2026 is the posting date, not the historical date.",
-        "rationale": "Reconstruct the disagreement over sequencing a bombing halt and Security Council resolution, and Russian participation in the Kosovo security force.",
-        "topic": "Kosovo diplomacy",
-        "nato": true,
-        "gaps": "The 26-page PDF is a repeated cable transmission. Do not count physical pages as unique conversation pages; collate duplicate sections first.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Evidence for the review rationale on physical PDF page 1; consult the linked source in context."
-          },
-          {
-            "page": 2,
-            "note": "Evidence for the review rationale on physical PDF page 2; consult the linked source in context."
-          }
-        ],
-        "reviewedPages": [
-          1,
-          2
-        ],
-        "sourceId": "741bf5ab33f6e299e661",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-        "caseNumber": "M-2017-11772",
-        "catalogDate": "1999-06-22",
-        "physicalPageCount": 26,
-        "selectionDecision": "Pending",
-        "reviewStatus": "Reviewed searchable body text on cited pages; not facsimile verified",
-        "crossVolumeNote": "XVII NATO/European Security and XVIII Russia: compare negotiating channels, with Western European policy/contacts where relevant.",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000003",
-        "documentDate": "1999-06-22",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11772",
-        "messageNumber": "1999 STATE 115889",
-        "pdfSha256": null
-      },
-      "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
-    },
-    {
-      "id": "state-oct2026-823875050bd58c56be6a",
-      "dedupeKey": "823875050bd58c56be6a|https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-      "date": "2000-05-24",
-      "sortDate": "2000-05-24",
-      "dateLine": "Meeting May 24; dispatch June 6, 2000.",
-      "type": "Source Lead",
-      "title": "SECRETARY ALBRIGHT'S MAY 24 MEETING WITH NATO SYG ROBERTSON, FLORENCE, ITALY",
-      "documentTitle": "SECRETARY ALBRIGHT'S MAY 24 MEETING WITH NATO SYG ROBERTSON, FLORENCE, ITALY",
-      "participants": [],
-      "countries": [],
-      "chapter": {
-        "number": 1,
-        "name": "NATO Strategy and Enlargement"
-      },
-      "releaseStatus": "October 2026 released-source lead; image review pending",
-      "selectionDecision": "Pending",
-      "naid": "",
-      "catalogUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-      "pageCount": null,
-      "sourcePdfPageCount": 5,
-      "sourcePages": "1, 3, 4, 5",
-      "sourcePdfPages": "1, 3, 4, 5",
-      "countStatus": "Physical file extent recorded; unique document/conversation extent pending",
-      "subjectLine": "Connect NATO-Russia reengagement after Kosovo with efforts to make ESDI institutionally workable, defense-industrial cooperation and allied missile-defense concerns.",
-      "sourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11780, document C09000006.",
-      "frusSourceNote": "Source: U.S. Department of State, FOIA Library, FOIA_M_Oct2026, case M-2017-11780, document C09000006.",
-      "sourceNoteStatus": "Draft",
-      "sourceNoteAddendum": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed. Do not repeat the summary’s apparent KFOR/NATO wording as the entire ESDI argument: substantive paragraphs 8–11 concern NATO/EU links. Locate the DTSI announcement, relevant NATO/EU working-group papers and later decisions.",
-      "declassificationStatus": "Catalog release decision RIF; image-level status/markings audit pending",
-      "originalClassification": "",
-      "documentMarkings": [],
-      "handlingMarkings": [],
-      "withheldMaterial": {
-        "status": "Pending source-image audit"
-      },
-      "annotationStatus": "Pending",
-      "washingtonTime": "",
-      "placementNote": "Meeting May 24; dispatch June 6, 2000.",
-      "source": {
-        "name": "U.S. Department of State, FOIA Library",
-        "url": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-        "caseNumber": "M-2017-11780",
-        "documentId": "C09000006",
-        "collection": "FOIA_M_Oct2026",
-        "path": [
-          "FOIA_M_Oct2026",
-          "M-2017-11780",
-          "C09000006"
-        ],
-        "note": "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      },
-      "frusVolume": {
-        "id": "frus1993-00v17",
-        "title": "Foreign Relations of the United States, 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security",
-        "url": "https://history.state.gov/historicaldocuments/frus1993-00v17",
-        "status": "Planned"
-      },
-      "frusTopics": [
-        "NATO enlargement and European security architecture",
-        "October 30 2026 release",
-        "Pending compiler selection"
-      ],
-      "topics": [
-        "NATO enlargement and European security architecture"
-      ],
-      "compilerNotes": [
-        "Connect NATO-Russia reengagement after Kosovo with efforts to make ESDI institutionally workable, defense-industrial cooperation and allied missile-defense concerns.",
-        "Do not repeat the summary’s apparent KFOR/NATO wording as the entire ESDI argument: substantive paragraphs 8–11 concern NATO/EU links. Locate the DTSI announcement, relevant NATO/EU working-group papers and later decisions.",
-        "Physical PDF pages cited below were reviewed as searchable PDF/OCR text. No facsimile verification, final selection, original classification determination, or archival box/folder inference is claimed."
-      ],
-      "relatedReleaseIds": [
-        "823875050bd58c56be6a"
-      ],
-      "releaseBatch": "2026-10-30",
-      "releaseReview": {
-        "id": "823875050bd58c56be6a",
-        "historicalDate": "2000-05-24",
-        "rationale": "Connect NATO-Russia reengagement after Kosovo with efforts to make ESDI institutionally workable, defense-industrial cooperation and allied missile-defense concerns.",
-        "evidence": [
-          {
-            "page": 1,
-            "note": "Meeting date/location are May 24, 2000, Florence."
-          },
-          {
-            "page": 3,
-            "note": "Discussion addresses Russian institutional divisions and linking NATO/EU security structures."
-          },
-          {
-            "page": 4,
-            "note": "Albright presents defense-trade reforms and warns against transatlantic decoupling."
-          },
-          {
-            "page": 5,
-            "note": "Robertson urges attention to allied views on missile defense; the exchange also addresses Kosovo unity."
-          }
-        ],
-        "gaps": "Do not repeat the summary’s apparent KFOR/NATO wording as the entire ESDI argument: substantive paragraphs 8–11 concern NATO/EU links. Locate the DTSI announcement, relevant NATO/EU working-group papers and later decisions.",
-        "crossVolumeNote": "XVII core and XXIV European security; XVIII contextual Russia assessment; XXII ministerial/institutional contact.",
-        "dateNote": "Meeting May 24; dispatch June 6, 2000.",
-        "selection": "Pending compiler decision",
-        "evidenceBasis": "Reviewed physical-page search text from the release microsite; not source-image verified.",
-        "title": "SECRETARY ALBRIGHT'S MAY 24 MEETING WITH NATO SYG ROBERTSON, FLORENCE, ITALY",
-        "catalogDate": "2000-06-06",
-        "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-        "caseNumber": "M-2017-11780",
-        "documentId": "C09000006",
-        "date": "2000-05-24",
-        "topic": "NATO enlargement and European security architecture",
-        "reviewStatus": "Reviewed searchable body text on cited physical pages; not facsimile verified",
-        "selectionDecision": "Pending",
-        "releasePostedDate": "2026-10-30",
-        "relatedCopies": [],
-        "relatedExistingRecordIds": []
-      },
-      "catalogMetadata": {
-        "documentId": "C09000006",
-        "documentDate": "2000-06-06",
-        "postedDate": "2026-10-30",
-        "releaseDate": null,
-        "documentType": "Telegram",
-        "releaseDecision": "RIF",
-        "classification": "UNCLASS",
-        "caseNumber": "M-2017-11780",
-        "messageNumber": "2000 STATE 107530",
         "pdfSha256": null
       },
       "extractionStatus": "No derivative PDF created. Cited numbers are physical source-PDF pages; file extent includes any covers, repeat transmissions and attachments."
@@ -6888,15 +5750,6 @@
       "auditNote": ""
     },
     {
-      "id": "590b8353873d54b0d697",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11708",
-      "title": "DECEMBER 10 NAC MINISTERIAL: OPENING AND MORNING RESTRICTED SESSION",
-      "catalogDate": "1996-12-11",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
       "id": "ebdde6dc290cc939af1c",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11708/DOC_0C09000003/C09000003.pdf",
       "caseNumber": "M-2017-11708",
@@ -6956,24 +5809,6 @@
       "caseNumber": "M-2017-11708",
       "title": "NACC MINISTERIAL 12/11/96: AFTERNOON SESSION",
       "catalogDate": "1996-12-14",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
-      "id": "1ccd55bf615471fed9bb",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11710",
-      "title": "NIGHT NOTE: BRUSSELS MEETINGS WITH MANFRED WOERNER AND THE NATO FOREIGN MINISTERS",
-      "catalogDate": "1993-02-27",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
-      "id": "e9dbc0b3732ef9cd86a5",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11710/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11710",
-      "title": "SECRETARY'S MEETING WITH NATO SYG WOERNER, FEBRUARY 26, 1993",
-      "catalogDate": "1993-03-04",
       "disposition": "Reviewed body-text lead imported; final selection pending",
       "auditNote": ""
     },
@@ -7050,24 +5885,6 @@
       "auditNote": ""
     },
     {
-      "id": "a0b45d336d98f0f0483e",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11724/DOC_0C09000003/C09000003.pdf",
-      "caseNumber": "M-2017-11724",
-      "title": "THE SECRETARY'S MEETING WITH REPUBLIKA SRPSKA PRESIDENT PLAVSIC, JUNE 1, 1997, BANJA LUKA, BOSNIA",
-      "catalogDate": "1997-06-12",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "6f7a53cdc5831bafc65f",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11724/DOC_0C09000004/C09000004.pdf",
-      "caseNumber": "M-2017-11724",
-      "title": "THE SECRETARY'S MEETING WITH THE BOSNIAN PRESIDENCY, MAY 30, 1997, SINTRA, PORTUGAL",
-      "catalogDate": "1997-06-12",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "c924fdb4e873c7a81306",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11724/DOC_0C09000005/C09000005.pdf",
       "caseNumber": "M-2017-11724",
@@ -7102,15 +5919,6 @@
       "catalogDate": "1997-12-23",
       "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
       "auditNote": ""
-    },
-    {
-      "id": "6a7a73f8c4f1f3220325",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11727/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11727",
-      "title": "SECRETARY'S MEETING WITH THE NATO-RUSSIA PERMANENT JOINT COUNCIL, DECEMBER 17, 1997 BRUSSELS, BELGIUM",
-      "catalogDate": "1997-12-17",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": "12-page PJC cable retains summary and Albright statements; much of later body is redacted. Use surviving sections and record the gap."
     },
     {
       "id": "e162911dc46527ae53c5",
@@ -7257,15 +6065,6 @@
       "auditNote": ""
     },
     {
-      "id": "c3aff77a30ff33f26b01",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11738/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11738",
-      "title": "SECRETARY'S MEETING WITH RUSSIAN  FOREIGN MINISTER YEVGENIY PRIMAKOV ON AUGUST 31, 1998",
-      "catalogDate": "1998-09-15",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
       "id": "dceff1cebf0bc148670a",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11741/DOC_0C09000001/C09000001.pdf",
       "caseNumber": "M-2017-11741",
@@ -7365,15 +6164,6 @@
       "auditNote": ""
     },
     {
-      "id": "44d5de8c670d961d6b87",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11755/DOC_0C09000007/C09000007.pdf",
-      "caseNumber": "M-2017-11755",
-      "title": "SECRETARY'S MEETING WITH MACEDONIAN PM AT THE NAC MINISTERIAL",
-      "catalogDate": "1998-12-21",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "acd2e1893e199070012e",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11755/DOC_0C09000008/C09000008.pdf",
       "caseNumber": "M-2017-11755",
@@ -7401,46 +6191,10 @@
       "auditNote": ""
     },
     {
-      "id": "f7469a4124461134b69e",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11758/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11758",
-      "title": "SECRETARY ALBRIGHT'S FEBRUARY 14 MEETING WITH SERBIAN PRESIDENT MILAN MILUTINOVIC",
-      "catalogDate": "1999-02-19",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "9579d4a959c367f66e83",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11758/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11758",
-      "title": "SECRETARY ALBRIGHTVS MEETING WITH KOSOVAR ALBANIAN AND SERBIAN DELEGATIONS TO THE RAMBOUILLET TALKS ON FEBRUARY 14, 1999",
-      "catalogDate": "1999-02-18",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "2f40eae81cec31172559",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11758/DOC_0C09000003/C09000003.pdf",
-      "caseNumber": "M-2017-11758",
-      "title": "SECRETARY ALBRIGHT'S MEETING WITH SERBIAN DELEGATION",
-      "catalogDate": "1999-02-19",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "05101f78116ce701cece",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11760/DOC_0C09000001/C09000001.pdf",
       "caseNumber": "M-2017-11760",
       "title": "THE SECRETARY'S PARTICIPATION IN RAMBOUILLET CONTACT GROUP MINISTERIAL, FEBRUARY 20, 1999",
-      "catalogDate": "1999-02-26",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "b4c7448137d5e0b92535",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11760/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11760",
-      "title": "SECRETARY'S MEETING WITH KOSOVAR ALBANIAN PRESIDENCY ON FEBRUARY 21",
       "catalogDate": "1999-02-26",
       "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
       "auditNote": ""
@@ -7452,24 +6206,6 @@
       "title": "SECRETARY'S MEETING WITH RUSSIAN FIRST DEPUTY FOREIGN MINISTER ALEKSANDR AVDEYEV, FEBRUARY 20, 1999",
       "catalogDate": "1999-02-25",
       "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
-      "id": "25ddbdd068b5437345e6",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11760/DOC_0C09000004/C09000004.pdf",
-      "caseNumber": "M-2017-11760",
-      "title": "SECRETARY'S SECOND MEETING WITH THE KOSOVO ALBANIAN DELEGATION AT THE CHATEAU DE RAMBOUILLET,  FEBRUARY 20,  1999.",
-      "catalogDate": "1999-02-25",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "17cf951e5c1fcd53a27c",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11760/DOC_0C09000005/C09000005.pdf",
-      "caseNumber": "M-2017-11760",
-      "title": "SECRETARY'S MEETING WITH KOSOVO ALBANIAN DELEGATION LEADERS QOSJA AND SURROL,  FEBRUARY 20, 1999",
-      "catalogDate": "1999-02-25",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
       "auditNote": ""
     },
     {
@@ -7527,15 +6263,6 @@
       "auditNote": ""
     },
     {
-      "id": "1d1348eb09e5dd013a00",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11764/DOC_0C09000006/C09000006.pdf",
-      "caseNumber": "M-2017-11764",
-      "title": "SECRETARY ALBRIGHT'S APRIL 12 MEETING WITH KOSOVO LIBERATION ARMY REPRESENTATIVE JAKUP KRASNIQI.",
-      "catalogDate": "1999-04-23",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "c8121501465c49eaa2a7",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11764/DOC_0C09000007/C09000007.pdf",
       "caseNumber": "M-2017-11764",
@@ -7563,48 +6290,12 @@
       "auditNote": ""
     },
     {
-      "id": "a9e60dca38bf43eb3735",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11766/DOC_0C09000003/C09000003.pdf",
-      "caseNumber": "M-2017-11766",
-      "title": "SECRETARY'S MEETING WITH KOSOVAR ALBANIAN LEADERSHIP; COLOGNE, JUNE 8, 1999",
-      "catalogDate": "1999-06-10",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "1266940d113b75e2c63e",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11769/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11769",
-      "title": "KOSOVO: QUINT MINISTERIAL -- PARIS, JUNE 19",
-      "catalogDate": "1999-06-25",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "5b74958e878d4850fdf2",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000001/C09000001.pdf",
       "caseNumber": "M-2017-11772",
       "title": "COLOGNE G-8 FOREIGN MINISTERS PLENARY: JUNE 10 MORNING SESSION",
       "catalogDate": "1999-06-21",
       "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "db5fe8b8bb72f87c530c",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11772",
-      "title": "SECRETARY'S PARTICIPATION IN G-8 FOREIGN MINISTERS MEETING ON KOSOVO, JUNE 7, 1999, BONN, GERMANY, AND JUNE 8, 1999, COLOGNE, GERMANY",
-      "catalogDate": "1999-06-26",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "741bf5ab33f6e299e661",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11772/DOC_0C09000003/C09000003.pdf",
-      "caseNumber": "M-2017-11772",
-      "title": "SECRETARY'S MEETING WITH RUSSIAN FOREIGN MINISTER IVANOV, COLOGNE, GERMANY",
-      "catalogDate": "1999-06-22",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
       "auditNote": ""
     },
     {
@@ -7680,15 +6371,6 @@
       "auditNote": ""
     },
     {
-      "id": "b1f645ccc3dc041f586f",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000002/C09000002.pdf",
-      "caseNumber": "M-2017-11780",
-      "title": "FLORENCE NAC MINISTERIAL - SECRETARY ALBRIGHT'S MAY 25 MEETING WITH CROATIAN FM PICULA",
-      "catalogDate": "2000-06-05",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
       "id": "a45d133c0750f0728336",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000003/C09000003.pdf",
       "caseNumber": "M-2017-11780",
@@ -7713,15 +6395,6 @@
       "title": "SECRETARY'S BILATERAL WITH ITALIAN FOREIGN MINISTER DINI, FLORENCE NAC MINISTERIAL",
       "catalogDate": "2000-06-06",
       "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "823875050bd58c56be6a",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11780/DOC_0C09000006/C09000006.pdf",
-      "caseNumber": "M-2017-11780",
-      "title": "SECRETARY ALBRIGHT'S MAY 24 MEETING WITH NATO SYG ROBERTSON, FLORENCE, ITALY",
-      "catalogDate": "2000-06-06",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
       "auditNote": ""
     },
     {
@@ -7776,15 +6449,6 @@
       "title": "SECRETARY ALBRIGHT'S DECEMBER 13 DINNER WITH NATO SECRETARY GENERAL ROBERTSON AND EU HIGH REPRESENTATIVE SOLANA BRUSSELS, BELGIUM",
       "catalogDate": "2000-12-27",
       "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
-      "id": "29dc1ab1bf465a7ad864",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11781/DOC_0C09000003/C09000003.pdf",
-      "caseNumber": "M-2017-11781",
-      "title": "SECRETARY ALBRIGHT'S DECEMBER 13 DINNER WITH SYG ROBERTSON-BALKAN THEMES",
-      "catalogDate": "2000-12-27",
-      "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
       "auditNote": ""
     },
     {
@@ -7959,15 +6623,6 @@
       "auditNote": ""
     },
     {
-      "id": "2f999cdc340f2c81318c",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11827/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11827",
-      "title": "PRESIDENT'S DINNER WITH PRESIDENT YELTSIN JANUARY 14, 1994",
-      "catalogDate": "1994-01-20",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
-      "auditNote": ""
-    },
-    {
       "id": "34c62020df24339064a8",
       "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11832/DOC_0C09000001/C09000001.pdf",
       "caseNumber": "M-2017-11832",
@@ -8028,15 +6683,6 @@
       "title": "TALBOTT/GATI CONSULTATIONS IN KIEV: REBUILDING BRIDGES",
       "catalogDate": "1993-05-11",
       "disposition": "Not imported in this workspace; further review or companion-volume treatment pending",
-      "auditNote": ""
-    },
-    {
-      "id": "05095da35aa330bb7725",
-      "pdfUrl": "https://foia.state.gov/DOCUMENTS/FOIA_M_Oct2026/M-2017-11839/DOC_0C09000001/C09000001.pdf",
-      "caseNumber": "M-2017-11839",
-      "title": "TALBOTT/MCCAFFREY BOSNIA CONSULTATIONS IN MOSCOW, MAY 7-8:   BOTTOM LINE",
-      "catalogDate": "1993-05-08",
-      "disposition": "Reviewed body-text lead imported; final selection pending",
       "auditNote": ""
     },
     {
