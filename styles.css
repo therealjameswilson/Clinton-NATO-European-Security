@@ -1816,3 +1816,7 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+.source-provenance-detail { border-inline-start: 3px solid currentColor; padding-inline-start: .7rem; margin-block: .5rem; }
+.source-provenance-status { font-size: .85rem; font-weight: 700; margin: 0 0 .25rem; }
+#download-all-provenance { font: inherit; padding: .3rem .6rem; cursor: pointer; }

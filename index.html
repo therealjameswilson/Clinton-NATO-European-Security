@@ -8,7 +8,7 @@
       name="description"
       content="A public, source-first compiler workbench for source leads related to FRUS 1993-2000, Volume XVII, North Atlantic Treaty Organization; European Security."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261120-provenance" />
     <style id="compiler-network-style">
       .compiler-network {
         border-bottom: 1px solid rgba(31, 41, 51, 0.14);
@@ -322,6 +322,11 @@
           copy working citations, isolate records missing source, chronology, or
           declassification detail, and export the whole repair ledger for review.
         </p>
+        <div class="records-intro">
+          <h3>Source-note provenance for every record</h3>
+          <p>Each note identifies what the available source establishes. Original archival identifiers, public release identifiers, scan pages, and marker pages are kept separate. Item scans and finding-aid matches are not interchangeable.</p>
+          <p><button type="button" id="download-all-provenance">Download all 308 source notes (CSV)</button> · The earlier static workbooks and reports are research snapshots; use this export for the current notes and verification status.</p>
+        </div>
         <div class="records-intro" id="verified-presidential-provenance">
           <h3>Verified presidential-record locations</h3>
           <p>Two April 1993 Oval Office conversations share an archival container, but not a document ID. The item links open the first page of each conversation. The adjacent administrative markers identify the records; they are not part of the memoranda.</p>
@@ -1218,7 +1223,9 @@
       <a href="https://github.com/therealjameswilson/Clinton-NATO-European-Security">Repository</a>
     </footer>
     <script src="data/records.js?v=20261120-scope-update"></script>
-    <script src="app.js?v=20261120-scope-update"></script>
+    <script src="data/source-note-evidence.js?v=20261120-provenance"></script>
+  <script src="data/source-note-provenance.js?v=20261120-provenance"></script>
+  <script src="app.js?v=20261120-provenance"></script>
     <script id="compiler-network-script">
       (() => {
         const button = document.querySelector("[data-compiler-handoff]");

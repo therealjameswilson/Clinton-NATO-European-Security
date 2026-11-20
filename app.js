@@ -223,22 +223,57 @@ function chronologyNextAction(record) {
   return "Review for final selection, annotation, and index treatment.";
 }
 
+function sourceProvenance(record) {
+  return globalThis.ClintonProvenance.sourceNote(record);
+}
 function createSourceNoteDraft(record) {
-  if (record.sourceNote) return record.sourceNote;
-
-  const path = sourcePathParts(record);
-  if (!path.length) return "Source: Citation pending.";
-
-  const sentences = [`Source: ${path.join(", ")}.`];
-  const markings = sourceMarkings(record);
-  const transmission = sourceTransmission(record);
-  const clearance = sourceClearance(record);
-
-  if (markings) sentences.push(`${markings}.`);
-  if (transmission) sentences.push(transmission);
-  if (clearance) sentences.push(clearance);
-  if (record.sourcePages || record.sourcePdfPages) sentences.push(`Source pages: ${record.sourcePages || record.sourcePdfPages}.`);
-  return sentences.join(" ").replace(/\s+/g, " ").trim();
+  return sourceProvenance(record).text;
+}
+function createProvenanceDetails(record) {
+  const p = sourceProvenance(record);
+  const box = document.createElement("div");
+  box.className = "source-provenance-detail";
+  box.append(createParagraph("source-provenance-status", p.label), createParagraph("record-extraction-note", p.context));
+  const pointers = [
+    p.caseId && `Release/FOIA case: ${p.caseId}`,
+    p.item && `Digital Library item: ${p.item}`,
+    p.archiveID && `NARA catalog ID: ${p.archiveID}`,
+    p.markerDocumentId && `Release-marker reference: ${p.markerDocumentId} (not a unique original document ID)`,
+    p.bodyPages && `Checked document PDF pointer: ${p.bodyPages}`,
+    p.markerPages && `Release-marker PDF pages: ${p.markerPages}`,
+    !p.bodyPages && p.workingPages && `Existing working page pointer: ${p.workingPages}`,
+    p.publishedPages && `Printed pages: ${p.publishedPages}`
+  ].filter(Boolean);
+  if (pointers.length) box.append(createParagraph("record-extraction-note", pointers.join(" · ")));
+  if (p.evidenceURL) {
+    const link = document.createElement("a");
+    link.href = p.evidenceURL;
+    link.rel = "noreferrer";
+    link.textContent = "Source evidence";
+    box.append(link);
+  }
+  if (p.archiveCatalogURL && p.archiveCatalogURL !== p.evidenceURL) {
+    const catalog = document.createElement("a");
+    catalog.href = p.archiveCatalogURL;
+    catalog.rel = "noreferrer";
+    catalog.textContent = " Official NARA catalog description";
+    box.append(catalog);
+  }
+  if (p.publicContextURL) {
+    const contextLink = document.createElement("a");
+    contextLink.href = p.publicContextURL;
+    contextLink.rel = "noreferrer";
+    contextLink.textContent = " Separate published context";
+    box.append(contextLink);
+  }
+  if (p.metadataURL) {
+    const metadata = document.createElement("a");
+    metadata.href = p.metadataURL;
+    metadata.rel = "noreferrer";
+    metadata.textContent = " Official bibliographic metadata";
+    box.append(metadata);
+  }
+  return box;
 }
 
 function csvEscape(value) {
@@ -263,6 +298,9 @@ function buildChronologyCsv(records) {
     ["catalog_url", (record) => record.catalogUrl || ""],
     ["pdf_url", (record) => record.pdfUrl || ""],
     ["source_note", createSourceNoteDraft],
+    ["source_evidence_level", (record) => sourceProvenance(record).level],
+    ["source_evidence_url", (record) => sourceProvenance(record).evidenceURL],
+    ["marker_pdf_pages", (record) => sourceProvenance(record).markerPages],
     ["next_action", chronologyNextAction]
   ];
 
@@ -471,6 +509,7 @@ function createRecordRow(record) {
   const row = document.createElement("article");
   row.className = "record-row";
 
+  const provenance = sourceProvenance(record);
   const date = document.createElement("time");
   date.className = "record-date";
   date.dateTime = record.date;
@@ -480,7 +519,7 @@ function createRecordRow(record) {
   const title = document.createElement(record.catalogUrl || record.pdfUrl ? "a" : "span");
   title.className = "record-title";
   if (record.catalogUrl || record.pdfUrl) {
-    title.href = record.catalogUrl || record.pdfUrl;
+    title.href = sourceProvenance(record).evidenceURL || record.catalogUrl || record.pdfUrl;
     title.rel = "noreferrer";
   }
   title.textContent = record.documentTitle || record.title;
@@ -490,10 +529,11 @@ function createRecordRow(record) {
     createParagraph("record-date-line", record.dateLine || formatDate(record.date)),
     createParagraph("record-subject", record.subjectLine || record.title),
     createMeta(record),
-    createParagraph("record-source-note", createSourceNoteDraft(record))
+    createParagraph("record-source-note", createSourceNoteDraft(record)),
+    createProvenanceDetails(record)
   );
 
-  if (record.sourceNoteAddendum) {
+  if (record.sourceNoteAddendum && !provenance.suppressLegacy) {
     body.append(createParagraph("record-extraction-note", `Source-note review: ${record.sourceNoteAddendum}`));
   }
 
@@ -509,17 +549,17 @@ function createRecordRow(record) {
   const links = document.createElement("div");
   links.className = "record-links";
 
-  if (record.catalogUrl) {
+  if (provenance.evidenceURL) {
     const source = document.createElement("a");
-    source.href = record.catalogUrl;
+    source.href = provenance.evidenceURL;
     source.rel = "noreferrer";
     source.textContent = record.naid?.match(/^\d+$/) ? "Catalog" : "Source";
     links.append(source);
   }
 
-  if (record.pdfUrl) {
+  if (provenance.scanURL) {
     const pdf = document.createElement("a");
-    pdf.href = record.pdfUrl;
+    pdf.href = provenance.scanURL;
     pdf.rel = "noreferrer";
     pdf.target = "_blank";
     pdf.textContent = "Open PDF";
@@ -555,12 +595,12 @@ function createProductionBlock(record) {
     : "Production gates ready";
   block.append(gate);
 
+  const p = sourceProvenance(record);
   const items = [
     ["Decision", record.selectionDecision || record.compilerDecision || "Pending"],
     ["Washington time", record.washingtonTime || "Pending"],
-    ["Archival path", sourcePathParts(record).join(" / ") || "Pending"],
-    ["Document ID", record.source?.documentId || record.source?.caseNumber || record.naid || "Pending"],
-    ["Markings", sourceMarkings(record) || "Pending"],
+    ["Original archival document ID", p.originalDocumentId || "Not verified"],
+    ["Original classification", p.classification || "Not verified or not applicable"],
     ["Transmission", sourceTransmission(record) || record.distribution || "Pending"],
     ["Draft/clear/approve", sourceClearance(record) || "Pending"],
     ["Read by", joinValues(record.readBy) || "Pending"],
@@ -946,17 +986,18 @@ function createQueueItem(item) {
   const links = document.createElement("div");
   links.className = "record-links";
 
-  if (record.catalogUrl || record.source?.url) {
+  const provenance = sourceProvenance(record);
+  if (provenance.evidenceURL) {
     const source = document.createElement("a");
-    source.href = record.catalogUrl || record.source.url;
+    source.href = provenance.evidenceURL;
     source.rel = "noreferrer";
     source.textContent = "Source";
     links.append(source);
   }
 
-  if (record.pdfUrl || record.source?.pdfUrl) {
+  if (provenance.scanURL) {
     const pdf = document.createElement("a");
-    pdf.href = record.pdfUrl || record.source.pdfUrl;
+    pdf.href = provenance.scanURL;
     pdf.rel = "noreferrer";
     pdf.target = "_blank";
     pdf.textContent = "Open PDF";
@@ -1204,24 +1245,25 @@ function createCitationItem(item) {
   links.className = "record-links";
   links.append(createCopyButton("Copy source note", item.sourceNote));
 
-  if (record.catalogUrl || record.source?.url) {
+  const provenance = sourceProvenance(record);
+  if (provenance.evidenceURL) {
     const source = document.createElement("a");
-    source.href = record.catalogUrl || record.source.url;
+    source.href = provenance.evidenceURL;
     source.rel = "noreferrer";
     source.textContent = "Source";
     links.append(source);
   }
 
-  if (record.pdfUrl || record.source?.pdfUrl) {
+  if (provenance.scanURL) {
     const pdf = document.createElement("a");
-    pdf.href = record.pdfUrl || record.source.pdfUrl;
+    pdf.href = provenance.scanURL;
     pdf.rel = "noreferrer";
     pdf.target = "_blank";
     pdf.textContent = "Open PDF";
     links.append(pdf);
   }
 
-  article.append(top, meta, note, action, links);
+  article.append(top, meta, note, createProvenanceDetails(record), action, links);
   return article;
 }
 
@@ -1536,6 +1578,7 @@ async function init() {
         ? window.COMPILER_RECORDS || window.MEMCONS || []
         : await loadRecords().catch(() => window.COMPILER_RECORDS || window.MEMCONS || []);
     if (!allRecords.length) throw new Error("No compiler records available.");
+    allRecords = allRecords.map(record=>globalThis.ClintonProvenance.applyRecordEvidence(record));
     ensureActionQueueSurface();
     setChapterCounts(allRecords);
     renderChronology(allRecords);
@@ -1546,6 +1589,16 @@ async function init() {
     enableChronologyExport();
     enableActionQueueExport();
     enableCitationExport();
+    document.querySelector("#download-all-provenance")?.addEventListener("click", () => {
+      const blob = new Blob([globalThis.ClintonProvenance.exportAll(allRecords)], {type:"text/csv;charset=utf-8"});
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "frus-v17-source-note-provenance.csv";
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(()=>URL.revokeObjectURL(link.href), 500);
+    });
     enableChapterCards();
     if (window.location.hash) document.querySelector(window.location.hash)?.scrollIntoView();
   } catch (error) {
